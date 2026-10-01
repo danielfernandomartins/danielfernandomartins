@@ -99,7 +99,7 @@ Sou Desenvolvedor Backend com atuação e vivência no setor financeiro (**Banco
     <td width="50%">
       <h3 align="center">📊 Análise de Dados de Clientes</h3>
       <p align="center">
-        <a href="https://github.com/danielfernandomartins/Analise-de-Dados-de-Clientes">
+        <a href="https://github.com/danielfernandomartins/analise-dados-clientes">
           <b>Ver Repositório »</b>
         </a>
       </p>
