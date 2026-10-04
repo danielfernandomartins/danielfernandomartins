@@ -2,9 +2,11 @@
 
 # Daniel Fernando Martins
 
-### Operações de TI • Suporte • Sistemas • Banco de Dados • Tecnologia
+### Operações de TI • Suporte • Sistemas • Banco de Dados
 
-Profissional em transição para **Tecnologia da Informação**, buscando a **primeira oportunidade em cargo operacional de TI**. Trago uma trajetória consolidada em instituições financeiras e meios de pagamento, com forte experiência em atendimento, processos, resolução de problemas, relacionamento com usuários e operação — competências diretamente transferíveis para ambientes de suporte e operações de tecnologia.
+Busco minha **primeira oportunidade em TI**, com foco em funções operacionais como **Suporte Técnico, Service Desk, Operações, Sistemas e Monitoramento**.
+
+Trago uma carreira consolidada em ambientes de alta responsabilidade, com experiência em atendimento, processos, resolução de problemas e relacionamento com usuários.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Daniel%20Fernando%20Martins-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
 [![Email](https://img.shields.io/badge/Email-Contato-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
@@ -13,124 +15,110 @@ Profissional em transição para **Tecnologia da Informação**, buscando a **pr
 
 ---
 
-## Em 30 segundos
+## Perfil em resumo
 
-**Objetivo atual:** conquistar minha primeira oportunidade em **cargo operacional de TI**.  
-**Áreas de interesse:** Operações de TI, Suporte Técnico, Service Desk, Sistemas, Monitoramento, Banco de Dados e funções de entrada em tecnologia.  
-**Formação:** Análise e Desenvolvimento de Sistemas — Universidade São Judas Tadeu.  
-**Diferencial:** experiência profissional madura em atendimento, processos, operação, resolução de problemas e relacionamento com usuários.
-
-> Busco uma função em que eu possa entrar em TI pela operação, aprender rapidamente o ambiente técnico e contribuir desde o início com disciplina, atendimento, análise e execução.
-
----
-
-## Perfil profissional
-
-Minha carreira foi construída em ambientes de alta responsabilidade, com foco em **atendimento, processos, operação, resolução de problemas e relacionamento com clientes e usuários**.
-
-Ao longo da trajetória profissional, atuei com gestão de carteiras, atendimento consultivo, negociação, prospecção, relacionamento com clientes pessoa física e jurídica, meios de pagamento e serviços financeiros.
-
-Hoje direciono essa experiência para a área de TI, complementando-a com programação, banco de dados e análise de sistemas. Meu objetivo é iniciar em uma função operacional, ganhar profundidade técnica no dia a dia e evoluir de forma consistente dentro de tecnologia.
-
-### Competências transferíveis para TI
-
-- Atendimento e suporte a usuários
-- Resolução estruturada de problemas
-- Organização de processos e rotinas operacionais
-- Comunicação com diferentes perfis de usuário
-- Registro, acompanhamento e priorização de demandas
-- Análise de requisitos e regras de negócio
-- Banco de dados e SQL em desenvolvimento
-- Python, Java, C# e APIs REST em projetos de estudo
-- Git e GitHub
-- Visão de negócio aplicada a sistemas e operações
+| | |
+|---|---|
+| **Objetivo** | Primeira oportunidade em cargo operacional de TI |
+| **Áreas** | Suporte Técnico, Service Desk, Operações, Sistemas, Monitoramento e Banco de Dados |
+| **Formação** | Análise e Desenvolvimento de Sistemas — Universidade São Judas Tadeu |
+| **Diferencial** | Experiência profissional madura em atendimento, processos e resolução de problemas |
+| **Base técnica** | Python, Java, C#, SQL, APIs REST, Git e GitHub |
 
 ---
 
-## O que consigo demonstrar em uma entrevista de TI
+## O que eu levo para uma equipe de TI
 
-- Como investigar uma falha por etapas
-- Como diferenciar erro de usuário, regra de negócio e defeito de sistema
-- Como validar entrada, resposta HTTP e retorno JSON
-- Como analisar dependências entre serviços
-- Como pensar em status, fluxo e resultado esperado
-- Como documentar um problema e explicar a causa de forma clara
-
-Minha meta inicial é atuar em um ambiente operacional de TI no qual eu possa aplicar esse raciocínio, aprender ferramentas corporativas e ganhar profundidade técnica no dia a dia.
-
----
-
-## Projetos que melhor representam meu perfil
-
-| Projeto | Problema / contexto | Competências demonstradas |
-|---|---|---|
-| [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | Carteira digital e transferências | Regras financeiras, Java, Spring Boot, PostgreSQL, testes |
-| [📈 Pipeline Comercial](https://github.com/danielfernandomartins/pipeline-comercial-python) | Gestão de oportunidades comerciais | Funil de vendas, indicadores, regras de negócio, Python |
-| [📊 Análise de Clientes](https://github.com/danielfernandomartins/analise-dados-clientes) | Churn e comportamento de clientes | Dados, Pandas, análise e tomada de decisão |
-| [🏦 Sistema Bancário](https://github.com/danielfernandomartins/sistema-bancario-python) | Operações bancárias | POO, validações, regras financeiras e testes |
-| [🏠 Financiamento SAC x Price](https://github.com/danielfernandomartins/financiamento-imobiliario-sac-price) | Simulação de crédito | Matemática financeira, amortização e Python |
-| [💰 Fluxo de Caixa](https://github.com/danielfernandomartins/fluxo-caixa-contas-pagar-receber) | Contas a pagar e receber | Processos financeiros, POO e relatórios |
+- Atendimento claro e profissional a usuários
+- Investigação estruturada de problemas
+- Organização de demandas e rotinas
+- Facilidade para entender processos e regras de sistema
+- Comunicação com áreas técnicas e não técnicas
+- Disciplina operacional e responsabilidade
+- Capacidade de aprender ferramentas e ambientes novos
 
 ---
 
-## Tecnologia aplicada à operação
+## Como penso em troubleshooting
 
-Meu portfólio técnico foi construído para demonstrar **lógica, integração, dados, APIs, regras de negócio e automação**, com projetos que me ajudam a desenvolver a base necessária para atuar em ambientes operacionais de TI.
+Quando algo falha, procuro separar o problema em etapas:
 
-<p>
+1. Entender o sintoma relatado
+2. Validar entrada e contexto
+3. Reproduzir o cenário
+4. Conferir regra e comportamento esperado
+5. Verificar dependências e integrações
+6. Isolar a provável causa
+7. Registrar evidências e resultado
+
+Esse raciocínio aparece nos projetos abaixo.
+
+---
+
+## Projetos em destaque
+
+| Projeto | O que demonstra |
+|---|---|
+| [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | Fluxo transacional, API, banco de dados, validações e diagnóstico de falhas |
+| [📍 Consulta CEP via API](https://github.com/danielfernandomartins/consulta-cep-api-python) | Integração externa, HTTP, JSON, validação e troubleshooting |
+| [🌦️ Consultor de Clima](https://github.com/danielfernandomartins/consultor-clima-python) | Dependência entre serviços e isolamento de falhas |
+| [🏦 Sistema Bancário](https://github.com/danielfernandomartins/sistema-bancario-python) | Regras de sistema, estados, validações e testes |
+| [👥 Cadastro de Clientes](https://github.com/danielfernandomartins/cadastro-clientes-python) | Entrada de dados, registros, limitações e análise de ocorrências |
+| [✅ Task Manager CLI](https://github.com/danielfernandomartins/task-manager-cli-java) | Controle de estado e fluxo operacional |
+
+---
+
+## Tecnologias
+
+<p align="center">
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
 <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
 <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white"/>
 <img src="https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white"/>
-<img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
 <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
 </p>
 
 ---
 
-## Mapa do portfólio
+## Portfólio organizado por nível
 
-Para facilitar a avaliação, organizei os projetos em três níveis:
-
-### 1. Projetos de destaque
-Projetos que melhor conectam minha experiência profissional com tecnologia e devem ser avaliados primeiro.
+### Projetos aplicados
+Projetos usados para demonstrar integração, dados, regras de sistema e operação.
 
 - [PayFlow API](https://github.com/danielfernandomartins/payflow-api)
-- [Pipeline Comercial em Python](https://github.com/danielfernandomartins/pipeline-comercial-python)
-- [Análise de Dados de Clientes](https://github.com/danielfernandomartins/analise-dados-clientes)
-- [Sistema Bancário em Python](https://github.com/danielfernandomartins/sistema-bancario-python)
-- [Financiamento Imobiliário — SAC e Price](https://github.com/danielfernandomartins/financiamento-imobiliario-sac-price)
-- [Fluxo de Caixa — Contas a Pagar e Receber](https://github.com/danielfernandomartins/fluxo-caixa-contas-pagar-receber)
-
-### 2. Projetos aplicados
-Projetos menores que demonstram integração, automação e modelagem de processos.
-
-- [Cadastro de Clientes](https://github.com/danielfernandomartins/cadastro-clientes-python)
-- [Consulta de CEP via API](https://github.com/danielfernandomartins/consulta-cep-api-python)
-- [Sistema de Caixa — Posto de Combustível](https://github.com/danielfernandomartins/sistema-caixa-posto-combustivel)
-- [Controle de Despesas](https://github.com/danielfernandomartins/controle-despesas-python)
+- [Consulta CEP via API](https://github.com/danielfernandomartins/consulta-cep-api-python)
 - [Consultor de Clima via API](https://github.com/danielfernandomartins/consultor-clima-python)
+- [Sistema Bancário em Python](https://github.com/danielfernandomartins/sistema-bancario-python)
+- [Cadastro de Clientes](https://github.com/danielfernandomartins/cadastro-clientes-python)
+- [Task Manager CLI](https://github.com/danielfernandomartins/task-manager-cli-java)
 
-### 3. Laboratório de fundamentos
-Os demais repositórios registram minha evolução em lógica, linguagens e fundamentos de programação. Eles fazem parte do aprendizado contínuo, mas **não representam o nível dos projetos de destaque acima**.
+### Projetos de apoio
+Projetos que mostram lógica, organização de dados e automação de rotinas.
 
-Essa organização evita misturar exercícios introdutórios com projetos que melhor representam minha capacidade atual.
+- [Pipeline Comercial](https://github.com/danielfernandomartins/pipeline-comercial-python)
+- [Controle de Despesas](https://github.com/danielfernandomartins/controle-despesas-python)
+- [Fluxo de Caixa](https://github.com/danielfernandomartins/fluxo-caixa-contas-pagar-receber)
+- [Financiamento SAC x Price](https://github.com/danielfernandomartins/financiamento-imobiliario-sac-price)
+
+### Fundamentos
+Os demais repositórios registram minha evolução em lógica de programação, linguagens e Git/GitHub.
 
 ---
 
-## Formação e desenvolvimento contínuo
+## Formação
 
-🎓 **Análise e Desenvolvimento de Sistemas** — Universidade São Judas Tadeu  
-📚 Desenvolvimento complementar em programação, banco de dados, análise de sistemas, dados e tecnologias aplicadas a negócios.
+**Análise e Desenvolvimento de Sistemas**  
+Universidade São Judas Tadeu
 
-A formação tecnológica complementa uma base profissional já madura em atendimento, processos e operação. Minha meta agora é transformar essa experiência em valor dentro de uma equipe de TI.
+Desenvolvimento contínuo em programação, banco de dados, análise de sistemas, APIs e suporte a aplicações.
 
 ---
 
-## Vamos conversar
+## Contato
 
-Estou buscando minha **primeira oportunidade em cargo operacional de TI**, especialmente em ambientes de suporte, service desk, operações, sistemas, monitoramento ou funções de entrada relacionadas a tecnologia.
+Estou disponível para oportunidades de entrada em **Suporte Técnico, Service Desk, Operações de TI, Sistemas, Monitoramento e funções correlatas**.
 
 [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) • [E-mail](mailto:dfernandom@outlook.com)
