@@ -47,6 +47,19 @@ Hoje direciono essa experiência para a área de TI, complementando-a com progra
 
 ---
 
+## O que consigo demonstrar em uma entrevista de TI
+
+- Como investigar uma falha por etapas
+- Como diferenciar erro de usuário, regra de negócio e defeito de sistema
+- Como validar entrada, resposta HTTP e retorno JSON
+- Como analisar dependências entre serviços
+- Como pensar em status, fluxo e resultado esperado
+- Como documentar um problema e explicar a causa de forma clara
+
+Minha meta inicial é atuar em um ambiente operacional de TI no qual eu possa aplicar esse raciocínio, aprender ferramentas corporativas e ganhar profundidade técnica no dia a dia.
+
+---
+
 ## Projetos que melhor representam meu perfil
 
 | Projeto | Problema / contexto | Competências demonstradas |
