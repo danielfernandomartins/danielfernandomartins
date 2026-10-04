@@ -4,7 +4,7 @@
 
 ### Negócios • Serviços Financeiros • Relacionamento B2B • Operações • Tecnologia
 
-Profissional com trajetória consolidada em instituições financeiras e meios de pagamento, unindo experiência em **gestão de clientes, desenvolvimento de negócios, negociação, operações e serviços financeiros** a uma formação atual em **Análise e Desenvolvimento de Sistemas**.
+Profissional com trajetória consolidada em instituições financeiras e meios de pagamento, conectando **relacionamento com clientes, desenvolvimento de negócios, negociação, operações e serviços financeiros** com uma formação atual em **Análise e Desenvolvimento de Sistemas**.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Daniel%20Fernando%20Martins-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
 [![Email](https://img.shields.io/badge/Email-Contato-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
@@ -13,15 +13,26 @@ Profissional com trajetória consolidada em instituições financeiras e meios d
 
 ---
 
+## Em 30 segundos
+
+**Experiência principal:** negócios, relacionamento, carteira de clientes, serviços financeiros, meios de pagamento e operações.  
+**Diferencial atual:** tecnologia aplicada a processos, dados, automação e regras de negócio.  
+**Formação:** Análise e Desenvolvimento de Sistemas — Universidade São Judas Tadeu.  
+**Interesses profissionais:** Negócios, Comercial, Relacionamento B2B, Gestão de Contas, Operações, Serviços Financeiros e Meios de Pagamento.
+
+> Meu foco é combinar experiência prática de negócio com capacidade tecnológica para compreender problemas, estruturar processos e construir soluções mais eficientes.
+
+---
+
 ## Perfil profissional
 
-Minha carreira foi construída na interseção entre **relacionamento com clientes, negócios, produtos financeiros, processos e resultado**.
+Minha carreira foi construída na interseção entre **cliente, negócio, processo e resultado**.
 
 Ao longo da trajetória profissional, atuei com gestão de carteiras, atendimento consultivo, negociação, prospecção, relacionamento com clientes pessoa física e jurídica, meios de pagamento e serviços financeiros.
 
-Hoje complemento essa experiência com formação em tecnologia, banco de dados, programação e análise de sistemas. O objetivo é usar tecnologia como **ferramenta para resolver problemas reais de negócio**, automatizar processos, organizar informações e apoiar decisões.
+Hoje complemento essa experiência com programação, banco de dados e análise de sistemas. Tecnologia, para mim, é uma **ferramenta para resolver problemas reais de negócio** — organizar informações, automatizar rotinas, interpretar dados e aproximar áreas comerciais e técnicas.
 
-### Competências que conectam negócio e tecnologia
+### Competências
 
 - Gestão de relacionamento e carteira de clientes
 - Desenvolvimento de negócios e vendas consultivas
@@ -36,72 +47,22 @@ Hoje complemento essa experiência com formação em tecnologia, banco de dados,
 
 ---
 
-## Projetos em destaque
+## Projetos que melhor representam meu perfil
 
-### 💳 [PayFlow API](https://github.com/danielfernandomartins/payflow-api)
-API de carteira digital e transferências desenvolvida em Java e Spring Boot.
-
-**O que demonstra:** modelagem de regras financeiras, consistência transacional, integração com banco de dados, testes automatizados e construção de APIs.
-
-**Stack:** Java 21 • Spring Boot • PostgreSQL • Docker • JUnit • REST API
-
----
-
-### 📊 [Análise de Dados de Clientes](https://github.com/danielfernandomartins/analise-dados-clientes)
-Projeto de análise exploratória focado em comportamento e cancelamento de clientes.
-
-**O que demonstra:** tratamento de dados, identificação de padrões, interpretação de indicadores e transformação de dados em informação para decisão.
-
-**Stack:** Python • Pandas • Plotly • Jupyter
+| Projeto | Problema / contexto | Competências demonstradas |
+|---|---|---|
+| [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | Carteira digital e transferências | Regras financeiras, Java, Spring Boot, PostgreSQL, testes |
+| [📈 Pipeline Comercial](https://github.com/danielfernandomartins/pipeline-comercial-python) | Gestão de oportunidades comerciais | Funil de vendas, indicadores, regras de negócio, Python |
+| [📊 Análise de Clientes](https://github.com/danielfernandomartins/analise-dados-clientes) | Churn e comportamento de clientes | Dados, Pandas, análise e tomada de decisão |
+| [🏦 Sistema Bancário](https://github.com/danielfernandomartins/sistema-bancario-python) | Operações bancárias | POO, validações, regras financeiras e testes |
+| [🏠 Financiamento SAC x Price](https://github.com/danielfernandomartins/financiamento-imobiliario-sac-price) | Simulação de crédito | Matemática financeira, amortização e Python |
+| [💰 Fluxo de Caixa](https://github.com/danielfernandomartins/fluxo-caixa-contas-pagar-receber) | Contas a pagar e receber | Processos financeiros, POO e relatórios |
 
 ---
 
-### 📈 [Pipeline Comercial em Python](https://github.com/danielfernandomartins/pipeline-comercial-python)
-Sistema para cadastro e acompanhamento de oportunidades comerciais.
+## Tecnologia aplicada a negócios
 
-**O que demonstra:** tradução de processos de vendas para lógica de software, acompanhamento de funil, cálculo de conversão e organização de oportunidades.
-
-**Stack:** Python • Regras de Negócio • Pipeline de Vendas • Indicadores
-
----
-
-### 🏦 [Sistema Bancário em Python](https://github.com/danielfernandomartins/sistema-bancario-python)
-Simulação de operações bancárias com versões procedural e orientada a objetos.
-
-**O que demonstra:** regras de negócio financeiras, organização de domínio, orientação a objetos, validações e testes.
-
-**Stack:** Python • POO • Testes • Regras Financeiras
-
----
-
-### 🏠 [Financiamento Imobiliário — SAC e Price](https://github.com/danielfernandomartins/financiamento-imobiliario-sac-price)
-Simulador de financiamento com cálculo de parcelas, juros, amortização e exportação de dados.
-
-**O que demonstra:** aplicação de lógica financeira em software e tratamento de cenários de crédito e amortização.
-
-**Stack:** Python • Finanças • SAC • Price • CSV
-
----
-
-### 💰 [Fluxo de Caixa — Contas a Pagar e Receber](https://github.com/danielfernandomartins/fluxo-caixa-contas-pagar-receber)
-Aplicação para controle de transações financeiras, pagamentos e relatórios.
-
-**O que demonstra:** modelagem de processos administrativos e financeiros em uma solução simples de software.
-
-**Stack:** Python • POO • Fluxo de Caixa • Relatórios
-
----
-
-## Formação e desenvolvimento
-
-🎓 **Análise e Desenvolvimento de Sistemas** — Universidade São Judas Tadeu  
-📚 Estudos complementares em programação, banco de dados, análise de sistemas, dados e tecnologias aplicadas a negócios.
-
-Minha evolução em tecnologia não substitui minha experiência profissional anterior: ela amplia minha capacidade de compreender processos, conversar com áreas técnicas e de negócio e transformar necessidades operacionais em soluções mais estruturadas.
-
----
-
-## Tecnologias utilizadas nos projetos
+Meu portfólio técnico foi intencionalmente construído em torno de temas próximos à minha experiência profissional: **clientes, vendas, crédito, pagamentos, operações e controles financeiros**.
 
 <p>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
@@ -116,18 +77,17 @@ Minha evolução em tecnologia não substitui minha experiência profissional an
 
 ---
 
-## Áreas de interesse profissional
+## Formação e desenvolvimento contínuo
 
-**Negócios • Comercial • Relacionamento B2B • Gestão de Contas • Serviços Financeiros • Meios de Pagamento • Operações • Processos • Dados aplicados a negócios**
+🎓 **Análise e Desenvolvimento de Sistemas** — Universidade São Judas Tadeu  
+📚 Desenvolvimento complementar em programação, banco de dados, análise de sistemas, dados e tecnologias aplicadas a negócios.
 
-Também mantenho desenvolvimento contínuo em tecnologia como diferencial profissional e base para projetos futuros.
+A formação tecnológica amplia minha capacidade de compreender sistemas e processos sem apagar o principal ativo da minha trajetória: **experiência real com clientes, negócios e serviços financeiros**.
 
 ---
 
-<div align="center">
+## Vamos conversar
 
-### Contato
+Estou aberto a oportunidades em que experiência comercial, visão de negócios, relacionamento e capacidade de adaptação tecnológica sejam valorizadas.
 
 [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) • [E-mail](mailto:dfernandom@outlook.com)
-
-</div>
