@@ -57,14 +57,22 @@ Esse raciocínio aparece nos projetos abaixo.
 
 ## Projetos em destaque
 
-| Projeto | O que demonstra |
-|---|---|
-| [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | Fluxo transacional, API, banco de dados, validações e diagnóstico de falhas |
-| [📍 Consulta CEP via API](https://github.com/danielfernandomartins/consulta-cep-api-python) | Integração externa, HTTP, JSON, validação e troubleshooting |
-| [🌦️ Consultor de Clima](https://github.com/danielfernandomartins/consultor-clima-python) | Dependência entre serviços e isolamento de falhas |
-| [🏦 Sistema Bancário](https://github.com/danielfernandomartins/sistema-bancario-python) | Regras de sistema, estados, validações e testes |
-| [👥 Cadastro de Clientes](https://github.com/danielfernandomartins/cadastro-clientes-python) | Entrada de dados, registros, limitações e análise de ocorrências |
-| [✅ Task Manager CLI](https://github.com/danielfernandomartins/task-manager-cli-java) | Controle de estado e fluxo operacional |
+| Projeto | O que demonstra | Evidência |
+|---|---|---|
+| [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | API, banco, integrações e troubleshooting | [Playbook de suporte](https://github.com/danielfernandomartins/payflow-api/blob/main/SUPPORT-PLAYBOOK.md) |
+| [📍 Consulta CEP via API](https://github.com/danielfernandomartins/consulta-cep-api-python) | HTTP, JSON, validação e diagnóstico | README com fluxo de troubleshooting |
+| [🌦️ Consultor de Clima](https://github.com/danielfernandomartins/consultor-clima-python) | APIs dependentes e isolamento de falhas | README com análise por etapas |
+| [🏦 Sistema Bancário](https://github.com/danielfernandomartins/sistema-bancario-python) | Regras, estados, validações e testes | README com cenários de suporte |
+| [👥 Cadastro de Clientes](https://github.com/danielfernandomartins/cadastro-clientes-python) | Dados, validação e ocorrências | [Cenários de suporte](https://github.com/danielfernandomartins/cadastro-clientes-python/blob/main/SUPPORT-SCENARIOS.md) |
+| [✅ Task Manager CLI](https://github.com/danielfernandomartins/task-manager-cli-java) | Estados e fluxo operacional | README com conexão a chamados |
+
+---
+
+## Por que meu perfil pode funcionar em Suporte e Operações
+
+Meu diferencial não é apenas estudar tecnologia. Eu já venho de ambientes em que **atendimento, pressão, processo, registro, responsabilidade e resolução de problemas** fazem parte da rotina.
+
+Agora estou direcionando essa experiência para TI, com foco em aprender ferramentas corporativas rapidamente e atuar com consistência desde o início.
 
 ---
 
