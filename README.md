@@ -77,6 +77,36 @@ Meu portfólio técnico foi intencionalmente construído em torno de temas próx
 
 ---
 
+## Mapa do portfólio
+
+Para facilitar a avaliação, organizei os projetos em três níveis:
+
+### 1. Projetos de destaque
+Projetos que melhor conectam minha experiência profissional com tecnologia e devem ser avaliados primeiro.
+
+- [PayFlow API](https://github.com/danielfernandomartins/payflow-api)
+- [Pipeline Comercial em Python](https://github.com/danielfernandomartins/pipeline-comercial-python)
+- [Análise de Dados de Clientes](https://github.com/danielfernandomartins/analise-dados-clientes)
+- [Sistema Bancário em Python](https://github.com/danielfernandomartins/sistema-bancario-python)
+- [Financiamento Imobiliário — SAC e Price](https://github.com/danielfernandomartins/financiamento-imobiliario-sac-price)
+- [Fluxo de Caixa — Contas a Pagar e Receber](https://github.com/danielfernandomartins/fluxo-caixa-contas-pagar-receber)
+
+### 2. Projetos aplicados
+Projetos menores que demonstram integração, automação e modelagem de processos.
+
+- [Cadastro de Clientes](https://github.com/danielfernandomartins/cadastro-clientes-python)
+- [Consulta de CEP via API](https://github.com/danielfernandomartins/consulta-cep-api-python)
+- [Sistema de Caixa — Posto de Combustível](https://github.com/danielfernandomartins/sistema-caixa-posto-combustivel)
+- [Controle de Despesas](https://github.com/danielfernandomartins/controle-despesas-python)
+- [Consultor de Clima via API](https://github.com/danielfernandomartins/consultor-clima-python)
+
+### 3. Laboratório de fundamentos
+Os demais repositórios registram minha evolução em lógica, linguagens e fundamentos de programação. Eles fazem parte do aprendizado contínuo, mas **não representam o nível dos projetos de destaque acima**.
+
+Essa organização evita misturar exercícios introdutórios com projetos que melhor representam minha capacidade atual.
+
+---
+
 ## Formação e desenvolvimento contínuo
 
 🎓 **Análise e Desenvolvimento de Sistemas** — Universidade São Judas Tadeu  
