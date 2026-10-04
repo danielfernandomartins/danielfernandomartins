@@ -2,9 +2,9 @@
 
 # Daniel Fernando Martins
 
-### Negócios • Serviços Financeiros • Relacionamento B2B • Operações • Tecnologia
+### Operações de TI • Suporte • Sistemas • Banco de Dados • Tecnologia
 
-Profissional com trajetória consolidada em instituições financeiras e meios de pagamento, conectando **relacionamento com clientes, desenvolvimento de negócios, negociação, operações e serviços financeiros** com uma formação atual em **Análise e Desenvolvimento de Sistemas**.
+Profissional em transição para **Tecnologia da Informação**, buscando a **primeira oportunidade em cargo operacional de TI**. Trago uma trajetória consolidada em instituições financeiras e meios de pagamento, com forte experiência em atendimento, processos, resolução de problemas, relacionamento com usuários e operação — competências diretamente transferíveis para ambientes de suporte e operações de tecnologia.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Daniel%20Fernando%20Martins-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
 [![Email](https://img.shields.io/badge/Email-Contato-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
@@ -15,35 +15,35 @@ Profissional com trajetória consolidada em instituições financeiras e meios d
 
 ## Em 30 segundos
 
-**Experiência principal:** negócios, relacionamento, carteira de clientes, serviços financeiros, meios de pagamento e operações.  
-**Diferencial atual:** tecnologia aplicada a processos, dados, automação e regras de negócio.  
+**Objetivo atual:** conquistar minha primeira oportunidade em **cargo operacional de TI**.  
+**Áreas de interesse:** Operações de TI, Suporte Técnico, Service Desk, Sistemas, Monitoramento, Banco de Dados e funções de entrada em tecnologia.  
 **Formação:** Análise e Desenvolvimento de Sistemas — Universidade São Judas Tadeu.  
-**Interesses profissionais:** Negócios, Comercial, Relacionamento B2B, Gestão de Contas, Operações, Serviços Financeiros e Meios de Pagamento.
+**Diferencial:** experiência profissional madura em atendimento, processos, operação, resolução de problemas e relacionamento com usuários.
 
-> Meu foco é combinar experiência prática de negócio com capacidade tecnológica para compreender problemas, estruturar processos e construir soluções mais eficientes.
+> Busco uma função em que eu possa entrar em TI pela operação, aprender rapidamente o ambiente técnico e contribuir desde o início com disciplina, atendimento, análise e execução.
 
 ---
 
 ## Perfil profissional
 
-Minha carreira foi construída na interseção entre **cliente, negócio, processo e resultado**.
+Minha carreira foi construída em ambientes de alta responsabilidade, com foco em **atendimento, processos, operação, resolução de problemas e relacionamento com clientes e usuários**.
 
 Ao longo da trajetória profissional, atuei com gestão de carteiras, atendimento consultivo, negociação, prospecção, relacionamento com clientes pessoa física e jurídica, meios de pagamento e serviços financeiros.
 
-Hoje complemento essa experiência com programação, banco de dados e análise de sistemas. Tecnologia, para mim, é uma **ferramenta para resolver problemas reais de negócio** — organizar informações, automatizar rotinas, interpretar dados e aproximar áreas comerciais e técnicas.
+Hoje direciono essa experiência para a área de TI, complementando-a com programação, banco de dados e análise de sistemas. Meu objetivo é iniciar em uma função operacional, ganhar profundidade técnica no dia a dia e evoluir de forma consistente dentro de tecnologia.
 
-### Competências
+### Competências transferíveis para TI
 
-- Gestão de relacionamento e carteira de clientes
-- Desenvolvimento de negócios e vendas consultivas
-- Negociação e prospecção B2B
-- Serviços financeiros e meios de pagamento
-- Operações comerciais e processos
-- Indicadores, dados e visão analítica
-- CRM e organização de pipeline comercial
+- Atendimento e suporte a usuários
+- Resolução estruturada de problemas
+- Organização de processos e rotinas operacionais
+- Comunicação com diferentes perfis de usuário
+- Registro, acompanhamento e priorização de demandas
 - Análise de requisitos e regras de negócio
-- Banco de dados e automação de rotinas
-- Python, Java, C#, SQL e APIs REST em projetos de estudo
+- Banco de dados e SQL em desenvolvimento
+- Python, Java, C# e APIs REST em projetos de estudo
+- Git e GitHub
+- Visão de negócio aplicada a sistemas e operações
 
 ---
 
@@ -60,9 +60,9 @@ Hoje complemento essa experiência com programação, banco de dados e análise 
 
 ---
 
-## Tecnologia aplicada a negócios
+## Tecnologia aplicada à operação
 
-Meu portfólio técnico foi intencionalmente construído em torno de temas próximos à minha experiência profissional: **clientes, vendas, crédito, pagamentos, operações e controles financeiros**.
+Meu portfólio técnico foi construído para demonstrar **lógica, integração, dados, APIs, regras de negócio e automação**, com projetos que me ajudam a desenvolver a base necessária para atuar em ambientes operacionais de TI.
 
 <p>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
@@ -112,12 +112,12 @@ Essa organização evita misturar exercícios introdutórios com projetos que me
 🎓 **Análise e Desenvolvimento de Sistemas** — Universidade São Judas Tadeu  
 📚 Desenvolvimento complementar em programação, banco de dados, análise de sistemas, dados e tecnologias aplicadas a negócios.
 
-A formação tecnológica amplia minha capacidade de compreender sistemas e processos sem apagar o principal ativo da minha trajetória: **experiência real com clientes, negócios e serviços financeiros**.
+A formação tecnológica complementa uma base profissional já madura em atendimento, processos e operação. Minha meta agora é transformar essa experiência em valor dentro de uma equipe de TI.
 
 ---
 
 ## Vamos conversar
 
-Estou aberto a oportunidades em que experiência comercial, visão de negócios, relacionamento e capacidade de adaptação tecnológica sejam valorizadas.
+Estou buscando minha **primeira oportunidade em cargo operacional de TI**, especialmente em ambientes de suporte, service desk, operações, sistemas, monitoramento ou funções de entrada relacionadas a tecnologia.
 
 [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) • [E-mail](mailto:dfernandom@outlook.com)
