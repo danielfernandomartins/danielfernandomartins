@@ -38,32 +38,35 @@ Minha prioridade é conquistar uma oportunidade inicial em Tecnologia em posiç�
 |---|---|---|
 | **COBOL / Mainframe** | [🏦 Batch de Liquidação Bancária](cobol-portfolio/batch-liquidacao-bancaria/) | COBOL, JCL, DB2/SQL, processamento batch, conciliação e runbook de incidentes |
 | **COBOL / CICS** | [💻 Consulta de Conta Corrente](cobol-portfolio/conta-corrente-online-cics/) | COBOL, CICS-oriented flow, COMMAREA, DB2/SQLCODE e tratamento de retorno |
+| **COBOL / VSAM** | [🗂️ VSAM + Restart Bancário](cobol-portfolio/vsam-restart-bancario/) | arquivo indexado, VSAM concepts, IDCAMS, DFSORT, checkpoint e restart/recovery |
 | **Backend / Fintech** | [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | Java, Spring Boot, PostgreSQL, Docker, concorrência, regras financeiras e testes |
 | **Dados** | [📊 Análise de Clientes e Churn](https://github.com/danielfernandomartins/analise-dados-clientes) | Python, Pandas, Plotly, comportamento de clientes e insights de retenção |
 | **Dados / SQL + BI** | [📈 Análise Comercial com SQL](data-portfolio/vendas-sql/) | SQL, KPIs, interpretação de vendas, modelo Power BI e medidas DAX propostas |
 | **QA Web** | [🧪 Playwright + TypeScript](qa-portfolio/web-playwright/) | automação E2E, BDD, plano de testes e exemplo de bug report |
 | **QA API** | [🔎 Postman + Newman](qa-portfolio/api-postman/) | testes de API REST, asserts, validações e execução automatizada |
-| **Business / Systems** | [🏦 Sistema Bancário](https://github.com/danielfernandomartins/sistema-bancario-python) | modelagem de domínio financeiro, POO, regras e testes |
 
 ---
 
 ## 🔍 Palavras-chave e competências demonstradas
 
-`COBOL` · `Mainframe` · `JCL` · `DB2` · `SQL` · `CICS` · `COMMAREA` · `Batch Processing` · `Banking Systems` · `Incident Analysis` · `Python` · `Pandas` · `Data Analysis` · `Power BI` · `DAX` · `KPIs` · `QA` · `Playwright` · `TypeScript` · `Postman` · `Newman` · `API Testing` · `BDD` · `Business Analysis` · `Systems Analysis` · `REST API` · `PostgreSQL` · `Git` · `GitHub Actions` · `Docker` · `Fintech` · `Banking` · `Payments` · `Risk`
+`COBOL` · `Mainframe` · `JCL` · `DB2` · `SQL` · `CICS` · `COMMAREA` · `VSAM` · `KSDS` · `IDCAMS` · `DFSORT` · `Restart` · `Recovery` · `Batch Processing` · `Banking Systems` · `Incident Analysis` · `Python` · `Pandas` · `Data Analysis` · `Power BI` · `DAX` · `QA` · `Playwright` · `Postman` · `API Testing` · `BDD` · `Business Analysis` · `Systems Analysis` · `REST API` · `PostgreSQL` · `Git` · `Docker` · `Fintech` · `Banking` · `Payments` · `Risk`
 
 ---
 
 ## 🏦 Trilha COBOL / Mainframe Banking
 
 ### [Batch de Liquidação Bancária — COBOL + JCL + DB2/SQL](cobol-portfolio/batch-liquidacao-bancaria/)
-Case inspirado em rotinas de processamento financeiro em grandes bancos: leitura de arquivo, validação, rejeições, totalização, conciliação, JCL e modelo DB2. Inclui também um runbook de sustentação com restart/recovery, SQLCODE, reprocessamento e prevenção de duplicidade.
+Case inspirado em rotinas de processamento financeiro em grandes bancos: leitura de arquivo, validação, rejeições, totalização, conciliação, JCL e modelo DB2. Inclui runbook de sustentação com restart/recovery, SQLCODE, reprocessamento e prevenção de duplicidade.
 
 ### [Consulta de Conta Corrente — COBOL + CICS + DB2](cobol-portfolio/conta-corrente-online-cics/)
 Case transacional que demonstra diferença entre batch e online, COMMAREA, tratamento de `SQLCODE`, códigos de retorno e desenho orientado a CICS. O repositório separa claramente o programa executável com GnuCOBOL do exemplo conceitual `EXEC CICS`/`EXEC SQL`.
 
-**Competências demonstradas:** `COBOL` `JCL` `DB2` `SQL` `CICS` `COMMAREA` `Batch` `Mainframe Concepts` `Banking` `Payments` `Incident Analysis`
+### [VSAM + Restart/Recovery Bancário](cobol-portfolio/vsam-restart-bancario/)
+Case batch com arquivo mestre indexado, acesso por chave, `REWRITE`, movimentos bancários, rejeições e checkpoint. Complementa o laboratório com exemplos de `IDCAMS`, definição de cluster VSAM/KSDS, JCL e `DFSORT`, além de um runbook detalhado de restart/recovery e reconciliação.
 
-> Os artefatos de JCL/CICS/DB2 demonstram conhecimento aplicado e preparação para ambiente mainframe. Não são apresentados como experiência produtiva em z/OS ou ferramentas proprietárias.
+**Competências demonstradas:** `COBOL` `JCL` `DB2` `SQL` `CICS` `COMMAREA` `VSAM` `KSDS` `IDCAMS` `DFSORT` `Batch` `Restart/Recovery` `Banking` `Payments` `Incident Analysis`
+
+> Os artefatos de JCL/CICS/DB2/VSAM demonstram conhecimento aplicado e preparação para ambiente mainframe. Não são apresentados como experiência produtiva em z/OS, Control-M ou ferramentas proprietárias.
 
 ---
 
@@ -78,8 +81,6 @@ Análise de carteira de clientes com indicadores, segmentação e preparação d
 ### [Análise de Clientes e Churn](https://github.com/danielfernandomartins/analise-dados-clientes)
 Exploração de padrões associados a cancelamento, atendimento, contratos e comportamento de clientes, traduzindo dados em hipóteses de retenção.
 
-**Competências demonstradas:** `Python` `SQL` `Pandas` `Data Analysis` `KPIs` `Power BI modeling` `Customer Analytics` `Business Analysis`
-
 ---
 
 ## 🧪 Trilha QA / Quality Assurance
@@ -89,8 +90,6 @@ Automação de fluxos Web E2E com casos positivos e negativos, asserts, plano de
 
 ### [QA API — Postman + Newman](qa-portfolio/api-postman/)
 Testes de APIs REST com validação de status, payloads, estrutura da resposta e comportamento esperado.
-
-**Competências demonstradas:** `QA` `Playwright` `TypeScript` `Postman` `Newman` `API Testing` `E2E Testing` `BDD` `Bug Reporting` `GitHub Actions`
 
 ---
 
@@ -121,7 +120,7 @@ Processo comercial traduzido em estados, indicadores e regras de sistema — con
 
 ## 🛠️ Stack atual
 
-**Mainframe / Banking:** COBOL · JCL · DB2/SQL · CICS concepts · COMMAREA · batch processing  
+**Mainframe / Banking:** COBOL · JCL · DB2/SQL · CICS concepts · COMMAREA · VSAM concepts · KSDS · IDCAMS · DFSORT · restart/recovery · batch processing  
 **Dados:** Python · SQL · Pandas · Jupyter · Plotly · Power BI modeling · DAX conceitual  
 **QA:** Playwright · TypeScript · Postman · Newman · BDD · API Testing · E2E · Bug Reporting  
 **Backend:** Java · Spring Boot · REST APIs · PostgreSQL  
