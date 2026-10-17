@@ -1,0 +1,26 @@
+name: QA API - Newman
+
+on:
+  push:
+    paths:
+      - 'qa-portfolio/api-postman/**'
+      - '.github/workflows/qa-api-newman.yml'
+  pull_request:
+    paths:
+      - 'qa-portfolio/api-postman/**'
+      - '.github/workflows/qa-api-newman.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: qa-portfolio/api-postman
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: npm test
