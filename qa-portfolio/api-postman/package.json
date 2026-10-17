@@ -1,0 +1,11 @@
+{
+  "name": "qa-api-postman",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "newman run collection/qa-api.postman_collection.json --reporters cli"
+  },
+  "devDependencies": {
+    "newman": "^6.2.1"
+  }
+}
