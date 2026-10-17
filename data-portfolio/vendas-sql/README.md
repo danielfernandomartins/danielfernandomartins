@@ -10,6 +10,7 @@ Demonstrar prática com competências comuns em vagas júnior:
 - cálculo de KPIs;
 - leitura de dados comerciais;
 - interpretação de resultados;
+- preparação conceitual para dashboard em Power BI;
 - documentação clara para público não técnico.
 
 ## Perguntas de negócio
@@ -26,6 +27,8 @@ Demonstrar prática com competências comuns em vagas júnior:
 - SQL
 - SQLite
 - CSV
+- Power BI modeling
+- DAX conceitual
 - Git / GitHub
 
 ## Arquivos
@@ -38,6 +41,7 @@ vendas-sql/
 │   ├── schema.sql
 │   └── analises.sql
 ├── INSIGHTS.md
+├── POWER-BI-MODEL.md
 └── README.md
 ```
 
@@ -45,18 +49,31 @@ vendas-sql/
 
 Importe o CSV para uma tabela chamada `vendas` em SQLite, DBeaver ou outra ferramenta SQL e execute as consultas de `sql/analises.sql`.
 
+## Camada de BI
+
+O arquivo [POWER-BI-MODEL.md](POWER-BI-MODEL.md) documenta:
+
+- desenho sugerido do dashboard;
+- KPIs principais;
+- medidas DAX propostas;
+- estrutura visual executiva;
+- evolução futura para modelo estrela.
+
+Essa documentação demonstra como eu transformaria uma análise SQL em uma entrega de BI, sem afirmar que um arquivo `.pbix` já foi construído.
+
 ## O que este projeto demonstra
 
 - domínio básico de `SELECT`, `WHERE`, `GROUP BY`, `ORDER BY`, `SUM`, `AVG` e `COUNT`;
 - transformação de dados transacionais em indicadores;
 - capacidade de responder perguntas de negócio com SQL;
-- organização de análise reproduzível.
+- organização de análise reproduzível;
+- entendimento inicial da passagem de SQL para visualização em Power BI.
 
 ## Próximas evoluções
 
-- adicionar JOIN com tabela de clientes;
+- adicionar `JOIN` com tabela de clientes;
 - criar visão por região;
-- construir dashboard em Power BI;
+- construir dashboard real em Power BI;
 - incluir metas e análise de variação;
 - automatizar atualização da base.
 
