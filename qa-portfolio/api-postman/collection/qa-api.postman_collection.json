@@ -1,0 +1,99 @@
+{
+  "info": {
+    "name": "QA API Portfolio - JSONPlaceholder",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET users - lista disponível",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://jsonplaceholder.typicode.com/users"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('status 200', () => pm.response.to.have.status(200));",
+              "pm.test('retorna uma lista', () => pm.expect(pm.response.json()).to.be.an('array').that.is.not.empty);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "GET user 1 - contrato mínimo",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://jsonplaceholder.typicode.com/users/1"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('status 200', () => pm.response.to.have.status(200));",
+              "const body = pm.response.json();",
+              "pm.test('possui id, nome e email', () => {",
+              "  pm.expect(body).to.have.property('id');",
+              "  pm.expect(body).to.have.property('name');",
+              "  pm.expect(body).to.have.property('email');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "GET user inexistente - 404",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://jsonplaceholder.typicode.com/users/9999"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('status 404', () => pm.response.to.have.status(404));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST post - criação simulada",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Teste QA\",\n  \"body\": \"Validação automatizada via Postman/Newman\",\n  \"userId\": 1\n}"
+        },
+        "url": "https://jsonplaceholder.typicode.com/posts"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('status 201', () => pm.response.to.have.status(201));",
+              "const body = pm.response.json();",
+              "pm.test('retorna os campos enviados', () => {",
+              "  pm.expect(body.title).to.eql('Teste QA');",
+              "  pm.expect(body.userId).to.eql(1);",
+              "  pm.expect(body).to.have.property('id');",
+              "});"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
