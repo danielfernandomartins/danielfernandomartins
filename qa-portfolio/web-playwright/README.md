@@ -10,6 +10,8 @@ Demonstrar capacidade prática de:
 - automatizar testes web com **Playwright**;
 - escrever testes em **TypeScript**;
 - validar cenários positivos e negativos;
+- documentar testes em formato **BDD (Given / When / Then)**;
+- registrar defeitos com clareza de impacto e evidência;
 - gerar evidências reproduzíveis;
 - executar testes automaticamente em **GitHub Actions**.
 
@@ -24,6 +26,13 @@ Os testes utilizam o **SauceDemo**, ambiente público criado para prática e dem
 3. Inclusão de produto no carrinho
 4. Validação do item no carrinho
 
+## Evidências de QA
+
+- [Plano de testes](TEST-PLAN.md)
+- [Cenários BDD](BDD-SCENARIOS.md)
+- [Exemplo de Bug Report](BUG-REPORT.md)
+- testes automatizados em `tests/ecommerce.spec.ts`
+
 ## Stack
 
 - Playwright
@@ -31,6 +40,8 @@ Os testes utilizam o **SauceDemo**, ambiente público criado para prática e dem
 - Node.js
 - Git / GitHub
 - GitHub Actions
+- BDD
+- Bug Reporting
 
 ## Estrutura
 
@@ -39,6 +50,8 @@ web-playwright/
 ├── tests/
 │   └── ecommerce.spec.ts
 ├── TEST-PLAN.md
+├── BDD-SCENARIOS.md
+├── BUG-REPORT.md
 ├── package.json
 ├── playwright.config.ts
 └── README.md
@@ -60,12 +73,14 @@ npx playwright show-report
 
 ## O que este case demonstra para recrutadores
 
-- conhecimento básico de automação E2E;
+- fundamentos de testes funcionais e E2E;
 - uso de seletores e asserts;
 - organização de cenários de regressão;
+- BDD e tradução de requisito em comportamento esperado;
+- documentação estruturada de defeitos;
 - leitura de fluxo de usuário;
 - automação dentro de pipeline CI;
-- documentação de testes.
+- comunicação de qualidade para times técnicos e de negócio.
 
 ## Próximas evoluções
 
@@ -73,7 +88,7 @@ npx playwright show-report
 - testes data-driven;
 - execução cross-browser;
 - evidências com screenshots e traces;
-- integração com relatório de bugs.
+- integração de resultados a uma ferramenta de gestão de defeitos.
 
 ## Autor
 
