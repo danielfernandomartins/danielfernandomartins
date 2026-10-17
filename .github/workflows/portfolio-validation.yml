@@ -1,0 +1,39 @@
+name: Portfolio Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  cobol-compile:
+    name: COBOL compile checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install GnuCOBOL
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gnucobol
+      - name: Compile banking batch case
+        run: cobc -x -free cobol-portfolio/batch-liquidacao-bancaria/src/liquidacao.cbl -o /tmp/liquidacao
+      - name: Compile account-query local case
+        run: cobc -x -free cobol-portfolio/conta-corrente-online-cics/src/consulta-conta-local.cbl -o /tmp/consulta-conta
+      - name: Compile indexed-file load case
+        run: cobc -x -free cobol-portfolio/vsam-restart-bancario/src/carga_clientes.cbl -o /tmp/carga-clientes
+      - name: Compile movement/restart case
+        run: cobc -x -free cobol-portfolio/vsam-restart-bancario/src/processa_movimentos.cbl -o /tmp/processa-movimentos
+
+  python-data-check:
+    name: Python data checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r data-portfolio/customer-kpis-python/requirements.txt
+      - name: Validate Python source
+        run: python -m py_compile data-portfolio/customer-kpis-python/src/analise_clientes.py
