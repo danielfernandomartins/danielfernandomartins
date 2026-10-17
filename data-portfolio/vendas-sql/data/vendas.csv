@@ -1,0 +1,13 @@
+data,vendedor,categoria,produto,quantidade,valor_unitario,forma_pagamento
+2026-01-05,Ana,Servicos,Consultoria,2,1200.00,PIX
+2026-01-12,Bruno,Software,Licenca Basic,5,350.00,Cartao
+2026-01-20,Ana,Software,Licenca Pro,3,790.00,Boleto
+2026-02-03,Carla,Servicos,Treinamento,4,650.00,PIX
+2026-02-15,Bruno,Software,Licenca Pro,2,790.00,Cartao
+2026-02-21,Carla,Hardware,Leitor,6,420.00,Boleto
+2026-03-02,Ana,Hardware,Terminal,2,1800.00,PIX
+2026-03-10,Bruno,Servicos,Consultoria,1,1200.00,Boleto
+2026-03-18,Carla,Software,Licenca Basic,8,350.00,Cartao
+2026-04-06,Ana,Servicos,Treinamento,3,650.00,Cartao
+2026-04-14,Bruno,Hardware,Leitor,4,420.00,PIX
+2026-04-25,Carla,Software,Licenca Pro,5,790.00,Boleto
