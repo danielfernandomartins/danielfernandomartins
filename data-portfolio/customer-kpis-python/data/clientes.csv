@@ -1,0 +1,11 @@
+cliente_id,nome,segmento,status,receita_mensal,dias_sem_interacao,ocorrencias_suporte
+1,Alfa Ltda,Corporate,Ativo,4800,12,0
+2,Beta Tech,SMB,Ativo,2200,35,1
+3,Gamma SA,Corporate,Ativo,6100,18,2
+4,Delta Comercio,SMB,Ativo,1800,42,3
+5,Epsilon Invest,HNW,Ativo,7500,9,0
+6,Zeta Servicos,SMB,Inativo,900,67,4
+7,Eta Partners,Corporate,Ativo,5300,28,1
+8,Theta Capital,HNW,Ativo,8200,14,0
+9,Iota Digital,SMB,Ativo,2600,31,2
+10,Kappa Foods,Corporate,Ativo,3900,7,1
