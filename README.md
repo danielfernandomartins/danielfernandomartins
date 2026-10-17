@@ -33,8 +33,8 @@ Tenho interesse especial em **bancos, instituições financeiras, meios de pagam
 | **1 — COBOL Batch Banking** | [🏦 Liquidação Bancária](cobol-portfolio/batch-liquidacao-bancaria/) | COBOL · JCL · DB2/SQL · batch · conciliação · incidentes |
 | **2 — COBOL Online / CICS** | [💻 Conta Corrente CICS](cobol-portfolio/conta-corrente-online-cics/) | COBOL · CICS · COMMAREA · DB2 · SQLCODE · fluxo online |
 | **3 — VSAM / Operação Mainframe** | [🗂️ VSAM + Restart](cobol-portfolio/vsam-restart-bancario/) | VSAM/KSDS · IDCAMS · DFSORT · checkpoint · restart/recovery |
-| **4 — Modernização / Integração** | [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | Java · Spring Boot · REST · PostgreSQL · payments · testes |
-| **5 — Regras de negócio bancárias** | [🏦 Sistema Bancário](https://github.com/danielfernandomartins/sistema-bancario-python) | domínio financeiro · regras · validações · modelagem |
+| **4 — Conteúdo técnico** | [📚 Mainframe Knowledge Base](mainframe-knowledge/) | abends · JCL · DB2 · CICS · VSAM · batch · modernização |
+| **5 — Modernização / Integração** | [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | Java · Spring Boot · REST · PostgreSQL · payments · testes |
 
 ➡️ [Guia de preparação técnica para entrevistas Mainframe](MAINFRAME-INTERVIEW-GUIDE.md)
 
@@ -58,6 +58,20 @@ Case batch com arquivo mestre indexado, acesso por chave, `REWRITE`, conceitos V
 **Demonstra:** `COBOL` `VSAM` `KSDS` `IDCAMS` `DFSORT` `JCL` `Restart/Recovery` `Batch Operations`
 
 > Os componentes JCL/CICS/DB2/VSAM são laboratórios técnicos orientados a mainframe. Não apresento experiência produtiva em z/OS, Control-M, TSO/ISPF ou ferramentas proprietárias que ainda não utilizei profissionalmente.
+
+---
+
+## 📚 Mainframe Knowledge Base
+
+Além de código, mantenho materiais técnicos autorais para demonstrar raciocínio, documentação e preparação para sustentação e desenvolvimento Mainframe:
+
+- [COBOL + JCL + DB2 + CICS + VSAM — Cheat Sheet](mainframe-knowledge/COBOL-MAINFRAME-CHEATSHEET.md)
+- [Runbook de Abend, Restart e Rerun](mainframe-knowledge/ABEND-RESTART-RUNBOOK.md)
+- [Batch Banking — do arquivo à conciliação](mainframe-knowledge/BATCH-BANKING-FLOW.md)
+- [Mainframe Modernization — legado + APIs](mainframe-knowledge/MAINFRAME-MODERNIZATION.md)
+- [Perguntas técnicas de entrevista](mainframe-knowledge/INTERVIEW-QUESTIONS.md)
+
+**Temas:** `Abend` `Restart` `Rerun` `GDG` `SYSIN` `SQLCODE` `Application Support` `Production Support` `Batch` `CICS` `VSAM` `Modernization`
 
 ---
 
