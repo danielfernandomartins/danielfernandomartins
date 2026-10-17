@@ -2,119 +2,119 @@
 
 # Daniel Fernando Martins
 
-### COBOL / Mainframe • Systems Analyst • Banking Technology • Data & QA
+### COBOL / Mainframe Developer • Systems Analyst • Application Support • Banking Technology
 
-**+20 anos em mercado financeiro adicionando tecnologia a uma carreira construída em clientes, risco, operações e negócios.**
+**+20 anos no mercado financeiro + tecnologia aplicada a sistemas bancários críticos.**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Daniel%20Fernando%20Martins-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
 [![Email](https://img.shields.io/badge/Email-Contato-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
-[![Open to Work](https://img.shields.io/badge/Open%20to-Banking%20Technology-2EA44F?style=for-the-badge)](https://github.com/danielfernandomartins)
+[![Open to Work](https://img.shields.io/badge/Open%20to-COBOL%20%2F%20Mainframe-2EA44F?style=for-the-badge)](https://github.com/danielfernandomartins)
 
 </div>
 
 ---
 
-## 🎯 Posicionamento
+## 🎯 Objetivo profissional
 
-Busco minha primeira oportunidade formal em Tecnologia, com prioridade para funções em que minha experiência anterior seja uma vantagem real:
+Busco minha **primeira oportunidade formal em Tecnologia** com foco principal em:
 
-**COBOL / Mainframe Developer · Systems Analyst · Application Support · Business Analyst · Data Analyst · QA Analyst**
+**COBOL Developer · Mainframe Developer · Analista Mainframe · Systems Analyst · Application Support / Production Support**
 
-Especial interesse em **bancos, consultorias de tecnologia, meios de pagamento, fintechs e ambientes críticos/legados em modernização**.
+Tenho interesse especial em **bancos, instituições financeiras, meios de pagamento, seguradoras e consultorias de tecnologia com ambientes Mainframe**.
 
-> **Não estou começando minha carreira do zero. Estou adicionando tecnologia a mais de duas décadas resolvendo problemas reais de negócio no mercado financeiro.**
+> **Não estou começando minha carreira do zero. Estou levando mais de duas décadas de experiência no mercado financeiro para dentro da tecnologia bancária.**
 
 ---
 
-## ⚡ Recrutador: 60 segundos para avaliar meu perfil
+## ⚡ Recrutador: avalie meu perfil em 60 segundos
 
 | Prioridade | Evidência | O que demonstra |
 |---|---|---|
-| **1 — COBOL / Batch Banking** | [🏦 Liquidação Bancária](cobol-portfolio/batch-liquidacao-bancaria/) | COBOL · JCL · DB2/SQL · batch · conciliação · incidentes |
-| **2 — COBOL / Online** | [💻 Conta Corrente CICS](cobol-portfolio/conta-corrente-online-cics/) | COBOL · CICS concepts · COMMAREA · DB2 · SQLCODE |
-| **3 — COBOL / VSAM** | [🗂️ VSAM + Restart](cobol-portfolio/vsam-restart-bancario/) | VSAM/KSDS · IDCAMS · DFSORT · checkpoint · restart/recovery |
-| **4 — Backend / Payments** | [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | Java · Spring Boot · PostgreSQL · Docker · concorrência · testes |
-| **5 — Data / Customer** | [📊 Churn & Customer Analytics](https://github.com/danielfernandomartins/analise-dados-clientes) | Python · Pandas · análise · hipóteses de retenção |
-| **6 — Systems / Business** | [🏦 Sistema Bancário](https://github.com/danielfernandomartins/sistema-bancario-python) | regras de negócio · domínio financeiro · validações · testes |
+| **1 — COBOL Batch Banking** | [🏦 Liquidação Bancária](cobol-portfolio/batch-liquidacao-bancaria/) | COBOL · JCL · DB2/SQL · batch · conciliação · incidentes |
+| **2 — COBOL Online / CICS** | [💻 Conta Corrente CICS](cobol-portfolio/conta-corrente-online-cics/) | COBOL · CICS · COMMAREA · DB2 · SQLCODE · fluxo online |
+| **3 — VSAM / Operação Mainframe** | [🗂️ VSAM + Restart](cobol-portfolio/vsam-restart-bancario/) | VSAM/KSDS · IDCAMS · DFSORT · checkpoint · restart/recovery |
+| **4 — Modernização / Integração** | [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | Java · Spring Boot · REST · PostgreSQL · payments · testes |
+| **5 — Regras de negócio bancárias** | [🏦 Sistema Bancário](https://github.com/danielfernandomartins/sistema-bancario-python) | domínio financeiro · regras · validações · modelagem |
+
+➡️ [Guia de preparação técnica para entrevistas Mainframe](MAINFRAME-INTERVIEW-GUIDE.md)
 
 ---
 
 ## 🏦 COBOL / Mainframe Banking Portfolio
 
-### [Batch de Liquidação Bancária](cobol-portfolio/batch-liquidacao-bancaria/)
-Processamento de transações financeiras com **COBOL**, estrutura **JCL**, modelo **DB2/SQL**, rejeições, totalização, conciliação e runbook de incidentes.
+### [1. Batch de Liquidação Bancária — COBOL + JCL + DB2/SQL](cobol-portfolio/batch-liquidacao-bancaria/)
+Case inspirado em processamento financeiro de grandes instituições. Faz leitura de transações, validação, rejeições, totalização e conciliação.
 
-### [Consulta de Conta Corrente — CICS](cobol-portfolio/conta-corrente-online-cics/)
-Case online bancário com **COBOL**, desenho orientado a **CICS**, **COMMAREA**, `EXEC SQL`, tratamento de `SQLCODE` e códigos de retorno.
+**Demonstra:** `COBOL` `JCL` `DB2/SQL` `Batch` `File Processing` `Reconciliation` `Incident Analysis`
 
-### [VSAM + Restart/Recovery Bancário](cobol-portfolio/vsam-restart-bancario/)
-Arquivo mestre indexado, acesso por chave, `REWRITE`, conceitos **VSAM/KSDS**, **IDCAMS**, **DFSORT**, checkpoint, restart/recovery e reconciliação.
+### [2. Consulta de Conta Corrente — COBOL + CICS + DB2](cobol-portfolio/conta-corrente-online-cics/)
+Case online para demonstrar fluxo transacional, COMMAREA, `EXEC CICS`, `EXEC SQL`, tratamento de `SQLCODE` e códigos de retorno.
 
-**Stack demonstrada:** `COBOL` `JCL` `DB2` `SQL` `CICS` `COMMAREA` `VSAM` `KSDS` `IDCAMS` `DFSORT` `Batch` `Restart/Recovery`
+**Demonstra:** `COBOL` `CICS` `COMMAREA` `DB2` `SQL` `Online Processing`
 
-> JCL, CICS, DB2 e VSAM são apresentados como laboratório técnico orientado a mainframe. Não afirmo experiência produtiva em z/OS ou ferramentas proprietárias que não utilizei profissionalmente.
+### [3. VSAM + Restart/Recovery Bancário](cobol-portfolio/vsam-restart-bancario/)
+Case batch com arquivo mestre indexado, acesso por chave, `REWRITE`, conceitos VSAM/KSDS, IDCAMS, DFSORT, checkpoint, restart/recovery e reconciliação.
+
+**Demonstra:** `COBOL` `VSAM` `KSDS` `IDCAMS` `DFSORT` `JCL` `Restart/Recovery` `Batch Operations`
+
+> Os componentes JCL/CICS/DB2/VSAM são laboratórios técnicos orientados a mainframe. Não apresento experiência produtiva em z/OS, Control-M, TSO/ISPF ou ferramentas proprietárias que ainda não utilizei profissionalmente.
 
 ---
 
-## 💳 Banking, Payments & Systems
+## ✅ Código verificável
+
+Este portfólio possui **GitHub Actions** para validar automaticamente os programas COBOL executáveis com **GnuCOBOL** e verificar código Python de apoio.
+
+O objetivo é oferecer evidência técnica reproduzível, e não apenas documentação.
+
+---
+
+## 🧠 Por que meu background financeiro importa em Mainframe
+
+Sistemas Mainframe em bancos sustentam processos nos quais contexto de negócio é crítico. Minha experiência anterior adiciona familiaridade real com:
+
+- operações financeiras e meios de pagamento;
+- clientes e relacionamento;
+- risco, controles e ambientes regulados;
+- conciliação e análise de divergências;
+- processos críticos e continuidade operacional;
+- indicadores e investigação estruturada de problemas;
+- comunicação com áreas de negócio e stakeholders.
+
+Essa combinação me ajuda a entender **por que uma rotina existe**, e não apenas como codificá-la.
+
+---
+
+## 🔄 Modernização como diferencial
+
+Vagas Mainframe atuais também valorizam integração entre legado e plataformas distribuídas. Por isso mantenho conhecimento complementar em:
+
+- **Java / Spring Boot**;
+- **REST APIs**;
+- **PostgreSQL / SQL**;
+- **Docker**;
+- **Git / GitHub Actions**;
+- testes automatizados.
 
 ### [PayFlow API](https://github.com/danielfernandomartins/payflow-api)
-API de carteira digital com regras financeiras, concorrência, locks, integração externa, persistência e testes. Meu principal case de engenharia aplicada a meios de pagamento.
-
-### [Sistema Bancário](https://github.com/danielfernandomartins/sistema-bancario-python)
-Regras bancárias convertidas em software: estados, validações, orientação a objetos e evolução planejada para persistência/API.
-
-### [Pipeline Comercial](https://github.com/danielfernandomartins/pipeline-comercial-python)
-Processo de negócio convertido em estados, regras e indicadores — evidência de raciocínio útil para **Business Analysis / Systems Analysis / Product Operations**.
+Case de pagamentos com Java/Spring Boot, persistência, concorrência, tratamento de falhas e integração externa — útil para discutir coexistência entre sistemas legados e arquitetura distribuída.
 
 ---
 
-## 📊 Dados como diferencial
+## 🛠️ Stack principal
 
-- [Análise de Clientes e Churn](https://github.com/danielfernandomartins/analise-dados-clientes) — Python, Pandas, Plotly e interpretação de comportamento.
-- [Análise Comercial com SQL](data-portfolio/vendas-sql/) — SQL, agregações, KPIs e desenho de dashboard/medidas DAX.
-- [Customer KPIs](data-portfolio/customer-kpis-python/) — Python/Pandas, segmentação e preparação para Excel/Power BI.
+**Mainframe / Banking:** COBOL · JCL · DB2/SQL · CICS concepts · COMMAREA · VSAM concepts · KSDS · IDCAMS · DFSORT · Batch · Restart/Recovery  
+**Modernização:** Java · Spring Boot · REST APIs · PostgreSQL · Docker  
+**Engenharia:** Git · GitHub · GitHub Actions · testes · documentação técnica · análise de incidentes
 
-**Stack:** `Python` `SQL` `Pandas` `Power BI modeling` `DAX` `KPIs` `Customer Analytics`
-
----
-
-## 🧪 Qualidade como diferencial
-
-- [QA Web — Playwright + TypeScript](qa-portfolio/web-playwright/) — E2E, BDD, plano de testes e bug report.
-- [QA API — Postman + Newman](qa-portfolio/api-postman/) — API testing, assertions, cenários positivos/negativos e automação.
-
-**Stack:** `Playwright` `TypeScript` `Postman` `Newman` `API Testing` `E2E` `BDD`
-
----
-
-## ✅ Evidência automatizada
-
-Este portfólio possui **GitHub Actions** para validar automaticamente:
-
-- compilação dos programas COBOL executáveis com GnuCOBOL;
-- compilação dos cases de arquivo indexado/restart;
-- validação sintática do projeto Python/Pandas.
-
-Isso permite que código demonstrável seja verificado continuamente, em vez de depender apenas de documentação.
-
----
-
-## 🧠 O que eu levo para um time de tecnologia
-
-- mais de 20 anos em mercado financeiro e ambientes de alta responsabilidade;
-- experiência com clientes, risco, operações, processos e indicadores;
-- capacidade de entender regras críticas de negócio e transformá-las em fluxos verificáveis;
-- comunicação com stakeholders técnicos e não técnicos;
-- disciplina de investigação, reconciliação, controles e documentação;
-- conhecimento de domínio em **banking, payments, customer experience e risco**;
-- evolução técnica demonstrada por código, testes, documentação e CI.
+### Conhecimentos complementares
+Python · Pandas · Data Analysis · Playwright · Postman · API Testing
 
 ---
 
 ## 🔍 Palavras-chave para recrutamento
 
-`COBOL` · `Mainframe` · `JCL` · `DB2` · `SQL` · `CICS` · `VSAM` · `KSDS` · `IDCAMS` · `DFSORT` · `Batch Processing` · `Restart Recovery` · `Banking` · `Payments` · `Systems Analysis` · `Business Analysis` · `Application Support` · `Python` · `Data Analysis` · `Power BI` · `QA` · `API Testing` · `Java` · `Spring Boot` · `PostgreSQL` · `Docker` · `GitHub Actions`
+`COBOL Developer` · `Mainframe Developer` · `Mainframe Analyst` · `COBOL` · `JCL` · `DB2` · `SQL` · `CICS` · `VSAM` · `KSDS` · `IDCAMS` · `DFSORT` · `Batch Processing` · `Online Processing` · `Restart Recovery` · `Application Support` · `Production Support` · `Systems Analysis` · `Banking Systems` · `Financial Services` · `Payments` · `Incident Analysis` · `Troubleshooting` · `Java` · `REST API`
 
 ---
 
@@ -122,19 +122,21 @@ Isso permite que código demonstrável seja verificado continuamente, em vez de 
 
 **Análise e Desenvolvimento de Sistemas — Universidade São Judas Tadeu**
 
-Minha formação técnica complementa uma trajetória executiva e comercial construída em finanças, clientes, risco, governança e operações.
+A formação técnica complementa mais de duas décadas de experiência profissional em mercado financeiro, clientes, risco, operações e negócios.
 
 ---
 
-## 🤝 Open to Work
+## 🤝 Open to Work — Mainframe
 
-Procuro oportunidades em **bancos, consultorias, fintechs, meios de pagamento e empresas com sistemas críticos**, especialmente para:
+Procuro oportunidades para atuar e evoluir como:
 
-**COBOL/Mainframe · Systems Analysis · Application Support · Business Analysis · Data · QA**
+**COBOL Developer · Mainframe Developer · Analista Mainframe · Systems Analyst · Application Support / Production Support**
+
+Especial interesse em empresas com **sistemas bancários críticos, legado em modernização, processamento batch/online e integração Mainframe ↔ plataformas distribuídas**.
 
 <div align="center">
 
-### Quer conversar sobre como essa combinação pode gerar valor no seu time?
+### Vamos conversar sobre COBOL, Mainframe e tecnologia bancária?
 
 [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) • [E-mail](mailto:dfernandom@outlook.com) • [GitHub](https://github.com/danielfernandomartins)
 
