@@ -2,131 +2,157 @@
 
 # Daniel Fernando Martins
 
-### Operações de TI • Suporte • Sistemas • Banco de Dados
+### Negócios + Tecnologia + Dados + Risco
 
-Busco minha **primeira oportunidade em TI**, com foco em funções operacionais como **Suporte Técnico, Service Desk, Operações, Sistemas e Monitoramento**.
-
-Trago uma carreira consolidada em ambientes de alta responsabilidade, com experiência em atendimento, processos, resolução de problemas e relacionamento com usuários.
+**Profissional sênior em transição estratégica para Tecnologia**, conectando mais de 20 anos de experiência em ambientes financeiros e de alta responsabilidade com desenvolvimento de software, APIs, dados, automação e resolução estruturada de problemas.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Daniel%20Fernando%20Martins-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
 [![Email](https://img.shields.io/badge/Email-Contato-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
+[![Open to Work](https://img.shields.io/badge/Open%20to-Technology%20Opportunities-2EA44F?style=for-the-badge)](https://github.com/danielfernandomartins)
 
 </div>
 
 ---
 
-## Perfil em resumo
+## 👋 Quem sou
 
-| | |
-|---|---|
-| **Objetivo** | Primeira oportunidade em cargo operacional de TI |
-| **Áreas** | Suporte Técnico, Service Desk, Operações, Sistemas, Monitoramento e Banco de Dados |
-| **Formação** | Análise e Desenvolvimento de Sistemas — Universidade São Judas Tadeu |
-| **Diferencial** | Experiência profissional madura em atendimento, processos e resolução de problemas |
-| **Base técnica** | Python, Java, C#, SQL, APIs REST, Git e GitHub |
+Minha carreira foi construída em contextos nos quais **confiança, relacionamento, risco, processos, indicadores, negociação e tomada de decisão** importam todos os dias.
 
----
+Agora estou levando essa bagagem para Tecnologia.
 
-## O que eu levo para uma equipe de TI
+Não encaro essa mudança como um recomeço profissional. Vejo como uma evolução: aprender e aplicar tecnologia para resolver problemas de negócio que eu já conheço na prática.
 
-- Atendimento claro e profissional a usuários
-- Investigação estruturada de problemas
-- Organização de demandas e rotinas
-- Facilidade para entender processos e regras de sistema
-- Comunicação com áreas técnicas e não técnicas
-- Disciplina operacional e responsabilidade
-- Capacidade de aprender ferramentas e ambientes novos
+Hoje desenvolvo projetos com **Python, Java, C#, SQL, APIs REST, Spring Boot, PostgreSQL, Docker, Git e GitHub**, priorizando casos de uso ligados a serviços financeiros, clientes, operações e eficiência.
 
 ---
 
-## Como penso em troubleshooting
+## 🎯 Onde posso gerar valor
 
-Quando algo falha, procuro separar o problema em etapas:
+Tenho interesse especial em oportunidades na interseção entre negócio e tecnologia, como:
 
-1. Entender o sintoma relatado
-2. Validar entrada e contexto
-3. Reproduzir o cenário
-4. Conferir regra e comportamento esperado
-5. Verificar dependências e integrações
-6. Isolar a provável causa
-7. Registrar evidências e resultado
+- **Business Analysis / Systems Analysis**
+- **Product Operations / Product Support**
+- **Fintechs e meios de pagamento**
+- **Operações de TI e aplicações**
+- **Dados / BI aplicado a negócios**
+- **Customer Success B2B / Technical Customer Success**
+- **Risco, Compliance e RegTech**
+- **Automação e transformação digital**
+- **Suporte técnico de aplicações e integrações**
 
-Esse raciocínio aparece nos projetos abaixo.
+Meu diferencial é combinar **maturidade profissional + visão de negócio + comunicação executiva + repertório técnico em desenvolvimento**.
 
 ---
 
-## Projetos em destaque
+## 🚀 Projetos que melhor representam meu momento atual
 
-| Projeto | O que demonstra | Evidência |
+| Projeto | Problema / valor demonstrado | Stack principal |
 |---|---|---|
-| [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | API, banco, integrações e troubleshooting | [Playbook de suporte](https://github.com/danielfernandomartins/payflow-api/blob/main/SUPPORT-PLAYBOOK.md) |
-| [📍 Consulta CEP via API](https://github.com/danielfernandomartins/consulta-cep-api-python) | HTTP, JSON, validação e diagnóstico | README com fluxo de troubleshooting |
-| [🌦️ Consultor de Clima](https://github.com/danielfernandomartins/consultor-clima-python) | APIs dependentes e isolamento de falhas | README com análise por etapas |
-| [🏦 Sistema Bancário](https://github.com/danielfernandomartins/sistema-bancario-python) | Regras, estados, validações e testes | README com cenários de suporte |
-| [👥 Cadastro de Clientes](https://github.com/danielfernandomartins/cadastro-clientes-python) | Dados, validação e ocorrências | [Cenários de suporte](https://github.com/danielfernandomartins/cadastro-clientes-python/blob/main/SUPPORT-SCENARIOS.md) |
-| [✅ Task Manager CLI](https://github.com/danielfernandomartins/task-manager-cli-java) | Estados e fluxo operacional | README com conexão a chamados |
+| [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | API de carteira digital e transferências, regras financeiras, concorrência, integrações, testes e resiliência | Java · Spring Boot · PostgreSQL · Docker |
+| [📊 Análise de Clientes e Churn](https://github.com/danielfernandomartins/analise-dados-clientes) | Dados transformados em hipóteses de retenção, relacionamento e tomada de decisão | Python · Pandas · Plotly · Jupyter |
+| [🏦 Sistema Bancário](https://github.com/danielfernandomartins/sistema-bancario-python) | Regras bancárias, validações, estados e organização de domínio | Python |
+| [📈 Pipeline Comercial](https://github.com/danielfernandomartins/pipeline-comercial-python) | Organização de oportunidades e visão de processo comercial | Python |
+| [👥 Cadastro de Clientes](https://github.com/danielfernandomartins/cadastro-clientes-python) | Regras de cadastro, validação, dados e cenários operacionais | Python |
+| [📍 Consulta CEP via API](https://github.com/danielfernandomartins/consulta-cep-api-python) | Consumo de API, JSON, validações e tratamento de falhas | Python · REST API |
 
 ---
 
-## Por que meu perfil pode funcionar em Suporte e Operações
+## 💼 Meu posicionamento
 
-Meu diferencial não é apenas estudar tecnologia. Eu já venho de ambientes em que **atendimento, pressão, processo, registro, responsabilidade e resolução de problemas** fazem parte da rotina.
+> **Quero atuar onde tecnologia encontra problemas reais de negócio.**
 
-Agora estou direcionando essa experiência para TI, com foco em aprender ferramentas corporativas rapidamente e atuar com consistência desde o início.
+Ao longo da minha trajetória profissional desenvolvi competências que continuam valiosas em ambientes de tecnologia:
+
+- relacionamento com clientes e stakeholders;
+- análise de cenários e riscos;
+- disciplina operacional e governança;
+- comunicação entre áreas técnicas e não técnicas;
+- entendimento de regras e processos complexos;
+- visão de experiência do cliente;
+- tomada de decisão baseada em contexto e indicadores;
+- responsabilidade em ambientes de alta exigência.
+
+Meu objetivo é aplicar essas competências em equipes de tecnologia, produtos digitais, fintechs, dados e operações.
 
 ---
 
-## Tecnologias
+## 🧠 Como abordo problemas
+
+Quando encontro uma falha ou desafio, procuro transformar o problema em um fluxo verificável:
+
+1. entender o objetivo de negócio;
+2. identificar entradas, regras e dependências;
+3. reproduzir o cenário;
+4. separar sintomas de causas;
+5. validar dados e integrações;
+6. testar hipóteses;
+7. documentar evidências e solução;
+8. avaliar impacto para usuário e negócio.
+
+Esse raciocínio aparece especialmente no **PayFlow API**, nos projetos com APIs e nas análises de dados.
+
+---
+
+## 🛠️ Tecnologias
 
 <p align="center">
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
 <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
 <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white"/>
 <img src="https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white"/>
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
 <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
 <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/>
 </p>
 
 ---
 
-## Portfólio organizado por nível
+## 📚 Formação e desenvolvimento
 
-### Projetos aplicados
-Projetos usados para demonstrar integração, dados, regras de sistema e operação.
+**Análise e Desenvolvimento de Sistemas — Universidade São Judas Tadeu**
 
+Aprendizado contínuo em desenvolvimento de software, banco de dados, APIs, análise de sistemas, arquitetura, testes e operações.
+
+Minha formação anterior e experiência executiva complementam o repertório técnico com visão de **negócio, risco, relacionamento, governança e estratégia**.
+
+---
+
+## 🗂️ Portfólio por contexto
+
+### Finanças, risco e operações
 - [PayFlow API](https://github.com/danielfernandomartins/payflow-api)
+- [Sistema Bancário em Python](https://github.com/danielfernandomartins/sistema-bancario-python)
+- [Financiamento SAC x Price](https://github.com/danielfernandomartins/financiamento-imobiliario-sac-price)
+- [Fluxo de Caixa](https://github.com/danielfernandomartins/fluxo-caixa-contas-pagar-receber)
+- [Controle de Despesas](https://github.com/danielfernandomartins/controle-despesas-python)
+
+### Clientes, relacionamento e dados
+- [Análise de Clientes e Churn](https://github.com/danielfernandomartins/analise-dados-clientes)
+- [Pipeline Comercial](https://github.com/danielfernandomartins/pipeline-comercial-python)
+- [Cadastro de Clientes](https://github.com/danielfernandomartins/cadastro-clientes-python)
+
+### APIs, sistemas e troubleshooting
 - [Consulta CEP via API](https://github.com/danielfernandomartins/consulta-cep-api-python)
 - [Consultor de Clima via API](https://github.com/danielfernandomartins/consultor-clima-python)
-- [Sistema Bancário em Python](https://github.com/danielfernandomartins/sistema-bancario-python)
-- [Cadastro de Clientes](https://github.com/danielfernandomartins/cadastro-clientes-python)
 - [Task Manager CLI](https://github.com/danielfernandomartins/task-manager-cli-java)
 
-### Projetos de apoio
-Projetos que mostram lógica, organização de dados e automação de rotinas.
-
-- [Pipeline Comercial](https://github.com/danielfernandomartins/pipeline-comercial-python)
-- [Controle de Despesas](https://github.com/danielfernandomartins/controle-despesas-python)
-- [Fluxo de Caixa](https://github.com/danielfernandomartins/fluxo-caixa-contas-pagar-receber)
-- [Financiamento SAC x Price](https://github.com/danielfernandomartins/financiamento-imobiliario-sac-price)
-
 ### Fundamentos
-Os demais repositórios registram minha evolução em lógica de programação, linguagens e Git/GitHub.
+Os demais repositórios registram minha evolução prática em lógica de programação, Python, Java, C#, Git e GitHub.
 
 ---
 
-## Formação
+## 🤝 Para recrutadores e líderes de tecnologia
 
-**Análise e Desenvolvimento de Sistemas**  
-Universidade São Judas Tadeu
+Se você procura alguém que una **experiência profissional madura, visão do cliente, conhecimento de ambientes financeiros e evolução técnica consistente**, ficarei feliz em conversar.
 
-Desenvolvimento contínuo em programação, banco de dados, análise de sistemas, APIs e suporte a aplicações.
+Estou aberto a oportunidades em empresas de tecnologia, bancos, fintechs, meios de pagamento, SaaS e organizações em transformação digital.
 
----
+<div align="center">
 
-## Contato
+### Vamos conversar?
 
-Estou disponível para oportunidades de entrada em **Suporte Técnico, Service Desk, Operações de TI, Sistemas, Monitoramento e funções correlatas**.
+[LinkedIn](https://www.linkedin.com/in/danielfernandomartins) • [E-mail](mailto:dfernandom@outlook.com) • [GitHub](https://github.com/danielfernandomartins)
 
-[LinkedIn](https://www.linkedin.com/in/danielfernandomartins) • [E-mail](mailto:dfernandom@outlook.com)
+</div>
