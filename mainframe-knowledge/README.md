@@ -9,6 +9,12 @@ Conteúdo técnico autoral criado para demonstrar raciocínio, documentação e 
 
 > **Tese:** o maior valor da IA no Mainframe não é apagar o legado rapidamente; é tornar o legado compreensível o suficiente para que decisões de modernização deixem de ser apostas.
 
+## Em evidência — COBOL DevOps / Git / Zowe / CI-CD
+
+- [🚀 COBOL DevOps — Do PDS ao Pull Request](COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md) — Git, Zowe, dependency-based build, CI/CD, testes, artifact management, DevSecOps, promotion, rollback e rastreabilidade
+
+> **Tese:** modernizar Mainframe não é apenas reescrever aplicações; também é modernizar como elas são construídas, testadas, promovidas, auditadas e operadas.
+
 ## Materiais principais
 
 - [🏦 CNPJ Alfanumérico no Legado Bancário](CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) — impacto em COBOL, copybooks, DB2, VSAM, CICS, batch, APIs, KYC/AML, regulatórios, rollback e hypercare
@@ -27,4 +33,4 @@ Os materiais não substituem experiência produtiva em z/OS. Eles mostram como o
 
 ## Temas cobertos
 
-`AI-Assisted Modernization` `Application Discovery` `Knowledge Graph` `Business Rules` `Characterization Tests` `Semantic Equivalence` `Human-in-the-loop` `COBOL` `JCL` `DB2` `CICS` `VSAM` `KSDS` `IDCAMS` `DFSORT` `Batch` `CNPJ Alfanumérico` `Legacy Modernization` `Regulatory Change` `KYC` `AML` `Cutover` `Hypercare` `ABEND` `S0C7` `S0C4` `S806` `SB37` `SD37` `SE37` `S322` `Restart` `Rerun` `GDG` `DISP` `DCB` `SPACE` `SYSIN` `SYSPRINT` `PROC` `COND` `SQLCODE -911` `SQLCODE -913` `RCA` `Application Support` `Production Support` `Banking` `Payments` `Modernization`
+`AI-Assisted Modernization` `Application Discovery` `Knowledge Graph` `Business Rules` `Characterization Tests` `Semantic Equivalence` `Human-in-the-loop` `COBOL DevOps` `Git` `Zowe` `CI/CD` `Dependency-Based Build` `DevSecOps` `Artifact Management` `COBOL` `JCL` `DB2` `CICS` `VSAM` `KSDS` `IDCAMS` `DFSORT` `Batch` `CNPJ Alfanumérico` `Legacy Modernization` `Regulatory Change` `KYC` `AML` `Cutover` `Hypercare` `ABEND` `S0C7` `S0C4` `S806` `SB37` `SD37` `SE37` `S322` `Restart` `Rerun` `GDG` `DISP` `DCB` `SPACE` `SYSIN` `SYSPRINT` `PROC` `COND` `SQLCODE -911` `SQLCODE -913` `RCA` `Application Support` `Production Support` `Banking` `Payments` `Modernization`
