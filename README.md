@@ -34,8 +34,9 @@ Tenho interesse especial em **bancos, instituições financeiras, meios de pagam
 | **2 — COBOL Online / CICS** | [💻 Conta Corrente CICS](cobol-portfolio/conta-corrente-online-cics/) | COBOL · CICS · COMMAREA · DB2 · SQLCODE · fluxo online |
 | **3 — VSAM / Operação Mainframe** | [🗂️ VSAM + Restart](cobol-portfolio/vsam-restart-bancario/) | VSAM/KSDS · IDCAMS · DFSORT · checkpoint · restart/recovery |
 | **4 — Production Support / ABENDs** | [🚨 Guia de ABENDs](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md) | S0C7 · S0C4 · S806 · SB37 · S322 · SQLCODE -911/-913 · RCA |
-| **5 — Conteúdo técnico** | [📚 Mainframe Knowledge Base](mainframe-knowledge/) | JCL · DB2 · CICS · VSAM · batch · modernização |
-| **6 — Modernização / Integração** | [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | Java · Spring Boot · REST · PostgreSQL · payments · testes |
+| **5 — JCL Troubleshooting** | [🧩 Guia de JCL em Produção](mainframe-knowledge/JCL-PRODUCTION-TROUBLESHOOTING.md) | RCs · GDG · DISP · DCB · SPACE · PROC · SYSIN · restart/rerun |
+| **6 — Conteúdo técnico** | [📚 Mainframe Knowledge Base](mainframe-knowledge/) | COBOL · JCL · DB2 · CICS · VSAM · batch · modernização |
+| **7 — Modernização / Integração** | [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | Java · Spring Boot · REST · PostgreSQL · payments · testes |
 
 ➡️ [Guia de preparação técnica para entrevistas Mainframe](MAINFRAME-INTERVIEW-GUIDE.md)
 
@@ -72,18 +73,39 @@ O foco não é decorar códigos: é demonstrar como eu estruturaria uma investig
 
 ---
 
+## 🧩 Destaque: JCL Production Troubleshooting
+
+[**JCL Production Troubleshooting — Mainframe Operations Guide**](mainframe-knowledge/JCL-PRODUCTION-TROUBLESHOOTING.md)
+
+Material voltado a leitura e investigação de fluxos batch em produção, cobrindo:
+
+- `RC 0/4/8/12/16`;
+- `GDG` e riscos de rerun;
+- `DISP`, `DCB` e `SPACE`;
+- `SB37`, `SD37` e `SE37`;
+- `PROC`, overrides, `SYSIN`, `SYSPRINT` e `SYSUDUMP`;
+- `COND` versus `IF/THEN/ELSE`;
+- `DFSORT`;
+- restart x rerun;
+- cenário bancário com falha em step DB2 e reconciliação.
+
+A preocupação central é operacional: **entender estado parcial, dependências e efeitos persistidos antes de reexecutar um job**.
+
+---
+
 ## 📚 Mainframe Knowledge Base
 
 Além de código, mantenho materiais técnicos autorais para demonstrar raciocínio, documentação e preparação para sustentação e desenvolvimento Mainframe:
 
 - [🚨 Mainframe ABENDs — Production Troubleshooting Guide](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md)
+- [🧩 JCL Production Troubleshooting](mainframe-knowledge/JCL-PRODUCTION-TROUBLESHOOTING.md)
 - [COBOL + JCL + DB2 + CICS + VSAM — Cheat Sheet](mainframe-knowledge/COBOL-MAINFRAME-CHEATSHEET.md)
 - [Runbook de Abend, Restart e Rerun](mainframe-knowledge/ABEND-RESTART-RUNBOOK.md)
 - [Batch Banking — do arquivo à conciliação](mainframe-knowledge/BATCH-BANKING-FLOW.md)
 - [Mainframe Modernization — legado + APIs](mainframe-knowledge/MAINFRAME-MODERNIZATION.md)
 - [Perguntas técnicas de entrevista](mainframe-knowledge/INTERVIEW-QUESTIONS.md)
 
-**Temas:** `ABEND` `S0C7` `S0C4` `S806` `SB37` `S322` `Restart` `Rerun` `RCA` `GDG` `SYSIN` `SQLCODE` `Application Support` `Production Support` `Batch` `CICS` `VSAM` `Modernization`
+**Temas:** `ABEND` `S0C7` `S0C4` `S806` `SB37` `SD37` `SE37` `S322` `Restart` `Rerun` `RCA` `GDG` `DISP` `DCB` `SPACE` `SYSIN` `SYSPRINT` `PROC` `COND` `SQLCODE` `Application Support` `Production Support` `Batch` `CICS` `VSAM` `Modernization`
 
 ---
 
@@ -140,7 +162,7 @@ Python · Pandas · Data Analysis · Playwright · Postman · API Testing
 
 ## 🔍 Palavras-chave para recrutamento
 
-`COBOL Developer` · `Mainframe Developer` · `Mainframe Analyst` · `COBOL` · `JCL` · `DB2` · `SQL` · `CICS` · `VSAM` · `KSDS` · `IDCAMS` · `DFSORT` · `ABEND` · `S0C7` · `S0C4` · `S806` · `SB37` · `S322` · `Batch Processing` · `Restart Recovery` · `Application Support` · `Production Support` · `Root Cause Analysis` · `Incident Analysis` · `Troubleshooting` · `Banking Systems` · `Financial Services` · `Payments` · `Java` · `REST API`
+`COBOL Developer` · `Mainframe Developer` · `Mainframe Analyst` · `COBOL` · `JCL` · `DB2` · `SQL` · `CICS` · `VSAM` · `KSDS` · `IDCAMS` · `DFSORT` · `ABEND` · `S0C7` · `S0C4` · `S806` · `SB37` · `SD37` · `SE37` · `S322` · `GDG` · `DISP` · `DCB` · `SPACE` · `Batch Processing` · `Restart Recovery` · `Application Support` · `Production Support` · `Root Cause Analysis` · `Incident Analysis` · `Troubleshooting` · `Banking Systems` · `Financial Services` · `Payments` · `Java` · `REST API`
 
 ---
 
