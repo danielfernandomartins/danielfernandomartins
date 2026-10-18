@@ -1,36 +1,40 @@
 # Mainframe Knowledge Base
 
-Conteúdo técnico autoral criado para demonstrar raciocínio, documentação e preparação para ambientes COBOL/Mainframe em bancos e consultorias.
+Conteúdo técnico autoral para demonstrar raciocínio, documentação e preparação para ambientes **COBOL/Mainframe em bancos e consultorias**.
 
-## Em evidência — AI + Mainframe Modernization
+> Navegação pensada para recrutadores e líderes técnicos: comece pela trilha mais próxima da vaga.
 
-- [🤖 AI-Assisted Mainframe Modernization — Discovery First, Human Governed](AI-ASSISTED-MAINFRAME-MODERNIZATION.md) — application discovery, dependency graph, business rules, characterization tests, semantic equivalence, human gates e modernização seletiva
-- [🧭 AI Modernization Readiness & Governance Matrix](AI-MODERNIZATION-READINESS-MATRIX.md) — readiness score, retain/optimize/expose/refactor/rewrite, evidence ladder, risk classes e Go/No-Go
+## Trilhas principais
 
-> **Tese:** o maior valor da IA no Mainframe não é apagar o legado rapidamente; é tornar o legado compreensível o suficiente para que decisões de modernização deixem de ser apostas.
+| Trilha | Comece por aqui | Complementos |
+|---|---|---|
+| **🏦 Banking / Regulatórios** | [CNPJ Alfanumérico no Legado Bancário](CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) | [Testes, Cutover e Hypercare](CNPJ-ALFANUMERICO-TEST-CUTOVER-HYPERCARE.md) |
+| **🚨 Production Support** | [Mainframe ABENDs — Production Troubleshooting](ABENDS-PRODUCTION-GUIDE.md) | [JCL Troubleshooting](JCL-PRODUCTION-TROUBLESHOOTING.md) · [Restart/Rerun Runbook](ABEND-RESTART-RUNBOOK.md) |
+| **🤖 Modernização com IA** | [AI-Assisted Mainframe Modernization](AI-ASSISTED-MAINFRAME-MODERNIZATION.md) | [Readiness & Governance Matrix](AI-MODERNIZATION-READINESS-MATRIX.md) |
+| **🚀 COBOL DevOps** | [Do PDS ao Pull Request](COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md) | Git · Zowe · CI/CD · dependency-based build · DevSecOps |
+| **📚 Fundamentos** | [COBOL + JCL + DB2 + CICS + VSAM Cheat Sheet](COBOL-MAINFRAME-CHEATSHEET.md) | [Perguntas Técnicas de Entrevista](INTERVIEW-QUESTIONS.md) · [Batch Banking Flow](BATCH-BANKING-FLOW.md) |
 
-## Em evidência — COBOL DevOps / Git / Zowe / CI-CD
+---
 
-- [🚀 COBOL DevOps — Do PDS ao Pull Request](COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md) — Git, Zowe, dependency-based build, CI/CD, testes, artifact management, DevSecOps, promotion, rollback e rastreabilidade
+## Três materiais para avaliar meu perfil rapidamente
 
-> **Tese:** modernizar Mainframe não é apenas reescrever aplicações; também é modernizar como elas são construídas, testadas, promovidas, auditadas e operadas.
+### 1. [🏦 CNPJ Alfanumérico no Legado Bancário](CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md)
+Demonstra análise de impacto transversal em COBOL, copybooks, DB2, VSAM, CICS, batch, KYC/AML, regulatórios, cutover e hypercare.
 
-## Materiais principais
+### 2. [🚨 Mainframe ABENDs — Production Troubleshooting](ABENDS-PRODUCTION-GUIDE.md)
+Demonstra raciocínio de incidente, análise de causa, restart/rerun, DB2 e reconciliação.
 
-- [🏦 CNPJ Alfanumérico no Legado Bancário](CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) — impacto em COBOL, copybooks, DB2, VSAM, CICS, batch, APIs, KYC/AML, regulatórios, rollback e hypercare
-- [🧪 CNPJ Alfanumérico — Matriz de Testes, Cutover e Hypercare](CNPJ-ALFANUMERICO-TEST-ROLL OUT.md) — massa de testes, regressão, E2E, rollout, war room e critérios Go/No-Go
-- [🚨 Mainframe ABENDs — Production Troubleshooting Guide](ABENDS-PRODUCTION-GUIDE.md) — S0C7, S0C4, S806, SB37/SD37/SE37, S322, SQLCODE -911/-913, RCs, restart/rerun e RCA
-- [🧩 JCL Production Troubleshooting](JCL-PRODUCTION-TROUBLESHOOTING.md) — RC 0/4/8/12/16, GDG, DISP, DCB, SPACE, COND/IF, PROC, SYSIN, DFSORT e restart/rerun
-- [COBOL + JCL + DB2 + CICS + VSAM — Cheat Sheet](COBOL-MAINFRAME-CHEATSHEET.md)
-- [Runbook de Abends, Restart e Rerun](ABEND-RESTART-RUNBOOK.md)
-- [Batch Banking: do arquivo à conciliação](BATCH-BANKING-FLOW.md)
-- [Mainframe Modernization: legado + APIs](MAINFRAME-MODERNIZATION.md)
-- [Perguntas técnicas de entrevista](INTERVIEW-QUESTIONS.md)
+### 3. [🚀 COBOL DevOps — Do PDS ao Pull Request](COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md)
+Demonstra entendimento de como modernizar o processo de engenharia em torno do legado sem abandonar governança e controle.
+
+---
 
 ## Objetivo
 
-Os materiais não substituem experiência produtiva em z/OS. Eles mostram como organizo conceitos, investigo problemas e conecto tecnologia mainframe a processos bancários críticos.
+Os materiais não substituem experiência produtiva em z/OS. Eles mostram como organizo conceitos, investigo problemas e conecto tecnologia Mainframe a processos bancários críticos.
 
 ## Temas cobertos
 
-`AI-Assisted Modernization` `Application Discovery` `Knowledge Graph` `Business Rules` `Characterization Tests` `Semantic Equivalence` `Human-in-the-loop` `COBOL DevOps` `Git` `Zowe` `CI/CD` `Dependency-Based Build` `DevSecOps` `Artifact Management` `COBOL` `JCL` `DB2` `CICS` `VSAM` `KSDS` `IDCAMS` `DFSORT` `Batch` `CNPJ Alfanumérico` `Legacy Modernization` `Regulatory Change` `KYC` `AML` `Cutover` `Hypercare` `ABEND` `S0C7` `S0C4` `S806` `SB37` `SD37` `SE37` `S322` `Restart` `Rerun` `GDG` `DISP` `DCB` `SPACE` `SYSIN` `SYSPRINT` `PROC` `COND` `SQLCODE -911` `SQLCODE -913` `RCA` `Application Support` `Production Support` `Banking` `Payments` `Modernization`
+`COBOL` `JCL` `DB2` `CICS` `VSAM` `KSDS` `IDCAMS` `DFSORT` `Batch` `ABEND` `Restart` `Rerun` `Production Support` `CNPJ Alfanumérico` `Regulatory Change` `Legacy Modernization` `KYC` `AML` `Cutover` `Hypercare` `AI-Assisted Modernization` `Application Discovery` `Human-in-the-loop` `COBOL DevOps` `Git` `Zowe` `CI/CD` `DevSecOps` `Banking` `Payments`
+
+[← Voltar para a vitrine principal](../README.md)
