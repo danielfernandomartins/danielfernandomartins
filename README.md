@@ -2,222 +2,186 @@
 
 # Daniel Fernando Martins
 
-### COBOL / Mainframe • Banking Technology • Application Support • Modernization
+### COBOL / Mainframe • Banking Technology • Application Support • Legacy Modernization
 
-**+20 anos no mercado financeiro conectados a tecnologia, sistemas críticos e modernização de legado.**
+**+20 anos no mercado financeiro + tecnologia aplicada a sistemas bancários críticos.**
 
-[![Open to Work](https://img.shields.io/badge/Open%20to%20Work-COBOL%20%2F%20Mainframe-2EA44F?style=for-the-badge)](https://github.com/danielfernandomartins)
+[![Open to Work](https://img.shields.io/badge/OPEN%20TO%20WORK-COBOL%20%2F%20MAINFRAME-2EA44F?style=for-the-badge)](https://github.com/danielfernandomartins)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
-[![Email](https://img.shields.io/badge/Email-Contato-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
+[![Email](https://img.shields.io/badge/Email-Falar%20comigo-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
 [![Portfolio Validation](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/portfolio-validation.yml/badge.svg)](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/portfolio-validation.yml)
 
-`COBOL` `JCL` `DB2` `CICS` `VSAM` `Batch` `Production Support` `Banking` `Legacy Modernization`
+`COBOL` `JCL` `DB2` `CICS` `VSAM` `Batch` `Production Support` `Banking` `Modernization`
 
 </div>
 
 ---
+
+## ⚡ Recrutador: meu perfil em 30 segundos
+
+| | |
+|---|---|
+| **O que busco** | Primeira oportunidade formal em **COBOL / Mainframe / Application Support / Systems Analysis** |
+| **Meu diferencial** | **+20 anos no mercado financeiro**: operações, risco, controles, clientes, pagamentos e ambiente regulado |
+| **O que já demonstro** | COBOL, JCL, DB2/SQL, CICS concepts, VSAM/KSDS, batch, restart/recovery, troubleshooting e modernização |
+| **Onde gero mais valor** | Bancos, meios de pagamento, seguradoras e consultorias com sistemas críticos |
+| **Evidência técnica** | 3 cases COBOL/Mainframe + Knowledge Base + workflow de validação automatizada |
+
+> **Não estou começando minha carreira do zero. Estou levando duas décadas de contexto financeiro para dentro da tecnologia bancária.**
 
 <div align="center">
 
-### 🧭 Explore rápido
+### Escolha o próximo clique
 
-[⚡ Em 30s](#-em-30-segundos) • [⭐ Destaques](#-destaques-principais) • [🏦 Projetos COBOL](#-projetos-cobolmainframe) • [🚨 Production Support](#-production-support--troubleshooting) • [🚀 Modernização](#-modernização-mainframe) • [📚 Knowledge Base](#-knowledge-base) • [🤝 Contato](#-vamos-conversar)
+[**📄 Ver Recruiter Brief — 1 página**](RECRUITER-BRIEF.md) · [**🏦 Ver melhor case técnico**](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) · [**💻 Ver código COBOL**](cobol-portfolio/batch-liquidacao-bancaria/) · [**🎯 Preparar entrevista**](MAINFRAME-INTERVIEW-GUIDE.md)
 
 </div>
 
 ---
 
-## ⚡ Em 30 segundos
-
-Sou um profissional com **mais de duas décadas no mercado financeiro** em transição estratégica para tecnologia, com foco em **COBOL/Mainframe, sistemas bancários críticos, sustentação, processamento batch/online e modernização de legado**.
-
-> **Não estou começando minha carreira do zero. Estou levando experiência real de negócio financeiro para dentro da tecnologia bancária.**
-
-**Objetivo:** primeira oportunidade formal em tecnologia como **COBOL Developer, Mainframe Developer, Analista Mainframe, Systems Analyst ou Application/Production Support**.
-
-[**📄 Recruiter Brief — visão de 1 página**](RECRUITER-BRIEF.md) · [**🎯 Guia de entrevista técnica**](MAINFRAME-INTERVIEW-GUIDE.md)
-
----
-
-## ⭐ Destaques principais
+## ⭐ 3 provas que resumem meu posicionamento
 
 <table>
 <tr>
 <td width="33%" valign="top">
 
-### 🏦 CNPJ Alfanumérico no Legado Bancário
+### 🏦 Legado bancário
+**CNPJ Alfanumérico**
 
-**Mudança regulatória aplicada ao Mainframe.**
+Impacto transversal em COBOL, DB2, VSAM, CICS, batch, KYC/AML, cutover e hypercare.
 
-COBOL · DB2 · VSAM · CICS · Batch · KYC/AML · Cutover · Hypercare
+**Mostra:** visão de negócio + risco + arquitetura de legado.
 
-**Tese:** CNPJ é identificador, não número.
-
-[**→ Abrir case**](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md)
-
-</td>
-<td width="33%" valign="top">
-
-### 🤖 AI-Assisted Mainframe Modernization
-
-**Discovery antes de migration.**
-
-Dependency Graph · Business Rules · Characterization Tests · Human-in-the-loop · Governance
-
-**Tese:** IA deve reduzir incerteza antes de mudar o legado.
-
-[**→ Abrir dossiê**](mainframe-knowledge/AI-ASSISTED-MAINFRAME-MODERNIZATION.md)
+[**Abrir case →**](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md)
 
 </td>
 <td width="33%" valign="top">
 
-### 🚀 COBOL DevOps
+### 🚨 Produção
+**ABENDs & Troubleshooting**
 
-**Do PDS ao Pull Request.**
+S0C7, S0C4, S806, SB37, S322, SQLCODE -911/-913, restart/rerun e RCA.
 
-Git · Zowe · CI/CD · Dependency-Based Build · DevSecOps · Rollback
+**Mostra:** raciocínio de sustentação e recuperação segura.
 
-**Tese:** modernizar também é melhorar o caminho até produção.
+[**Abrir guia →**](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md)
 
-[**→ Abrir guia**](mainframe-knowledge/COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md)
+</td>
+<td width="33%" valign="top">
+
+### 🚀 Modernização
+**COBOL DevOps**
+
+Git, Zowe, CI/CD, dependency-based build, DevSecOps e rollback.
+
+**Mostra:** como aproximar legado e engenharia moderna.
+
+[**Abrir guia →**](mainframe-knowledge/COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md)
 
 </td>
 </tr>
 </table>
-
----
-
-## 🎯 Rota rápida para recrutadores
-
-| Tempo disponível | Abra isto | O que você verá |
-|---|---|---|
-| **30 segundos** | [📄 Recruiter Brief](RECRUITER-BRIEF.md) | posicionamento, evidências e aderência às vagas |
-| **1 minuto** | [⭐ CNPJ Alfanumérico](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) | legado bancário + mudança regulatória |
-| **2 minutos** | [🏦 Batch de Liquidação](cobol-portfolio/batch-liquidacao-bancaria/) | COBOL + JCL + DB2/SQL + conciliação |
-| **3 minutos** | [💻 Conta Corrente CICS](cobol-portfolio/conta-corrente-online-cics/) | fluxo online + COMMAREA + DB2 + SQLCODE |
-| **5 minutos** | [📚 Mainframe Knowledge Base](mainframe-knowledge/) | produção, modernização, JCL, ABENDs, IA e DevOps |
-| **Entrevista técnica** | [🎯 Mainframe Interview Guide](MAINFRAME-INTERVIEW-GUIDE.md) | fundamentos + perguntas e respostas estruturadas |
 
 ---
 
 ## 🏦 Projetos COBOL/Mainframe
 
-<table>
-<tr>
-<td width="33%" valign="top">
+| Projeto | Cenário | Evidência principal |
+|---|---|---|
+| [**Batch de Liquidação Bancária**](cobol-portfolio/batch-liquidacao-bancaria/) | processamento financeiro | COBOL · JCL · DB2/SQL · rejeições · conciliação |
+| [**Conta Corrente Online**](cobol-portfolio/conta-corrente-online-cics/) | fluxo transacional | COBOL · CICS · COMMAREA · DB2 · SQLCODE |
+| [**VSAM + Restart/Recovery**](cobol-portfolio/vsam-restart-bancario/) | processamento batch resiliente | VSAM/KSDS · IDCAMS · DFSORT · checkpoint · recovery |
 
-### 01 — Batch de Liquidação Bancária
+[**→ Ver trilha COBOL/Mainframe completa**](cobol-portfolio/)
 
-Processamento de transações, validação, rejeições, totalização e conciliação.
-
-`COBOL` `JCL` `DB2/SQL` `Batch` `Incident Analysis`
-
-[**Explorar projeto →**](cobol-portfolio/batch-liquidacao-bancaria/)
-
-</td>
-<td width="33%" valign="top">
-
-### 02 — Conta Corrente Online
-
-Consulta online com conceitos de CICS, COMMAREA, DB2 e tratamento de SQLCODE.
-
-`COBOL` `CICS` `COMMAREA` `DB2` `Online`
-
-[**Explorar projeto →**](cobol-portfolio/conta-corrente-online-cics/)
-
-</td>
-<td width="33%" valign="top">
-
-### 03 — VSAM + Restart/Recovery
-
-Arquivo indexado, chave, REWRITE, checkpoint, restart, recovery e reconciliação.
-
-`VSAM` `KSDS` `IDCAMS` `DFSORT` `JCL` `Recovery`
-
-[**Explorar projeto →**](cobol-portfolio/vsam-restart-bancario/)
-
-</td>
-</tr>
-</table>
-
-[**→ Abrir índice completo do portfólio COBOL/Mainframe**](cobol-portfolio/)
-
-> **Transparência:** JCL, CICS, DB2, VSAM, Zowe e demais tecnologias de ambiente Mainframe são demonstradas aqui como laboratórios técnicos e estudos aplicados. Não apresento experiência produtiva em ferramentas ou ambientes que ainda não utilizei profissionalmente.
+> **Transparência técnica:** os componentes de ambiente Mainframe são apresentados como laboratórios e estudos aplicados. Não apresento experiência produtiva em z/OS, CICS, VSAM, Control-M, TSO/ISPF ou ferramentas proprietárias que ainda não utilizei profissionalmente.
 
 ---
 
-## 🚨 Production Support & Troubleshooting
+<details>
+<summary><strong>🚨 Production Support — ABENDs, JCL, Restart e RCA</strong></summary>
 
-| Material | Foco |
-|---|---|
-| [**Mainframe ABENDs — Production Troubleshooting**](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md) | `S0C7` `S0C4` `S806` `SB37/SD37/SE37` `S322` `SQLCODE -911/-913` RCA |
-| [**JCL Production Troubleshooting**](mainframe-knowledge/JCL-PRODUCTION-TROUBLESHOOTING.md) | RCs · GDG · DISP · DCB · SPACE · PROC · SYSIN · DFSORT |
-| [**Abend, Restart & Rerun Runbook**](mainframe-knowledge/ABEND-RESTART-RUNBOOK.md) | recuperação segura · rerun · restart · idempotência · reconciliação |
-| [**Batch Banking Flow**](mainframe-knowledge/BATCH-BANKING-FLOW.md) | processamento financeiro do input à conciliação |
+<br>
 
-**Como penso um incidente:** `impacto → evidência → job/step → persistência parcial → correção → restart/rerun → conciliação → RCA`.
+Minha forma de pensar incidentes:
 
----
+`impacto → evidência → job/step → persistência parcial → correção → restart/rerun → conciliação → RCA`
 
-## 🚀 Modernização Mainframe
+- [**Mainframe ABENDs — Production Troubleshooting**](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md)
+- [**JCL Production Troubleshooting**](mainframe-knowledge/JCL-PRODUCTION-TROUBLESHOOTING.md)
+- [**Abend, Restart & Rerun Runbook**](mainframe-knowledge/ABEND-RESTART-RUNBOOK.md)
+- [**Batch Banking Flow**](mainframe-knowledge/BATCH-BANKING-FLOW.md)
 
-<table>
-<tr>
-<td width="50%" valign="top">
+</details>
 
-### 🤖 IA + Discovery + Governança
+<details>
+<summary><strong>🤖 Modernização — IA, Discovery, Git, Zowe e CI/CD</strong></summary>
 
-Como IA pode apoiar descoberta de aplicações, regras de negócio e testes sem transformar modernização em aposta.
+<br>
 
-[**AI-Assisted Modernization →**](mainframe-knowledge/AI-ASSISTED-MAINFRAME-MODERNIZATION.md)
+### AI-Assisted Mainframe Modernization
 
-[**Readiness & Governance Matrix →**](mainframe-knowledge/AI-MODERNIZATION-READINESS-MATRIX.md)
+Discovery de aplicações, dependency graph, regras de negócio, characterization tests, semantic equivalence e human-in-the-loop.
 
-</td>
-<td width="50%" valign="top">
+- [**Discovery First, Human Governed**](mainframe-knowledge/AI-ASSISTED-MAINFRAME-MODERNIZATION.md)
+- [**Readiness & Governance Matrix**](mainframe-knowledge/AI-MODERNIZATION-READINESS-MATRIX.md)
 
-### 🚀 Git + Zowe + CI/CD
+### COBOL DevOps
 
-Como aproximar COBOL/Mainframe de práticas modernas de engenharia sem abrir mão de auditabilidade e controle operacional.
+Git, Pull Request, Zowe, CI/CD, dependency-based build, DevSecOps e promotion controlada.
 
-[**COBOL DevOps — PDS to Pull Request →**](mainframe-knowledge/COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md)
-
-</td>
-</tr>
-</table>
+- [**COBOL DevOps — Do PDS ao Pull Request**](mainframe-knowledge/COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md)
 
 ### Integração legado ↔ distribuído
 
-[**PayFlow API**](https://github.com/danielfernandomartins/payflow-api) — Java / Spring Boot / REST / PostgreSQL / pagamentos / concorrência / tratamento de falhas.
+- [**PayFlow API**](https://github.com/danielfernandomartins/payflow-api) — Java, Spring Boot, REST, PostgreSQL e pagamentos
 
----
+</details>
 
-## 📚 Knowledge Base
+<details>
+<summary><strong>📚 Knowledge Base — trilhas técnicas</strong></summary>
 
-A área de conteúdo técnico foi organizada para mostrar **raciocínio, documentação e preparação para ambientes críticos**, não apenas código.
+<br>
 
 | Trilha | Materiais |
 |---|---|
-| **Regulatório / Banking** | [CNPJ Alfanumérico](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) · [Testes/Cutover/Hypercare](mainframe-knowledge/CNPJ-ALFANUMERICO-TEST-CUTOVER-HYPERCARE.md) |
+| **Banking / Regulatório** | [CNPJ Alfanumérico](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) · [Testes/Cutover/Hypercare](mainframe-knowledge/CNPJ-ALFANUMERICO-TEST-CUTOVER-HYPERCARE.md) |
+| **Production Support** | [ABENDs](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md) · [JCL Troubleshooting](mainframe-knowledge/JCL-PRODUCTION-TROUBLESHOOTING.md) · [Restart/Rerun](mainframe-knowledge/ABEND-RESTART-RUNBOOK.md) |
 | **Modernização** | [AI-Assisted Mainframe](mainframe-knowledge/AI-ASSISTED-MAINFRAME-MODERNIZATION.md) · [COBOL DevOps](mainframe-knowledge/COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md) |
-| **Produção** | [ABENDs](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md) · [JCL Troubleshooting](mainframe-knowledge/JCL-PRODUCTION-TROUBLESHOOTING.md) · [Restart/Rerun](mainframe-knowledge/ABEND-RESTART-RUNBOOK.md) |
-| **Fundamentos** | [COBOL/JCL/DB2/CICS/VSAM Cheat Sheet](mainframe-knowledge/COBOL-MAINFRAME-CHEATSHEET.md) · [Interview Questions](mainframe-knowledge/INTERVIEW-QUESTIONS.md) |
+| **Fundamentos** | [Cheat Sheet](mainframe-knowledge/COBOL-MAINFRAME-CHEATSHEET.md) · [Interview Questions](mainframe-knowledge/INTERVIEW-QUESTIONS.md) |
 
-[**→ Abrir a Mainframe Knowledge Base completa**](mainframe-knowledge/)
+[**→ Abrir Knowledge Base completa**](mainframe-knowledge/)
 
----
+</details>
 
-## 🧠 Por que meu background financeiro importa
+<details>
+<summary><strong>🧠 Por que meu background financeiro importa</strong></summary>
+
+<br>
 
 Meu diferencial não é apenas aprender sintaxe. É conectar tecnologia a contextos que já conheço profundamente:
 
 `operações financeiras` · `meios de pagamento` · `risco` · `controles` · `ambientes regulados` · `clientes` · `conciliação` · `indicadores` · `investigação de divergências` · `continuidade operacional`
 
-Isso me ajuda a entender **por que uma rotina existe**, o impacto de uma falha e como comunicar problemas técnicos para áreas de negócio.
+Isso ajuda a entender **por que uma rotina existe**, o impacto de uma falha e como comunicar problemas técnicos para áreas de negócio.
+
+</details>
 
 ---
 
-## 🛠️ Stack e temas de estudo
+## ✅ Evidência técnica verificável
+
+<div align="center">
+
+[![Portfolio Validation](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/portfolio-validation.yml/badge.svg)](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/portfolio-validation.yml)
+
+Workflow versionado para validar programas COBOL executáveis com **GnuCOBOL** e código Python de apoio.
+
+</div>
+
+---
+
+## 🛠️ Stack
 
 <div align="center">
 
@@ -234,15 +198,7 @@ Isso me ajuda a entender **por que uma rotina existe**, o impacto de uma falha e
 
 **Mainframe:** COBOL · JCL · DB2/SQL · CICS concepts · COMMAREA · VSAM concepts · KSDS · IDCAMS · DFSORT · Batch · Restart/Recovery  
 **Modernização:** Git · CI/CD concepts · Zowe concepts · Application Discovery · AI-assisted analysis · Java · Spring Boot · REST APIs  
-**Engenharia:** GitHub · GitHub Actions · testes · documentação técnica · troubleshooting · RCA
-
----
-
-## ✅ Evidência verificável
-
-O workflow **Portfolio Validation** está versionado e possui execução concluída com sucesso no `main`, validando os programas COBOL executáveis com **GnuCOBOL** e o código Python de apoio.
-
-[**→ Ver GitHub Actions**](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/portfolio-validation.yml)
+**Engenharia:** GitHub · GitHub Actions · testes · troubleshooting · RCA · documentação técnica
 
 ---
 
@@ -256,11 +212,10 @@ O workflow **Portfolio Validation** está versionado e possui execução conclu�
 
 <div align="center">
 
-### Interesse em COBOL, Mainframe, Banking Technology e Modernização de Legado
+### COBOL • Mainframe • Banking Technology • Application Support
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
 [![Email](https://img.shields.io/badge/Email-Falar%20comigo-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Explorar%20perfil-181717?style=for-the-badge&logo=github)](https://github.com/danielfernandomartins)
 
 **Open to Work:** COBOL Developer · Mainframe Developer · Analista Mainframe · Systems Analyst · Application Support / Production Support
 
