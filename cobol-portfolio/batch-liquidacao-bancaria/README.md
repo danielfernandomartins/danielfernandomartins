@@ -1,10 +1,6 @@
 # COBOL Batch — Liquidação Bancária
 
-Projeto de portfólio voltado a vagas de **Desenvolvedor COBOL / Mainframe** em bancos e consultorias, inspirado em rotinas batch de processamento financeiro.
-
-## Aderência ao mercado
-
-Vagas recentes em bancos e consultorias pedem repetidamente **COBOL, JCL, DB2/SQL, processamento batch, sustentação, testes e análise de incidentes**. Este case foi desenhado para demonstrar exatamente esses fundamentos, sem afirmar experiência em z/OS que não foi executada em ambiente real.
+Case de portfólio voltado a **COBOL/Mainframe Banking**, inspirado em rotinas batch de processamento financeiro e sustentação operacional.
 
 ## Problema de negócio
 
@@ -15,16 +11,13 @@ Processar um arquivo diário de transações bancárias, validar registros e pro
 - arquivo de rejeições para tratamento operacional;
 - resumo para conciliação e auditoria.
 
-## Stack demonstrada
+## Por que abrir este projeto
 
-- COBOL
-- JCL
-- SQL / modelagem DB2
-- processamento batch
-- arquivos sequenciais
-- validação de registros
-- tratamento de retorno
-- documentação de incidentes
+Em poucos minutos ele permite discutir:
+
+`COBOL` · `JCL` · `DB2/SQL` · `Batch` · `File Processing` · `Reconciliation` · `Incident Analysis` · `Restart/Recovery`
+
+O foco é mostrar não apenas sintaxe, mas como uma rotina financeira precisa tratar **integridade, rejeições, reprocessamento e conciliação**.
 
 ## Fluxo
 
@@ -59,36 +52,41 @@ batch-liquidacao-bancaria/
 └── README.md
 ```
 
-## Como executar localmente
+## Execução local
 
-O programa COBOL foi escrito para ser compatível com **GnuCOBOL** no processamento por arquivo.
+O programa COBOL foi escrito para execução com **GnuCOBOL** no processamento por arquivo.
 
 ```bash
 cobc -x -free src/liquidacao.cbl -o liquidacao
 ./liquidacao
 ```
 
-O arquivo JCL e o modelo DB2 representam a forma como o mesmo fluxo seria organizado em ambiente mainframe. Eles não são apresentados como evidência de execução real em z/OS.
+O workflow **Portfolio Validation** do repositório inclui a compilação deste programa com GnuCOBOL e possui execução concluída com sucesso no `main`.
 
-## O que este projeto demonstra para recrutadores
+O JCL e o modelo DB2 representam como o fluxo pode ser organizado em ambiente Mainframe; não são apresentados como evidência de execução produtiva em z/OS.
 
-- entendimento de rotina batch;
+## Evidências para recrutadores
+
 - leitura e escrita de arquivos sequenciais;
 - validação de dados financeiros;
-- totals e reconciliação;
+- totalização e conciliação;
 - estrutura de job com JCL;
-- noções de persistência DB2/SQL;
-- preocupação com rejeições, retorno de processamento e sustentação.
+- modelagem DB2/SQL;
+- rejeições e códigos de retorno;
+- documentação de incidente;
+- preocupação com restart/recovery e reprocessamento seguro.
 
 ## Perguntas de entrevista que o projeto suporta
 
-- Como você trataria registros inválidos sem interromper o lote inteiro?
-- Como garantiria reprocessamento sem duplicidade?
-- Como controlaria restart/recovery de um job?
+- Como tratar registros inválidos sem interromper o lote inteiro?
+- Como garantir reprocessamento sem duplicidade?
+- Como controlar restart/recovery de um job?
 - Onde entrariam commits DB2 em lotes maiores?
-- Como investigaria uma divergência de conciliação?
-- O que monitoraria em Control-M em um fluxo como este?
+- Como investigar uma divergência de conciliação?
+- O que monitorar em um scheduler corporativo em um fluxo como este?
 
-## Autor
+## Transparência técnica
 
-**Daniel Fernando Martins** — conectando experiência no mercado financeiro com desenvolvimento COBOL, processamento batch e sistemas bancários.
+O código local e a automação com GnuCOBOL são evidências reproduzíveis do portfólio. JCL/DB2 são artefatos de estudo aplicado; não apresento experiência produtiva em z/OS ou ferramentas proprietárias que ainda não utilizei profissionalmente.
+
+[← Voltar ao índice COBOL/Mainframe](../README.md)
