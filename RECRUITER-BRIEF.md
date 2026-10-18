@@ -2,87 +2,95 @@
 
 ## Perfil em 30 segundos
 
-Profissional com mais de 20 anos de experiência em mercado financeiro, clientes, risco, operações e processos, em transição estratégica para Tecnologia.
+Profissional com **mais de 20 anos de experiência no mercado financeiro**, em transição estratégica para Tecnologia com foco em **COBOL/Mainframe, Banking Technology, Systems Analysis e Application/Production Support**.
 
-A proposta de valor não é competir como alguém que está começando a vida profissional. É combinar **maturidade de negócio + domínio financeiro + capacidade técnica demonstrável**.
+Minha proposta de valor é combinar **maturidade de negócio + domínio financeiro + evidência técnica demonstrável**.
+
+> **Não estou começando minha carreira do zero. Estou levando experiência real de negócio financeiro para dentro da tecnologia bancária.**
+
+---
 
 ## Vagas com maior aderência
 
-### Prioridade 1 — COBOL / Mainframe / Banking Technology
+**COBOL Developer · Mainframe Developer · Analista Mainframe · Systems Analyst · Application Support / Production Support**
 
-Evidências no GitHub:
+Especial interesse em bancos, meios de pagamento, seguradoras, instituições financeiras e consultorias com ambientes Mainframe.
 
-- COBOL batch aplicado a liquidação bancária;
-- JCL e modelo DB2/SQL;
-- CICS/COMMAREA e SQLCODE em fluxo online;
-- VSAM/KSDS, IDCAMS e DFSORT;
-- checkpoint, restart/recovery e runbook de incidentes;
-- compilação automática dos programas COBOL executáveis em GitHub Actions.
+---
 
-### Prioridade 2 — Systems Analysis / Application Support
+## Evidências principais no GitHub
 
-Evidências:
+### 1. COBOL / Mainframe Banking
 
-- domínio financeiro e regras de negócio;
-- PayFlow API e Sistema Bancário;
-- investigação estruturada de falhas;
-- documentação de incidentes e troubleshooting;
-- APIs, SQL, PostgreSQL e integração entre componentes.
+- [Batch de Liquidação Bancária](cobol-portfolio/batch-liquidacao-bancaria/) — COBOL, JCL, DB2/SQL, batch, rejeições e conciliação;
+- [Conta Corrente Online](cobol-portfolio/conta-corrente-online-cics/) — COBOL, CICS-oriented flow, COMMAREA, DB2 e SQLCODE;
+- [VSAM + Restart/Recovery](cobol-portfolio/vsam-restart-bancario/) — arquivo indexado, VSAM/KSDS concepts, IDCAMS, DFSORT, checkpoint e recovery.
 
-### Prioridade 3 — Data / BI aplicado a negócio
+### 2. Production Support
 
-Evidências:
+- [Mainframe ABENDs — Production Troubleshooting](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md);
+- [JCL Production Troubleshooting](mainframe-knowledge/JCL-PRODUCTION-TROUBLESHOOTING.md);
+- [Restart/Rerun Runbook](mainframe-knowledge/ABEND-RESTART-RUNBOOK.md).
 
-- SQL aplicado a vendas e KPIs;
-- Python/Pandas para clientes e churn;
-- customer analytics;
-- preparação de dados para Excel/Power BI;
-- interpretação de resultados em contexto de negócio.
+### 3. Banking Legacy & Modernization
 
-### Prioridade 4 — QA / Quality Assurance
+- [CNPJ Alfanumérico no Legado Bancário](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md);
+- [AI-Assisted Mainframe Modernization](mainframe-knowledge/AI-ASSISTED-MAINFRAME-MODERNIZATION.md);
+- [COBOL DevOps — Do PDS ao Pull Request](mainframe-knowledge/COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md).
 
-Evidências:
+### 4. Evidência automatizada
 
-- Playwright + TypeScript;
-- testes E2E;
-- Postman/Newman para APIs;
-- BDD, plano de testes e bug report;
-- GitHub Actions.
+O workflow **Portfolio Validation** possui execução concluída com sucesso no `main` e valida programas COBOL executáveis com **GnuCOBOL**, além do código Python de apoio.
 
-## Diferencial de domínio
+[Ver GitHub Actions](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/portfolio-validation.yml)
 
-Experiência profissional anterior relevante para tecnologia financeira:
+---
 
+## Diferencial de domínio financeiro
+
+Experiência profissional anterior relevante para tecnologia bancária:
+
+- operações financeiras e meios de pagamento;
 - clientes e relacionamento;
-- serviços financeiros;
-- meios de pagamento;
-- risco e controles;
-- processos e governança;
-- operações;
+- risco, controles e ambientes regulados;
+- conciliação e análise de divergências;
+- processos críticos e continuidade operacional;
 - indicadores e tomada de decisão;
-- comunicação com diferentes stakeholders.
+- comunicação com áreas de negócio e stakeholders.
+
+Esse repertório ajuda a entender **por que uma rotina existe**, o impacto de uma falha e o risco envolvido em reprocessamento, conciliação e mudanças de legado.
+
+---
 
 ## Objeções comuns — respostas objetivas
 
-### “Você ainda não trabalhou formalmente como desenvolvedor.”
+### “Você ainda não trabalhou formalmente como desenvolvedor Mainframe.”
 
-Correto. Por isso o GitHub foi estruturado para demonstrar evidência prática: código, testes, documentação, CI, SQL, APIs e cases bancários. Busco a primeira oportunidade formal em TI sem apresentar laboratório como experiência produtiva.
-
-### “Sua carreira anterior é muito diferente.”
-
-A tecnologia muda; problemas de negócio, risco, clientes, controles, incidentes e operação continuam existindo. Minha transição busca justamente usar esse repertório em sistemas que suportam negócios reais.
+Correto. Busco minha primeira oportunidade formal em Tecnologia. O GitHub demonstra estudo aplicado, código, documentação, troubleshooting e cases bancários sem apresentar laboratório como experiência produtiva.
 
 ### “Por que COBOL/Mainframe?”
 
-Porque combina tecnologia com um domínio onde já possuo contexto profissional: bancos, pagamentos, operações críticas, conciliação e regras financeiras. Os projetos COBOL foram desenhados em cenários bancários para acelerar essa conexão.
+Porque combina tecnologia com um domínio onde já possuo contexto profissional: bancos, pagamentos, operações críticas, conciliação, risco e regras financeiras.
 
 ### “Você está aberto a posições iniciais?”
 
-Sim. Entendo que senioridade técnica precisa ser construída na prática. Busco uma posição compatível com meu estágio técnico, mas em que maturidade profissional e conhecimento de negócio possam gerar valor desde o início.
+Sim. Entendo que senioridade técnica precisa ser construída na prática. Busco uma posição compatível com meu estágio técnico, onde maturidade profissional e conhecimento de negócio possam gerar valor desde o início.
 
-## Tecnologias comprovadas no portfólio
+---
 
-`COBOL` `JCL` `DB2/SQL concepts` `CICS concepts` `VSAM concepts` `IDCAMS` `DFSORT` `Python` `SQL` `Pandas` `Java` `Spring Boot` `PostgreSQL` `Docker` `Playwright` `TypeScript` `Postman` `Newman` `GitHub Actions`
+## Transparência técnica
+
+Conhecimentos de JCL, DB2, CICS, VSAM, IDCAMS, DFSORT, Zowe e ferramentas Mainframe são apresentados como **estudo aplicado e laboratório técnico** quando não houver uso profissional real.
+
+Não afirmo experiência produtiva em z/OS, CICS, VSAM, Control-M, TSO/ISPF, Endevor, Changeman ou ferramentas proprietárias que ainda não utilizei profissionalmente.
+
+---
+
+## Formação
+
+**Análise e Desenvolvimento de Sistemas — Universidade São Judas Tadeu**
+
+---
 
 ## Contato
 
