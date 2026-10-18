@@ -33,8 +33,9 @@ Tenho interesse especial em **bancos, instituições financeiras, meios de pagam
 | **1 — COBOL Batch Banking** | [🏦 Liquidação Bancária](cobol-portfolio/batch-liquidacao-bancaria/) | COBOL · JCL · DB2/SQL · batch · conciliação · incidentes |
 | **2 — COBOL Online / CICS** | [💻 Conta Corrente CICS](cobol-portfolio/conta-corrente-online-cics/) | COBOL · CICS · COMMAREA · DB2 · SQLCODE · fluxo online |
 | **3 — VSAM / Operação Mainframe** | [🗂️ VSAM + Restart](cobol-portfolio/vsam-restart-bancario/) | VSAM/KSDS · IDCAMS · DFSORT · checkpoint · restart/recovery |
-| **4 — Conteúdo técnico** | [📚 Mainframe Knowledge Base](mainframe-knowledge/) | abends · JCL · DB2 · CICS · VSAM · batch · modernização |
-| **5 — Modernização / Integração** | [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | Java · Spring Boot · REST · PostgreSQL · payments · testes |
+| **4 — Production Support / ABENDs** | [🚨 Guia de ABENDs](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md) | S0C7 · S0C4 · S806 · SB37 · S322 · SQLCODE -911/-913 · RCA |
+| **5 — Conteúdo técnico** | [📚 Mainframe Knowledge Base](mainframe-knowledge/) | JCL · DB2 · CICS · VSAM · batch · modernização |
+| **6 — Modernização / Integração** | [💳 PayFlow API](https://github.com/danielfernandomartins/payflow-api) | Java · Spring Boot · REST · PostgreSQL · payments · testes |
 
 ➡️ [Guia de preparação técnica para entrevistas Mainframe](MAINFRAME-INTERVIEW-GUIDE.md)
 
@@ -61,17 +62,28 @@ Case batch com arquivo mestre indexado, acesso por chave, `REWRITE`, conceitos V
 
 ---
 
+## 🚨 Destaque: ABENDs & Production Troubleshooting
+
+[**Mainframe ABENDs — Production Troubleshooting Guide**](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md)
+
+Material específico de sustentação com diagnóstico de `S0C7`, `S0C4`, `S806`, `SB37/SD37/SE37`, `S322`, `SQLCODE -911/-913`, return codes, restart/rerun, prevenção de duplicidade e exemplo de RCA.
+
+O foco não é decorar códigos: é demonstrar como eu estruturaria uma investigação de produção considerando **job/step, evidências, impacto, persistência parcial, recuperação segura, conciliação e causa-raiz**.
+
+---
+
 ## 📚 Mainframe Knowledge Base
 
 Além de código, mantenho materiais técnicos autorais para demonstrar raciocínio, documentação e preparação para sustentação e desenvolvimento Mainframe:
 
+- [🚨 Mainframe ABENDs — Production Troubleshooting Guide](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md)
 - [COBOL + JCL + DB2 + CICS + VSAM — Cheat Sheet](mainframe-knowledge/COBOL-MAINFRAME-CHEATSHEET.md)
 - [Runbook de Abend, Restart e Rerun](mainframe-knowledge/ABEND-RESTART-RUNBOOK.md)
 - [Batch Banking — do arquivo à conciliação](mainframe-knowledge/BATCH-BANKING-FLOW.md)
 - [Mainframe Modernization — legado + APIs](mainframe-knowledge/MAINFRAME-MODERNIZATION.md)
 - [Perguntas técnicas de entrevista](mainframe-knowledge/INTERVIEW-QUESTIONS.md)
 
-**Temas:** `Abend` `Restart` `Rerun` `GDG` `SYSIN` `SQLCODE` `Application Support` `Production Support` `Batch` `CICS` `VSAM` `Modernization`
+**Temas:** `ABEND` `S0C7` `S0C4` `S806` `SB37` `S322` `Restart` `Rerun` `RCA` `GDG` `SYSIN` `SQLCODE` `Application Support` `Production Support` `Batch` `CICS` `VSAM` `Modernization`
 
 ---
 
@@ -128,7 +140,7 @@ Python · Pandas · Data Analysis · Playwright · Postman · API Testing
 
 ## 🔍 Palavras-chave para recrutamento
 
-`COBOL Developer` · `Mainframe Developer` · `Mainframe Analyst` · `COBOL` · `JCL` · `DB2` · `SQL` · `CICS` · `VSAM` · `KSDS` · `IDCAMS` · `DFSORT` · `Batch Processing` · `Online Processing` · `Restart Recovery` · `Application Support` · `Production Support` · `Systems Analysis` · `Banking Systems` · `Financial Services` · `Payments` · `Incident Analysis` · `Troubleshooting` · `Java` · `REST API`
+`COBOL Developer` · `Mainframe Developer` · `Mainframe Analyst` · `COBOL` · `JCL` · `DB2` · `SQL` · `CICS` · `VSAM` · `KSDS` · `IDCAMS` · `DFSORT` · `ABEND` · `S0C7` · `S0C4` · `S806` · `SB37` · `S322` · `Batch Processing` · `Restart Recovery` · `Application Support` · `Production Support` · `Root Cause Analysis` · `Incident Analysis` · `Troubleshooting` · `Banking Systems` · `Financial Services` · `Payments` · `Java` · `REST API`
 
 ---
 
