@@ -14,6 +14,24 @@
 
 ---
 
+## ⭐ Projeto em destaque — CNPJ Alfanumérico no Legado Bancário
+
+### [CNPJ Alfanumérico no Legado Bancário — implantação em COBOL/Mainframe](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md)
+
+> **Case autoral de transformação regulatória em sistemas bancários legados**, conectando COBOL, copybooks, DB2, VSAM, CICS, batch, JCL/SORT, APIs, KYC/AML, regulatórios, Data/BI, cutover, rollback e hypercare.
+
+**Por que este case importa:** o CNPJ continua com 14 posições, mas passa a aceitar caracteres alfanuméricos nas 12 primeiras posições. Em bancos, isso pode afetar milhares de pontos do legado sem alterar necessariamente o tamanho físico do campo — criando risco de incompatibilidade semântica em sistemas que ainda tratam CNPJ como número.
+
+**Tese central:** `CNPJ é identificador, não número.`
+
+**Principais implicações exploradas:**
+
+`PIC 9 → PIC X` · `COMP-3` · `COPYBOOK` · `DCLGEN` · `DB2` · `VSAM/KSDS` · `CICS/COMMAREA` · `Batch` · `JCL/SORT` · `KYC/AML` · `Regulatory Change` · `Cutover` · `Rollback` · `Hypercare` · `Reconciliation`
+
+[📘 Abrir dossiê técnico](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) · [🧪 Ver matriz de testes, cutover e hypercare](mainframe-knowledge/CNPJ-ALFANUMERICO-TEST-ROLL%20OUT.md)
+
+---
+
 ## 🎯 Objetivo profissional
 
 Busco minha **primeira oportunidade formal em Tecnologia** com foco principal em:
@@ -30,10 +48,10 @@ Tenho interesse especial em **bancos, instituições financeiras, meios de pagam
 
 | Prioridade | Evidência | O que demonstra |
 |---|---|---|
-| **1 — COBOL Batch Banking** | [🏦 Liquidação Bancária](cobol-portfolio/batch-liquidacao-bancaria/) | COBOL · JCL · DB2/SQL · batch · conciliação · incidentes |
-| **2 — COBOL Online / CICS** | [💻 Conta Corrente CICS](cobol-portfolio/conta-corrente-online-cics/) | COBOL · CICS · COMMAREA · DB2 · SQLCODE · fluxo online |
-| **3 — VSAM / Operação Mainframe** | [🗂️ VSAM + Restart](cobol-portfolio/vsam-restart-bancario/) | VSAM/KSDS · IDCAMS · DFSORT · checkpoint · restart/recovery |
-| **4 — Mudança Regulatória / Legado** | [🏦 CNPJ Alfanumérico no Legado Bancário](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) | COBOL · DB2 · VSAM · CICS · batch · KYC/AML · cutover · hypercare |
+| **1 — Mudança Regulatória / Legado Bancário** | [🏦 CNPJ Alfanumérico no Legado Bancário](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) | COBOL · DB2 · VSAM · CICS · batch · KYC/AML · cutover · hypercare |
+| **2 — COBOL Batch Banking** | [🏦 Liquidação Bancária](cobol-portfolio/batch-liquidacao-bancaria/) | COBOL · JCL · DB2/SQL · batch · conciliação · incidentes |
+| **3 — COBOL Online / CICS** | [💻 Conta Corrente CICS](cobol-portfolio/conta-corrente-online-cics/) | COBOL · CICS · COMMAREA · DB2 · SQLCODE · fluxo online |
+| **4 — VSAM / Operação Mainframe** | [🗂️ VSAM + Restart](cobol-portfolio/vsam-restart-bancario/) | VSAM/KSDS · IDCAMS · DFSORT · checkpoint · restart/recovery |
 | **5 — Production Support / ABENDs** | [🚨 Guia de ABENDs](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md) | S0C7 · S0C4 · S806 · SB37 · S322 · SQLCODE -911/-913 · RCA |
 | **6 — JCL Troubleshooting** | [🧩 Guia de JCL em Produção](mainframe-knowledge/JCL-PRODUCTION-TROUBLESHOOTING.md) | RCs · GDG · DISP · DCB · SPACE · PROC · SYSIN · restart/rerun |
 | **7 — Conteúdo técnico** | [📚 Mainframe Knowledge Base](mainframe-knowledge/) | COBOL · JCL · DB2 · CICS · VSAM · batch · modernização |
@@ -64,18 +82,6 @@ Case batch com arquivo mestre indexado, acesso por chave, `REWRITE`, conceitos V
 
 ---
 
-## 🏦 Destaque: CNPJ Alfanumérico no Legado Bancário
-
-[**CNPJ Alfanumérico no Legado Bancário — estudo de implantação em COBOL/Mainframe**](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md)
-
-Dossiê técnico sobre como uma mudança regulatória aparentemente simples pode atravessar todo o legado de um banco: `PIC 9 → PIC X`, copybooks, DCLGEN, DB2, VSAM/KSDS, CICS/COMMAREA, batch, JCL/SORT, APIs, KYC/AML, regulatórios, Data/BI, observabilidade, rollback e hypercare.
-
-O estudo inclui também uma [**matriz de testes, cutover e hypercare**](mainframe-knowledge/CNPJ-ALFANUMERICO-TEST-ROLL%20OUT.md), com massa de testes, regressão, E2E, critérios Go/No-Go e war room.
-
-O ponto central é tratar CNPJ como **identificador**, não como número, e garantir compatibilidade ponta a ponta entre formatos antigos e novos.
-
----
-
 ## 🚨 Destaque: ABENDs & Production Troubleshooting
 
 [**Mainframe ABENDs — Production Troubleshooting Guide**](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md)
@@ -100,7 +106,7 @@ A preocupação central é operacional: **entender estado parcial, dependências
 
 Além de código, mantenho materiais técnicos autorais para demonstrar raciocínio, documentação e preparação para sustentação e desenvolvimento Mainframe:
 
-- [🏦 CNPJ Alfanumérico no Legado Bancário](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md)
+- [⭐ CNPJ Alfanumérico no Legado Bancário — case principal](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md)
 - [🧪 CNPJ Alfanumérico — Testes, Cutover e Hypercare](mainframe-knowledge/CNPJ-ALFANUMERICO-TEST-ROLL%20OUT.md)
 - [🚨 Mainframe ABENDs — Production Troubleshooting Guide](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md)
 - [🧩 JCL Production Troubleshooting](mainframe-knowledge/JCL-PRODUCTION-TROUBLESHOOTING.md)
