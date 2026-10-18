@@ -9,6 +9,7 @@
 [![Open to Work](https://img.shields.io/badge/Open%20to%20Work-COBOL%20%2F%20Mainframe-2EA44F?style=for-the-badge)](https://github.com/danielfernandomartins)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
 [![Email](https://img.shields.io/badge/Email-Contato-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
+[![Portfolio Validation](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/portfolio-validation.yml/badge.svg)](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/portfolio-validation.yml)
 
 `COBOL` `JCL` `DB2` `CICS` `VSAM` `Batch` `Production Support` `Banking` `Legacy Modernization`
 
@@ -20,7 +21,7 @@
 
 ### 🧭 Explore rápido
 
-[⭐ Destaques](#-destaques-principais) • [🏦 Projetos COBOL](#-projetos-cobolmainframe) • [🚨 Production Support](#-production-support--troubleshooting) • [🚀 Modernização](#-modernização-mainframe) • [📚 Knowledge Base](#-knowledge-base) • [🎯 Entrevista](#-rota-rápida-para-recrutadores) • [🤝 Contato](#-vamos-conversar)
+[⚡ Em 30s](#-em-30-segundos) • [⭐ Destaques](#-destaques-principais) • [🏦 Projetos COBOL](#-projetos-cobolmainframe) • [🚨 Production Support](#-production-support--troubleshooting) • [🚀 Modernização](#-modernização-mainframe) • [📚 Knowledge Base](#-knowledge-base) • [🤝 Contato](#-vamos-conversar)
 
 </div>
 
@@ -33,6 +34,8 @@ Sou um profissional com **mais de duas décadas no mercado financeiro** em trans
 > **Não estou começando minha carreira do zero. Estou levando experiência real de negócio financeiro para dentro da tecnologia bancária.**
 
 **Objetivo:** primeira oportunidade formal em tecnologia como **COBOL Developer, Mainframe Developer, Analista Mainframe, Systems Analyst ou Application/Production Support**.
+
+[**📄 Recruiter Brief — visão de 1 página**](RECRUITER-BRIEF.md) · [**🎯 Guia de entrevista técnica**](MAINFRAME-INTERVIEW-GUIDE.md)
 
 ---
 
@@ -88,10 +91,10 @@ Git · Zowe · CI/CD · Dependency-Based Build · DevSecOps · Rollback
 
 | Tempo disponível | Abra isto | O que você verá |
 |---|---|---|
-| **30 segundos** | [⭐ CNPJ Alfanumérico](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) | visão de legado bancário + mudança regulatória |
-| **1 minuto** | [🏦 Batch de Liquidação](cobol-portfolio/batch-liquidacao-bancaria/) | COBOL + JCL + DB2/SQL + conciliação |
-| **2 minutos** | [💻 Conta Corrente CICS](cobol-portfolio/conta-corrente-online-cics/) | fluxo online + COMMAREA + DB2 + SQLCODE |
-| **3 minutos** | [🗂️ VSAM + Restart](cobol-portfolio/vsam-restart-bancario/) | VSAM/KSDS + IDCAMS + DFSORT + recovery |
+| **30 segundos** | [📄 Recruiter Brief](RECRUITER-BRIEF.md) | posicionamento, evidências e aderência às vagas |
+| **1 minuto** | [⭐ CNPJ Alfanumérico](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) | legado bancário + mudança regulatória |
+| **2 minutos** | [🏦 Batch de Liquidação](cobol-portfolio/batch-liquidacao-bancaria/) | COBOL + JCL + DB2/SQL + conciliação |
+| **3 minutos** | [💻 Conta Corrente CICS](cobol-portfolio/conta-corrente-online-cics/) | fluxo online + COMMAREA + DB2 + SQLCODE |
 | **5 minutos** | [📚 Mainframe Knowledge Base](mainframe-knowledge/) | produção, modernização, JCL, ABENDs, IA e DevOps |
 | **Entrevista técnica** | [🎯 Mainframe Interview Guide](MAINFRAME-INTERVIEW-GUIDE.md) | fundamentos + perguntas e respostas estruturadas |
 
@@ -136,6 +139,8 @@ Arquivo indexado, chave, REWRITE, checkpoint, restart, recovery e reconciliaçã
 </td>
 </tr>
 </table>
+
+[**→ Abrir índice completo do portfólio COBOL/Mainframe**](cobol-portfolio/)
 
 > **Transparência:** JCL, CICS, DB2, VSAM, Zowe e demais tecnologias de ambiente Mainframe são demonstradas aqui como laboratórios técnicos e estudos aplicados. Não apresento experiência produtiva em ferramentas ou ambientes que ainda não utilizei profissionalmente.
 
@@ -193,7 +198,7 @@ A área de conteúdo técnico foi organizada para mostrar **raciocínio, documen
 
 | Trilha | Materiais |
 |---|---|
-| **Regulatório / Banking** | [CNPJ Alfanumérico](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) · [Testes/Cutover/Hypercare](mainframe-knowledge/CNPJ-ALFANUMERICO-TEST-ROLL%20OUT.md) |
+| **Regulatório / Banking** | [CNPJ Alfanumérico](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) · [Testes/Cutover/Hypercare](mainframe-knowledge/CNPJ-ALFANUMERICO-TEST-CUTOVER-HYPERCARE.md) |
 | **Modernização** | [AI-Assisted Mainframe](mainframe-knowledge/AI-ASSISTED-MAINFRAME-MODERNIZATION.md) · [COBOL DevOps](mainframe-knowledge/COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md) |
 | **Produção** | [ABENDs](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md) · [JCL Troubleshooting](mainframe-knowledge/JCL-PRODUCTION-TROUBLESHOOTING.md) · [Restart/Rerun](mainframe-knowledge/ABEND-RESTART-RUNBOOK.md) |
 | **Fundamentos** | [COBOL/JCL/DB2/CICS/VSAM Cheat Sheet](mainframe-knowledge/COBOL-MAINFRAME-CHEATSHEET.md) · [Interview Questions](mainframe-knowledge/INTERVIEW-QUESTIONS.md) |
@@ -235,9 +240,9 @@ Isso me ajuda a entender **por que uma rotina existe**, o impacto de uma falha e
 
 ## ✅ Evidência verificável
 
-O repositório contém GitHub Actions configurado para validar programas COBOL executáveis com **GnuCOBOL** e checar código Python de apoio.
+O workflow **Portfolio Validation** está versionado e possui execução concluída com sucesso no `main`, validando os programas COBOL executáveis com **GnuCOBOL** e o código Python de apoio.
 
-**Importante:** a existência do workflow é evidência de automação versionada; resultados de execução só devem ser considerados quando houver run efetivamente concluído no GitHub Actions.
+[**→ Ver GitHub Actions**](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/portfolio-validation.yml)
 
 ---
 
