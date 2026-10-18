@@ -1,17 +1,35 @@
-<div align="center">
+<table>
+<tr>
+<td width="190" valign="top">
+
+<img src="assets/profile.jpg" width="170" alt="Daniel Fernando Martins">
+
+</td>
+<td valign="top">
 
 # Daniel Fernando Martins
 
-### COBOL / Mainframe • Banking Technology • Application Support • Legacy Modernization
+### COBOL / Mainframe • Banking Technology • Application Support
 
-**+20 anos no mercado financeiro + tecnologia aplicada a sistemas bancários críticos.**
+**+20 anos no mercado financeiro** conectando operações, risco, controles, pagamentos e atendimento a ambientes críticos.
+
+Hoje direciono essa experiência para **COBOL/Mainframe e tecnologia bancária**, com projetos práticos, troubleshooting e estudos de modernização de legado.
+
+**Objetivo:** primeira oportunidade formal em Tecnologia como **COBOL Developer, Mainframe Developer, Analista Mainframe, Systems Analyst ou Application/Production Support**.
 
 [![Open to Work](https://img.shields.io/badge/OPEN%20TO%20WORK-COBOL%20%2F%20MAINFRAME-2EA44F?style=for-the-badge)](https://github.com/danielfernandomartins)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
 [![Email](https://img.shields.io/badge/Email-Falar%20comigo-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
 [![Portfolio Validation](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/portfolio-validation.yml/badge.svg)](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/portfolio-validation.yml)
 
-`COBOL` `JCL` `DB2` `CICS` `VSAM` `Batch` `Production Support` `Banking` `Modernization`
+`COBOL` `JCL` `DB2` `CICS` `VSAM` `Batch` `Production Support` `Banking` `Legacy Modernization`
 
 </div>
 
@@ -21,11 +39,10 @@
 
 | | |
 |---|---|
-| **O que busco** | Primeira oportunidade formal em **COBOL / Mainframe / Application Support / Systems Analysis** |
-| **Meu diferencial** | **+20 anos no mercado financeiro**: operações, risco, controles, clientes, pagamentos e ambiente regulado |
-| **O que já demonstro** | COBOL, JCL, DB2/SQL, CICS concepts, VSAM/KSDS, batch, restart/recovery, troubleshooting e modernização |
-| **Onde gero mais valor** | Bancos, meios de pagamento, seguradoras e consultorias com sistemas críticos |
-| **Evidência técnica** | 3 cases COBOL/Mainframe + Knowledge Base + workflow de validação automatizada |
+| **Posicionamento** | COBOL / Mainframe + forte contexto de negócio bancário |
+| **Diferencial** | +20 anos em operações financeiras, risco, controles, clientes e pagamentos |
+| **Evidências** | 3 cases COBOL/Mainframe + troubleshooting + Knowledge Base + CI automatizado |
+| **Melhor aderência** | Bancos, meios de pagamento, seguradoras e consultorias com sistemas críticos |
 
 > **Não estou começando minha carreira do zero. Estou levando duas décadas de contexto financeiro para dentro da tecnologia bancária.**
 
@@ -33,7 +50,7 @@
 
 ### Escolha o próximo clique
 
-[**📄 Ver Recruiter Brief — 1 página**](RECRUITER-BRIEF.md) · [**🏦 Ver melhor case técnico**](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) · [**💻 Ver código COBOL**](cobol-portfolio/batch-liquidacao-bancaria/) · [**🎯 Preparar entrevista**](MAINFRAME-INTERVIEW-GUIDE.md)
+[**📄 Recruiter Brief — 1 página**](RECRUITER-BRIEF.md) · [**🏦 Melhor case técnico**](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) · [**💻 Código COBOL**](cobol-portfolio/batch-liquidacao-bancaria/) · [**🎯 Guia de entrevista**](MAINFRAME-INTERVIEW-GUIDE.md)
 
 </div>
 
