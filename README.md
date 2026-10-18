@@ -32,11 +32,21 @@
 
 Estudo autoral sobre **como usar IA para entender e modernizar legado COBOL/Mainframe sem confundir discovery com migração automática**.
 
-O material cobre `Application Discovery`, grafo de dependências COBOL/JCL/DB2/CICS, extração rastreável de regras de negócio, characterization tests, semantic equivalence, human-in-the-loop, segurança, governança e estratégias `retain / optimize / expose / refactor / replatform / rewrite / retire`.
-
 > **Tese:** o maior valor da IA no Mainframe não é apagar o legado rapidamente; é tornar o legado compreensível o suficiente para que decisões de modernização deixem de ser apostas.
 
 [🤖 Abrir dossiê AI + Mainframe](mainframe-knowledge/AI-ASSISTED-MAINFRAME-MODERNIZATION.md) · [🧭 Ver Readiness & Governance Matrix](mainframe-knowledge/AI-MODERNIZATION-READINESS-MATRIX.md)
+
+---
+
+## 🚀 Tema em evidência — COBOL DevOps: do PDS ao Pull Request
+
+### [Git + Zowe + CI/CD para Mainframe](mainframe-knowledge/COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md)
+
+Estudo autoral sobre como modernizar **o caminho do código COBOL até produção**, conectando Git, Pull Request, dependency-based build, Zowe, CI/CD, testes automatizados, artifact management, DevSecOps, promoção controlada e rollback.
+
+> **Tese:** modernizar Mainframe não é apenas reescrever aplicações; também é modernizar como elas são construídas, testadas, promovidas, auditadas e operadas.
+
+[🚀 Abrir COBOL DevOps — Do PDS ao Pull Request](mainframe-knowledge/COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md)
 
 ---
 
@@ -58,12 +68,12 @@ Tenho interesse especial em **bancos, instituições financeiras, meios de pagam
 |---|---|---|
 | **1 — Mudança Regulatória / Legado Bancário** | [🏦 CNPJ Alfanumérico no Legado Bancário](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) | COBOL · DB2 · VSAM · CICS · batch · KYC/AML · cutover · hypercare |
 | **2 — AI + Mainframe Modernization** | [🤖 Discovery First, Human Governed](mainframe-knowledge/AI-ASSISTED-MAINFRAME-MODERNIZATION.md) | discovery · dependency graph · business rules · semantic equivalence · governance |
-| **3 — COBOL Batch Banking** | [🏦 Liquidação Bancária](cobol-portfolio/batch-liquidacao-bancaria/) | COBOL · JCL · DB2/SQL · batch · conciliação · incidentes |
-| **4 — COBOL Online / CICS** | [💻 Conta Corrente CICS](cobol-portfolio/conta-corrente-online-cics/) | COBOL · CICS · COMMAREA · DB2 · SQLCODE · fluxo online |
-| **5 — VSAM / Operação Mainframe** | [🗂️ VSAM + Restart](cobol-portfolio/vsam-restart-bancario/) | VSAM/KSDS · IDCAMS · DFSORT · checkpoint · restart/recovery |
-| **6 — Production Support / ABENDs** | [🚨 Guia de ABENDs](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md) | S0C7 · S0C4 · S806 · SB37 · S322 · SQLCODE -911/-913 · RCA |
-| **7 — JCL Troubleshooting** | [🧩 Guia de JCL em Produção](mainframe-knowledge/JCL-PRODUCTION-TROUBLESHOOTING.md) | RCs · GDG · DISP · DCB · SPACE · PROC · SYSIN · restart/rerun |
-| **8 — Conteúdo técnico** | [📚 Mainframe Knowledge Base](mainframe-knowledge/) | COBOL · JCL · DB2 · CICS · VSAM · AI · modernização |
+| **3 — COBOL DevOps / Git / Zowe / CI-CD** | [🚀 Do PDS ao Pull Request](mainframe-knowledge/COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md) | Git · Zowe · dependency-based build · CI/CD · DevSecOps · rollback |
+| **4 — COBOL Batch Banking** | [🏦 Liquidação Bancária](cobol-portfolio/batch-liquidacao-bancaria/) | COBOL · JCL · DB2/SQL · batch · conciliação · incidentes |
+| **5 — COBOL Online / CICS** | [💻 Conta Corrente CICS](cobol-portfolio/conta-corrente-online-cics/) | COBOL · CICS · COMMAREA · DB2 · SQLCODE · fluxo online |
+| **6 — VSAM / Operação Mainframe** | [🗂️ VSAM + Restart](cobol-portfolio/vsam-restart-bancario/) | VSAM/KSDS · IDCAMS · DFSORT · checkpoint · restart/recovery |
+| **7 — Production Support / ABENDs** | [🚨 Guia de ABENDs](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md) | S0C7 · S0C4 · S806 · SB37 · S322 · SQLCODE -911/-913 · RCA |
+| **8 — JCL Troubleshooting** | [🧩 Guia de JCL em Produção](mainframe-knowledge/JCL-PRODUCTION-TROUBLESHOOTING.md) | RCs · GDG · DISP · DCB · SPACE · PROC · SYSIN · restart/rerun |
 
 ➡️ [Guia de preparação técnica para entrevistas Mainframe](MAINFRAME-INTERVIEW-GUIDE.md)
 
@@ -100,6 +110,7 @@ Case batch com arquivo mestre indexado, acesso por chave, `REWRITE`, conceitos V
 
 - [⭐ CNPJ Alfanumérico no Legado Bancário — case principal](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md)
 - [🤖 AI-Assisted Mainframe Modernization — Discovery First, Human Governed](mainframe-knowledge/AI-ASSISTED-MAINFRAME-MODERNIZATION.md)
+- [🚀 COBOL DevOps — Do PDS ao Pull Request](mainframe-knowledge/COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md)
 - [🧭 AI Modernization Readiness & Governance Matrix](mainframe-knowledge/AI-MODERNIZATION-READINESS-MATRIX.md)
 - [🧪 CNPJ Alfanumérico — Testes, Cutover e Hypercare](mainframe-knowledge/CNPJ-ALFANUMERICO-TEST-ROLL%20OUT.md)
 - [🚨 Mainframe ABENDs — Production Troubleshooting Guide](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md)
@@ -110,7 +121,7 @@ Case batch com arquivo mestre indexado, acesso por chave, `REWRITE`, conceitos V
 - [Mainframe Modernization — legado + APIs](mainframe-knowledge/MAINFRAME-MODERNIZATION.md)
 - [Perguntas técnicas de entrevista](mainframe-knowledge/INTERVIEW-QUESTIONS.md)
 
-**Temas:** `AI-Assisted Modernization` `Application Discovery` `Knowledge Graph` `Human-in-the-loop` `Semantic Equivalence` `CNPJ Alfanumérico` `Regulatory Change` `Legacy Modernization` `COBOL` `JCL` `DB2` `CICS` `VSAM` `ABEND` `Production Support` `Banking`
+**Temas:** `COBOL DevOps` `Git` `Zowe` `CI/CD` `Dependency-Based Build` `DevSecOps` `AI-Assisted Modernization` `Application Discovery` `Human-in-the-loop` `CNPJ Alfanumérico` `Legacy Modernization` `COBOL` `JCL` `DB2` `CICS` `VSAM` `ABEND` `Production Support` `Banking`
 
 ---
 
@@ -130,7 +141,7 @@ Essa combinação me ajuda a entender **por que uma rotina existe**, e não apen
 
 ## 🔄 Modernização como diferencial
 
-Mantenho conhecimento complementar em **Java / Spring Boot, REST APIs, PostgreSQL / SQL, Docker, Git e GitHub Actions**, além de estudar como IA pode apoiar discovery e modernização de legado com governança.
+Mantenho conhecimento complementar em **Git, GitHub Actions, Java / Spring Boot, REST APIs, PostgreSQL / SQL e Docker**, além de estudar como Zowe, CI/CD e IA podem apoiar a modernização do ecossistema em torno do legado.
 
 ### [PayFlow API](https://github.com/danielfernandomartins/payflow-api)
 Case de pagamentos com Java/Spring Boot, persistência, concorrência, tratamento de falhas e integração externa.
@@ -140,14 +151,14 @@ Case de pagamentos com Java/Spring Boot, persistência, concorrência, tratament
 ## 🛠️ Stack principal
 
 **Mainframe / Banking:** COBOL · JCL · DB2/SQL · CICS concepts · COMMAREA · VSAM concepts · KSDS · IDCAMS · DFSORT · Batch · Restart/Recovery  
-**Modernização:** Application Discovery · AI-assisted analysis · Java · Spring Boot · REST APIs · PostgreSQL · Docker  
-**Engenharia:** Git · GitHub · GitHub Actions · testes · documentação técnica · análise de incidentes
+**Modernização:** Git · CI/CD concepts · Zowe concepts · Application Discovery · AI-assisted analysis · Java · Spring Boot · REST APIs · PostgreSQL · Docker  
+**Engenharia:** GitHub · GitHub Actions · testes · documentação técnica · análise de incidentes
 
 ---
 
 ## 🔍 Palavras-chave para recrutamento
 
-`COBOL Developer` · `Mainframe Developer` · `Mainframe Analyst` · `COBOL` · `JCL` · `DB2` · `CICS` · `VSAM` · `AI-Assisted Mainframe Modernization` · `Application Discovery` · `Business Rule Discovery` · `Semantic Equivalence` · `Human-in-the-loop` · `CNPJ Alfanumérico` · `Legacy Modernization` · `Regulatory Change` · `ABEND` · `Application Support` · `Production Support` · `Banking Systems` · `Financial Services` · `Payments`
+`COBOL Developer` · `Mainframe Developer` · `Mainframe Analyst` · `COBOL DevOps` · `Git` · `Zowe` · `CI/CD` · `Dependency-Based Build` · `DevSecOps` · `COBOL` · `JCL` · `DB2` · `CICS` · `VSAM` · `AI-Assisted Mainframe Modernization` · `Application Discovery` · `CNPJ Alfanumérico` · `Legacy Modernization` · `ABEND` · `Application Support` · `Production Support` · `Banking Systems` · `Financial Services` · `Payments`
 
 ---
 
