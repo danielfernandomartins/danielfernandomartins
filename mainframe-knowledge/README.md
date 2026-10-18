@@ -4,6 +4,7 @@ Conteúdo técnico autoral criado para demonstrar raciocínio, documentação e 
 
 ## Materiais
 
+- [🚨 Mainframe ABENDs — Production Troubleshooting Guide](ABENDS-PRODUCTION-GUIDE.md) — S0C7, S0C4, S806, SB37/SD37/SE37, S322, SQLCODE -911/-913, RCs, restart/rerun e RCA
 - [COBOL + JCL + DB2 + CICS + VSAM — Cheat Sheet](COBOL-MAINFRAME-CHEATSHEET.md)
 - [Runbook de Abends, Restart e Rerun](ABEND-RESTART-RUNBOOK.md)
 - [Batch Banking: do arquivo à conciliação](BATCH-BANKING-FLOW.md)
@@ -16,4 +17,4 @@ Os materiais não substituem experiência produtiva em z/OS. Eles mostram como o
 
 ## Temas cobertos
 
-`COBOL` `JCL` `DB2` `CICS` `VSAM` `KSDS` `IDCAMS` `DFSORT` `Batch` `Abend` `Restart` `Rerun` `GDG` `SYSIN` `SQLCODE` `Application Support` `Production Support` `Banking` `Payments` `Modernization`
+`COBOL` `JCL` `DB2` `CICS` `VSAM` `KSDS` `IDCAMS` `DFSORT` `Batch` `ABEND` `S0C7` `S0C4` `S806` `SB37` `S322` `Restart` `Rerun` `GDG` `SYSIN` `SQLCODE -911` `SQLCODE -913` `RCA` `Application Support` `Production Support` `Banking` `Payments` `Modernization`
