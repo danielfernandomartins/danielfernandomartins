@@ -36,7 +36,7 @@ export function App() {
         <p>REST API • React • TypeScript</p>
         <h1>Movie Explorer</h1>
         <form onSubmit={handleSearch} role="search" aria-describedby="search-help">
-          <label htmlFor="show-query">Nome da série</label>
+          <label htmlFor="show-query" className="visually-hidden">Nome da série</label>
           <input
             id="show-query"
             value={query}
@@ -45,7 +45,7 @@ export function App() {
             autoComplete="off"
           />
           <button type="submit" disabled={loading}>{loading ? 'Buscando...' : 'Buscar'}</button>
-          <small id="search-help">Pesquise pelo título de uma série.</small>
+          <small id="search-help" className="visually-hidden">Pesquise pelo título de uma série.</small>
         </form>
       </header>
 
@@ -56,7 +56,7 @@ export function App() {
       </div>
 
       <section aria-labelledby="results-title" aria-busy={loading}>
-        <h2 id="results-title">Resultados</h2>
+        <h2 id="results-title" className="visually-hidden">Resultados</h2>
         {results.map(({ show }) => (
           <article key={show.id}>
             <div className="poster">{show.image ? <img src={show.image.medium} alt={`Capa de ${show.name}`} /> : <span aria-label="Sem capa disponível">🎬</span>}</div>
