@@ -13,7 +13,7 @@ O portfólio está estruturado para demonstrar profundidade em Front-End em vez 
 - dependências diretas deixaram de usar `latest` e passaram a versões explícitas;
 - todos os projetos TypeScript modernos expõem `typecheck` e `lint`;
 - a CI executa automaticamente qualquer suíte de testes disponível;
-- TaskFlow ganhou domínio separado, persistência tolerante a falhas, testes unitários e testes de criação/conclusão/filtro/exclusão pela UI;
+- TaskFlow ganhou domínio separado, persistência tolerante a falhas, testes unitários, testes de integração/UI e um fluxo E2E real em Chromium com Playwright;
 - Movie Explorer ganhou camada de API separada, testes HTTP e testes de resultado/estado vazio/erro na interface;
 - Finance Dashboard ganhou reducer exportável, teste unitário e teste de integração entre formulário, Redux e resumo financeiro;
 - GitHub Explorer separa cliente HTTP, tipos e estado assíncrono, testa a camada de API e testa a integração TanStack Query + UI;
@@ -24,9 +24,8 @@ O portfólio está estruturado para demonstrar profundidade em Front-End em vez 
 - apps Vite possuem HTML completo com `lang`, viewport, descrição, título e `type: module` explícito;
 - todos os apps TypeScript usam ESLint com `typescript-eslint` e regras oficiais de React Hooks;
 - o CI executa lint antes de typecheck, build e testes;
-- GitHub Actions foi atualizado para as releases v7 de `checkout` e `setup-node`;
-- o workflow usa `concurrency` para cancelar runs superseded e timeouts explícitos para evitar jobs presos;
-- a auditoria automatizada bloqueia perda dos testes de comportamento dos flagships, retorno de `latest`, perda de metadados, ausência de typecheck/lint e retorno do legado à raiz.
+- GitHub Actions usa releases v7 de `checkout` e `setup-node`, `concurrency` e timeouts explícitos;
+- a auditoria automatizada bloqueia perda dos testes de comportamento dos flagships e da evidência E2E do TaskFlow.
 
 ## Critérios mestres avaliados
 
@@ -57,12 +56,14 @@ O portfólio está estruturado para demonstrar profundidade em Front-End em vez 
 
 ### 4. Testes
 
-Os quatro flagships agora possuem duas camadas complementares de teste:
+Os quatro flagships possuem camadas complementares de teste:
 
-- **TaskFlow:** regras puras de tarefas + fluxos reais da interface com React Testing Library;
+- **TaskFlow:** regras puras + integração/UI com React Testing Library + E2E em Chromium com Playwright;
 - **Movie Explorer:** camada HTTP + estados de resultado, vazio e erro na UI;
 - **Finance Dashboard:** reducer Redux + integração formulário → dispatch → store → resumo visual;
 - **GitHub Explorer:** cliente/API + integração TanStack Query → renderização de perfil e nova busca.
+
+O E2E do TaskFlow valida dois riscos que unitários/jsdom não cobrem da mesma forma: o fluxo conectado no navegador real e a persistência em `LocalStorage` depois de recarregar a página. A escolha de um único flagship evita E2E redundante e mantém a pirâmide de testes equilibrada.
 
 Outras evidências:
 
@@ -92,9 +93,10 @@ O workflow `Front-End Portfolio Quality` executa:
 3. lint em todos os apps TypeScript;
 4. TypeScript strict/typecheck;
 5. build de todos os projetos modernos;
-6. testes disponíveis em cada projeto.
+6. testes disponíveis em cada projeto;
+7. job E2E dedicado do TaskFlow em Chromium, executando o build de produção.
 
-Além disso, o workflow usa Actions v7, permissões mínimas, cancelamento de execuções superseded e timeouts explícitos. O script `scripts/audit-frontend.mjs` bloqueia regressões de estrutura e exige a presença das evidências principais de teste dos flagships.
+Além disso, o workflow usa Actions v7, permissões mínimas, cancelamento de execuções superseded e timeouts explícitos. O script `scripts/audit-frontend.mjs` bloqueia regressões de estrutura e exige a presença das evidências principais de teste dos flagships e do E2E representativo.
 
 ## Pontos que continuam externos ao código
 
@@ -112,10 +114,9 @@ Não adicionar tecnologia apenas para aumentar a lista de stacks. Priorizar, nes
 1. demos públicas;
 2. lockfiles e instalação 100% reproduzível;
 3. acessibilidade e performance medidas em ambiente publicado;
-4. testes E2E em um projeto com fluxo representativo;
-5. repositórios individuais para os flagships;
-6. colaboração real, code review e experiência em produto/time.
+4. repositórios individuais para os flagships;
+5. colaboração real, code review e experiência em produto/time.
 
 ## Conclusão
 
-A evolução do portfólio troca sinais de protótipo por sinais de engenharia: dependências controladas, contratos de qualidade, lint uniforme, testes em camadas diferentes, metadados completos, acessibilidade e regressões bloqueadas automaticamente. Os quatro flagships já demonstram não só lógica isolada, mas também comportamento observável de UI. O perfil permanece honesto sobre o nível profissional buscado, mas demonstra práticas que ajudam a diferenciar um candidato Júnior preparado de um repositório composto apenas por exercícios isolados.
+A evolução do portfólio troca sinais de protótipo por sinais de engenharia: dependências controladas, contratos de qualidade, lint uniforme, testes em camadas diferentes, um E2E seletivo em navegador real, metadados completos, acessibilidade e regressões bloqueadas automaticamente. O perfil permanece honesto sobre o nível profissional buscado, mas demonstra práticas que ajudam a diferenciar um candidato Júnior preparado de um repositório composto apenas por exercícios isolados.
