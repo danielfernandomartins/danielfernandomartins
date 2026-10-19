@@ -53,16 +53,16 @@ Esta vitrine foi organizada para demonstrar exatamente os pontos mais cobrados e
 
 | Projeto | O que demonstra | Stack |
 |---|---|---|
-| **Accessible SaaS Landing** | HTML semântico, responsividade e acessibilidade | HTML · CSS · JavaScript |
-| **TaskFlow** | Componentes, hooks, tipagem e persistência | React · TypeScript · LocalStorage |
-| **Movie Explorer** | Consumo de API e estados assíncronos | React · TypeScript · Fetch API |
-| **Job Tracker** | Rotas e formulários | React Router · TypeScript |
-| **Finance Dashboard** | Estado global e arquitetura de estado | Redux Toolkit |
-| **Dev Portfolio Blog** | App Router, SEO e estrutura moderna | Next.js · TypeScript |
-| **CRM Dashboard** | UI moderna e componentização | React · Tailwind CSS |
-| **GitHub Explorer** | Cache, requisições e API REST | Axios · TanStack Query |
-| **Smart Signup** | Validação de formulário tipada | React Hook Form · Zod |
-| **Tested Cart** | Qualidade e testes automatizados | Vitest · React Testing Library |
+| [**Accessible SaaS Landing**](frontend-projects/01-accessible-saas-landing/) | HTML semântico, responsividade e acessibilidade | HTML · CSS · JavaScript |
+| [**TaskFlow**](frontend-projects/02-taskflow-react-ts/) | Componentes, hooks, tipagem e persistência | React · TypeScript · LocalStorage |
+| [**Movie Explorer**](frontend-projects/03-movie-explorer/) | Consumo de API e estados assíncronos | React · TypeScript · Fetch API |
+| [**Job Tracker**](frontend-projects/04-job-tracker/) | Rotas e formulários | React Router · TypeScript |
+| [**Finance Dashboard**](frontend-projects/05-finance-dashboard/) | Estado global e arquitetura de estado | Redux Toolkit |
+| [**Dev Portfolio Blog**](frontend-projects/06-next-portfolio-blog/) | App Router, SEO e estrutura moderna | Next.js · TypeScript |
+| [**CRM Dashboard**](frontend-projects/07-crm-tailwind/) | UI moderna e componentização | React · Tailwind CSS |
+| [**GitHub Explorer**](frontend-projects/08-github-explorer/) | Cache, requisições e API REST | Axios · TanStack Query |
+| [**Smart Signup**](frontend-projects/09-smart-signup/) | Validação de formulário tipada | React Hook Form · Zod |
+| [**Tested Cart**](frontend-projects/10-tested-cart/) | Qualidade e testes automatizados | Vitest · React Testing Library |
 
 [**📂 Ver trilha Front-End completa →**](frontend-projects/)
 
