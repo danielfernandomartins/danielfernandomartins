@@ -24,13 +24,18 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: frontend-quality-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   portfolio-audit:
     name: Portfolio structure audit
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
       - run: node scripts/audit-frontend.mjs
@@ -38,6 +43,7 @@ jobs:
   build-projects:
     name: Quality ${{ matrix.project }}
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     strategy:
       fail-fast: false
       matrix:
@@ -55,8 +61,8 @@ jobs:
       run:
         working-directory: frontend-projects/${{ matrix.project }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
       - name: Install dependencies
