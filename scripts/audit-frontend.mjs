@@ -18,6 +18,7 @@ const expected = [
 const nodeProjects = expected.filter((project) => !['01-accessible-saas-landing', '11-dev-city-ai-character'].includes(project));
 const viteProjects = nodeProjects.filter((project) => project !== '06-next-portfolio-blog');
 const testedProjects = ['02-taskflow-react-ts', '03-movie-explorer', '05-finance-dashboard', '06-next-portfolio-blog', '08-github-explorer', '10-tested-cart'];
+const lintedProjects = ['02-taskflow-react-ts', '03-movie-explorer', '05-finance-dashboard', '06-next-portfolio-blog', '08-github-explorer'];
 const failures = [];
 const exists = (path) => fs.existsSync(path);
 const read = (path) => fs.readFileSync(path, 'utf8');
@@ -69,6 +70,16 @@ for (const project of testedProjects) {
   if (!pkg.scripts?.test) failures.push(`test script ausente no projeto testado: ${project}`);
 }
 
+for (const project of lintedProjects) {
+  const base = `frontend-projects/${project}`;
+  const pkg = JSON.parse(read(`${base}/package.json`));
+  if (!pkg.scripts?.lint) failures.push(`lint script ausente no projeto principal: ${project}`);
+  if (!exists(`${base}/eslint.config.mjs`)) failures.push(`eslint.config.mjs ausente: ${project}`);
+  if (!pkg.devDependencies?.eslint || !pkg.devDependencies?.['typescript-eslint']) {
+    failures.push(`dependências de lint ausentes: ${project}`);
+  }
+}
+
 const requiredFlagshipFiles = [
   'frontend-projects/02-taskflow-react-ts/src/task-utils.test.ts',
   'frontend-projects/03-movie-explorer/src/api.test.ts',
@@ -109,9 +120,7 @@ if (exists(`${aiProject}/scripts.js`)) {
 
 if (exists(`${aiProject}/domain.test.mjs`)) {
   const result = spawnSync(process.execPath, ['--test', `${aiProject}/domain.test.mjs`], { encoding: 'utf8' });
-  if (result.status !== 0) {
-    failures.push(`Dev City: testes falharam\n${result.stdout}${result.stderr}`);
-  }
+  if (result.status !== 0) failures.push(`Dev City: testes falharam\n${result.stdout}${result.stderr}`);
 }
 
 const profile = read('README.md');
@@ -148,5 +157,5 @@ if (failures.length) {
 }
 
 console.log(
-  `AUDITORIA OK: ${expected.length} projetos, dependências diretas sem latest, metadados, typecheck, testes, acessibilidade, projeto IA e isolamento do legado validados.`,
+  `AUDITORIA OK: ${expected.length} projetos, dependências diretas sem latest, metadados, typecheck, testes, lint nos principais, acessibilidade, projeto IA e isolamento do legado validados.`,
 );
