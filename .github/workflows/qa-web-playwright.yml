@@ -1,34 +1,37 @@
-name: QA Web - Playwright
+name: Legacy QA Web - Playwright
 
 on:
+  workflow_dispatch:
   push:
     paths:
-      - 'qa-portfolio/web-playwright/**'
+      - 'legacy-portfolio/qa-portfolio/web-playwright/**'
       - '.github/workflows/qa-web-playwright.yml'
   pull_request:
     paths:
-      - 'qa-portfolio/web-playwright/**'
+      - 'legacy-portfolio/qa-portfolio/web-playwright/**'
       - '.github/workflows/qa-web-playwright.yml'
+
+permissions:
+  contents: read
 
 jobs:
   test:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: qa-portfolio/web-playwright
-
+        working-directory: legacy-portfolio/qa-portfolio/web-playwright
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
-      - run: npm install
+          node-version: '22'
+      - run: npm install --no-audit --no-fund
       - run: npx playwright install --with-deps chromium
       - run: npm test
       - name: Upload Playwright report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-report
-          path: qa-portfolio/web-playwright/playwright-report/
+          name: legacy-playwright-report
+          path: legacy-portfolio/qa-portfolio/web-playwright/playwright-report/
           if-no-files-found: ignore
