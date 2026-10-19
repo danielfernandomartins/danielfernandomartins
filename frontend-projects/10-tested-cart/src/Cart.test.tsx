@@ -1,15 +1,24 @@
-import React from 'react';
 import { describe, expect, it } from 'vitest';
-import { fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, render, screen, within } from '@testing-library/react';
 import { Cart } from './Cart';
 
 describe('Cart', () => {
-  it('adiciona um item e atualiza quantidade e total', () => {
+  it('starts with an empty cart summary', () => {
     render(<Cart />);
 
-    fireEvent.click(screen.getAllByRole('button', { name: 'Adicionar' })[0]);
+    const summary = screen.getByLabelText('Resumo do carrinho');
+    expect(within(summary).getByText(/Itens:/).textContent).toContain('0');
+    expect(within(summary).getByText(/Total:/).textContent).toMatch(/0,00/);
+  });
 
-    expect(screen.getByTestId('count').textContent).toContain('1');
-    expect(screen.getByTestId('total').textContent).toContain('R$ 220');
+  it('adds products and recalculates quantity and total', () => {
+    render(<Cart />);
+
+    fireEvent.click(screen.getByRole('button', { name: 'Adicionar Keyboard' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Adicionar Mouse' }));
+
+    const summary = screen.getByLabelText('Resumo do carrinho');
+    expect(within(summary).getByText(/Itens:/).textContent).toContain('2');
+    expect(within(summary).getByText(/Total:/).textContent).toMatch(/340,00/);
   });
 });
