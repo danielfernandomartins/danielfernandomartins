@@ -11,10 +11,12 @@ const expected = [
   '08-github-explorer',
   '09-smart-signup',
   '10-tested-cart',
+  '11-dev-city-ai-character',
 ];
 
-const viteProjects = expected.filter((project) => !['01-accessible-saas-landing', '06-next-portfolio-blog'].includes(project));
-const testedProjects = ['02-taskflow-react-ts', '03-movie-explorer', '05-finance-dashboard', '08-github-explorer', '10-tested-cart'];
+const nodeProjects = expected.filter((project) => !['01-accessible-saas-landing', '11-dev-city-ai-character'].includes(project));
+const viteProjects = nodeProjects.filter((project) => project !== '06-next-portfolio-blog');
+const testedProjects = ['02-taskflow-react-ts', '03-movie-explorer', '05-finance-dashboard', '06-next-portfolio-blog', '08-github-explorer', '10-tested-cart'];
 const failures = [];
 const exists = (path) => fs.existsSync(path);
 const read = (path) => fs.readFileSync(path, 'utf8');
@@ -25,7 +27,7 @@ for (const project of expected) {
   if (!exists(`${base}/README.md`)) failures.push(`README ausente: ${project}`);
 }
 
-for (const project of expected.slice(1)) {
+for (const project of nodeProjects) {
   const base = `frontend-projects/${project}`;
   const packagePath = `${base}/package.json`;
   const tsconfigPath = `${base}/tsconfig.json`;
@@ -70,11 +72,30 @@ const requiredFlagshipFiles = [
   'frontend-projects/02-taskflow-react-ts/src/task-utils.test.ts',
   'frontend-projects/03-movie-explorer/src/api.test.ts',
   'frontend-projects/05-finance-dashboard/src/store.test.ts',
+  'frontend-projects/06-next-portfolio-blog/app/content.test.ts',
   'frontend-projects/08-github-explorer/src/api.test.ts',
   'frontend-projects/08-github-explorer/src/Explorer.tsx',
 ];
 for (const file of requiredFlagshipFiles) {
   if (!exists(file)) failures.push(`Evidência flagship ausente: ${file}`);
+}
+
+const aiProject = 'frontend-projects/11-dev-city-ai-character';
+for (const required of [`${aiProject}/index.html`, `${aiProject}/styles.css`, `${aiProject}/scripts.js`, `${aiProject}/README.md`]) {
+  if (!exists(required)) failures.push(`Projeto IA incompleto: ${required}`);
+}
+if (exists(`${aiProject}/index.html`)) {
+  const html = read(`${aiProject}/index.html`);
+  if (!html.includes('lang="pt-BR"')) failures.push('Dev City: idioma HTML ausente');
+  if (!html.includes('name="description"')) failures.push('Dev City: meta description ausente');
+  if (!html.includes('Pular para o conteúdo')) failures.push('Dev City: skip link ausente');
+  if (!html.includes('aria-live')) failures.push('Dev City: região dinâmica acessível ausente');
+  if (html.includes('onclick=')) failures.push('Dev City: handler inline voltou ao HTML');
+}
+if (exists(`${aiProject}/scripts.js`)) {
+  const script = read(`${aiProject}/scripts.js`);
+  if (!script.includes('validateImage')) failures.push('Dev City: validação de upload ausente');
+  if (!script.includes('try {') || !script.includes('catch')) failures.push('Dev City: tratamento de erro assíncrono ausente');
 }
 
 const profile = read('README.md');
@@ -84,6 +105,7 @@ for (const project of expected) {
 
 const brief = read('RECRUITER-BRIEF.md').toLowerCase();
 if (!brief.includes('front-end')) failures.push('Recruiter Brief não está alinhado a Front-End');
+if (!brief.includes('dev city character lab')) failures.push('Recruiter Brief não cita o projeto de IA');
 
 const landing = read('frontend-projects/01-accessible-saas-landing/index.html');
 if (!landing.includes('lang="pt-BR"') || !landing.includes('Pular para conteúdo')) {
@@ -110,5 +132,5 @@ if (failures.length) {
 }
 
 console.log(
-  `AUDITORIA OK: ${expected.length} projetos, dependências diretas sem latest, metadados HTML, typecheck, testes flagship, documentação e isolamento do legado validados.`,
+  `AUDITORIA OK: ${expected.length} projetos, dependências diretas sem latest, metadados, typecheck, testes, acessibilidade, projeto IA e isolamento do legado validados.`,
 );
