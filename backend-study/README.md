@@ -21,6 +21,23 @@ Trilha prática de estudo com foco em **Node.js + TypeScript + PostgreSQL**, org
 5. [Autenticação, segurança e testes](05-auth-security-tests.md)
 6. [Entrevista Back-End: perguntas e respostas](06-interview-qa.md)
 7. [Projetos guiados do zero à vaga](07-projects-roadmap.md)
+8. [Task API totalmente resolvida](08-task-api-resolvida.md)
+9. [Exercícios SQL resolvidos](09-sql-exercises-resolvidos.md)
+
+## O que já está respondido
+
+A trilha inclui:
+
+- teoria explicada do zero;
+- respostas-modelo de entrevista;
+- exercícios com solução;
+- SQL resolvido passo a passo;
+- arquitetura comentada;
+- segurança e autenticação;
+- testes unitários e de integração;
+- projeto Task API com código completo de referência;
+- projetos maiores com modelagem e decisões explicadas;
+- simulações de perguntas que costumam revelar lacunas de fundamento.
 
 ## Stack da trilha
 
@@ -29,6 +46,7 @@ Trilha prática de estudo com foco em **Node.js + TypeScript + PostgreSQL**, org
 - Express ou Fastify
 - PostgreSQL
 - Prisma
+- Zod
 - Vitest/Jest
 - Supertest
 - Docker
@@ -62,4 +80,6 @@ Resposta de entrevista modelo:
 
 ## Regra importante
 
-Não tente decorar tudo de uma vez. Para primeira vaga, é mais valioso entender muito bem **HTTP, APIs, JavaScript/TypeScript, Node.js, SQL, banco de dados, autenticação, erros e testes** do que conhecer dez frameworks superficialmente.
+As respostas prontas existem para acelerar a correção e revisão, não para substituir prática. Para realmente ficar pronto para entrevista, tente responder primeiro sem olhar e depois compare com a solução.
+
+Para primeira vaga, é mais valioso entender muito bem **HTTP, APIs, JavaScript/TypeScript, Node.js, SQL, banco de dados, autenticação, erros e testes** do que conhecer dez frameworks superficialmente.
