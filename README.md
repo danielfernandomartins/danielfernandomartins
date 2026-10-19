@@ -31,7 +31,7 @@ Trago também **+20 anos de experiência no mercado financeiro**, o que fortalec
 
 `HTML5` `CSS3` `JavaScript` `TypeScript` `React` `Next.js` `REST APIs` `Git` `Testing`
 
-[**Recruiter Brief**](RECRUITER-BRIEF.md) · [**Auditoria de qualidade**](audit/FRONTEND-PORTFOLIO-AUDIT.md) · [**Padrão dos projetos**](frontend-projects/PROJECT-STANDARDS.md)
+[**Recruiter Brief**](RECRUITER-BRIEF.md) · [**Guia de entrevista**](FRONTEND-INTERVIEW-GUIDE.md) · [**Auditoria 110 critérios**](audit/RECRUITER-110-CHECKLIST.md) · [**Padrão dos projetos**](frontend-projects/PROJECT-STANDARDS.md)
 
 </div>
 
