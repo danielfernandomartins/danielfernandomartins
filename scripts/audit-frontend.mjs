@@ -14,7 +14,7 @@ const expected = [
 ];
 
 const viteProjects = expected.filter((project) => !['01-accessible-saas-landing', '06-next-portfolio-blog'].includes(project));
-const testedProjects = ['02-taskflow-react-ts', '03-movie-explorer', '05-finance-dashboard', '10-tested-cart'];
+const testedProjects = ['02-taskflow-react-ts', '03-movie-explorer', '05-finance-dashboard', '08-github-explorer', '10-tested-cart'];
 const failures = [];
 const exists = (path) => fs.existsSync(path);
 const read = (path) => fs.readFileSync(path, 'utf8');
@@ -70,7 +70,7 @@ const requiredFlagshipFiles = [
   'frontend-projects/02-taskflow-react-ts/src/task-utils.test.ts',
   'frontend-projects/03-movie-explorer/src/api.test.ts',
   'frontend-projects/05-finance-dashboard/src/store.test.ts',
-  'frontend-projects/08-github-explorer/src/api.ts',
+  'frontend-projects/08-github-explorer/src/api.test.ts',
   'frontend-projects/08-github-explorer/src/Explorer.tsx',
 ];
 for (const file of requiredFlagshipFiles) {
