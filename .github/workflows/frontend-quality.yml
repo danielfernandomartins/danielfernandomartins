@@ -1,0 +1,69 @@
+name: Front-End Portfolio Quality
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'frontend-projects/**'
+      - 'README.md'
+      - 'RECRUITER-BRIEF.md'
+      - 'SECURITY.md'
+      - 'audit/**'
+      - 'scripts/audit-frontend.mjs'
+      - '.github/workflows/frontend-quality.yml'
+  pull_request:
+    paths:
+      - 'frontend-projects/**'
+      - 'README.md'
+      - 'RECRUITER-BRIEF.md'
+      - 'SECURITY.md'
+      - 'audit/**'
+      - 'scripts/audit-frontend.mjs'
+      - '.github/workflows/frontend-quality.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  portfolio-audit:
+    name: Portfolio structure audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/audit-frontend.mjs
+
+  build-projects:
+    name: Build ${{ matrix.project }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          - 02-taskflow-react-ts
+          - 03-movie-explorer
+          - 04-job-tracker
+          - 05-finance-dashboard
+          - 06-next-portfolio-blog
+          - 07-crm-tailwind
+          - 08-github-explorer
+          - 09-smart-signup
+          - 10-tested-cart
+    defaults:
+      run:
+        working-directory: frontend-projects/${{ matrix.project }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - name: TypeScript strict check
+        if: matrix.project != '06-next-portfolio-blog'
+        run: npx tsc --noEmit
+      - run: npm run build
+      - name: Unit tests
+        if: matrix.project == '10-tested-cart'
+        run: npm test
