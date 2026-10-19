@@ -35,21 +35,33 @@ export function App() {
       <header>
         <p>REST API • React • TypeScript</p>
         <h1>Movie Explorer</h1>
-        <form onSubmit={handleSearch}>
-          <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Busque uma série..." aria-label="Nome da série" />
-          <button disabled={loading}>{loading ? 'Buscando...' : 'Buscar'}</button>
+        <form onSubmit={handleSearch} role="search" aria-describedby="search-help">
+          <label htmlFor="show-query" className="visually-hidden">Nome da série</label>
+          <input
+            id="show-query"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Ex.: The Bear"
+            autoComplete="off"
+          />
+          <button type="submit" disabled={loading}>{loading ? 'Buscando...' : 'Buscar'}</button>
+          <small id="search-help" className="visually-hidden">Pesquise pelo título de uma série.</small>
         </form>
       </header>
 
-      {error && <p role="alert">{error}</p>}
-      {!loading && searched && !error && results.length === 0 && <p role="status">Nenhum resultado encontrado.</p>}
+      <div aria-live="polite" aria-atomic="true">
+        {loading && <p role="status">Buscando séries…</p>}
+        {error && <p role="alert">{error}</p>}
+        {!loading && searched && !error && results.length === 0 && <p role="status">Nenhum resultado encontrado.</p>}
+      </div>
 
-      <section aria-live="polite">
+      <section aria-labelledby="results-title" aria-busy={loading}>
+        <h2 id="results-title" className="visually-hidden">Resultados</h2>
         {results.map(({ show }) => (
           <article key={show.id}>
-            <div className="poster">{show.image ? <img src={show.image.medium} alt={`Capa de ${show.name}`} /> : '🎬'}</div>
+            <div className="poster">{show.image ? <img src={show.image.medium} alt={`Capa de ${show.name}`} /> : <span aria-label="Sem capa disponível">🎬</span>}</div>
             <div>
-              <h2>{show.name}</h2>
+              <h3>{show.name}</h3>
               <small>{show.genres.join(' • ') || 'Sem gênero'} · ⭐ {show.rating.average ?? '—'}</small>
               <p>{cleanSummary(show.summary)}</p>
             </div>

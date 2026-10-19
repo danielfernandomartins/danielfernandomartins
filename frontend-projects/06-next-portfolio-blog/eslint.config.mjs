@@ -1,0 +1,9 @@
+import { defineConfig } from 'eslint/config';
+import reactHooks from 'eslint-plugin-react-hooks';
+import tseslint from 'typescript-eslint';
+
+export default defineConfig([
+  { ignores: ['.next/**'] },
+  ...tseslint.configs.recommended,
+  reactHooks.configs.flat.recommended,
+]);

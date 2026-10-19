@@ -28,26 +28,45 @@ export function App() {
         <span aria-live="polite">{completed}/{tasks.length} concluídas</span>
       </header>
 
-      <section className="panel" aria-label="Gerenciador de tarefas">
+      <section className="panel" aria-labelledby="taskflow-panel-title">
+        <h2 id="taskflow-panel-title" className="visually-hidden">Gerenciador de tarefas</h2>
+
         <form onSubmit={handleSubmit}>
-          <input name="task" placeholder="Nova tarefa" aria-label="Nova tarefa" autoComplete="off" />
+          <label htmlFor="new-task" className="visually-hidden">Nova tarefa</label>
+          <input id="new-task" name="task" placeholder="Ex.: revisar pull request" autoComplete="off" />
           <button type="submit">Adicionar</button>
         </form>
 
         <nav aria-label="Filtrar tarefas">
-          {filters.map(({ value, label }) => (
-            <button type="button" className={filter === value ? 'active' : ''} onClick={() => setFilter(value)} key={value}>
-              {label}
-            </button>
-          ))}
+          {filters.map(({ value, label }) => {
+            const active = filter === value;
+            return (
+              <button
+                type="button"
+                className={active ? 'active' : ''}
+                aria-pressed={active}
+                onClick={() => setFilter(value)}
+                key={value}
+              >
+                {label}
+              </button>
+            );
+          })}
         </nav>
 
         {visibleTasks.length === 0 && <p role="status">Nenhuma tarefa neste filtro.</p>}
         {visibleTasks.map((task) => (
           <article key={task.id} className={task.done ? 'done' : ''}>
-            <input aria-label={`Concluir ${task.text}`} type="checkbox" checked={task.done} onChange={() => toggleTask(task.id)} />
+            <input
+              aria-label={`${task.done ? 'Marcar como pendente' : 'Marcar como concluída'}: ${task.text}`}
+              type="checkbox"
+              checked={task.done}
+              onChange={() => toggleTask(task.id)}
+            />
             <span>{task.text}</span>
-            <button type="button" className="ghost" onClick={() => removeTask(task.id)} aria-label={`Excluir ${task.text}`}>Excluir</button>
+            <button type="button" className="ghost" onClick={() => removeTask(task.id)} aria-label={`Excluir tarefa: ${task.text}`}>
+              Excluir
+            </button>
           </article>
         ))}
       </section>
