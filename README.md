@@ -31,7 +31,7 @@ Trago também **+20 anos de experiência no mercado financeiro**, o que fortalec
 
 `HTML5` `CSS3` `JavaScript` `TypeScript` `React` `Next.js` `REST APIs` `Git` `Testing`
 
-[**Recruiter Brief**](RECRUITER-BRIEF.md) · [**Guia de entrevista**](FRONTEND-INTERVIEW-GUIDE.md) · [**Auditoria 110 critérios**](audit/RECRUITER-110-CHECKLIST.md) · [**Padrão dos projetos**](frontend-projects/PROJECT-STANDARDS.md)
+[**Recruiter Brief**](RECRUITER-BRIEF.md) · [**Guia de entrevista**](FRONTEND-INTERVIEW-GUIDE.md) · [**Auditoria mestre**](audit/MASTER-FRONTEND-AUDIT.md) · [**110 critérios**](audit/RECRUITER-110-CHECKLIST.md) · [**Padrão dos projetos**](frontend-projects/PROJECT-STANDARDS.md)
 
 </div>
 
@@ -57,12 +57,12 @@ Estes são os projetos que melhor representam meu nível atual e minhas competê
 
 | Projeto | Competência principal | Stack |
 |---|---|---|
-| [**TaskFlow**](frontend-projects/02-taskflow-react-ts/) | componentes, hooks, tipagem, filtros e persistência | React · TypeScript · LocalStorage |
-| [**Movie Explorer**](frontend-projects/03-movie-explorer/) | API REST, async/await, loading, erro e renderização de dados | React · TypeScript · Fetch API |
-| [**Finance Dashboard**](frontend-projects/05-finance-dashboard/) | estado global, dados derivados e fluxo financeiro | React · TypeScript · Redux Toolkit |
+| [**TaskFlow**](frontend-projects/02-taskflow-react-ts/) | componentes, hooks, tipagem, filtros, persistência e testes de domínio | React · TypeScript · LocalStorage · Vitest |
+| [**Movie Explorer**](frontend-projects/03-movie-explorer/) | API REST, async/await, loading, erro e testes da camada HTTP | React · TypeScript · Fetch API · Vitest |
+| [**Finance Dashboard**](frontend-projects/05-finance-dashboard/) | estado global, dados derivados, fluxo financeiro e reducer testável | React · TypeScript · Redux Toolkit · Vitest |
 | [**GitHub Explorer**](frontend-projects/08-github-explorer/) | requisições, cache e gerenciamento de estado assíncrono | React · TypeScript · Axios · TanStack Query |
 
-**O que procuro demonstrar aqui:** fundamentos bem entendidos, código tipado, tratamento de estados reais de interface, organização e capacidade de explicar decisões técnicas.
+**O que procuro demonstrar aqui:** fundamentos bem entendidos, código tipado, tratamento de estados reais de interface, organização, testes em decisões críticas e capacidade de explicar decisões técnicas.
 
 ---
 
@@ -90,7 +90,7 @@ Os projetos abaixo complementam a trilha e demonstram tecnologias específicas s
 **React:** componentes · props · estado · hooks · formulários · rotas · renderização condicional  
 **TypeScript:** tipos, unions, interfaces e checagem strict  
 **Dados e estado:** REST APIs · Axios · TanStack Query · Redux Toolkit  
-**Qualidade:** Git · GitHub · Vitest · React Testing Library · CI automatizado
+**Qualidade:** Git · GitHub · Vitest · React Testing Library · CI automatizado · dependências versionadas
 
 ---
 
