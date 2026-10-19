@@ -17,8 +17,8 @@ const expected = [
 
 const nodeProjects = expected.filter((project) => !['01-accessible-saas-landing', '11-dev-city-ai-character'].includes(project));
 const viteProjects = nodeProjects.filter((project) => project !== '06-next-portfolio-blog');
-const testedProjects = ['02-taskflow-react-ts', '03-movie-explorer', '05-finance-dashboard', '06-next-portfolio-blog', '08-github-explorer', '10-tested-cart'];
-const lintedProjects = ['02-taskflow-react-ts', '03-movie-explorer', '05-finance-dashboard', '06-next-portfolio-blog', '08-github-explorer'];
+const testedProjects = ['02-taskflow-react-ts', '03-movie-explorer', '05-finance-dashboard', '06-next-portfolio-blog', '08-github-explorer', '09-smart-signup', '10-tested-cart'];
+const lintedProjects = [...nodeProjects];
 const failures = [];
 const exists = (path) => fs.existsSync(path);
 const read = (path) => fs.readFileSync(path, 'utf8');
@@ -73,23 +73,25 @@ for (const project of testedProjects) {
 for (const project of lintedProjects) {
   const base = `frontend-projects/${project}`;
   const pkg = JSON.parse(read(`${base}/package.json`));
-  if (!pkg.scripts?.lint) failures.push(`lint script ausente no projeto principal: ${project}`);
+  if (!pkg.scripts?.lint) failures.push(`lint script ausente: ${project}`);
   if (!exists(`${base}/eslint.config.mjs`)) failures.push(`eslint.config.mjs ausente: ${project}`);
   if (!pkg.devDependencies?.eslint || !pkg.devDependencies?.['typescript-eslint']) {
     failures.push(`dependências de lint ausentes: ${project}`);
   }
 }
 
-const requiredFlagshipFiles = [
+const requiredEvidenceFiles = [
   'frontend-projects/02-taskflow-react-ts/src/task-utils.test.ts',
   'frontend-projects/03-movie-explorer/src/api.test.ts',
   'frontend-projects/05-finance-dashboard/src/store.test.ts',
   'frontend-projects/06-next-portfolio-blog/app/content.test.ts',
   'frontend-projects/08-github-explorer/src/api.test.ts',
   'frontend-projects/08-github-explorer/src/Explorer.tsx',
+  'frontend-projects/09-smart-signup/src/schema.ts',
+  'frontend-projects/09-smart-signup/src/schema.test.ts',
 ];
-for (const file of requiredFlagshipFiles) {
-  if (!exists(file)) failures.push(`Evidência flagship ausente: ${file}`);
+for (const file of requiredEvidenceFiles) {
+  if (!exists(file)) failures.push(`Evidência de qualidade ausente: ${file}`);
 }
 
 const aiProject = 'frontend-projects/11-dev-city-ai-character';
@@ -157,5 +159,5 @@ if (failures.length) {
 }
 
 console.log(
-  `AUDITORIA OK: ${expected.length} projetos, dependências diretas sem latest, metadados, typecheck, testes, lint nos principais, acessibilidade, projeto IA e isolamento do legado validados.`,
+  `AUDITORIA OK: ${expected.length} projetos, dependências diretas sem latest, metadados, typecheck, testes, lint em todos os apps TypeScript, acessibilidade, projeto IA e isolamento do legado validados.`,
 );

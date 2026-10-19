@@ -45,7 +45,7 @@ Trago também **+20 anos de experiência no mercado financeiro**, o que fortalec
 | **Base técnica** | HTML, CSS, JavaScript, responsividade, DOM e consumo de APIs |
 | **Stack em evolução** | React, TypeScript, React Router, Next.js, Tailwind, testes e estado global |
 | **Diferencial** | Experiência sólida de negócio + visão de usuário + comunicação + resolução de problemas |
-| **Qualidade** | ESLint, TypeScript strict, build, testes automatizados, auditoria estrutural e CI via GitHub Actions |
+| **Qualidade** | ESLint em todos os apps TypeScript, TypeScript strict, builds, testes, auditoria estrutural e CI via GitHub Actions v7 |
 
 > **Meu foco é transformar necessidades de negócio em interfaces simples, responsivas, acessíveis e fáceis de usar.**
 
@@ -71,11 +71,11 @@ Estes são os projetos que melhor representam meu nível atual e minhas competê
 | Projeto | Competência | Stack |
 |---|---|---|
 | [Accessible SaaS Landing](frontend-projects/01-accessible-saas-landing/) | semântica, responsividade e acessibilidade | HTML · CSS · JavaScript |
-| [Job Tracker](frontend-projects/04-job-tracker/) | rotas e formulários | React Router · TypeScript |
-| [Dev Portfolio Blog](frontend-projects/06-next-portfolio-blog/) | App Router, conteúdo tipado, lint e testes | Next.js · TypeScript · Vitest |
-| [CRM Dashboard](frontend-projects/07-crm-tailwind/) | UI e componentização | React · Tailwind CSS |
-| [Smart Signup](frontend-projects/09-smart-signup/) | validação tipada | React Hook Form · Zod |
-| [Tested Cart](frontend-projects/10-tested-cart/) | testes de comportamento | Vitest · React Testing Library |
+| [Job Tracker](frontend-projects/04-job-tracker/) | rotas, componentes estáveis, formulários e status tipados | React Router · TypeScript · ESLint |
+| [Dev Portfolio Blog](frontend-projects/06-next-portfolio-blog/) | App Router, rota dinâmica, metadata, geração estática e testes | Next.js · TypeScript · Vitest |
+| [CRM Dashboard](frontend-projects/07-crm-tailwind/) | UI responsiva, filtro funcional e tabela semântica | React · TypeScript · Tailwind CSS |
+| [Smart Signup](frontend-projects/09-smart-signup/) | schema isolado, validação acessível e testes das regras | React Hook Form · Zod · Vitest |
+| [Tested Cart](frontend-projects/10-tested-cart/) | testes de comportamento com consultas acessíveis | Vitest · React Testing Library |
 | [Dev City Character Lab](frontend-projects/11-dev-city-ai-character/) | upload, estados assíncronos, acessibilidade, testes e IA como progressive enhancement | HTML · CSS · JavaScript · Puter.js |
 
 [**📂 Ver os 11 projetos →**](frontend-projects/)
@@ -95,6 +95,7 @@ O objetivo não é apenas “usar IA”, e sim mostrar que uma integração exte
 **Fundamentos:** HTML semântico · CSS Grid · Flexbox · mobile-first · responsividade · acessibilidade  
 **JavaScript:** ES6+ · DOM · eventos · arrays · objetos · Fetch API · async/await · LocalStorage · FileReader  
 **React:** componentes · props · estado · hooks · formulários · rotas · renderização condicional  
+**Next.js:** App Router · rotas dinâmicas · `generateStaticParams` · metadata · `notFound`  
 **TypeScript:** tipos, unions, interfaces e checagem strict  
 **Dados e estado:** REST APIs · Axios · TanStack Query · Redux Toolkit  
 **Qualidade:** Git · GitHub · ESLint · Vitest · React Testing Library · CI automatizado · dependências versionadas  
