@@ -6,7 +6,7 @@
     "build": "vite build",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --max-warnings=0",
-    "test": "vitest run --environment jsdom",
+    "test": "vitest run src --environment jsdom",
     "test:e2e": "playwright test"
   },
   "dependencies": {
