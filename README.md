@@ -13,7 +13,7 @@
 
 Desenvolvedor Front-End com foco em **React, TypeScript, JavaScript, HTML e CSS**, construindo interfaces responsivas, acessíveis e orientadas à experiência do usuário.
 
-Atuo como **freelancer em desenvolvimento Front-End** e mantenho este GitHub como uma vitrine técnica do meu trabalho, decisões de engenharia e evolução contínua.
+Atuo como **freelancer em desenvolvimento Front-End** e uso este GitHub para apresentar projetos, decisões técnicas e práticas de engenharia aplicadas no dia a dia.
 
 Minha trajetória de **+20 anos no mercado financeiro** complementa a formação técnica com visão de negócio, análise de problemas, comunicação, atenção a detalhes e responsabilidade com entregas.
 
@@ -30,44 +30,57 @@ Minha trajetória de **+20 anos no mercado financeiro** complementa a formação
 
 `HTML5` `CSS3` `JavaScript` `TypeScript` `React` `Next.js` `REST APIs` `Testing` `ESLint` `GitHub Actions`
 
-[**Auditoria técnica**](audit/MASTER-FRONTEND-AUDIT.md) · [**Padrão dos projetos**](frontend-projects/PROJECT-STANDARDS.md)
-
 </div>
 
 ---
 
-## Resumo profissional
+## Perfil técnico
 
 | | |
 |---|---|
-| **Especialidade** | Desenvolvimento Front-End com foco em React + TypeScript |
-| **Fundamentos** | HTML, CSS, JavaScript, responsividade, DOM e consumo de APIs |
-| **Ecossistema** | React Router, Next.js, Tailwind CSS, Redux Toolkit e TanStack Query |
-| **Qualidade** | ESLint, TypeScript strict, testes unitários, integração/UI, E2E seletivo com Playwright e CI via GitHub Actions |
-| **Diferencial** | Experiência de negócio, visão de usuário, comunicação e resolução estruturada de problemas |
+| **Front-End** | React, TypeScript, JavaScript, HTML, CSS e responsividade |
+| **Aplicações** | React Router, Next.js, consumo de APIs REST e gerenciamento de estado |
+| **Qualidade** | ESLint, TypeScript strict, Vitest, React Testing Library, Playwright, Axe e CI |
+| **Engenharia** | componentização, estados de interface, tratamento de erros, acessibilidade e automação |
+| **Visão de produto** | entendimento de requisitos, experiência do usuário e contexto de negócio |
 
-> **Meu foco é transformar necessidades de negócio em interfaces simples, responsivas, acessíveis e confiáveis.**
+> **Transformo necessidades de negócio em interfaces claras, responsivas, acessíveis e confiáveis.**
 
 ---
 
 # Projetos em destaque
 
-Os projetos abaixo concentram as principais evidências de arquitetura, estado, integração com APIs, testes e qualidade de Front-End deste portfólio.
+Quatro projetos concentram as principais evidências técnicas deste portfólio.
 
-| Projeto | Destaques técnicos | Stack |
+| Projeto | O que demonstra | Stack |
 |---|---|---|
 | [**TaskFlow**](frontend-projects/02-taskflow-react-ts/) | hooks, persistência, filtros, testes de domínio/UI, E2E em navegador real e auditoria automatizada de acessibilidade | React · TypeScript · LocalStorage · Vitest · RTL · Playwright · Axe |
-| [**Movie Explorer**](frontend-projects/03-movie-explorer/) | API REST, estados assíncronos, tratamento de erro e testes da camada HTTP + interface | React · TypeScript · Fetch API · Vitest · RTL |
-| [**Finance Dashboard**](frontend-projects/05-finance-dashboard/) | estado global, dados derivados e integração formulário → Redux → UI | React · TypeScript · Redux Toolkit · Vitest · RTL |
-| [**GitHub Explorer**](frontend-projects/08-github-explorer/) | Axios, cache, estado assíncrono e integração TanStack Query + UI | React · TypeScript · Axios · TanStack Query · Vitest · RTL |
+| [**Movie Explorer**](frontend-projects/03-movie-explorer/) | consumo de API REST, estados assíncronos, tratamento de erros e testes da camada HTTP + interface | React · TypeScript · Fetch API · Vitest · RTL |
+| [**Finance Dashboard**](frontend-projects/05-finance-dashboard/) | estado global, dados derivados e integração entre formulário, store e interface | React · TypeScript · Redux Toolkit · Vitest · RTL |
+| [**GitHub Explorer**](frontend-projects/08-github-explorer/) | camada HTTP, cache, estado assíncrono e integração TanStack Query + interface | React · TypeScript · Axios · TanStack Query · Vitest · RTL |
 
 Esses projetos priorizam **código legível, tipagem, comportamento observável, estados reais de interface, testes em camadas e automação de qualidade**.
 
 ---
 
-## Laboratório Front-End
+## Engenharia e qualidade
 
-Projetos complementares usados para explorar competências específicas sem inflar artificialmente a stack dos projetos principais.
+O workflow **Front-End Portfolio Quality** valida automaticamente a estrutura do portfólio e os principais projetos com **lint, TypeScript strict, build e testes**. O TaskFlow inclui ainda **E2E em Chromium com Playwright** e **checagem automatizada de acessibilidade com Axe**.
+
+**Fundamentos:** HTML semântico · CSS Grid · Flexbox · mobile-first · responsividade · acessibilidade  
+**React e Next.js:** componentes · hooks · formulários · rotas · App Router · rotas dinâmicas · metadata  
+**Dados e estado:** Fetch API · Axios · TanStack Query · Redux Toolkit · LocalStorage  
+**Testes:** Vitest · React Testing Library · Playwright · Axe  
+**Qualidade:** ESLint · TypeScript strict · builds de produção · GitHub Actions
+
+---
+
+## Projetos complementares
+
+<details>
+<summary><strong>Ver outros projetos Front-End</strong></summary>
+
+<br>
 
 | Projeto | Competência | Stack |
 |---|---|---|
@@ -79,40 +92,17 @@ Projetos complementares usados para explorar competências específicas sem infl
 | [Tested Cart](frontend-projects/10-tested-cart/) | testes de comportamento com consultas acessíveis | Vitest · React Testing Library |
 | [Dev City Character Lab](frontend-projects/11-dev-city-ai-character/) | upload, estados assíncronos, acessibilidade, testes e IA como progressive enhancement | HTML · CSS · JavaScript · Puter.js |
 
-[**Ver os 11 projetos →**](frontend-projects/)
+[**Ver todos os projetos →**](frontend-projects/)
 
----
-
-## Front-End + IA como progressive enhancement
-
-O [**Dev City Character Lab**](frontend-projects/11-dev-city-ai-character/) demonstra uma integração de IA tratada como recurso opcional, sem comprometer o funcionamento principal da interface.
-
-O projeto inclui JavaScript modular, navegação por teclado, foco visível, validação de upload, estados de loading/sucesso/erro, fallback para falhas externas, testes de regras puras e cuidados explícitos com privacidade e experiência do usuário.
-
----
-
-## Engenharia e qualidade
-
-**Fundamentos:** HTML semântico · CSS Grid · Flexbox · mobile-first · responsividade · acessibilidade  
-**JavaScript:** ES6+ · DOM · eventos · arrays · objetos · Fetch API · async/await · LocalStorage · FileReader  
-**React:** componentes · props · estado · hooks · formulários · rotas · renderização condicional  
-**Next.js:** App Router · rotas dinâmicas · `generateStaticParams` · metadata · `notFound`  
-**TypeScript:** tipos, unions, interfaces e checagem strict  
-**Dados e estado:** REST APIs · Axios · TanStack Query · Redux Toolkit  
-**Qualidade:** Git · GitHub · ESLint · Vitest · React Testing Library · Playwright · Axe · testes unitários, integração e E2E · CI automatizado  
-**Integrações:** upload de imagem · validação de entrada · estados assíncronos · IA opcional no navegador
-
-O workflow **Front-End Portfolio Quality** executa auditoria estrutural, lint, typecheck, builds e testes automaticamente. No TaskFlow, a validação inclui também E2E em Chromium e checagem automatizada de acessibilidade.
+</details>
 
 ---
 
 ## Experiência de negócio aplicada à tecnologia
 
-Minha trajetória no mercado financeiro desenvolveu competências que hoje aplico diretamente ao desenvolvimento de software: entendimento de requisitos, análise de impacto, comunicação com diferentes áreas, atenção a dados, priorização e responsabilidade com mudanças.
+Minha trajetória no mercado financeiro desenvolveu competências que aplico diretamente ao desenvolvimento de software: entendimento de requisitos, análise de impacto, comunicação com diferentes áreas, atenção a dados, priorização e responsabilidade com mudanças.
 
-No Front-End, isso se traduz em uma preocupação constante com **clareza da interface, estados de erro, previsibilidade do comportamento, experiência do usuário e qualidade da entrega**.
-
-Os projetos deste repositório são apresentados de forma transparente como portfólio e estudo aplicado quando não correspondem a experiência produtiva.
+No Front-End, isso se traduz em atenção constante à **clareza da interface, estados de erro, previsibilidade do comportamento, experiência do usuário e qualidade da entrega**.
 
 ---
 
