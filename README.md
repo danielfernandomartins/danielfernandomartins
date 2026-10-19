@@ -11,15 +11,14 @@
 
 ### Front-End Developer • React • TypeScript • JavaScript
 
-Sou **Desenvolvedor Front-End freelancer** em evolução contínua para atuar em times de produto e engenharia. Trabalho com **HTML, CSS, JavaScript, React e TypeScript**, criando interfaces responsivas, funcionais e orientadas à experiência do usuário.
+Desenvolvedor Front-End com foco em **React, TypeScript, JavaScript, HTML e CSS**, construindo interfaces responsivas, acessíveis e orientadas à experiência do usuário.
 
-Trago também **+20 anos de experiência no mercado financeiro**, o que fortaleceu minha visão de negócio, análise de problemas, comunicação com usuários, atenção a detalhes e responsabilidade com entregas.
+Atuo como **freelancer em desenvolvimento Front-End** e mantenho este GitHub como uma vitrine técnica do meu trabalho, decisões de engenharia e evolução contínua.
 
-**Objetivo:** primeira oportunidade formal como **Desenvolvedor Front-End Júnior / Web Developer**.
+Minha trajetória de **+20 anos no mercado financeiro** complementa a formação técnica com visão de negócio, análise de problemas, comunicação, atenção a detalhes e responsabilidade com entregas.
 
-[![Open to Work](https://img.shields.io/badge/OPEN%20TO%20WORK-FRONT--END-2EA44F?style=for-the-badge)](https://github.com/danielfernandomartins)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
-[![Email](https://img.shields.io/badge/Email-Falar%20comigo-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil%20profissional-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
+[![Email](https://img.shields.io/badge/Email-Contato-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
 
 </td>
 </tr>
@@ -31,42 +30,44 @@ Trago também **+20 anos de experiência no mercado financeiro**, o que fortalec
 
 `HTML5` `CSS3` `JavaScript` `TypeScript` `React` `Next.js` `REST APIs` `Testing` `ESLint` `GitHub Actions`
 
-[**Recruiter Brief**](RECRUITER-BRIEF.md) · [**Guia de entrevista**](FRONTEND-INTERVIEW-GUIDE.md) · [**Auditoria mestre**](audit/MASTER-FRONTEND-AUDIT.md) · [**110 critérios**](audit/RECRUITER-110-CHECKLIST.md) · [**Padrão dos projetos**](frontend-projects/PROJECT-STANDARDS.md)
+[**Auditoria técnica**](audit/MASTER-FRONTEND-AUDIT.md) · [**Padrão dos projetos**](frontend-projects/PROJECT-STANDARDS.md)
 
 </div>
 
 ---
 
-## ⚡ Recrutador: meu perfil em 30 segundos
+## Resumo profissional
 
 | | |
 |---|---|
-| **Posicionamento** | Front-End Developer Júnior com foco em React + TypeScript |
-| **Base técnica** | HTML, CSS, JavaScript, responsividade, DOM e consumo de APIs |
-| **Stack em evolução** | React, TypeScript, React Router, Next.js, Tailwind, testes e estado global |
-| **Diferencial** | Experiência sólida de negócio + visão de usuário + comunicação + resolução de problemas |
-| **Qualidade** | ESLint em todos os apps TypeScript, TypeScript strict, testes unitários + integração/UI e E2E seletivo com Playwright, builds e CI via GitHub Actions v7 |
+| **Especialidade** | Desenvolvimento Front-End com foco em React + TypeScript |
+| **Fundamentos** | HTML, CSS, JavaScript, responsividade, DOM e consumo de APIs |
+| **Ecossistema** | React Router, Next.js, Tailwind CSS, Redux Toolkit e TanStack Query |
+| **Qualidade** | ESLint, TypeScript strict, testes unitários, integração/UI, E2E seletivo com Playwright e CI via GitHub Actions |
+| **Diferencial** | Experiência de negócio, visão de usuário, comunicação e resolução estruturada de problemas |
 
-> **Meu foco é transformar necessidades de negócio em interfaces simples, responsivas, acessíveis e fáceis de usar.**
+> **Meu foco é transformar necessidades de negócio em interfaces simples, responsivas, acessíveis e confiáveis.**
 
 ---
 
-# ⭐ 4 projetos que eu defenderia em uma entrevista
+# Projetos em destaque
 
-Estes são os projetos que melhor representam meu nível atual e minhas competências para uma primeira oportunidade Front-End.
+Os projetos abaixo concentram as principais evidências de arquitetura, estado, integração com APIs, testes e qualidade de Front-End deste portfólio.
 
-| Projeto | Competência principal | Stack |
+| Projeto | Destaques técnicos | Stack |
 |---|---|---|
-| [**TaskFlow**](frontend-projects/02-taskflow-react-ts/) | hooks, persistência, filtros e testes em três camadas: domínio, UI e navegador real | React · TypeScript · LocalStorage · Vitest · RTL · Playwright |
-| [**Movie Explorer**](frontend-projects/03-movie-explorer/) | API REST, estados assíncronos e testes da camada HTTP + estados da UI | React · TypeScript · Fetch API · Vitest · RTL |
-| [**Finance Dashboard**](frontend-projects/05-finance-dashboard/) | estado global, dados derivados e testes de reducer + integração React/Redux | React · TypeScript · Redux Toolkit · Vitest · RTL |
-| [**GitHub Explorer**](frontend-projects/08-github-explorer/) | Axios, cache e testes da API + integração TanStack Query/UI | React · TypeScript · Axios · TanStack Query · Vitest · RTL |
+| [**TaskFlow**](frontend-projects/02-taskflow-react-ts/) | hooks, persistência, filtros, testes de domínio/UI, E2E em navegador real e auditoria automatizada de acessibilidade | React · TypeScript · LocalStorage · Vitest · RTL · Playwright · Axe |
+| [**Movie Explorer**](frontend-projects/03-movie-explorer/) | API REST, estados assíncronos, tratamento de erro e testes da camada HTTP + interface | React · TypeScript · Fetch API · Vitest · RTL |
+| [**Finance Dashboard**](frontend-projects/05-finance-dashboard/) | estado global, dados derivados e integração formulário → Redux → UI | React · TypeScript · Redux Toolkit · Vitest · RTL |
+| [**GitHub Explorer**](frontend-projects/08-github-explorer/) | Axios, cache, estado assíncrono e integração TanStack Query + UI | React · TypeScript · Axios · TanStack Query · Vitest · RTL |
 
-**O que procuro demonstrar aqui:** fundamentos bem entendidos, código tipado, estados reais de interface, organização, testes em decisões críticas e capacidade de explicar decisões técnicas.
+Esses projetos priorizam **código legível, tipagem, comportamento observável, estados reais de interface, testes em camadas e automação de qualidade**.
 
 ---
 
-## 🧪 Laboratório Front-End — competências complementares
+## Laboratório Front-End
+
+Projetos complementares usados para explorar competências específicas sem inflar artificialmente a stack dos projetos principais.
 
 | Projeto | Competência | Stack |
 |---|---|---|
@@ -78,19 +79,19 @@ Estes são os projetos que melhor representam meu nível atual e minhas competê
 | [Tested Cart](frontend-projects/10-tested-cart/) | testes de comportamento com consultas acessíveis | Vitest · React Testing Library |
 | [Dev City Character Lab](frontend-projects/11-dev-city-ai-character/) | upload, estados assíncronos, acessibilidade, testes e IA como progressive enhancement | HTML · CSS · JavaScript · Puter.js |
 
-[**📂 Ver os 11 projetos →**](frontend-projects/)
+[**Ver os 11 projetos →**](frontend-projects/)
 
 ---
 
-## 🤖 Projeto diferencial: Front-End + IA sem sacrificar UX
+## Front-End + IA como progressive enhancement
 
-O [**Dev City Character Lab**](frontend-projects/11-dev-city-ai-character/) começou como um protótipo em HTML/CSS/JavaScript e foi refinado para demonstrar práticas mais próximas de produto: sem handlers inline, navegação por teclado, foco visível, validação de upload, estados de loading/sucesso/erro, fallback quando o serviço externo falha, testes de regras puras e integração de IA tratada como recurso opcional.
+O [**Dev City Character Lab**](frontend-projects/11-dev-city-ai-character/) demonstra uma integração de IA tratada como recurso opcional, sem comprometer o funcionamento principal da interface.
 
-O objetivo não é apenas “usar IA”, e sim mostrar que uma integração externa precisa respeitar **acessibilidade, privacidade, resiliência e experiência do usuário**.
+O projeto inclui JavaScript modular, navegação por teclado, foco visível, validação de upload, estados de loading/sucesso/erro, fallback para falhas externas, testes de regras puras e cuidados explícitos com privacidade e experiência do usuário.
 
 ---
 
-## 🛠️ Competências técnicas demonstradas
+## Engenharia e qualidade
 
 **Fundamentos:** HTML semântico · CSS Grid · Flexbox · mobile-first · responsividade · acessibilidade  
 **JavaScript:** ES6+ · DOM · eventos · arrays · objetos · Fetch API · async/await · LocalStorage · FileReader  
@@ -98,34 +99,36 @@ O objetivo não é apenas “usar IA”, e sim mostrar que uma integração exte
 **Next.js:** App Router · rotas dinâmicas · `generateStaticParams` · metadata · `notFound`  
 **TypeScript:** tipos, unions, interfaces e checagem strict  
 **Dados e estado:** REST APIs · Axios · TanStack Query · Redux Toolkit  
-**Qualidade:** Git · GitHub · ESLint · Vitest · React Testing Library · Playwright · testes unitários, integração e E2E · CI automatizado · dependências versionadas  
+**Qualidade:** Git · GitHub · ESLint · Vitest · React Testing Library · Playwright · Axe · testes unitários, integração e E2E · CI automatizado  
 **Integrações:** upload de imagem · validação de entrada · estados assíncronos · IA opcional no navegador
 
----
-
-## 💼 Experiência de negócio como diferencial
-
-Minha trajetória no mercado financeiro desenvolveu habilidades que aplico diretamente em tecnologia: entendimento de requisitos, comunicação com áreas de negócio, atenção a detalhes, análise de problemas, priorização, responsabilidade com entregas e foco no usuário.
-
-Não apresento projetos de estudo como experiência produtiva. O objetivo deste GitHub é mostrar **o que consigo construir, explicar e evoluir tecnicamente hoje**.
+O workflow **Front-End Portfolio Quality** executa auditoria estrutural, lint, typecheck, builds e testes automaticamente. No TaskFlow, a validação inclui também E2E em Chromium e checagem automatizada de acessibilidade.
 
 ---
 
-## 📚 Formação
+## Experiência de negócio aplicada à tecnologia
+
+Minha trajetória no mercado financeiro desenvolveu competências que hoje aplico diretamente ao desenvolvimento de software: entendimento de requisitos, análise de impacto, comunicação com diferentes áreas, atenção a dados, priorização e responsabilidade com mudanças.
+
+No Front-End, isso se traduz em uma preocupação constante com **clareza da interface, estados de erro, previsibilidade do comportamento, experiência do usuário e qualidade da entrega**.
+
+Os projetos deste repositório são apresentados de forma transparente como portfólio e estudo aplicado quando não correspondem a experiência produtiva.
+
+---
+
+## Formação
 
 **Análise e Desenvolvimento de Sistemas — Universidade São Judas Tadeu**
 
 ---
 
-## 🤝 Vamos conversar
+## Contato
 
 <div align="center">
 
 ### Front-End Developer • React • TypeScript • JavaScript
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
-[![Email](https://img.shields.io/badge/Email-Falar%20comigo-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
-
-**Open to Work:** Front-End Developer Júnior · Web Developer · React Developer Júnior
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil%20profissional-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
+[![Email](https://img.shields.io/badge/Email-Contato-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
 
 </div>
