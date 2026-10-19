@@ -11,7 +11,7 @@ O portfólio está estruturado para demonstrar profundidade em Front-End em vez 
 ### Falhas corrigidas ao longo das auditorias
 
 - dependências diretas deixaram de usar `latest` e passaram a versões explícitas;
-- todos os projetos TypeScript modernos expõem `typecheck`;
+- todos os projetos TypeScript modernos expõem `typecheck` e `lint`;
 - a CI executa automaticamente qualquer suíte de testes disponível;
 - TaskFlow ganhou regras de domínio separadas, persistência tolerante a falhas e testes unitários;
 - Movie Explorer ganhou camada de API separada e testes de sucesso/erro;
@@ -20,9 +20,11 @@ O portfólio está estruturado para demonstrar profundidade em Front-End em vez 
 - o projeto Next.js ganhou conteúdo tipado e testes automatizados;
 - Dev City Character Lab ganhou HTML semântico, validação de upload, tratamento de loading/erro/sucesso, fallback de IA, módulo de domínio e testes nativos;
 - apps Vite possuem HTML completo com `lang`, viewport, descrição e título;
-- os projetos principais passaram a usar ESLint com `typescript-eslint` e regras oficiais de React Hooks;
-- o CI passou a executar lint antes de typecheck, build e testes;
-- a auditoria automatizada bloqueia retorno de `latest`, perda de metadados, ausência de typecheck/lint nos projetos principais, perda de testes e retorno do legado à raiz.
+- todos os apps TypeScript usam ESLint com `typescript-eslint` e regras oficiais de React Hooks;
+- o CI executa lint antes de typecheck, build e testes;
+- GitHub Actions foi atualizado para as releases v7 de `checkout` e `setup-node`;
+- o workflow usa `concurrency` para cancelar runs superseded e timeouts explícitos para evitar jobs presos;
+- a auditoria automatizada bloqueia retorno de `latest`, perda de metadados, ausência de typecheck/lint, perda de testes e retorno do legado à raiz.
 
 ## Critérios mestres avaliados
 
@@ -47,8 +49,8 @@ O portfólio está estruturado para demonstrar profundidade em Front-End em vez 
 
 - todos os projetos modernos possuem `tsconfig.json`.
 - todos expõem `typecheck`.
-- os projetos principais possuem lint explícito com zero warnings aceitos.
-- o stack de lint foi alinhado a uma versão de TypeScript oficialmente suportada pelo `typescript-eslint`, evitando `--force` e `legacy-peer-deps`.
+- todos os apps TypeScript possuem lint explícito com zero warnings aceitos.
+- o stack de lint foi alinhado a TypeScript 6.0.3, dentro da faixa suportada pelo `typescript-eslint` 8.71.2, evitando `--force` e `legacy-peer-deps`.
 - CI executa lint e verificação estática antes do build.
 
 ### 4. Testes
@@ -73,7 +75,7 @@ As dependências diretas estão fixadas em versões explícitas. Isso reduz o ri
 
 ### 6. HTML, acessibilidade e apresentação
 
-Os apps Vite possuem documento HTML completo com idioma, viewport, meta description e título. A landing page mantém skip link e requisitos explícitos de acessibilidade. O Dev City inclui skip link, foco visível, `aria-live`, `aria-pressed`, validação de upload e suporte a `prefers-reduced-motion`.
+Os apps Vite possuem documento HTML completo com idioma, viewport, meta description e título. A landing page mantém skip link e requisitos explícitos de acessibilidade. Os flagships usam labels reais, estados anunciados, headings estruturais, foco visível e controles com semântica apropriada. O Dev City inclui skip link, `aria-live`, `aria-pressed`, validação de upload e suporte a `prefers-reduced-motion`.
 
 ### 7. CI e prevenção de regressão
 
@@ -81,12 +83,12 @@ O workflow `Front-End Portfolio Quality` executa:
 
 1. auditoria estrutural do portfólio;
 2. instalação das dependências;
-3. lint quando disponível;
+3. lint em todos os apps TypeScript;
 4. TypeScript strict/typecheck;
 5. build de todos os projetos modernos;
 6. testes disponíveis em cada projeto.
 
-O script `scripts/audit-frontend.mjs` bloqueia regressões de estrutura e qualidade que um build simples não detectaria.
+Além disso, o workflow usa Actions v7, permissões mínimas, cancelamento de execuções superseded e timeouts explícitos. O script `scripts/audit-frontend.mjs` bloqueia regressões de estrutura e qualidade que um build simples não detectaria.
 
 ## Pontos que continuam externos ao código
 
@@ -110,4 +112,4 @@ Não adicionar tecnologia apenas para aumentar a lista de stacks. Priorizar, nes
 
 ## Conclusão
 
-A evolução do portfólio troca sinais de protótipo por sinais de engenharia: dependências controladas, contratos de qualidade, lint, testes em camadas diferentes, metadados completos, acessibilidade e regressões bloqueadas automaticamente. O perfil permanece honesto sobre o nível profissional buscado, mas demonstra práticas que ajudam a diferenciar um candidato Júnior preparado de um repositório composto apenas por exercícios isolados.
+A evolução do portfólio troca sinais de protótipo por sinais de engenharia: dependências controladas, contratos de qualidade, lint uniforme, testes em camadas diferentes, metadados completos, acessibilidade e regressões bloqueadas automaticamente. O perfil permanece honesto sobre o nível profissional buscado, mas demonstra práticas que ajudam a diferenciar um candidato Júnior preparado de um repositório composto apenas por exercícios isolados.
