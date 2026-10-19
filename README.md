@@ -9,15 +9,15 @@
 
 # Daniel Fernando Martins
 
-### COBOL / Mainframe • Banking Technology • Application Support
+### Front-End Developer • React • TypeScript • JavaScript
 
-**+20 anos no mercado financeiro** conectando operações, risco, controles, pagamentos e atendimento a ambientes críticos.
+Sou **Desenvolvedor Front-End freelancer** em evolução contínua para atuar em times de produto e engenharia. Trabalho com **HTML, CSS, JavaScript, React e TypeScript**, criando interfaces responsivas, funcionais e orientadas à experiência do usuário.
 
-Hoje direciono essa experiência para **COBOL/Mainframe e tecnologia bancária**, com projetos práticos, troubleshooting e estudos de modernização de legado.
+Trago também **+20 anos de experiência no mercado financeiro**, o que fortaleceu minha visão de negócio, análise de problemas, comunicação com usuários, atenção a detalhes e responsabilidade com entregas.
 
-**Objetivo:** primeira oportunidade formal em Tecnologia como **COBOL Developer, Mainframe Developer, Analista Mainframe, Systems Analyst ou Application/Production Support**.
+**Objetivo:** primeira oportunidade formal como **Desenvolvedor Front-End Júnior / Web Developer**, contribuindo em projetos reais e evoluindo tecnicamente em equipe.
 
-[![Open to Work](https://img.shields.io/badge/OPEN%20TO%20WORK-COBOL%20%2F%20MAINFRAME-2EA44F?style=for-the-badge)](https://github.com/danielfernandomartins)
+[![Open to Work](https://img.shields.io/badge/OPEN%20TO%20WORK-FRONT--END-2EA44F?style=for-the-badge)](https://github.com/danielfernandomartins)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
 [![Email](https://img.shields.io/badge/Email-Falar%20comigo-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
 
@@ -27,9 +27,7 @@ Hoje direciono essa experiência para **COBOL/Mainframe e tecnologia bancária**
 
 <div align="center">
 
-[![Portfolio Validation](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/portfolio-validation.yml/badge.svg)](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/portfolio-validation.yml)
-
-`COBOL` `JCL` `DB2` `CICS` `VSAM` `Batch` `Production Support` `Banking` `Legacy Modernization`
+`HTML5` `CSS3` `JavaScript` `TypeScript` `React` `Next.js` `Tailwind CSS` `REST APIs` `Git` `Testing`
 
 </div>
 
@@ -39,162 +37,34 @@ Hoje direciono essa experiência para **COBOL/Mainframe e tecnologia bancária**
 
 | | |
 |---|---|
-| **Posicionamento** | COBOL / Mainframe + forte contexto de negócio bancário |
-| **Diferencial** | +20 anos em operações financeiras, risco, controles, clientes e pagamentos |
-| **Evidências** | 3 cases COBOL/Mainframe + troubleshooting + Knowledge Base + CI automatizado |
-| **Melhor aderência** | Bancos, meios de pagamento, seguradoras e consultorias com sistemas críticos |
+| **Posicionamento** | Front-End Developer Júnior com foco em React + TypeScript |
+| **Base técnica** | HTML, CSS, JavaScript, responsividade, DOM e consumo de APIs |
+| **Stack em evolução** | React, TypeScript, Next.js, Tailwind, testes e estado global |
+| **Diferencial** | Experiência sólida de negócio + visão de usuário + comunicação + resolução de problemas |
+| **Objetivo** | Primeira oportunidade formal em desenvolvimento Front-End |
 
-> **Não estou começando minha carreira do zero. Estou levando duas décadas de contexto financeiro para dentro da tecnologia bancária.**
-
-<div align="center">
-
-### Escolha o próximo clique
-
-[**📄 Recruiter Brief — 1 página**](RECRUITER-BRIEF.md) · [**🏦 Melhor case técnico**](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) · [**💻 Código COBOL**](cobol-portfolio/batch-liquidacao-bancaria/) · [**🎯 Guia de entrevista**](MAINFRAME-INTERVIEW-GUIDE.md)
-
-</div>
+> **Meu foco é transformar necessidades de negócio em interfaces simples, responsivas, acessíveis e fáceis de usar.**
 
 ---
 
-## ⭐ 3 provas que resumem meu posicionamento
+## 🚀 Front-End Job Ready — projetos em destaque
 
-<table>
-<tr>
-<td width="33%" valign="top">
+Esta vitrine foi organizada para demonstrar exatamente os pontos mais cobrados em vagas Front-End Júnior.
 
-### 🏦 Legado bancário
-**CNPJ Alfanumérico**
-
-Impacto transversal em COBOL, DB2, VSAM, CICS, batch, KYC/AML, cutover e hypercare.
-
-**Mostra:** visão de negócio + risco + arquitetura de legado.
-
-[**Abrir case →**](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md)
-
-</td>
-<td width="33%" valign="top">
-
-### 🚨 Produção
-**ABENDs & Troubleshooting**
-
-S0C7, S0C4, S806, SB37, S322, SQLCODE -911/-913, restart/rerun e RCA.
-
-**Mostra:** raciocínio de sustentação e recuperação segura.
-
-[**Abrir guia →**](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md)
-
-</td>
-<td width="33%" valign="top">
-
-### 🚀 Modernização
-**COBOL DevOps**
-
-Git, Zowe, CI/CD, dependency-based build, DevSecOps e rollback.
-
-**Mostra:** como aproximar legado e engenharia moderna.
-
-[**Abrir guia →**](mainframe-knowledge/COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md)
-
-</td>
-</tr>
-</table>
-
----
-
-## 🏦 Projetos COBOL/Mainframe
-
-| Projeto | Cenário | Evidência principal |
+| Projeto | O que demonstra | Stack |
 |---|---|---|
-| [**Batch de Liquidação Bancária**](cobol-portfolio/batch-liquidacao-bancaria/) | processamento financeiro | COBOL · JCL · DB2/SQL · rejeições · conciliação |
-| [**Conta Corrente Online**](cobol-portfolio/conta-corrente-online-cics/) | fluxo transacional | COBOL · CICS · COMMAREA · DB2 · SQLCODE |
-| [**VSAM + Restart/Recovery**](cobol-portfolio/vsam-restart-bancario/) | processamento batch resiliente | VSAM/KSDS · IDCAMS · DFSORT · checkpoint · recovery |
+| **Accessible SaaS Landing** | HTML semântico, responsividade e acessibilidade | HTML · CSS · JavaScript |
+| **TaskFlow** | Componentes, hooks, tipagem e persistência | React · TypeScript · LocalStorage |
+| **Movie Explorer** | Consumo de API e estados assíncronos | React · TypeScript · Fetch API |
+| **Job Tracker** | Rotas e formulários | React Router · TypeScript |
+| **Finance Dashboard** | Estado global e arquitetura de estado | Redux Toolkit |
+| **Dev Portfolio Blog** | App Router, SEO e estrutura moderna | Next.js · TypeScript |
+| **CRM Dashboard** | UI moderna e componentização | React · Tailwind CSS |
+| **GitHub Explorer** | Cache, requisições e API REST | Axios · TanStack Query |
+| **Smart Signup** | Validação de formulário tipada | React Hook Form · Zod |
+| **Tested Cart** | Qualidade e testes automatizados | Vitest · React Testing Library |
 
-[**→ Ver trilha COBOL/Mainframe completa**](cobol-portfolio/)
-
-> **Transparência técnica:** os componentes de ambiente Mainframe são apresentados como laboratórios e estudos aplicados. Não apresento experiência produtiva em z/OS, CICS, VSAM, Control-M, TSO/ISPF ou ferramentas proprietárias que ainda não utilizei profissionalmente.
-
----
-
-<details>
-<summary><strong>🚨 Production Support — ABENDs, JCL, Restart e RCA</strong></summary>
-
-<br>
-
-Minha forma de pensar incidentes:
-
-`impacto → evidência → job/step → persistência parcial → correção → restart/rerun → conciliação → RCA`
-
-- [**Mainframe ABENDs — Production Troubleshooting**](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md)
-- [**JCL Production Troubleshooting**](mainframe-knowledge/JCL-PRODUCTION-TROUBLESHOOTING.md)
-- [**Abend, Restart & Rerun Runbook**](mainframe-knowledge/ABEND-RESTART-RUNBOOK.md)
-- [**Batch Banking Flow**](mainframe-knowledge/BATCH-BANKING-FLOW.md)
-
-</details>
-
-<details>
-<summary><strong>🤖 Modernização — IA, Discovery, Git, Zowe e CI/CD</strong></summary>
-
-<br>
-
-### AI-Assisted Mainframe Modernization
-
-Discovery de aplicações, dependency graph, regras de negócio, characterization tests, semantic equivalence e human-in-the-loop.
-
-- [**Discovery First, Human Governed**](mainframe-knowledge/AI-ASSISTED-MAINFRAME-MODERNIZATION.md)
-- [**Readiness & Governance Matrix**](mainframe-knowledge/AI-MODERNIZATION-READINESS-MATRIX.md)
-
-### COBOL DevOps
-
-Git, Pull Request, Zowe, CI/CD, dependency-based build, DevSecOps e promotion controlada.
-
-- [**COBOL DevOps — Do PDS ao Pull Request**](mainframe-knowledge/COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md)
-
-### Integração legado ↔ distribuído
-
-- [**PayFlow API**](https://github.com/danielfernandomartins/payflow-api) — Java, Spring Boot, REST, PostgreSQL e pagamentos
-
-</details>
-
-<details>
-<summary><strong>📚 Knowledge Base — trilhas técnicas</strong></summary>
-
-<br>
-
-| Trilha | Materiais |
-|---|---|
-| **Banking / Regulatório** | [CNPJ Alfanumérico](mainframe-knowledge/CNPJ-ALFANUMERICO-LEGADO-BANCARIO.md) · [Testes/Cutover/Hypercare](mainframe-knowledge/CNPJ-ALFANUMERICO-TEST-CUTOVER-HYPERCARE.md) |
-| **Production Support** | [ABENDs](mainframe-knowledge/ABENDS-PRODUCTION-GUIDE.md) · [JCL Troubleshooting](mainframe-knowledge/JCL-PRODUCTION-TROUBLESHOOTING.md) · [Restart/Rerun](mainframe-knowledge/ABEND-RESTART-RUNBOOK.md) |
-| **Modernização** | [AI-Assisted Mainframe](mainframe-knowledge/AI-ASSISTED-MAINFRAME-MODERNIZATION.md) · [COBOL DevOps](mainframe-knowledge/COBOL-DEVOPS-FROM-PDS-TO-PULL-REQUEST.md) |
-| **Fundamentos** | [Cheat Sheet](mainframe-knowledge/COBOL-MAINFRAME-CHEATSHEET.md) · [Interview Questions](mainframe-knowledge/INTERVIEW-QUESTIONS.md) |
-
-[**→ Abrir Knowledge Base completa**](mainframe-knowledge/)
-
-</details>
-
-<details>
-<summary><strong>🧠 Por que meu background financeiro importa</strong></summary>
-
-<br>
-
-Meu diferencial não é apenas aprender sintaxe. É conectar tecnologia a contextos que já conheço profundamente:
-
-`operações financeiras` · `meios de pagamento` · `risco` · `controles` · `ambientes regulados` · `clientes` · `conciliação` · `indicadores` · `investigação de divergências` · `continuidade operacional`
-
-Isso ajuda a entender **por que uma rotina existe**, o impacto de uma falha e como comunicar problemas técnicos para áreas de negócio.
-
-</details>
-
----
-
-## ✅ Evidência técnica verificável
-
-<div align="center">
-
-[![Portfolio Validation](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/portfolio-validation.yml/badge.svg)](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/portfolio-validation.yml)
-
-Workflow versionado para validar programas COBOL executáveis com **GnuCOBOL** e código Python de apoio.
-
-</div>
+[**📂 Ver trilha Front-End completa →**](frontend-projects/)
 
 ---
 
@@ -202,20 +72,32 @@ Workflow versionado para validar programas COBOL executáveis com **GnuCOBOL** e
 
 <div align="center">
 
-![COBOL](https://img.shields.io/badge/COBOL-Mainframe-005CA5?style=flat-square)
-![JCL](https://img.shields.io/badge/JCL-Batch-6E7781?style=flat-square)
-![DB2](https://img.shields.io/badge/DB2-SQL-0F62FE?style=flat-square)
-![CICS](https://img.shields.io/badge/CICS-Online-8A3FFC?style=flat-square)
-![VSAM](https://img.shields.io/badge/VSAM-KSDS-198038?style=flat-square)
-![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?style=flat-square&logo=git&logoColor=white)
-![Java](https://img.shields.io/badge/Java-Spring%20Boot-6DB33F?style=flat-square)
-![REST](https://img.shields.io/badge/REST-APIs-009688?style=flat-square)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 </div>
 
-**Mainframe:** COBOL · JCL · DB2/SQL · CICS concepts · COMMAREA · VSAM concepts · KSDS · IDCAMS · DFSORT · Batch · Restart/Recovery  
-**Modernização:** Git · CI/CD concepts · Zowe concepts · Application Discovery · AI-assisted analysis · Java · Spring Boot · REST APIs  
-**Engenharia:** GitHub · GitHub Actions · testes · troubleshooting · RCA · documentação técnica
+**Fundamentos:** HTML semântico · CSS Grid · Flexbox · mobile-first · responsividade · acessibilidade  
+**JavaScript:** ES6+ · DOM · eventos · arrays · objetos · Fetch API · async/await · LocalStorage  
+**Front-End moderno:** React · TypeScript · React Router · Next.js · Tailwind CSS  
+**Dados e estado:** REST APIs · Axios · TanStack Query · Redux Toolkit  
+**Qualidade:** Git · GitHub · componentes reutilizáveis · Vitest · React Testing Library
+
+---
+
+## 💼 Por que meu background profissional ajuda no Front-End
+
+Minha experiência no mercado financeiro fortaleceu habilidades que também são importantes em desenvolvimento:
+
+`visão de negócio` · `entendimento de requisitos` · `comunicação` · `atenção a detalhes` · `análise de problemas` · `priorização` · `responsabilidade com entregas` · `foco no usuário`
+
+Hoje aplico essa experiência na construção de interfaces e produtos web, buscando unir **boa experiência do usuário, código organizado e entendimento do problema que precisa ser resolvido**.
 
 ---
 
@@ -229,11 +111,11 @@ Workflow versionado para validar programas COBOL executáveis com **GnuCOBOL** e
 
 <div align="center">
 
-### COBOL • Mainframe • Banking Technology • Application Support
+### Front-End Developer • React • TypeScript • JavaScript
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
 [![Email](https://img.shields.io/badge/Email-Falar%20comigo-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white)](mailto:dfernandom@outlook.com)
 
-**Open to Work:** COBOL Developer · Mainframe Developer · Analista Mainframe · Systems Analyst · Application Support / Production Support
+**Open to Work:** Front-End Developer Júnior · Web Developer · React Developer Júnior
 
 </div>
