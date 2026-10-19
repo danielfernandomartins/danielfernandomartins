@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dev City Character Lab: seletor acessível de personagens com transformação opcional de foto usando IA no navegador." />
+  <meta name="theme-color" content="#070b12" />
+  <title>Dev City Character Lab — Front-End + IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://js.puter.com/v2/" defer></script>
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <main id="conteudo" class="app-shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">DEV CITY • CHARACTER LAB</p>
+        <h1 id="hero-title">Não é só um jogo.<br />É sua identidade visual.</h1>
+        <p class="support-copy">Escolha um personagem original ou envie uma foto para experimentar uma transformação visual com IA.</p>
+      </div>
+
+      <div class="stage" aria-live="polite">
+        <p class="character-name" data-character-name>Ava</p>
+        <img class="character-art" data-character-art alt="Personagem Ava, selecionada" />
+        <div class="stage-glow" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="controls" aria-labelledby="selector-title">
+      <div>
+        <p class="eyebrow">ESCOLHA RÁPIDA</p>
+        <h2 id="selector-title">Selecione seu personagem</h2>
+      </div>
+
+      <div class="character-picker" role="list" aria-label="Personagens disponíveis">
+        <button class="avatar-button is-active" type="button" data-character="ava" aria-pressed="true">
+          <span class="avatar-preview avatar-ava" aria-hidden="true">A</span>
+          <span>Ava</span>
+        </button>
+        <button class="avatar-button" type="button" data-character="rio" aria-pressed="false">
+          <span class="avatar-preview avatar-rio" aria-hidden="true">R</span>
+          <span>Rio</span>
+        </button>
+        <button class="avatar-button" type="button" data-character="neo" aria-pressed="false">
+          <span class="avatar-preview avatar-neo" aria-hidden="true">N</span>
+          <span>Neo</span>
+        </button>
+      </div>
+
+      <div class="ai-card">
+        <div>
+          <p class="eyebrow">MODO IA</p>
+          <h2>Transforme sua foto</h2>
+          <p>PNG, JPG ou WEBP de até 8 MB. A imagem é enviada ao serviço de IA somente após sua escolha.</p>
+        </div>
+
+        <label class="upload-button" for="photo-input">
+          <span aria-hidden="true">📸</span>
+          <span data-upload-label>Escolher foto</span>
+        </label>
+        <input id="photo-input" class="visually-hidden" type="file" accept="image/png,image/jpeg,image/webp" />
+
+        <p class="privacy-note">Privacidade: o processamento por IA depende do serviço Puter.js e pode exigir autenticação/créditos do usuário.</p>
+        <p class="status" data-status role="status" aria-live="polite">Pronto para começar.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Projeto de portfólio • HTML semântico • CSS responsivo • JavaScript • IA opcional</p>
+  </footer>
+</body>
+</html>
