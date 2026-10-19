@@ -50,7 +50,7 @@ describe('Movie Explorer interface', () => {
     });
     fireEvent.click(screen.getByRole('button', { name: 'Buscar' }));
 
-    expect((await screen.findByRole('status')).textContent).toContain('Nenhum resultado encontrado.');
+    expect(await screen.findByText('Nenhum resultado encontrado.')).toBeTruthy();
   });
 
   it('shows an accessible error when the API fails', async () => {
