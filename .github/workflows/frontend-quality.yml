@@ -59,11 +59,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm install --no-audit --no-fund
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then npm ci --no-audit --no-fund; else npm install --no-audit --no-fund; fi
       - name: TypeScript strict check
-        if: matrix.project != '06-next-portfolio-blog'
-        run: npx tsc --noEmit
-      - run: npm run build
+        run: npm run typecheck
+      - name: Production build
+        run: npm run build
       - name: Unit tests
-        if: matrix.project == '10-tested-cart'
-        run: npm test
+        run: npm test --if-present
