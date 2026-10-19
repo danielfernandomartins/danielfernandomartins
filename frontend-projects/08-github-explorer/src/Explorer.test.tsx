@@ -49,9 +49,13 @@ describe('GitHub Explorer interface', () => {
 
     expect(await screen.findByRole('heading', { name: 'Daniel Fernando Martins' })).toBeTruthy();
     expect(screen.getByText('Front-End Developer')).toBeTruthy();
-    expect(screen.getByRole('link', { name: 'Abrir perfil →' }).getAttribute('href')).toBe(
-      'https://github.com/danielfernandomartins',
-    );
+    expect(
+      screen
+        .getByRole('link', {
+          name: 'Abrir perfil de danielfernandomartins em nova aba →',
+        })
+        .getAttribute('href'),
+    ).toBe('https://github.com/danielfernandomartins');
   });
 
   it('submits another username and renders the new result', async () => {
