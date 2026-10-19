@@ -31,7 +31,9 @@ describe('TaskFlow interface', () => {
       target: { value: 'Praticar React' },
     });
     fireEvent.click(screen.getByRole('button', { name: 'Adicionar' }));
-    fireEvent.click(screen.getByRole('checkbox', { name: 'Concluir Praticar React' }));
+    fireEvent.click(
+      screen.getByRole('checkbox', { name: 'Marcar como concluída: Praticar React' }),
+    );
 
     expect(screen.getByText('1/1 concluídas')).toBeTruthy();
 
@@ -48,7 +50,9 @@ describe('TaskFlow interface', () => {
       target: { value: 'Remover depois' },
     });
     fireEvent.click(screen.getByRole('button', { name: 'Adicionar' }));
-    fireEvent.click(screen.getByRole('button', { name: 'Excluir Remover depois' }));
+    fireEvent.click(
+      screen.getByRole('button', { name: 'Excluir tarefa: Remover depois' }),
+    );
 
     expect(screen.queryByText('Remover depois')).toBeNull();
     expect(screen.getByText('0/0 concluídas')).toBeTruthy();
