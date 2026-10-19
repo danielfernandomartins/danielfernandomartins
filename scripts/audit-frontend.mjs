@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import { spawnSync } from 'node:child_process';
 
 const expected = [
   '01-accessible-saas-landing',
@@ -81,7 +82,14 @@ for (const file of requiredFlagshipFiles) {
 }
 
 const aiProject = 'frontend-projects/11-dev-city-ai-character';
-for (const required of [`${aiProject}/index.html`, `${aiProject}/styles.css`, `${aiProject}/scripts.js`, `${aiProject}/README.md`]) {
+for (const required of [
+  `${aiProject}/index.html`,
+  `${aiProject}/styles.css`,
+  `${aiProject}/scripts.js`,
+  `${aiProject}/domain.mjs`,
+  `${aiProject}/domain.test.mjs`,
+  `${aiProject}/README.md`,
+]) {
   if (!exists(required)) failures.push(`Projeto IA incompleto: ${required}`);
 }
 if (exists(`${aiProject}/index.html`)) {
@@ -90,12 +98,20 @@ if (exists(`${aiProject}/index.html`)) {
   if (!html.includes('name="description"')) failures.push('Dev City: meta description ausente');
   if (!html.includes('Pular para o conteúdo')) failures.push('Dev City: skip link ausente');
   if (!html.includes('aria-live')) failures.push('Dev City: região dinâmica acessível ausente');
+  if (!html.includes('type="module"')) failures.push('Dev City: JavaScript modular ausente');
   if (html.includes('onclick=')) failures.push('Dev City: handler inline voltou ao HTML');
 }
 if (exists(`${aiProject}/scripts.js`)) {
   const script = read(`${aiProject}/scripts.js`);
-  if (!script.includes('validateImage')) failures.push('Dev City: validação de upload ausente');
+  if (!script.includes('validateImageMeta')) failures.push('Dev City: validação de upload ausente');
   if (!script.includes('try {') || !script.includes('catch')) failures.push('Dev City: tratamento de erro assíncrono ausente');
+}
+
+if (exists(`${aiProject}/domain.test.mjs`)) {
+  const result = spawnSync(process.execPath, ['--test', `${aiProject}/domain.test.mjs`], { encoding: 'utf8' });
+  if (result.status !== 0) {
+    failures.push(`Dev City: testes falharam\n${result.stdout}${result.stderr}`);
+  }
 }
 
 const profile = read('README.md');
