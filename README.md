@@ -27,7 +27,11 @@ Trago também **+20 anos de experiência no mercado financeiro**, o que fortalec
 
 <div align="center">
 
+[![Front-End Portfolio Quality](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/frontend-quality.yml/badge.svg)](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/frontend-quality.yml)
+
 `HTML5` `CSS3` `JavaScript` `TypeScript` `React` `Next.js` `Tailwind CSS` `REST APIs` `Git` `Testing`
+
+[**Recruiter Brief**](RECRUITER-BRIEF.md) · [**10 camadas de auditoria**](audit/FRONTEND-PORTFOLIO-AUDIT.md) · [**Padrão de qualidade**](frontend-projects/PROJECT-STANDARDS.md)
 
 </div>
 
@@ -87,7 +91,7 @@ Esta vitrine foi organizada para demonstrar exatamente os pontos mais cobrados e
 **JavaScript:** ES6+ · DOM · eventos · arrays · objetos · Fetch API · async/await · LocalStorage  
 **Front-End moderno:** React · TypeScript · React Router · Next.js · Tailwind CSS  
 **Dados e estado:** REST APIs · Axios · TanStack Query · Redux Toolkit  
-**Qualidade:** Git · GitHub · componentes reutilizáveis · Vitest · React Testing Library
+**Qualidade:** Git · GitHub · componentes reutilizáveis · Vitest · React Testing Library · CI automatizado
 
 ---
 
