@@ -1,1 +1,5 @@
-{"scripts":{"dev":"vite","build":"vite build"},"dependencies":{"react":"latest","react-dom":"latest","react-hook-form":"latest","zod":"latest","@hookform/resolvers":"latest"},"devDependencies":{"@vitejs/plugin-react":"latest","vite":"latest","typescript":"latest","@types/react":"latest","@types/react-dom":"latest"}}
+{
+  "scripts": {"dev":"vite","build":"vite build","typecheck":"tsc --noEmit"},
+  "dependencies": {"react":"19.3.1","react-dom":"19.3.1","react-hook-form":"7.90.0","zod":"4.6.7","@hookform/resolvers":"5.9.2"},
+  "devDependencies": {"@vitejs/plugin-react":"6.1.2","vite":"8.3.4","typescript":"7.0.2","@types/react":"19.3.0","@types/react-dom":"19.3.0"}
+}
