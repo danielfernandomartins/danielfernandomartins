@@ -63,8 +63,8 @@ jobs:
         run: |
           if [ -f package-lock.json ]; then npm ci --no-audit --no-fund; else npm install --no-audit --no-fund; fi
       - name: TypeScript strict check
-        if: matrix.project != '06-next-portfolio-blog'
-        run: npm run typecheck --if-present || npx tsc --noEmit
-      - run: npm run build
+        run: npm run typecheck
+      - name: Production build
+        run: npm run build
       - name: Unit tests
         run: npm test --if-present
