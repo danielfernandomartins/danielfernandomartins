@@ -85,9 +85,15 @@ for (const project of lintedProjects) {
   }
 }
 
+const taskflowPackage = JSON.parse(read('frontend-projects/02-taskflow-react-ts/package.json'));
+if (!taskflowPackage.scripts?.['test:e2e']) failures.push('TaskFlow: script E2E ausente');
+if (!taskflowPackage.devDependencies?.['@playwright/test']) failures.push('TaskFlow: Playwright ausente');
+
 const requiredEvidenceFiles = [
   'frontend-projects/02-taskflow-react-ts/src/task-utils.test.ts',
   'frontend-projects/02-taskflow-react-ts/src/App.test.tsx',
+  'frontend-projects/02-taskflow-react-ts/playwright.config.ts',
+  'frontend-projects/02-taskflow-react-ts/e2e/taskflow.spec.ts',
   'frontend-projects/03-movie-explorer/src/api.test.ts',
   'frontend-projects/03-movie-explorer/src/App.test.tsx',
   'frontend-projects/05-finance-dashboard/src/store.test.ts',
@@ -168,5 +174,5 @@ if (failures.length) {
 }
 
 console.log(
-  `AUDITORIA OK: ${expected.length} projetos, dependências diretas sem latest, ESM nos apps Vite, metadados, typecheck, lint, testes de domínio e comportamento, acessibilidade, projeto IA e isolamento do legado validados.`,
+  `AUDITORIA OK: ${expected.length} projetos, dependências diretas sem latest, ESM nos apps Vite, metadados, typecheck, lint, testes de domínio/comportamento/E2E, acessibilidade, projeto IA e isolamento do legado validados.`,
 );
