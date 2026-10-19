@@ -1,1 +1,1 @@
-{"scripts":{"dev":"vite","build":"tsc -b && vite build"},"dependencies":{"@vitejs/plugin-react":"latest","vite":"latest","typescript":"latest","react":"latest","react-dom":"latest","@reduxjs/toolkit":"latest","react-redux":"latest"},"devDependencies":{}}
+{"scripts":{"dev":"vite","build":"vite build"},"dependencies":{"react":"latest","react-dom":"latest","@reduxjs/toolkit":"latest","react-redux":"latest"},"devDependencies":{"@vitejs/plugin-react":"latest","vite":"latest","typescript":"latest","@types/react":"latest","@types/react-dom":"latest"}}
