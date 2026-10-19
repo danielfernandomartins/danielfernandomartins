@@ -75,6 +75,16 @@ O workflow **Front-End Portfolio Quality** valida automaticamente a estrutura do
 
 ---
 
+## Caderno técnico Front-End — 2026
+
+Além dos projetos, mantenho um conjunto de notas autorais baseadas em documentação oficial para registrar decisões e mudanças relevantes do ecossistema.
+
+[**Abrir Front-End Notes →**](frontend-notes/)
+
+**Temas atuais:** React 19.3 · Next.js 16.x · TypeScript 6.0 · Core Web Vitals · WCAG 2.2 · Web Platform Baseline
+
+---
+
 ## Projetos complementares
 
 <details>
