@@ -1,31 +1,10 @@
+import { createAvatarDataUrl, getGeneratedImageSource, validateImageMeta } from './domain.mjs';
+
 const characters = {
   ava: { name: 'Ava', accent: '#ff3cac', initials: 'AVA', colors: ['#ff3cac', '#f8a5ff'] },
   rio: { name: 'Rio', accent: '#00b2c9', initials: 'RIO', colors: ['#00b2c9', '#8ef1ff'] },
   neo: { name: 'Neo', accent: '#7ed37e', initials: 'NEO', colors: ['#7ed37e', '#e2ff91'] },
 };
-
-const MAX_FILE_SIZE = 8 * 1024 * 1024;
-const ACCEPTED_TYPES = new Set(['image/png', 'image/jpeg', 'image/webp']);
-
-function createAvatarDataUrl({ initials, colors }) {
-  const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" role="img">
-      <defs>
-        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stop-color="${colors[0]}"/>
-          <stop offset="1" stop-color="${colors[1]}"/>
-        </linearGradient>
-      </defs>
-      <circle cx="300" cy="235" r="128" fill="url(#bg)"/>
-      <path d="M92 742c18-184 96-285 208-285s190 101 208 285" fill="url(#bg)"/>
-      <circle cx="255" cy="222" r="12" fill="#071018"/>
-      <circle cx="345" cy="222" r="12" fill="#071018"/>
-      <path d="M250 294c28 20 72 20 100 0" fill="none" stroke="#071018" stroke-width="12" stroke-linecap="round"/>
-      <text x="300" y="665" text-anchor="middle" fill="#071018" font-family="Arial, sans-serif" font-size="74" font-weight="800">${initials}</text>
-    </svg>`;
-
-  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
-}
 
 function readFileAsDataUrl(file) {
   return new Promise((resolve, reject) => {
@@ -34,19 +13,6 @@ function readFileAsDataUrl(file) {
     reader.addEventListener('error', () => reject(new Error('Não foi possível ler a imagem selecionada.')));
     reader.readAsDataURL(file);
   });
-}
-
-function getGeneratedImageSource(result) {
-  if (typeof result === 'string') return result;
-  if (result && typeof result === 'object' && 'src' in result && typeof result.src === 'string') return result.src;
-  throw new Error('O serviço de IA retornou uma resposta inesperada.');
-}
-
-function validateImage(file) {
-  if (!file) return 'Nenhum arquivo foi selecionado.';
-  if (!ACCEPTED_TYPES.has(file.type)) return 'Use uma imagem PNG, JPG ou WEBP.';
-  if (file.size > MAX_FILE_SIZE) return 'A imagem deve ter no máximo 8 MB.';
-  return null;
 }
 
 function init() {
@@ -90,7 +56,7 @@ function init() {
   }
 
   async function transformPhoto(file) {
-    const validationError = validateImage(file);
+    const validationError = validateImageMeta(file);
     if (validationError) {
       setStatus(validationError, 'error');
       return;
