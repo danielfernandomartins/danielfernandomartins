@@ -29,10 +29,10 @@ export function App() {
       </header>
 
       <section className="panel" aria-labelledby="taskflow-panel-title">
-        <h2 id="taskflow-panel-title">Gerenciador de tarefas</h2>
+        <h2 id="taskflow-panel-title" className="visually-hidden">Gerenciador de tarefas</h2>
 
         <form onSubmit={handleSubmit}>
-          <label htmlFor="new-task">Nova tarefa</label>
+          <label htmlFor="new-task" className="visually-hidden">Nova tarefa</label>
           <input id="new-task" name="task" placeholder="Ex.: revisar pull request" autoComplete="off" />
           <button type="submit">Adicionar</button>
         </form>
