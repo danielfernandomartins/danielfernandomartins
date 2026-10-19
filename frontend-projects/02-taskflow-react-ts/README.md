@@ -1,6 +1,6 @@
 # TaskFlow — React + TypeScript
 
-Gerenciador de tarefas construído para demonstrar fundamentos de React com tipagem, estado local, filtros, persistência e testes em duas camadas: domínio e comportamento da interface.
+Gerenciador de tarefas construído para demonstrar fundamentos de React com tipagem, estado local, filtros, persistência e testes em três camadas: domínio, comportamento da interface e navegador real.
 
 ## Problema que resolve
 Organizar tarefas de forma simples, permitindo criar, concluir, excluir e filtrar itens sem perder os dados ao recarregar a página.
@@ -13,13 +13,22 @@ Organizar tarefas de forma simples, permitindo criar, concluir, excluir e filtra
 - persistência segura com `LocalStorage`;
 - interface responsiva e controles acessíveis;
 - testes unitários das regras de domínio;
-- testes React Testing Library para criar, concluir, filtrar e remover tarefas.
+- testes React Testing Library para criar, concluir, filtrar e remover tarefas;
+- Playwright E2E em Chromium para validar fluxo completo e persistência após reload.
+
+## Estratégia de testes
+
+**Domínio:** regras puras de criação, contagem e filtros.  
+**Integração/UI:** eventos e estados observados pelo usuário no jsdom.  
+**E2E:** navegador real executando o build de produção, criando/concluindo/filtrando tarefas e validando LocalStorage após recarregar a página.
+
+Cada camada cobre um tipo diferente de risco; o E2E não substitui os testes mais rápidos e isolados.
 
 ## Decisões técnicas
-O estado permanece local porque o domínio é pequeno. A persistência fica isolada no hook e tolera storage indisponível ou dados inválidos. Os testes de domínio validam regras puras; os testes de interface exercitam o fluxo que o usuário realmente percorre, usando roles e labels em vez de detalhes internos.
+O estado permanece local porque o domínio é pequeno. A persistência fica isolada no hook e tolera storage indisponível ou dados inválidos. Os testes de domínio validam regras puras; os testes de interface exercitam o React; o Playwright valida o comportamento conectado no navegador real usando roles e labels acessíveis.
 
 ## Stack
-React · TypeScript · Vite · LocalStorage · Vitest · React Testing Library · jsdom · ESLint
+React · TypeScript · Vite · LocalStorage · Vitest · React Testing Library · Playwright · jsdom · ESLint
 
 ## Como executar
 ```bash
@@ -33,6 +42,7 @@ npm run lint
 npm run typecheck
 npm test
 npm run build
+npm run test:e2e
 ```
 
-Este projeto faz parte da trilha Front-End Job Ready e é validado pelo workflow de qualidade do portfólio.
+O CI instala Chromium e executa o fluxo E2E em um job dedicado, separado da matriz de testes unitários.
