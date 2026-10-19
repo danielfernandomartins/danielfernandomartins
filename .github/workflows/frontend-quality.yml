@@ -76,3 +76,25 @@ jobs:
         run: npm run build
       - name: Unit tests
         run: npm test --if-present
+
+  e2e-taskflow:
+    name: E2E TaskFlow (Chromium)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: frontend-projects/02-taskflow-react-ts
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then npm ci --no-audit --no-fund; else npm install --no-audit --no-fund; fi
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Production build
+        run: npm run build
+      - name: Browser end-to-end tests
+        run: npm run test:e2e
