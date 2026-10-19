@@ -50,7 +50,7 @@ describe('Movie Explorer interface', () => {
     });
     fireEvent.click(screen.getByRole('button', { name: 'Buscar' }));
 
-    expect(await screen.findByRole('status')).toHaveTextContent('Nenhum resultado encontrado.');
+    expect((await screen.findByRole('status')).textContent).toContain('Nenhum resultado encontrado.');
   });
 
   it('shows an accessible error when the API fails', async () => {
@@ -63,6 +63,8 @@ describe('Movie Explorer interface', () => {
     });
     fireEvent.click(screen.getByRole('button', { name: 'Buscar' }));
 
-    expect(await screen.findByRole('alert')).toHaveTextContent('Não foi possível carregar os resultados. Tente novamente.');
+    expect((await screen.findByRole('alert')).textContent).toContain(
+      'Não foi possível carregar os resultados. Tente novamente.',
+    );
   });
 });
