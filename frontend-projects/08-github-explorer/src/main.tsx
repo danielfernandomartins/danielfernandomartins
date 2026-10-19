@@ -1,1 +1,9 @@
-import React,{FormEvent,useState}from'react';import{createRoot}from'react-dom/client';import axios from'axios';import{QueryClient,QueryClientProvider,useQuery}from'@tanstack/react-query';import'./style.css';const qc=new QueryClient();type User={login:string,name:string|null,avatar_url:string,bio:string|null,public_repos:number,followers:number,html_url:string};function Explorer(){const[input,setInput]=useState('danielfernandomartins');const[user,setUser]=useState('danielfernandomartins');const q=useQuery<User>({queryKey:['github-user',user],queryFn:async()=>{const{data}=await axios.get(`https://api.github.com/users/${user}`);return data},retry:1});function submit(e:FormEvent){e.preventDefault();if(input.trim())setUser(input.trim())}return <main><h1>GitHub Explorer</h1><p>Axios + TanStack Query + cache</p><form onSubmit={submit}><input value={input} onChange={e=>setInput(e.target.value)} placeholder="Usuário do GitHub"/><button>Buscar</button></form>{q.isLoading&&<div className="card">Carregando...</div>}{q.isError&&<div className="card error">Usuário não encontrado.</div>}{q.data&&<article className="card"><img src={q.data.avatar_url} alt=""/><div><h2>{q.data.name||q.data.login}</h2><p>{q.data.bio||'Sem bio pública.'}</p><div className="stats"><span><b>{q.data.public_repos}</b> repositórios</span><span><b>{q.data.followers}</b> seguidores</span></div><a href={q.data.html_url} target="_blank">Abrir perfil →</a></div></article>}</main>}function App(){return <QueryClientProvider client={qc}><Explorer/></QueryClientProvider>}createRoot(document.getElementById('root')!).render(<App/>);
+import React from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { createRoot } from 'react-dom/client';
+import { Explorer } from './Explorer';
+import './style.css';
+
+const queryClient = new QueryClient({ defaultOptions: { queries: { refetchOnWindowFocus: false } } });
+
+createRoot(document.getElementById('root')!).render(<React.StrictMode><QueryClientProvider client={queryClient}><Explorer /></QueryClientProvider></React.StrictMode>);

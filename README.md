@@ -15,7 +15,7 @@ Sou **Desenvolvedor Front-End freelancer** em evolução contínua para atuar em
 
 Trago também **+20 anos de experiência no mercado financeiro**, o que fortaleceu minha visão de negócio, análise de problemas, comunicação com usuários, atenção a detalhes e responsabilidade com entregas.
 
-**Objetivo:** primeira oportunidade formal como **Desenvolvedor Front-End Júnior / Web Developer**, contribuindo em projetos reais e evoluindo tecnicamente em equipe.
+**Objetivo:** primeira oportunidade formal como **Desenvolvedor Front-End Júnior / Web Developer**.
 
 [![Open to Work](https://img.shields.io/badge/OPEN%20TO%20WORK-FRONT--END-2EA44F?style=for-the-badge)](https://github.com/danielfernandomartins)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
@@ -27,7 +27,11 @@ Trago também **+20 anos de experiência no mercado financeiro**, o que fortalec
 
 <div align="center">
 
-`HTML5` `CSS3` `JavaScript` `TypeScript` `React` `Next.js` `Tailwind CSS` `REST APIs` `Git` `Testing`
+[![Front-End Portfolio Quality](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/frontend-quality.yml/badge.svg)](https://github.com/danielfernandomartins/danielfernandomartins/actions/workflows/frontend-quality.yml)
+
+`HTML5` `CSS3` `JavaScript` `TypeScript` `React` `Next.js` `REST APIs` `Git` `Testing`
+
+[**Recruiter Brief**](RECRUITER-BRIEF.md) · [**Guia de entrevista**](FRONTEND-INTERVIEW-GUIDE.md) · [**Auditoria 110 critérios**](audit/RECRUITER-110-CHECKLIST.md) · [**Padrão dos projetos**](frontend-projects/PROJECT-STANDARDS.md)
 
 </div>
 
@@ -39,65 +43,62 @@ Trago também **+20 anos de experiência no mercado financeiro**, o que fortalec
 |---|---|
 | **Posicionamento** | Front-End Developer Júnior com foco em React + TypeScript |
 | **Base técnica** | HTML, CSS, JavaScript, responsividade, DOM e consumo de APIs |
-| **Stack em evolução** | React, TypeScript, Next.js, Tailwind, testes e estado global |
+| **Stack em evolução** | React, TypeScript, React Router, Next.js, Tailwind, testes e estado global |
 | **Diferencial** | Experiência sólida de negócio + visão de usuário + comunicação + resolução de problemas |
-| **Objetivo** | Primeira oportunidade formal em desenvolvimento Front-End |
+| **Qualidade** | Projetos submetidos a build, TypeScript strict, auditoria estrutural e testes automatizados via GitHub Actions |
 
 > **Meu foco é transformar necessidades de negócio em interfaces simples, responsivas, acessíveis e fáceis de usar.**
 
 ---
 
-## 🚀 Front-End Job Ready — projetos em destaque
+# ⭐ 4 projetos que eu defenderia em uma entrevista
 
-Esta vitrine foi organizada para demonstrar exatamente os pontos mais cobrados em vagas Front-End Júnior.
+Estes são os projetos que melhor representam meu nível atual e minhas competências para uma primeira oportunidade Front-End.
 
-| Projeto | O que demonstra | Stack |
+| Projeto | Competência principal | Stack |
 |---|---|---|
-| [**Accessible SaaS Landing**](frontend-projects/01-accessible-saas-landing/) | HTML semântico, responsividade e acessibilidade | HTML · CSS · JavaScript |
-| [**TaskFlow**](frontend-projects/02-taskflow-react-ts/) | Componentes, hooks, tipagem e persistência | React · TypeScript · LocalStorage |
-| [**Movie Explorer**](frontend-projects/03-movie-explorer/) | Consumo de API e estados assíncronos | React · TypeScript · Fetch API |
-| [**Job Tracker**](frontend-projects/04-job-tracker/) | Rotas e formulários | React Router · TypeScript |
-| [**Finance Dashboard**](frontend-projects/05-finance-dashboard/) | Estado global e arquitetura de estado | Redux Toolkit |
-| [**Dev Portfolio Blog**](frontend-projects/06-next-portfolio-blog/) | App Router, SEO e estrutura moderna | Next.js · TypeScript |
-| [**CRM Dashboard**](frontend-projects/07-crm-tailwind/) | UI moderna e componentização | React · Tailwind CSS |
-| [**GitHub Explorer**](frontend-projects/08-github-explorer/) | Cache, requisições e API REST | Axios · TanStack Query |
-| [**Smart Signup**](frontend-projects/09-smart-signup/) | Validação de formulário tipada | React Hook Form · Zod |
-| [**Tested Cart**](frontend-projects/10-tested-cart/) | Qualidade e testes automatizados | Vitest · React Testing Library |
+| [**TaskFlow**](frontend-projects/02-taskflow-react-ts/) | componentes, hooks, tipagem, filtros e persistência | React · TypeScript · LocalStorage |
+| [**Movie Explorer**](frontend-projects/03-movie-explorer/) | API REST, async/await, loading, erro e renderização de dados | React · TypeScript · Fetch API |
+| [**Finance Dashboard**](frontend-projects/05-finance-dashboard/) | estado global, dados derivados e fluxo financeiro | React · TypeScript · Redux Toolkit |
+| [**GitHub Explorer**](frontend-projects/08-github-explorer/) | requisições, cache e gerenciamento de estado assíncrono | React · TypeScript · Axios · TanStack Query |
 
-[**📂 Ver trilha Front-End completa →**](frontend-projects/)
+**O que procuro demonstrar aqui:** fundamentos bem entendidos, código tipado, tratamento de estados reais de interface, organização e capacidade de explicar decisões técnicas.
 
 ---
 
-## 🛠️ Stack
+## 🧪 Laboratório Front-End — competências complementares
 
-<div align="center">
+Os projetos abaixo complementam a trilha e demonstram tecnologias específicas sem competir com os quatro projetos principais.
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+| Projeto | Competência | Stack |
+|---|---|---|
+| [Accessible SaaS Landing](frontend-projects/01-accessible-saas-landing/) | semântica, responsividade e acessibilidade | HTML · CSS · JavaScript |
+| [Job Tracker](frontend-projects/04-job-tracker/) | rotas e formulários | React Router · TypeScript |
+| [Dev Portfolio Blog](frontend-projects/06-next-portfolio-blog/) | App Router e estrutura moderna | Next.js · TypeScript |
+| [CRM Dashboard](frontend-projects/07-crm-tailwind/) | UI e componentização | React · Tailwind CSS |
+| [Smart Signup](frontend-projects/09-smart-signup/) | validação tipada | React Hook Form · Zod |
+| [Tested Cart](frontend-projects/10-tested-cart/) | testes de comportamento | Vitest · React Testing Library |
 
-</div>
+[**📂 Ver os 10 projetos →**](frontend-projects/)
+
+---
+
+## 🛠️ Competências técnicas demonstradas
 
 **Fundamentos:** HTML semântico · CSS Grid · Flexbox · mobile-first · responsividade · acessibilidade  
 **JavaScript:** ES6+ · DOM · eventos · arrays · objetos · Fetch API · async/await · LocalStorage  
-**Front-End moderno:** React · TypeScript · React Router · Next.js · Tailwind CSS  
+**React:** componentes · props · estado · hooks · formulários · rotas · renderização condicional  
+**TypeScript:** tipos, unions, interfaces e checagem strict  
 **Dados e estado:** REST APIs · Axios · TanStack Query · Redux Toolkit  
-**Qualidade:** Git · GitHub · componentes reutilizáveis · Vitest · React Testing Library
+**Qualidade:** Git · GitHub · Vitest · React Testing Library · CI automatizado
 
 ---
 
-## 💼 Por que meu background profissional ajuda no Front-End
+## 💼 Experiência de negócio como diferencial
 
-Minha experiência no mercado financeiro fortaleceu habilidades que também são importantes em desenvolvimento:
+Minha trajetória no mercado financeiro desenvolveu habilidades que aplico diretamente em tecnologia: entendimento de requisitos, comunicação com áreas de negócio, atenção a detalhes, análise de problemas, priorização, responsabilidade com entregas e foco no usuário.
 
-`visão de negócio` · `entendimento de requisitos` · `comunicação` · `atenção a detalhes` · `análise de problemas` · `priorização` · `responsabilidade com entregas` · `foco no usuário`
-
-Hoje aplico essa experiência na construção de interfaces e produtos web, buscando unir **boa experiência do usuário, código organizado e entendimento do problema que precisa ser resolvido**.
+Não apresento projetos de estudo como experiência produtiva. O objetivo deste GitHub é mostrar **o que consigo construir, explicar e evoluir tecnicamente hoje**.
 
 ---
 
