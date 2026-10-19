@@ -1,6 +1,6 @@
 # TaskFlow — React + TypeScript
 
-Gerenciador de tarefas construído para demonstrar fundamentos de React com tipagem, estado local, filtros e persistência no navegador.
+Gerenciador de tarefas construído para demonstrar fundamentos de React com tipagem, estado local, filtros, persistência e testes em duas camadas: domínio e comportamento da interface.
 
 ## Problema que resolve
 Organizar tarefas de forma simples, permitindo criar, concluir, excluir e filtrar itens sem perder os dados ao recarregar a página.
@@ -10,15 +10,16 @@ Organizar tarefas de forma simples, permitindo criar, concluir, excluir e filtra
 - `useState`, `useEffect` e `useMemo`;
 - tipagem de entidades com TypeScript;
 - filtros derivados do estado;
-- persistência com `LocalStorage`;
-- formulário controlado pelo fluxo do React;
-- interface responsiva.
+- persistência segura com `LocalStorage`;
+- interface responsiva e controles acessíveis;
+- testes unitários das regras de domínio;
+- testes React Testing Library para criar, concluir, filtrar e remover tarefas.
 
 ## Decisões técnicas
-O estado permanece local porque o domínio é pequeno. A persistência foi isolada em efeito para manter a UI sincronizada com o navegador. `useMemo` é usado para deixar explícita a derivação da lista filtrada.
+O estado permanece local porque o domínio é pequeno. A persistência fica isolada no hook e tolera storage indisponível ou dados inválidos. Os testes de domínio validam regras puras; os testes de interface exercitam o fluxo que o usuário realmente percorre, usando roles e labels em vez de detalhes internos.
 
 ## Stack
-React · TypeScript · Vite · LocalStorage
+React · TypeScript · Vite · LocalStorage · Vitest · React Testing Library · jsdom · ESLint
 
 ## Como executar
 ```bash
@@ -28,7 +29,9 @@ npm run dev
 
 ## Validação
 ```bash
-npx tsc --noEmit
+npm run lint
+npm run typecheck
+npm test
 npm run build
 ```
 

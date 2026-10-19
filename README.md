@@ -45,7 +45,7 @@ Trago também **+20 anos de experiência no mercado financeiro**, o que fortalec
 | **Base técnica** | HTML, CSS, JavaScript, responsividade, DOM e consumo de APIs |
 | **Stack em evolução** | React, TypeScript, React Router, Next.js, Tailwind, testes e estado global |
 | **Diferencial** | Experiência sólida de negócio + visão de usuário + comunicação + resolução de problemas |
-| **Qualidade** | ESLint em todos os apps TypeScript, TypeScript strict, builds, testes, auditoria estrutural e CI via GitHub Actions v7 |
+| **Qualidade** | ESLint em todos os apps TypeScript, TypeScript strict, testes de domínio/API/reducer e comportamento de UI, builds e CI via GitHub Actions v7 |
 
 > **Meu foco é transformar necessidades de negócio em interfaces simples, responsivas, acessíveis e fáceis de usar.**
 
@@ -57,10 +57,10 @@ Estes são os projetos que melhor representam meu nível atual e minhas competê
 
 | Projeto | Competência principal | Stack |
 |---|---|---|
-| [**TaskFlow**](frontend-projects/02-taskflow-react-ts/) | componentes, hooks, tipagem, filtros, persistência e testes de domínio | React · TypeScript · LocalStorage · Vitest |
-| [**Movie Explorer**](frontend-projects/03-movie-explorer/) | API REST, async/await, loading, erro e testes da camada HTTP | React · TypeScript · Fetch API · Vitest |
-| [**Finance Dashboard**](frontend-projects/05-finance-dashboard/) | estado global, dados derivados, fluxo financeiro e reducer testável | React · TypeScript · Redux Toolkit · Vitest |
-| [**GitHub Explorer**](frontend-projects/08-github-explorer/) | requisições, cache e gerenciamento de estado assíncrono | React · TypeScript · Axios · TanStack Query |
+| [**TaskFlow**](frontend-projects/02-taskflow-react-ts/) | hooks, persistência, filtros e testes de domínio + fluxo completo da UI | React · TypeScript · LocalStorage · Vitest · RTL |
+| [**Movie Explorer**](frontend-projects/03-movie-explorer/) | API REST, estados assíncronos e testes da camada HTTP + estados da UI | React · TypeScript · Fetch API · Vitest · RTL |
+| [**Finance Dashboard**](frontend-projects/05-finance-dashboard/) | estado global, dados derivados e testes de reducer + integração React/Redux | React · TypeScript · Redux Toolkit · Vitest · RTL |
+| [**GitHub Explorer**](frontend-projects/08-github-explorer/) | Axios, cache e testes da API + integração TanStack Query/UI | React · TypeScript · Axios · TanStack Query · Vitest · RTL |
 
 **O que procuro demonstrar aqui:** fundamentos bem entendidos, código tipado, estados reais de interface, organização, testes em decisões críticas e capacidade de explicar decisões técnicas.
 
@@ -98,7 +98,7 @@ O objetivo não é apenas “usar IA”, e sim mostrar que uma integração exte
 **Next.js:** App Router · rotas dinâmicas · `generateStaticParams` · metadata · `notFound`  
 **TypeScript:** tipos, unions, interfaces e checagem strict  
 **Dados e estado:** REST APIs · Axios · TanStack Query · Redux Toolkit  
-**Qualidade:** Git · GitHub · ESLint · Vitest · React Testing Library · CI automatizado · dependências versionadas  
+**Qualidade:** Git · GitHub · ESLint · Vitest · React Testing Library · testes de domínio e integração · CI automatizado · dependências versionadas  
 **Integrações:** upload de imagem · validação de entrada · estados assíncronos · IA opcional no navegador
 
 ---

@@ -53,11 +53,16 @@ for (const project of nodeProjects) {
 }
 
 for (const project of viteProjects) {
-  const htmlPath = `frontend-projects/${project}/index.html`;
+  const base = `frontend-projects/${project}`;
+  const htmlPath = `${base}/index.html`;
   if (!exists(htmlPath)) {
     failures.push(`index.html ausente: ${project}`);
     continue;
   }
+
+  const pkg = JSON.parse(read(`${base}/package.json`));
+  if (pkg.type !== 'module') failures.push(`${project}: package.json sem type=module`);
+
   const html = read(htmlPath);
   if (!html.includes('lang="pt-BR"')) failures.push(`${project}: idioma HTML ausente`);
   if (!html.includes('name="viewport"')) failures.push(`${project}: viewport ausente`);
@@ -82,10 +87,14 @@ for (const project of lintedProjects) {
 
 const requiredEvidenceFiles = [
   'frontend-projects/02-taskflow-react-ts/src/task-utils.test.ts',
+  'frontend-projects/02-taskflow-react-ts/src/App.test.tsx',
   'frontend-projects/03-movie-explorer/src/api.test.ts',
+  'frontend-projects/03-movie-explorer/src/App.test.tsx',
   'frontend-projects/05-finance-dashboard/src/store.test.ts',
+  'frontend-projects/05-finance-dashboard/src/App.test.tsx',
   'frontend-projects/06-next-portfolio-blog/app/content.test.ts',
   'frontend-projects/08-github-explorer/src/api.test.ts',
+  'frontend-projects/08-github-explorer/src/Explorer.test.tsx',
   'frontend-projects/08-github-explorer/src/Explorer.tsx',
   'frontend-projects/09-smart-signup/src/schema.ts',
   'frontend-projects/09-smart-signup/src/schema.test.ts',
@@ -159,5 +168,5 @@ if (failures.length) {
 }
 
 console.log(
-  `AUDITORIA OK: ${expected.length} projetos, dependências diretas sem latest, metadados, typecheck, testes, lint em todos os apps TypeScript, acessibilidade, projeto IA e isolamento do legado validados.`,
+  `AUDITORIA OK: ${expected.length} projetos, dependências diretas sem latest, ESM nos apps Vite, metadados, typecheck, lint, testes de domínio e comportamento, acessibilidade, projeto IA e isolamento do legado validados.`,
 );

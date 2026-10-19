@@ -20,30 +20,34 @@ Busco ambientes onde possa contribuir com interfaces responsivas, integração c
 
 ## Evidências principais no GitHub
 
-### 1. Fundamentos sólidos
+### 1. Quatro projetos principais com testes em camadas
+
+- [TaskFlow](frontend-projects/02-taskflow-react-ts/) — React, TypeScript, hooks e LocalStorage; testa regras de domínio e fluxos reais de criar, concluir, filtrar e remover tarefas;
+- [Movie Explorer](frontend-projects/03-movie-explorer/) — Fetch API e estados assíncronos; testa a camada HTTP e também resultado, vazio e erro na interface;
+- [Finance Dashboard](frontend-projects/05-finance-dashboard/) — Redux Toolkit e estado global; testa reducer e integração formulário → dispatch → store → resumo financeiro;
+- [GitHub Explorer](frontend-projects/08-github-explorer/) — Axios + TanStack Query; testa camada de API e integração de cache/consulta com a UI.
+
+Esses projetos demonstram que os testes não ficam restritos a funções isoladas: decisões críticas também são verificadas no comportamento que o usuário enxerga, com consultas por roles, labels e texto acessível.
+
+### 2. Fundamentos e produto
 
 - [Accessible SaaS Landing](frontend-projects/01-accessible-saas-landing/) — HTML semântico, CSS responsivo, JavaScript e acessibilidade;
-- [TaskFlow](frontend-projects/02-taskflow-react-ts/) — React, TypeScript, hooks, LocalStorage, lint e testes de domínio;
-- [Movie Explorer](frontend-projects/03-movie-explorer/) — Fetch API, async/await, loading, erro, lint e testes da camada HTTP.
-
-### 2. React aplicado a cenários de produto
-
-- [Job Tracker](frontend-projects/04-job-tracker/) — React Router, formulários e fluxo de navegação;
-- [Finance Dashboard](frontend-projects/05-finance-dashboard/) — Redux Toolkit, estado global, lint e reducer testável;
-- [CRM Dashboard](frontend-projects/07-crm-tailwind/) — React, componentização e Tailwind CSS.
+- [Job Tracker](frontend-projects/04-job-tracker/) — React Router, componentes estáveis, formulários tipados e fluxo de status;
+- [CRM Dashboard](frontend-projects/07-crm-tailwind/) — React, Tailwind, filtro funcional e tabela semântica;
+- [Smart Signup](frontend-projects/09-smart-signup/) — React Hook Form, schema Zod isolado, validação acessível e testes das regras;
+- [Tested Cart](frontend-projects/10-tested-cart/) — React Testing Library com testes orientados ao comportamento visível.
 
 ### 3. Ecossistema moderno
 
-- [Dev Portfolio Blog](frontend-projects/06-next-portfolio-blog/) — Next.js App Router, conteúdo tipado, metadata, lint e testes;
-- [GitHub Explorer](frontend-projects/08-github-explorer/) — Axios, TanStack Query, cache, lint e consumo de API REST;
-- [Smart Signup](frontend-projects/09-smart-signup/) — React Hook Form, Zod e validação tipada;
-- [Tested Cart](frontend-projects/10-tested-cart/) — Vitest e React Testing Library.
+- [Dev Portfolio Blog](frontend-projects/06-next-portfolio-blog/) — Next.js App Router, rota dinâmica, `generateStaticParams`, metadata por rota, `notFound` e testes de contratos de conteúdo;
+- todos os apps TypeScript possuem ESLint com zero warnings, TypeScript strict, build e CI;
+- GitHub Actions usa `checkout@v7` e `setup-node@v7`, timeouts, concorrência controlada e matriz de projetos.
 
 ### 4. Front-End + IA como progressive enhancement
 
 - [Dev City Character Lab](frontend-projects/11-dev-city-ai-character/) — HTML semântico, CSS responsivo, JavaScript modular, upload de imagem, validação, estados assíncronos, acessibilidade, testes de regras puras e integração opcional com IA sem quebrar o fluxo principal.
 
-Esse projeto é relevante porque demonstra uma integração externa tratada como **enhancement**, com fallback funcional, mensagens de erro, privacidade explícita e experiência de teclado preservada.
+Esse projeto demonstra uma integração externa tratada como **enhancement**, com fallback funcional, mensagens de erro, privacidade explícita e experiência de teclado preservada.
 
 [**Ver a trilha Front-End completa →**](frontend-projects/)
 
@@ -54,12 +58,12 @@ Esse projeto é relevante porque demonstra uma integração externa tratada como
 **Fundamentos:** HTML5 · CSS3 · JavaScript ES6+ · DOM · responsividade · acessibilidade  
 **Front-End moderno:** React · TypeScript · React Router · Next.js · Tailwind CSS  
 **Dados e estado:** REST APIs · Fetch · Axios · TanStack Query · Redux Toolkit · LocalStorage  
-**Formulários e qualidade:** React Hook Form · Zod · ESLint · Vitest · React Testing Library · Git · GitHub Actions  
+**Formulários e qualidade:** React Hook Form · Zod · ESLint · Vitest · React Testing Library · jsdom · Git · GitHub Actions  
 **Integrações:** upload de arquivos · estados assíncronos · integração browser-side opcional com IA
 
 ### Quality gate demonstrado
 
-Nos projetos principais, o GitHub Actions valida automaticamente **lint → typecheck → build → testes**. A auditoria estrutural também verifica metadados, dependências explícitas, arquivos obrigatórios e isolamento do conteúdo legado.
+O GitHub Actions valida automaticamente **lint → typecheck → build → testes** em toda a matriz TypeScript. A auditoria estrutural também verifica metadados, configuração ESM, dependências explícitas, evidências de testes dos flagships, arquivos obrigatórios e isolamento do conteúdo legado.
 
 ---
 

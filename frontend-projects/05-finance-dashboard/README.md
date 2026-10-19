@@ -1,6 +1,6 @@
 # Finance Dashboard — Redux Toolkit
 
-Dashboard de entradas e saídas criado para demonstrar gerenciamento de estado global em um domínio próximo da minha experiência profissional no mercado financeiro.
+Dashboard de entradas e saídas criado para demonstrar gerenciamento de estado global em um domínio próximo da minha experiência profissional no mercado financeiro, com testes do reducer e da integração React + Redux.
 
 ## Problema que resolve
 Centralizar transações e apresentar saldo, total de entradas e total de saídas a partir de uma única fonte de estado.
@@ -12,13 +12,14 @@ Centralizar transações e apresentar saldo, total de entradas e total de saída
 - cálculos derivados a partir das transações;
 - formulários e atualização imediata da interface;
 - formatação monetária em BRL;
-- TypeScript aplicado ao domínio financeiro.
+- teste unitário do reducer;
+- teste React Testing Library com store isolada para validar formulário, dispatch e resumo financeiro.
 
 ## Decisões técnicas
-Redux Toolkit foi escolhido propositalmente para demonstrar arquitetura de estado global, mesmo em um projeto pequeno. Indicadores como saldo não são duplicados no store: são calculados a partir das transações, evitando estado redundante.
+Redux Toolkit foi escolhido propositalmente para demonstrar arquitetura de estado global, mesmo em um projeto pequeno. Indicadores como saldo não são duplicados no store: são calculados a partir das transações, evitando estado redundante. Nos testes de UI uma store nova é criada para cada cenário, evitando vazamento de estado entre testes.
 
 ## Stack
-React · TypeScript · Redux Toolkit · React Redux · Vite
+React · TypeScript · Redux Toolkit · React Redux · Vite · Vitest · React Testing Library · jsdom · ESLint
 
 ## Como executar
 ```bash
@@ -28,7 +29,9 @@ npm run dev
 
 ## Validação
 ```bash
-npx tsc --noEmit
+npm run lint
+npm run typecheck
+npm test
 npm run build
 ```
 
