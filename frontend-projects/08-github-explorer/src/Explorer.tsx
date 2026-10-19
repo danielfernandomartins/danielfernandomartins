@@ -24,7 +24,7 @@ export function Explorer() {
       <p>Axios + TanStack Query + cache</p>
 
       <form onSubmit={handleSubmit} role="search" aria-describedby="github-search-help">
-        <label htmlFor="github-username">Usuário do GitHub</label>
+        <label htmlFor="github-username" className="visually-hidden">Usuário do GitHub</label>
         <input
           id="github-username"
           value={input}
@@ -33,7 +33,7 @@ export function Explorer() {
           autoComplete="off"
         />
         <button type="submit" disabled={query.isFetching}>{query.isFetching ? 'Buscando...' : 'Buscar'}</button>
-        <small id="github-search-help">Digite um nome de usuário público do GitHub.</small>
+        <small id="github-search-help" className="visually-hidden">Digite um nome de usuário público do GitHub.</small>
       </form>
 
       <div aria-live="polite" aria-atomic="true">
