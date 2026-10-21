@@ -1,48 +1,31 @@
-# Resumo para Recrutadores
+# Daniel Fernando Martins — Resumo para recrutadores
 
-## Daniel Fernando Martins
+**Objetivo profissional: Analista de Dados Júnior**
 
-**Objetivo:** primeira oportunidade em Suporte de TI / Help Desk / Service Desk / Infraestrutura Júnior.
+Profissional em transição para a área de dados, com trajetória em serviços financeiros, relacionamento com clientes e desenvolvimento comercial. Conecta visão de negócio à prática com Python e a projetos de estudo sobre comportamento de clientes e indicadores.
 
-### O que este GitHub demonstra
+## Evidências do portfólio
 
-- troubleshooting em Windows;
-- diagnóstico básico de redes TCP/IP;
-- DNS, DHCP, gateway, ping, tracert e nslookup;
-- conceitos e tarefas básicas de Active Directory;
-- cenários de Microsoft 365;
-- documentação de chamados;
-- base de conhecimento e runbooks;
-- PowerShell básico para coleta de informações.
+| Projeto | Competências apresentadas |
+|---|---|
+| [Análise de cancelamento de clientes](https://github.com/danielfernandomartins/analise-dados-clientes) | Análise exploratória, tratamento de dados, Python, Pandas, Plotly Express e Jupyter Notebook, conforme documentação do projeto |
+| [Pipeline comercial](https://github.com/danielfernandomartins/pipeline-comercial-python) | Organização de oportunidades, taxa de conversão e consolidação de valores em Python |
+| [Controle de despesas](https://github.com/danielfernandomartins/controle-despesas-python) | Organização de registros, filtros por categoria e totalização em Python |
 
-### Diferencial
+## Diferencial
 
-O portfólio foi estruturado para mostrar **como penso durante um atendimento**, não apenas quais tecnologias estudei.
+Visão de cliente e negócio aplicada à escolha de perguntas analíticas. O case de cancelamento documenta hipóteses de retenção e distingue associações observadas de relações causais.
 
-Os laboratórios usam o fluxo:
+## Formação
 
-**Sintoma → impacto → hipótese → testes → causa → solução → validação → documentação**
+Análise e Desenvolvimento de Sistemas — Universidade São Judas Tadeu.
 
-### Transparência
+## Transparência e desenvolvimento
 
-Os projetos deste repositório são **laboratórios e simulações de estudo**, não experiência profissional fictícia.
+Os projetos são estudos de portfólio, sem atribuição de resultados empresariais ou experiência profissional em dados. SQL e Power BI estão entre as próximas evoluções planejadas, sem alegação de domínio ou entrega concluída.
 
-### Vagas de interesse
+## Contato
 
-- Suporte Técnico N1
-- Help Desk
-- Service Desk
-- Assistente de TI
-- Técnico de Informática
-- Analista de Suporte Júnior
-- Field Service Júnior
-
-### Formação
-
-**Análise e Desenvolvimento de Sistemas — Universidade São Judas Tadeu**
-
-### Contato
-
-LinkedIn: https://www.linkedin.com/in/danielfernandomartins
-
-E-mail: dfernandom@outlook.com
+- [LinkedIn](https://www.linkedin.com/in/danielfernandomartins)
+- [GitHub](https://github.com/danielfernandomartins)
+- E-mail: dfernandom@outlook.com
