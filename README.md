@@ -33,7 +33,11 @@ O projeto documenta uma análise exploratória de uma base de estudo, com foco e
 - Visualização de dados e formulação de hipóteses de negócio.
 - Comunicação das limitações: associação não comprova causalidade.
 
-**Tecnologias descritas no projeto:** Python, Pandas, Plotly Express e Jupyter Notebook.
+**Tecnologias utilizadas no notebook:** Python, Pandas, Plotly Express e Jupyter Notebook.
+
+**Evidência quantitativa da execução histórica:** 49.996 registros após limpeza e 28.393 cancelamentos (56,79%). As taxas dos recortes são comparações descritivas, sem alegação de redução real de churn.
+
+O código do notebook foi revisado; a reprodução integral depende do CSV original, ainda ausente do repositório.
 
 [**Explorar o estudo →**](https://github.com/danielfernandomartins/analise-dados-clientes) · [**Abrir notebook →**](https://github.com/danielfernandomartins/analise-dados-clientes/blob/main/analise_cancelamentos.ipynb)
 
@@ -53,7 +57,7 @@ Os projetos têm escopos diferentes: a análise de clientes é o principal case 
 |---|---|
 | Python | Organização de registros, funções, filtros e cálculos |
 | Pandas e análise exploratória | Projeto de cancelamento de clientes |
-| Plotly Express e notebooks | Tecnologias documentadas no case de clientes |
+| Plotly Express e notebooks | Visualizações no notebook de clientes |
 | Indicadores de negócio | Conversão, oportunidades e valores no pipeline comercial |
 | Comunicação analítica | Perguntas de negócio, hipóteses e limitações documentadas |
 
@@ -63,7 +67,7 @@ Minha experiência anterior em serviços financeiros e relacionamento com client
 
 Na transição para dados, meu foco é desenvolver análises que sejam **compreensíveis, verificáveis e conectadas ao contexto**.
 
-[**Ler o resumo para recrutadores →**](RECRUITER-SUMMARY.md)
+[**Ler o resumo para recrutadores →**](https://github.com/danielfernandomartins/danielfernandomartins/blob/main/RECRUITER-SUMMARY.md)
 
 ## 🚀 Próximos passos do portfólio
 
@@ -77,7 +81,7 @@ SQL e Power BI são objetivos de evolução e não são apresentados aqui como e
 <details>
 <summary><strong>Outras trilhas de estudo</strong></summary>
 
-Também mantenho estudos em [desenvolvimento Front-End](frontend-projects/), [laboratórios de suporte](support-labs/) e [documentação técnica](knowledge-base/). Esses materiais complementam minha formação em tecnologia; o foco profissional desta apresentação é Análise de Dados Júnior.
+Também mantenho estudos em [desenvolvimento Front-End](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/frontend-projects), [laboratórios de suporte](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/support-labs) e [documentação técnica](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/knowledge-base). Esses materiais complementam minha formação em tecnologia; o foco profissional desta apresentação é Análise de Dados Júnior.
 
 </details>
 
