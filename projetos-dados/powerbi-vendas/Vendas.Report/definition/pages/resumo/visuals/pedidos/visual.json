@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "pedidos",
+  "position": {
+    "x": 440,
+    "y": 20,
+    "width": 390,
+    "height": 130,
+    "z": 0,
+    "tabOrder": 460
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Vendas"
+                    }
+                  },
+                  "Property": "Vendas Concluidas"
+                }
+              },
+              "queryRef": "Vendas.Vendas Concluidas",
+              "nativeQueryRef": "Vendas Concluidas"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

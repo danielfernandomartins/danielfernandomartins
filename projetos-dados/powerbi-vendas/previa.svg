@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">Prévia estática dos indicadores de vendas fictícias</title>
+<desc id="desc">Receita de R$ 25.292, 42 vendas concluídas e ticket de R$ 602,19. Não é uma captura do Power BI.</desc>
+<rect width="1200" height="720" fill="#f1f5f9"/>
+<g font-family="Arial,sans-serif" fill="#0f172a">
+<text x="36" y="46" font-size="26" font-weight="bold">VENDAS | Visão comercial</text>
+<text x="36" y="76" font-size="16" fill="#475569">Dados fictícios · Janeiro a junho de 2026 · Canceladas excluídas dos KPIs de receita</text>
+<rect x="36" y="105" width="350" height="120" rx="12" fill="white"/>
+<text x="58" y="140" font-size="14" fill="#475569">RECEITA LÍQUIDA</text>
+<text x="58" y="190" font-size="34" font-weight="bold">R$ 25.292,00</text>
+<rect x="425" y="105" width="350" height="120" rx="12" fill="white"/>
+<text x="447" y="140" font-size="14" fill="#475569">VENDAS CONCLUÍDAS</text>
+<text x="447" y="190" font-size="34" font-weight="bold">42</text>
+<rect x="814" y="105" width="350" height="120" rx="12" fill="white"/>
+<text x="836" y="140" font-size="14" fill="#475569">TICKET MÉDIO</text>
+<text x="836" y="190" font-size="34" font-weight="bold">R$ 602,19</text>
+<rect x="36" y="250" width="700" height="370" rx="12" fill="white"/>
+<text x="60" y="288" font-size="20" font-weight="bold">Receita por mês (R$)</text>
+<rect x="75" y="345.0" width="65" height="220.0" rx="4" fill="#0f766e"/>
+<text x="107" y="330.0" text-anchor="middle" font-size="14">4,904</text>
+<text x="107" y="592" text-anchor="middle" font-size="14">2026-01</text>
+<rect x="183" y="364.873572593801" width="65" height="200.126427406199" rx="4" fill="#0f766e"/>
+<text x="215" y="349.873572593801" text-anchor="middle" font-size="14">4,461</text>
+<text x="215" y="592" text-anchor="middle" font-size="14">2026-02</text>
+<rect x="291" y="395.6484502446982" width="65" height="169.3515497553018" rx="4" fill="#0f766e"/>
+<text x="323" y="380.6484502446982" text-anchor="middle" font-size="14">3,775</text>
+<text x="323" y="592" text-anchor="middle" font-size="14">2026-03</text>
+<rect x="399" y="380.88907014681894" width="65" height="184.11092985318106" rx="4" fill="#0f766e"/>
+<text x="431" y="365.88907014681894" text-anchor="middle" font-size="14">4,104</text>
+<text x="431" y="592" text-anchor="middle" font-size="14">2026-04</text>
+<rect x="507" y="381.47226753670475" width="65" height="183.52773246329528" rx="4" fill="#0f766e"/>
+<text x="539" y="366.47226753670475" text-anchor="middle" font-size="14">4,091</text>
+<text x="539" y="592" text-anchor="middle" font-size="14">2026-05</text>
+<rect x="615" y="387.4836867862969" width="65" height="177.51631321370309" rx="4" fill="#0f766e"/>
+<text x="647" y="372.4836867862969" text-anchor="middle" font-size="14">3,957</text>
+<text x="647" y="592" text-anchor="middle" font-size="14">2026-06</text>
+<rect x="760" y="250" width="404" height="370" rx="12" fill="white"/>
+<text x="785" y="288" font-size="20" font-weight="bold">Receita por categoria</text>
+<text x="785" y="340" font-size="17">Monitores</text>
+<rect x="785" y="354" width="219.76909694765143" height="22" rx="3" fill="#2563eb"/>
+<text x="785" y="402" font-size="16">R$ 17,370.00 · 68.7% da receita</text>
+<text x="785" y="450" font-size="17">Acessorios</text>
+<rect x="785" y="464" width="100.23090305234858" height="22" rx="3" fill="#2563eb"/>
+<text x="785" y="512" font-size="16">R$ 7,922.00 · 31.3% da receita</text>
+<text x="36" y="663" font-size="16" font-weight="bold">Prévia estática gerada dos resultados SQL — não é captura do Power BI.</text>
+<text x="36" y="691" font-size="14" fill="#475569">O relatório PBIP inclui segmentador de mês e tabela por cliente; validação visual no Desktop pendente.</text>
+</g></svg>

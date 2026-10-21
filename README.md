@@ -2,7 +2,7 @@
 
 # Daniel Fernando Martins
 ### Foco em Analista de Dados Júnior
-**Python · Análise exploratória · Indicadores de negócio**
+**Python · SQL · Indicadores de negócio**
 
 Transformar dados em perguntas melhores, análises claras e decisões bem fundamentadas.
 
@@ -45,6 +45,8 @@ O código do notebook foi revisado; a reprodução integral depende do CSV origi
 
 | Projeto | Problema explorado | Foco para a área de dados |
 |---|---|---|
+| [SQL: análise de vendas](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/projetos-dados/sql-vendas) | Analisar vendas, receita e clientes | JOIN, agrupamentos, CTE e funções de janela; resultados executados |
+| [Power BI: dashboard de vendas](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/projetos-dados/powerbi-vendas) | Acompanhar indicadores comerciais | Projeto PBIP, Power Query e DAX; abertura no Desktop pendente |
 | [Análise de clientes](https://github.com/danielfernandomartins/analise-dados-clientes) | Investigar padrões associados ao churn | Análise exploratória, visualização e hipóteses de retenção |
 | [Pipeline comercial em Python](https://github.com/danielfernandomartins/pipeline-comercial-python) | Acompanhar oportunidades e resultados do funil | Indicadores de conversão, valor em aberto e vendas ganhas |
 | [Controle de despesas em Python](https://github.com/danielfernandomartins/controle-despesas-python) | Organizar registros de gastos | Filtros por categoria, totalização e organização de dados |
@@ -55,6 +57,8 @@ Os projetos têm escopos diferentes: a análise de clientes é o principal case 
 
 | Competência | Evidência |
 |---|---|
+| SQL (SQLite) | Seis consultas executadas e resultados conferidos no projeto de vendas |
+| Power BI — projeto em validação | Modelo estrela, consultas M, cinco medidas DAX e sete visuais em PBIP |
 | Python | Organização de registros, funções, filtros e cálculos |
 | Pandas e análise exploratória | Projeto de cancelamento de clientes |
 | Plotly Express e notebooks | Visualizações no notebook de clientes |
@@ -72,11 +76,11 @@ Na transição para dados, meu foco é desenvolver análises que sejam **compree
 ## 🚀 Próximos passos do portfólio
 
 - Ampliar a análise de clientes com indicadores e segmentações mais detalhadas.
-- Desenvolver uma versão da análise em SQL.
-- Construir um dashboard em Power BI.
+- Ampliar o projeto SQL de vendas com novas perguntas de negócio.
+- Validar a abertura, atualização e apresentação do dashboard no Power BI Desktop.
 - Melhorar a reprodução dos estudos com dados acessíveis e dependências documentadas.
 
-SQL e Power BI são objetivos de evolução e não são apresentados aqui como entregas já concluídas.
+O projeto SQL foi executado e conferido. O código do projeto Power BI está publicado; a abertura e a execução das medidas no Desktop ainda precisam ser validadas.
 
 <details>
 <summary><strong>Outras trilhas de estudo</strong></summary>

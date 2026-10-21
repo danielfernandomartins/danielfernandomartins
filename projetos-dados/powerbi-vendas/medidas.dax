@@ -1,0 +1,14 @@
+Receita Liquida =
+CALCULATE(SUMX(Vendas, Vendas[valor_bruto_centavos] - Vendas[desconto_centavos]), KEEPFILTERS(Vendas[status] = "Concluida")) / 100
+
+Vendas Concluidas =
+CALCULATE(COUNTROWS(Vendas), KEEPFILTERS(Vendas[status] = "Concluida"))
+
+Ticket Medio =
+DIVIDE([Receita Liquida], [Vendas Concluidas])
+
+Unidades Vendidas =
+CALCULATE(SUM(Vendas[quantidade]), KEEPFILTERS(Vendas[status] = "Concluida"))
+
+Taxa Cancelamento =
+DIVIDE(CALCULATE(COUNTROWS(Vendas), KEEPFILTERS(Vendas[status] = "Cancelada")), COUNTROWS(Vendas))

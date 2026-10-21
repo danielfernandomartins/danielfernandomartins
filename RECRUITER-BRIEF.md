@@ -16,6 +16,13 @@ Profissional em transição para a área de dados, com trajetória em serviços 
 
 A execução histórica do case de clientes registrava 49.996 linhas após limpeza e 28.393 cancelamentos (56,79%). São números da base de estudo, não impacto empresarial. O CSV original está ausente, impedindo nova execução integral; a pendência está documentada no projeto.
 
+## Novos projetos de vendas
+
+- [SQL / SQLite](projetos-dados/sql-vendas/): seis consultas com JOIN, LEFT JOIN, agregações, CTE, ranking e variação mensal. Resultados executados e conferidos em uma base fictícia de 48 vendas.
+- [Power BI](projetos-dados/powerbi-vendas/): projeto PBIP com modelo estrela, Power Query, cinco medidas DAX e sete visuais. Abertura, atualização e renderização no Desktop ainda pendentes.
+
+Receita da amostra: R$ 25.292,00 em 42 vendas concluídas; ticket médio de R$ 602,19. Valores calculados em SQL; não são resultados empresariais.
+
 ## Diferencial
 
 Visão de cliente e negócio aplicada à escolha de perguntas analíticas. O case de cancelamento documenta hipóteses de retenção e distingue associações observadas de relações causais.
@@ -26,7 +33,7 @@ Análise e Desenvolvimento de Sistemas — Universidade São Judas Tadeu.
 
 ## Transparência e desenvolvimento
 
-Os projetos são estudos de portfólio, sem atribuição de resultados empresariais ou experiência profissional em dados. SQL e Power BI estão entre as próximas evoluções planejadas, sem alegação de domínio ou entrega concluída.
+Os projetos são estudos de portfólio, sem atribuição de resultados empresariais ou experiência profissional em dados. SQL possui um projeto executável de estudo. Power BI possui código de projeto publicado, com validação no Desktop pendente; isso não equivale a experiência profissional ou domínio das ferramentas.
 
 ## Contato
 
