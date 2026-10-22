@@ -1,0 +1,42 @@
+[
+  {
+    "id": "RF-F01",
+    "titulo": "Validar estados e valores",
+    "necessidade": "N-F01: evitar registros incompatíveis com as regras do funil.",
+    "prioridade": "Must",
+    "historia": "Como operações, quero receber uma rejeição clara para estado desconhecido ou valor não positivo.",
+    "regra": "RN-F01: somente quatro estados e valor inteiro positivo; rejeição precede avaliação da transição. Origem de alteração deve ser SAP ou SMART; o retorno aceito preserva esse rótulo."
+  },
+  {
+    "id": "RF-F02",
+    "titulo": "Controlar transições",
+    "necessidade": "N-F02: proteger a coerência do avanço e do fechamento.",
+    "prioridade": "Must",
+    "historia": "Como gestor, quero permitir apenas mudanças previstas no fluxo.",
+    "regra": "RN-F02: prospeccao → negociacao/perdida; negociacao → ganha/perdida; estados terminais não reabrem."
+  },
+  {
+    "id": "RF-F03",
+    "titulo": "Justificar perdas",
+    "necessidade": "N-F03: permitir investigação futura de oportunidades perdidas.",
+    "prioridade": "Must",
+    "historia": "Como gestor, quero que o encerramento perdido tenha motivo.",
+    "regra": "RN-F03: motivo vazio, nulo ou composto só por espaços impede perda."
+  },
+  {
+    "id": "RF-F04",
+    "titulo": "Distinguir denominadores",
+    "necessidade": "N-F04: comparar indicadores sem ambiguidade.",
+    "prioridade": "Must",
+    "historia": "Como gestor, quero ver conversão total e taxa de ganho em encerradas separadas.",
+    "regra": "RN-F04: duas fórmulas explícitas; calcular valor aberto apenas de prospeccao e negociacao."
+  },
+  {
+    "id": "RF-F05",
+    "titulo": "Tratar ausência de base",
+    "necessidade": "N-F04: evitar interpretação incorreta de dados ausentes.",
+    "prioridade": "Must",
+    "historia": "Como leitor do relatório, quero distinguir zero resultados de denominador inexistente.",
+    "regra": "RN-F05: denominador zero retorna null; registros inválidos retornam erro, sem indicador parcial."
+  }
+]

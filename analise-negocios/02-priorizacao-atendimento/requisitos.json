@@ -1,0 +1,42 @@
+[
+  {
+    "id": "RF-A01",
+    "titulo": "Exigir classificação válida",
+    "necessidade": "N-A01: impedir prioridade calculada a partir de dados incompletos.",
+    "prioridade": "Must",
+    "historia": "Como triagem, quero solicitar complemento quando faltar impacto ou urgência.",
+    "regra": "RN-A01: impacto e urgência são inteiros entre 1 e 3; caso contrário, aguardando_dados."
+  },
+  {
+    "id": "RF-A02",
+    "titulo": "Aplicar a matriz",
+    "necessidade": "N-A02: padronizar a priorização.",
+    "prioridade": "Must",
+    "historia": "Como gestor, quero que a mesma combinação resulte na mesma prioridade.",
+    "regra": "RN-A02: aplicar as nove combinações da matriz documentada."
+  },
+  {
+    "id": "RF-A03",
+    "titulo": "Calcular o limite de resposta",
+    "necessidade": "N-A03: oferecer referência objetiva de prazo.",
+    "prioridade": "Must",
+    "historia": "Como atendente, quero saber o instante limite de primeira resposta.",
+    "regra": "RN-A03: abertura + horas corridas por prioridade; fuso obrigatório e cronologia válida."
+  },
+  {
+    "id": "RF-A04",
+    "titulo": "Aferir cumprimento no limite",
+    "necessidade": "N-A03: distinguir pendência de resposta tardia.",
+    "prioridade": "Must",
+    "historia": "Como gestor, quero diferenciar pendentes e respondidos dentro ou fora do prazo.",
+    "regra": "RN-A04: comparar resposta, ou agora se ausente; igualdade está no prazo."
+  },
+  {
+    "id": "RF-A05",
+    "titulo": "Indicar tratamento crítico",
+    "necessidade": "N-A04: encaminhar o nível crítico ao grupo apropriado.",
+    "prioridade": "Must",
+    "historia": "Como triagem, quero identificar o grupo sugerido para P1.",
+    "regra": "RN-A05: P1 indica especialista; P2 e P3 indicam triagem; sem envio automático."
+  }
+]

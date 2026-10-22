@@ -1,0 +1,673 @@
+{
+  "caso": "03-conciliacao-recebimentos",
+  "tipo": "verificacao_tecnica_automatizada",
+  "aceite_de_negocio": "pendente",
+  "requisitos_cobertos": 5,
+  "cenarios_aprovados": 14,
+  "sha256_fontes": {
+    "prototipo.py": "55250f767fe733c82fcb95ab8fe0f4decb10cc5992ae17da4363a01124fc1e85",
+    "requisitos.json": "21b461dffe08f9351fcf5556167c25a65fc2f2558fc522b12783c76c699445f0",
+    "cenarios.json": "171148ac4c033b827c17fbf83fec2b34dc67035c22a09a1953cd8967cf5b93dc"
+  },
+  "resultados": [
+    {
+      "cenario": "C-C01",
+      "requisitos": [
+        "RF-C01",
+        "RF-C02"
+      ],
+      "entrada": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "total_centavos": 10000,
+            "status": "ativo"
+          }
+        ],
+        "pagamentos": [
+          {
+            "id": "P1",
+            "parcela_id": "V1",
+            "valor_centavos": 10000
+          }
+        ]
+      },
+      "esperado": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "conciliado",
+            "recebido_centavos": 10000,
+            "saldo_centavos": 0
+          }
+        ],
+        "excecoes": []
+      },
+      "obtido": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "conciliado",
+            "recebido_centavos": 10000,
+            "saldo_centavos": 0
+          }
+        ],
+        "excecoes": []
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "C-C02",
+      "requisitos": [
+        "RF-C02"
+      ],
+      "entrada": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "total_centavos": 10000,
+            "status": "ativo"
+          }
+        ],
+        "pagamentos": []
+      },
+      "esperado": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "pendente",
+            "recebido_centavos": 0,
+            "saldo_centavos": 10000
+          }
+        ],
+        "excecoes": []
+      },
+      "obtido": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "pendente",
+            "recebido_centavos": 0,
+            "saldo_centavos": 10000
+          }
+        ],
+        "excecoes": []
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "C-C03",
+      "requisitos": [
+        "RF-C02"
+      ],
+      "entrada": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "total_centavos": 10000,
+            "status": "ativo"
+          }
+        ],
+        "pagamentos": [
+          {
+            "id": "P1",
+            "parcela_id": "V1",
+            "valor_centavos": 9999
+          }
+        ]
+      },
+      "esperado": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "parcial",
+            "recebido_centavos": 9999,
+            "saldo_centavos": 1
+          }
+        ],
+        "excecoes": []
+      },
+      "obtido": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "parcial",
+            "recebido_centavos": 9999,
+            "saldo_centavos": 1
+          }
+        ],
+        "excecoes": []
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "C-C04",
+      "requisitos": [
+        "RF-C02"
+      ],
+      "entrada": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "total_centavos": 10000,
+            "status": "ativo"
+          }
+        ],
+        "pagamentos": [
+          {
+            "id": "P1",
+            "parcela_id": "V1",
+            "valor_centavos": 10001
+          }
+        ]
+      },
+      "esperado": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "excedente",
+            "recebido_centavos": 10001,
+            "saldo_centavos": -1
+          }
+        ],
+        "excecoes": []
+      },
+      "obtido": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "excedente",
+            "recebido_centavos": 10001,
+            "saldo_centavos": -1
+          }
+        ],
+        "excecoes": []
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "C-C05",
+      "requisitos": [
+        "RF-C02"
+      ],
+      "entrada": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "total_centavos": 10000,
+            "status": "ativo"
+          }
+        ],
+        "pagamentos": [
+          {
+            "id": "P1",
+            "parcela_id": "V1",
+            "valor_centavos": 4000
+          },
+          {
+            "id": "P2",
+            "parcela_id": "V1",
+            "valor_centavos": 6000
+          }
+        ]
+      },
+      "esperado": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "conciliado",
+            "recebido_centavos": 10000,
+            "saldo_centavos": 0
+          }
+        ],
+        "excecoes": []
+      },
+      "obtido": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "conciliado",
+            "recebido_centavos": 10000,
+            "saldo_centavos": 0
+          }
+        ],
+        "excecoes": []
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "C-C06",
+      "requisitos": [
+        "RF-C03"
+      ],
+      "entrada": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "total_centavos": 10000,
+            "status": "cancelado"
+          }
+        ],
+        "pagamentos": [
+          {
+            "id": "P1",
+            "parcela_id": "V1",
+            "valor_centavos": 10000
+          }
+        ]
+      },
+      "esperado": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "revisar_cancelado",
+            "recebido_centavos": 10000,
+            "saldo_centavos": null
+          }
+        ],
+        "excecoes": []
+      },
+      "obtido": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "revisar_cancelado",
+            "recebido_centavos": 10000,
+            "saldo_centavos": null
+          }
+        ],
+        "excecoes": []
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "C-C07",
+      "requisitos": [
+        "RF-C03"
+      ],
+      "entrada": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "total_centavos": 10000,
+            "status": "cancelado"
+          }
+        ],
+        "pagamentos": []
+      },
+      "esperado": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "cancelado_sem_recebimento",
+            "recebido_centavos": 0,
+            "saldo_centavos": null
+          }
+        ],
+        "excecoes": []
+      },
+      "obtido": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "cancelado_sem_recebimento",
+            "recebido_centavos": 0,
+            "saldo_centavos": null
+          }
+        ],
+        "excecoes": []
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "C-C08",
+      "requisitos": [
+        "RF-C04"
+      ],
+      "entrada": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "total_centavos": 10000,
+            "status": "ativo"
+          }
+        ],
+        "pagamentos": [
+          {
+            "id": "P1",
+            "parcela_id": "V1",
+            "valor_centavos": 5000
+          },
+          {
+            "id": "P1",
+            "parcela_id": "V1",
+            "valor_centavos": 5000
+          }
+        ]
+      },
+      "esperado": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "pendente",
+            "recebido_centavos": 0,
+            "saldo_centavos": 10000
+          }
+        ],
+        "excecoes": [
+          {
+            "linha": 1,
+            "id": "P1",
+            "codigo": "ID_DUPLICADO"
+          },
+          {
+            "linha": 2,
+            "id": "P1",
+            "codigo": "ID_DUPLICADO"
+          }
+        ]
+      },
+      "obtido": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "pendente",
+            "recebido_centavos": 0,
+            "saldo_centavos": 10000
+          }
+        ],
+        "excecoes": [
+          {
+            "linha": 1,
+            "id": "P1",
+            "codigo": "ID_DUPLICADO"
+          },
+          {
+            "linha": 2,
+            "id": "P1",
+            "codigo": "ID_DUPLICADO"
+          }
+        ]
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "C-C09",
+      "requisitos": [
+        "RF-C04"
+      ],
+      "entrada": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "total_centavos": 10000,
+            "status": "ativo"
+          }
+        ],
+        "pagamentos": [
+          {
+            "id": "P1",
+            "parcela_id": "V1",
+            "valor_centavos": 5000
+          },
+          {
+            "id": "P1",
+            "parcela_id": "V1",
+            "valor_centavos": 6000
+          }
+        ]
+      },
+      "esperado": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "pendente",
+            "recebido_centavos": 0,
+            "saldo_centavos": 10000
+          }
+        ],
+        "excecoes": [
+          {
+            "linha": 1,
+            "id": "P1",
+            "codigo": "ID_DUPLICADO"
+          },
+          {
+            "linha": 2,
+            "id": "P1",
+            "codigo": "ID_DUPLICADO"
+          }
+        ]
+      },
+      "obtido": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "pendente",
+            "recebido_centavos": 0,
+            "saldo_centavos": 10000
+          }
+        ],
+        "excecoes": [
+          {
+            "linha": 1,
+            "id": "P1",
+            "codigo": "ID_DUPLICADO"
+          },
+          {
+            "linha": 2,
+            "id": "P1",
+            "codigo": "ID_DUPLICADO"
+          }
+        ]
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "C-C10",
+      "requisitos": [
+        "RF-C05"
+      ],
+      "entrada": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "total_centavos": 10000,
+            "status": "ativo"
+          }
+        ],
+        "pagamentos": [
+          {
+            "id": "P1",
+            "parcela_id": "V9",
+            "valor_centavos": 10000
+          }
+        ]
+      },
+      "esperado": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "pendente",
+            "recebido_centavos": 0,
+            "saldo_centavos": 10000
+          }
+        ],
+        "excecoes": [
+          {
+            "linha": 1,
+            "id": "P1",
+            "codigo": "PARCELA_INEXISTENTE"
+          }
+        ]
+      },
+      "obtido": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "pendente",
+            "recebido_centavos": 0,
+            "saldo_centavos": 10000
+          }
+        ],
+        "excecoes": [
+          {
+            "linha": 1,
+            "id": "P1",
+            "codigo": "PARCELA_INEXISTENTE"
+          }
+        ]
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "C-C11",
+      "requisitos": [
+        "RF-C01"
+      ],
+      "entrada": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "total_centavos": 10000,
+            "status": "ativo"
+          }
+        ],
+        "pagamentos": [
+          {
+            "id": "P1",
+            "parcela_id": "V1",
+            "valor_centavos": -100
+          }
+        ]
+      },
+      "esperado": {
+        "erro": "LOTE_INVALIDO"
+      },
+      "obtido": {
+        "erro": "LOTE_INVALIDO"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "C-C12",
+      "requisitos": [
+        "RF-C01"
+      ],
+      "entrada": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "total_centavos": 10000,
+            "status": "ativo"
+          },
+          {
+            "id": "V1",
+            "total_centavos": 10000,
+            "status": "ativo"
+          }
+        ],
+        "pagamentos": []
+      },
+      "esperado": {
+        "erro": "LOTE_INVALIDO"
+      },
+      "obtido": {
+        "erro": "LOTE_INVALIDO"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "C-C13",
+      "requisitos": [
+        "RF-C02"
+      ],
+      "entrada": {
+        "parcelas": [],
+        "pagamentos": []
+      },
+      "esperado": {
+        "parcelas": [],
+        "excecoes": []
+      },
+      "obtido": {
+        "parcelas": [],
+        "excecoes": []
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "C-C14",
+      "requisitos": [
+        "RF-C04",
+        "RF-C05"
+      ],
+      "entrada": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "total_centavos": 10000,
+            "status": "ativo"
+          }
+        ],
+        "pagamentos": [
+          {
+            "id": "P1",
+            "parcela_id": "V9",
+            "valor_centavos": 10000
+          },
+          {
+            "id": "P1",
+            "parcela_id": "V9",
+            "valor_centavos": 10000
+          }
+        ]
+      },
+      "esperado": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "pendente",
+            "recebido_centavos": 0,
+            "saldo_centavos": 10000
+          }
+        ],
+        "excecoes": [
+          {
+            "linha": 1,
+            "id": "P1",
+            "codigo": "ID_DUPLICADO"
+          },
+          {
+            "linha": 2,
+            "id": "P1",
+            "codigo": "ID_DUPLICADO"
+          }
+        ]
+      },
+      "obtido": {
+        "parcelas": [
+          {
+            "id": "V1",
+            "situacao": "pendente",
+            "recebido_centavos": 0,
+            "saldo_centavos": 10000
+          }
+        ],
+        "excecoes": [
+          {
+            "linha": 1,
+            "id": "P1",
+            "codigo": "ID_DUPLICADO"
+          },
+          {
+            "linha": 2,
+            "id": "P1",
+            "codigo": "ID_DUPLICADO"
+          }
+        ]
+      },
+      "resultado": "PASS"
+    }
+  ]
+}

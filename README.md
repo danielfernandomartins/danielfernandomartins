@@ -6,7 +6,7 @@
 
 Conectar necessidades do negócio, dados e tecnologia para apoiar decisões e melhorias.
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Negocios_e_Tecnologia-0F766E?style=for-the-badge)](https://github.com/danielfernandomartins/danielfernandomartins/blob/main/RECRUITER-SUMMARY.md)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Negocios_e_Tecnologia-0F766E?style=for-the-badge)](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Conecte--se-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
 [![Contato](https://img.shields.io/badge/Email-Contato-334155?style=for-the-badge)](mailto:dfernandom@outlook.com)
 
@@ -28,54 +28,65 @@ Minha experiência de negócio orienta a escolha dos problemas do portfólio: ac
 
 **Foco da candidatura:** Analista de Negócios / Business Analyst, com interesse em processos comerciais, serviços financeiros, relacionamento com clientes e soluções de tecnologia para operações.
 
-## Projetos em destaque
+## Vitrine — três casos de Análise de Negócios
 
-### 1. Pipeline comercial — regras e indicadores
+**15 requisitos rastreáveis · 47 cenários de aceite executados · protótipos reproduzíveis**
 
-**Problema:** organizar oportunidades e acompanhar os resultados de um funil comercial.
+Estudos independentes de portfólio no contexto bancário. A evidência é a documentação e a execução das regras; não é uma implantação ou experiência profissional no Bradesco.
 
-A aplicação de estudo registra cliente, produto, valor e status. Calcula valor em aberto, vendas ganhas e conversão sobre o total de oportunidades cadastradas.
+### 1. Funil comercial SAP / SMART
 
-**Contribuição para Análise de Negócios:** tornar explícitas as regras do processo e a definição dos indicadores. A documentação diferencia conversão sobre todas as oportunidades de taxa de ganho sobre oportunidades encerradas.
+**Problema:** impedir mudanças incoerentes de etapa e tornar a conversão comparável.
 
-[**Ver projeto e regras →**](https://github.com/danielfernandomartins/pipeline-comercial-python)
+Processos AS-IS/TO-BE, regras de transição, motivo de perda e duas definições de conversão. SAP e SMART identificam origens simuladas, conforme nomenclatura informada para o estudo.
 
-### 2. Vendas — perguntas de negócio respondidas com SQL
+**Entrega verificável:** 5 requisitos e 15 cenários, incluindo rejeições e preservação da origem.
 
-**Problema:** entender como receita, vendas e ticket se distribuem por mês, categoria e cliente.
+[**Explorar o caso →**](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/01-funil-comercial) · [Requisitos](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/01-funil-comercial/03-requisitos-e-rastreabilidade.md) · [Resultados dos testes](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/01-funil-comercial/evidencias/resultado.md)
 
-O estudo usa uma base fictícia completa e seis consultas executadas, com resultados disponíveis para conferência. A documentação explica o grão dos dados, a exclusão de vendas canceladas e o denominador de cada indicador.
+### 2. Atendimento operacional — contexto Bradesco Cartões
 
-**Contribuição para Análise de Negócios:** alinhar a interpretação das métricas e fundamentar perguntas sobre a operação. Na amostra, Monitores representam 68,68% da receita; a análise explicita que receita não é lucro.
+**Problema:** padronizar triagem e conferir o prazo de primeira resposta.
 
-[**Ver análise SQL →**](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/projetos-dados/sql-vendas) · [**Ler resultados e limites →**](https://github.com/danielfernandomartins/danielfernandomartins/blob/main/projetos-dados/LEITURA-DOS-RESULTADOS.md)
+Matriz impacto × urgência, critérios de encaminhamento, validação de datas e cenários no limite do prazo. A política de 1, 4 e 8 horas é didática; não representa SLA do banco.
 
-### 3. Clientes — hipóteses sobre cancelamento
+**Entrega verificável:** 5 requisitos e 18 cenários, cobrindo as nove combinações da matriz.
 
-**Problema:** investigar características associadas ao cancelamento e formular perguntas sobre retenção e atendimento.
+[**Explorar o caso →**](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/02-priorizacao-atendimento) · [Processos](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/02-priorizacao-atendimento/02-processos.md) · [Resultados dos testes](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/02-priorizacao-atendimento/evidencias/resultado.md)
 
-O notebook explora contratos, contatos com atendimento e atrasos. Os recortes são tratados como comparações entre populações diferentes, sem atribuir efeito causal ou redução real de cancelamentos.
+### 3. Conciliação de parcelas — contexto Bradesco Consórcios
 
-**Contribuição para Análise de Negócios:** formular hipóteses e comunicar quais evidências ainda seriam necessárias para apoiar uma decisão. A reprodução integral permanece pendente porque o CSV original não está publicado.
+**Problema:** localizar diferenças e duplicidades sem alocar recebimentos indevidamente.
 
-[**Ver estudo de clientes →**](https://github.com/danielfernandomartins/analise-dados-clientes)
+Contrato de dados, pagamentos parciais, diferença de um centavo, registros cancelados e quarentena de IDs duplicados. A proposta não executa baixa ou representa regras contratuais da instituição.
+
+**Entrega verificável:** 5 requisitos e 14 cenários, incluindo valores conflitantes e referência inexistente.
+
+[**Explorar o caso →**](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/03-conciliacao-recebimentos) · [Decisões e escopo](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/03-conciliacao-recebimentos/01-contexto-e-decisoes.md) · [Resultados dos testes](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/03-conciliacao-recebimentos/evidencias/resultado.md)
+
+[**Como reproduzir e avaliar as evidências →**](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios) · [Fontes públicas e limites](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/FONTES-E-LIMITES.md)
 
 ## Competências e evidências
 
 | Área | Evidência no portfólio |
 |---|---|
-| Regras de negócio | Status, valores e critérios de cálculo no pipeline comercial |
-| Definição de indicadores | Receita, ticket, conversão e cancelamento com denominadores explícitos |
-| Análise de dados de apoio ao negócio | Consultas SQL com JOIN, agrupamentos, ranking e variação mensal |
-| Documentação e comunicação | Perguntas de negócio, resultados, limitações e procedimentos de conferência |
-| Visão de cliente | Hipóteses sobre atendimento, contratos e retenção no estudo de cancelamentos |
-| Tecnologia de apoio | Python, SQL e projeto Power BI com modelo, Power Query e DAX |
+| Análise de processos | AS-IS/TO-BE dos três casos, com hipóteses identificadas |
+| Requisitos e histórias de usuário | 15 requisitos Must, necessidades, regras e critérios de aceite |
+| Rastreabilidade | Vínculo necessidade → requisito → cenário → resultado executado |
+| Análise de alternativas | Opções consideradas, decisões, riscos e escopo de MVP |
+| Gestão de mudanças | Exemplos de impacto de reabertura, calendário útil e tolerância monetária |
+| Validação | 47 cenários automatizados; aceite humano de negócio ainda pendente |
+| Dados de apoio | Projetos complementares em SQL, Python e Power BI |
 
 **Power BI:** o [projeto de dashboard de vendas](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/projetos-dados/powerbi-vendas) está publicado em PBIP. A abertura, a execução DAX e a apresentação dos visuais ainda precisam de validação no Desktop.
 
+## Projetos complementares
+
+[SQL — análise de vendas](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/projetos-dados/sql-vendas) · [Leitura de indicadores](https://github.com/danielfernandomartins/danielfernandomartins/blob/main/projetos-dados/LEITURA-DOS-RESULTADOS.md) · [Análise de clientes](https://github.com/danielfernandomartins/analise-dados-clientes)
+
 ## Desenvolvimento profissional
 
-Minha próxima evolução é aprofundar **levantamento de requisitos, mapeamento de processos, histórias de usuário e critérios de aceite**, aplicando esses temas aos casos do portfólio. São objetivos de desenvolvimento, sem alegação de experiência profissional já comprovada nessas atividades.
+Os três casos já incluem processos, histórias e critérios verificáveis. A próxima evolução é colher feedback real de profissionais de negócio, revisar as hipóteses e executar uma homologação acompanhada. Entrevistas e aprovações de stakeholders não são apresentadas como concluídas.
 
 [**Resumo para recrutadores →**](https://github.com/danielfernandomartins/danielfernandomartins/blob/main/RECRUITER-SUMMARY.md)
 

@@ -1,0 +1,467 @@
+{
+  "caso": "02-priorizacao-atendimento",
+  "tipo": "verificacao_tecnica_automatizada",
+  "aceite_de_negocio": "pendente",
+  "requisitos_cobertos": 5,
+  "cenarios_aprovados": 18,
+  "sha256_fontes": {
+    "prototipo.py": "93b7e1dd4d54528d2523a7e5e815d975cb7a8e74672c78befb312a2fc3f60ab3",
+    "requisitos.json": "52d8191f32dfaa2fcf4e9fe3d54584bad0fd3af2632cfa588843e83b2c34127b",
+    "cenarios.json": "1a86453ca8e57874142b91b6febdb7c5e1e6e284b06d4b49942432506c592b8c"
+  },
+  "resultados": [
+    {
+      "cenario": "A-C01",
+      "requisitos": [
+        "RF-A02",
+        "RF-A03",
+        "RF-A04",
+        "RF-A05"
+      ],
+      "entrada": {
+        "impacto": 1,
+        "urgencia": 1,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T11:00:00Z"
+      },
+      "esperado": {
+        "prioridade": "P1",
+        "limite_primeira_resposta": "2026-10-01T11:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "especialista"
+      },
+      "obtido": {
+        "prioridade": "P1",
+        "limite_primeira_resposta": "2026-10-01T11:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "especialista"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C02",
+      "requisitos": [
+        "RF-A04"
+      ],
+      "entrada": {
+        "impacto": 1,
+        "urgencia": 1,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T11:00:01Z"
+      },
+      "esperado": {
+        "prioridade": "P1",
+        "limite_primeira_resposta": "2026-10-01T11:00:00+00:00",
+        "situacao": "pendente_vencido",
+        "grupo": "especialista"
+      },
+      "obtido": {
+        "prioridade": "P1",
+        "limite_primeira_resposta": "2026-10-01T11:00:00+00:00",
+        "situacao": "pendente_vencido",
+        "grupo": "especialista"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C03",
+      "requisitos": [
+        "RF-A04"
+      ],
+      "entrada": {
+        "impacto": 1,
+        "urgencia": 1,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T12:00:00Z",
+        "primeira_resposta": "2026-10-01T11:00:00Z"
+      },
+      "esperado": {
+        "prioridade": "P1",
+        "limite_primeira_resposta": "2026-10-01T11:00:00+00:00",
+        "situacao": "respondido_no_prazo",
+        "grupo": "especialista"
+      },
+      "obtido": {
+        "prioridade": "P1",
+        "limite_primeira_resposta": "2026-10-01T11:00:00+00:00",
+        "situacao": "respondido_no_prazo",
+        "grupo": "especialista"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C04",
+      "requisitos": [
+        "RF-A04"
+      ],
+      "entrada": {
+        "impacto": 1,
+        "urgencia": 1,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T12:00:00Z",
+        "primeira_resposta": "2026-10-01T11:00:01Z"
+      },
+      "esperado": {
+        "prioridade": "P1",
+        "limite_primeira_resposta": "2026-10-01T11:00:00+00:00",
+        "situacao": "respondido_vencido",
+        "grupo": "especialista"
+      },
+      "obtido": {
+        "prioridade": "P1",
+        "limite_primeira_resposta": "2026-10-01T11:00:00+00:00",
+        "situacao": "respondido_vencido",
+        "grupo": "especialista"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C05",
+      "requisitos": [
+        "RF-A01"
+      ],
+      "entrada": {
+        "impacto": 1,
+        "urgencia": null,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T11:00:00Z"
+      },
+      "esperado": {
+        "situacao": "aguardando_dados",
+        "codigo": "CLASSIFICACAO_INCOMPLETA"
+      },
+      "obtido": {
+        "situacao": "aguardando_dados",
+        "codigo": "CLASSIFICACAO_INCOMPLETA"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C06",
+      "requisitos": [
+        "RF-A01"
+      ],
+      "entrada": {
+        "impacto": 4,
+        "urgencia": 1,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T11:00:00Z"
+      },
+      "esperado": {
+        "situacao": "aguardando_dados",
+        "codigo": "CLASSIFICACAO_INCOMPLETA"
+      },
+      "obtido": {
+        "situacao": "aguardando_dados",
+        "codigo": "CLASSIFICACAO_INCOMPLETA"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C07",
+      "requisitos": [
+        "RF-A03"
+      ],
+      "entrada": {
+        "impacto": 1,
+        "urgencia": 1,
+        "abertura": "2026-10-01T10:00:00",
+        "agora": "2026-10-01T11:00:00Z"
+      },
+      "esperado": {
+        "situacao": "revisar_dados",
+        "codigo": "DATA_INVALIDA"
+      },
+      "obtido": {
+        "situacao": "revisar_dados",
+        "codigo": "DATA_INVALIDA"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C08",
+      "requisitos": [
+        "RF-A03"
+      ],
+      "entrada": {
+        "impacto": 1,
+        "urgencia": 1,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T11:00:00Z",
+        "primeira_resposta": "2026-10-01T09:00:00Z"
+      },
+      "esperado": {
+        "situacao": "revisar_dados",
+        "codigo": "DATA_INVALIDA"
+      },
+      "obtido": {
+        "situacao": "revisar_dados",
+        "codigo": "DATA_INVALIDA"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C09",
+      "requisitos": [
+        "RF-A03"
+      ],
+      "entrada": {
+        "impacto": 1,
+        "urgencia": 1,
+        "abertura": "2026-10-01T07:00:00-03:00",
+        "agora": "2026-10-01T11:00:00Z"
+      },
+      "esperado": {
+        "prioridade": "P1",
+        "limite_primeira_resposta": "2026-10-01T11:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "especialista"
+      },
+      "obtido": {
+        "prioridade": "P1",
+        "limite_primeira_resposta": "2026-10-01T11:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "especialista"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C10",
+      "requisitos": [
+        "RF-A03"
+      ],
+      "entrada": {
+        "impacto": 1,
+        "urgencia": 1,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T11:00:00Z",
+        "primeira_resposta": "2026-10-01T12:00:00Z"
+      },
+      "esperado": {
+        "situacao": "revisar_dados",
+        "codigo": "DATA_INVALIDA"
+      },
+      "obtido": {
+        "situacao": "revisar_dados",
+        "codigo": "DATA_INVALIDA"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C11",
+      "requisitos": [
+        "RF-A02",
+        "RF-A03",
+        "RF-A05"
+      ],
+      "entrada": {
+        "impacto": 1,
+        "urgencia": 2,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T11:00:00Z"
+      },
+      "esperado": {
+        "prioridade": "P2",
+        "limite_primeira_resposta": "2026-10-01T14:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "obtido": {
+        "prioridade": "P2",
+        "limite_primeira_resposta": "2026-10-01T14:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C12",
+      "requisitos": [
+        "RF-A02",
+        "RF-A03",
+        "RF-A05"
+      ],
+      "entrada": {
+        "impacto": 1,
+        "urgencia": 3,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T11:00:00Z"
+      },
+      "esperado": {
+        "prioridade": "P2",
+        "limite_primeira_resposta": "2026-10-01T14:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "obtido": {
+        "prioridade": "P2",
+        "limite_primeira_resposta": "2026-10-01T14:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C13",
+      "requisitos": [
+        "RF-A02",
+        "RF-A03",
+        "RF-A05"
+      ],
+      "entrada": {
+        "impacto": 2,
+        "urgencia": 1,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T11:00:00Z"
+      },
+      "esperado": {
+        "prioridade": "P2",
+        "limite_primeira_resposta": "2026-10-01T14:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "obtido": {
+        "prioridade": "P2",
+        "limite_primeira_resposta": "2026-10-01T14:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C14",
+      "requisitos": [
+        "RF-A02",
+        "RF-A03",
+        "RF-A05"
+      ],
+      "entrada": {
+        "impacto": 2,
+        "urgencia": 2,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T11:00:00Z"
+      },
+      "esperado": {
+        "prioridade": "P2",
+        "limite_primeira_resposta": "2026-10-01T14:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "obtido": {
+        "prioridade": "P2",
+        "limite_primeira_resposta": "2026-10-01T14:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C15",
+      "requisitos": [
+        "RF-A02",
+        "RF-A03",
+        "RF-A05"
+      ],
+      "entrada": {
+        "impacto": 2,
+        "urgencia": 3,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T11:00:00Z"
+      },
+      "esperado": {
+        "prioridade": "P3",
+        "limite_primeira_resposta": "2026-10-01T18:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "obtido": {
+        "prioridade": "P3",
+        "limite_primeira_resposta": "2026-10-01T18:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C16",
+      "requisitos": [
+        "RF-A02",
+        "RF-A03",
+        "RF-A05"
+      ],
+      "entrada": {
+        "impacto": 3,
+        "urgencia": 1,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T11:00:00Z"
+      },
+      "esperado": {
+        "prioridade": "P2",
+        "limite_primeira_resposta": "2026-10-01T14:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "obtido": {
+        "prioridade": "P2",
+        "limite_primeira_resposta": "2026-10-01T14:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C17",
+      "requisitos": [
+        "RF-A02",
+        "RF-A03",
+        "RF-A05"
+      ],
+      "entrada": {
+        "impacto": 3,
+        "urgencia": 2,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T11:00:00Z"
+      },
+      "esperado": {
+        "prioridade": "P3",
+        "limite_primeira_resposta": "2026-10-01T18:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "obtido": {
+        "prioridade": "P3",
+        "limite_primeira_resposta": "2026-10-01T18:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "A-C18",
+      "requisitos": [
+        "RF-A02",
+        "RF-A03",
+        "RF-A05"
+      ],
+      "entrada": {
+        "impacto": 3,
+        "urgencia": 3,
+        "abertura": "2026-10-01T10:00:00Z",
+        "agora": "2026-10-01T11:00:00Z"
+      },
+      "esperado": {
+        "prioridade": "P3",
+        "limite_primeira_resposta": "2026-10-01T18:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "obtido": {
+        "prioridade": "P3",
+        "limite_primeira_resposta": "2026-10-01T18:00:00+00:00",
+        "situacao": "pendente_no_prazo",
+        "grupo": "triagem"
+      },
+      "resultado": "PASS"
+    }
+  ]
+}

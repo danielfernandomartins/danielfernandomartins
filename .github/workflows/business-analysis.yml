@@ -1,0 +1,20 @@
+name: Evidencias de Analise de Negocios
+on:
+  push:
+    paths:
+      - 'analise-negocios/**'
+      - '.github/workflows/business-analysis.yml'
+  pull_request:
+    paths:
+      - 'analise-negocios/**'
+      - '.github/workflows/business-analysis.yml'
+permissions:
+  contents: read
+jobs:
+  requisitos-e-cenarios:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Conferir regras, rastreabilidade e evidencias
+        run: python3 analise-negocios/validar.py

@@ -1,0 +1,385 @@
+{
+  "caso": "01-funil-comercial",
+  "tipo": "verificacao_tecnica_automatizada",
+  "aceite_de_negocio": "pendente",
+  "requisitos_cobertos": 5,
+  "cenarios_aprovados": 15,
+  "sha256_fontes": {
+    "prototipo.py": "77dbf4c7695dc2f4798e52e8f5eaaf75e5783a1c2ddf8741d9dfb3e318d88926",
+    "requisitos.json": "9c4cc8a0de81a9974d8c9d3ffc44cbc7089e9ed6c311c253967503f594a4e7b7",
+    "cenarios.json": "9edf76ad23d9a5c00e3baa676edc929e17efd6f9609c7a870632366e4c37112e"
+  },
+  "resultados": [
+    {
+      "cenario": "F-C01",
+      "requisitos": [
+        "RF-F01",
+        "RF-F02"
+      ],
+      "entrada": {
+        "acao": "transicao",
+        "atual": "prospeccao",
+        "destino": "negociacao",
+        "valor_centavos": 10000,
+        "sistema_origem": "SMART"
+      },
+      "esperado": {
+        "aceito": true,
+        "novo_status": "negociacao",
+        "sistema_origem": "SMART"
+      },
+      "obtido": {
+        "aceito": true,
+        "novo_status": "negociacao",
+        "sistema_origem": "SMART"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "F-C02",
+      "requisitos": [
+        "RF-F01"
+      ],
+      "entrada": {
+        "acao": "transicao",
+        "atual": "prospeccao",
+        "destino": "negociacao",
+        "valor_centavos": -1,
+        "sistema_origem": "SMART"
+      },
+      "esperado": {
+        "aceito": false,
+        "codigo": "DADOS_INVALIDOS"
+      },
+      "obtido": {
+        "aceito": false,
+        "codigo": "DADOS_INVALIDOS"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "F-C03",
+      "requisitos": [
+        "RF-F02"
+      ],
+      "entrada": {
+        "acao": "transicao",
+        "atual": "prospeccao",
+        "destino": "ganha",
+        "valor_centavos": 10000,
+        "sistema_origem": "SMART"
+      },
+      "esperado": {
+        "aceito": false,
+        "codigo": "TRANSICAO_INVALIDA"
+      },
+      "obtido": {
+        "aceito": false,
+        "codigo": "TRANSICAO_INVALIDA"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "F-C04",
+      "requisitos": [
+        "RF-F03"
+      ],
+      "entrada": {
+        "acao": "transicao",
+        "atual": "negociacao",
+        "destino": "perdida",
+        "valor_centavos": 10000,
+        "motivo": "  ",
+        "sistema_origem": "SMART"
+      },
+      "esperado": {
+        "aceito": false,
+        "codigo": "MOTIVO_OBRIGATORIO"
+      },
+      "obtido": {
+        "aceito": false,
+        "codigo": "MOTIVO_OBRIGATORIO"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "F-C05",
+      "requisitos": [
+        "RF-F02"
+      ],
+      "entrada": {
+        "acao": "transicao",
+        "atual": "ganha",
+        "destino": "negociacao",
+        "valor_centavos": 10000,
+        "sistema_origem": "SMART"
+      },
+      "esperado": {
+        "aceito": false,
+        "codigo": "TRANSICAO_INVALIDA"
+      },
+      "obtido": {
+        "aceito": false,
+        "codigo": "TRANSICAO_INVALIDA"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "F-C06",
+      "requisitos": [
+        "RF-F04"
+      ],
+      "entrada": {
+        "acao": "indicadores",
+        "oportunidades": [
+          {
+            "status": "ganha",
+            "valor_centavos": 10000
+          },
+          {
+            "status": "perdida",
+            "valor_centavos": 5000
+          },
+          {
+            "status": "negociacao",
+            "valor_centavos": 20000
+          }
+        ]
+      },
+      "esperado": {
+        "total": 3,
+        "ganhas": 1,
+        "valor_aberto_centavos": 20000,
+        "conversao_total_pct": 33.33,
+        "taxa_ganho_encerradas_pct": 50.0
+      },
+      "obtido": {
+        "total": 3,
+        "ganhas": 1,
+        "valor_aberto_centavos": 20000,
+        "conversao_total_pct": 33.33,
+        "taxa_ganho_encerradas_pct": 50.0
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "F-C07",
+      "requisitos": [
+        "RF-F05"
+      ],
+      "entrada": {
+        "acao": "indicadores",
+        "oportunidades": []
+      },
+      "esperado": {
+        "total": 0,
+        "ganhas": 0,
+        "valor_aberto_centavos": 0,
+        "conversao_total_pct": null,
+        "taxa_ganho_encerradas_pct": null
+      },
+      "obtido": {
+        "total": 0,
+        "ganhas": 0,
+        "valor_aberto_centavos": 0,
+        "conversao_total_pct": null,
+        "taxa_ganho_encerradas_pct": null
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "F-C08",
+      "requisitos": [
+        "RF-F04",
+        "RF-F05"
+      ],
+      "entrada": {
+        "acao": "indicadores",
+        "oportunidades": [
+          {
+            "status": "prospeccao",
+            "valor_centavos": 10000
+          }
+        ]
+      },
+      "esperado": {
+        "total": 1,
+        "ganhas": 0,
+        "valor_aberto_centavos": 10000,
+        "conversao_total_pct": 0.0,
+        "taxa_ganho_encerradas_pct": null
+      },
+      "obtido": {
+        "total": 1,
+        "ganhas": 0,
+        "valor_aberto_centavos": 10000,
+        "conversao_total_pct": 0.0,
+        "taxa_ganho_encerradas_pct": null
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "F-C09",
+      "requisitos": [
+        "RF-F02"
+      ],
+      "entrada": {
+        "acao": "transicao",
+        "atual": "negociacao",
+        "destino": "ganha",
+        "valor_centavos": 10000,
+        "sistema_origem": "SMART"
+      },
+      "esperado": {
+        "aceito": true,
+        "novo_status": "ganha",
+        "sistema_origem": "SMART"
+      },
+      "obtido": {
+        "aceito": true,
+        "novo_status": "ganha",
+        "sistema_origem": "SMART"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "F-C10",
+      "requisitos": [
+        "RF-F03"
+      ],
+      "entrada": {
+        "acao": "transicao",
+        "atual": "negociacao",
+        "destino": "perdida",
+        "valor_centavos": 10000,
+        "motivo": "preco",
+        "sistema_origem": "SMART"
+      },
+      "esperado": {
+        "aceito": true,
+        "novo_status": "perdida",
+        "sistema_origem": "SMART"
+      },
+      "obtido": {
+        "aceito": true,
+        "novo_status": "perdida",
+        "sistema_origem": "SMART"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "F-C11",
+      "requisitos": [
+        "RF-F01",
+        "RF-F05"
+      ],
+      "entrada": {
+        "acao": "indicadores",
+        "oportunidades": [
+          {
+            "status": "inventado",
+            "valor_centavos": 100
+          }
+        ]
+      },
+      "esperado": {
+        "erro": "REGISTRO_INVALIDO"
+      },
+      "obtido": {
+        "erro": "REGISTRO_INVALIDO"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "F-C12",
+      "requisitos": [
+        "RF-F01"
+      ],
+      "entrada": {
+        "acao": "transicao",
+        "atual": "prospeccao",
+        "destino": "negociacao",
+        "valor_centavos": 0,
+        "sistema_origem": "SMART"
+      },
+      "esperado": {
+        "aceito": false,
+        "codigo": "DADOS_INVALIDOS"
+      },
+      "obtido": {
+        "aceito": false,
+        "codigo": "DADOS_INVALIDOS"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "F-C13",
+      "requisitos": [
+        "RF-F01"
+      ],
+      "entrada": {
+        "acao": "transicao",
+        "atual": "prospeccao",
+        "destino": "negociacao",
+        "valor_centavos": 10000,
+        "sistema_origem": "SAP"
+      },
+      "esperado": {
+        "aceito": true,
+        "novo_status": "negociacao",
+        "sistema_origem": "SAP"
+      },
+      "obtido": {
+        "aceito": true,
+        "novo_status": "negociacao",
+        "sistema_origem": "SAP"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "F-C14",
+      "requisitos": [
+        "RF-F01"
+      ],
+      "entrada": {
+        "acao": "transicao",
+        "atual": "prospeccao",
+        "destino": "negociacao",
+        "valor_centavos": 10000,
+        "sistema_origem": "OUTRO"
+      },
+      "esperado": {
+        "aceito": false,
+        "codigo": "DADOS_INVALIDOS"
+      },
+      "obtido": {
+        "aceito": false,
+        "codigo": "DADOS_INVALIDOS"
+      },
+      "resultado": "PASS"
+    },
+    {
+      "cenario": "F-C15",
+      "requisitos": [
+        "RF-F03"
+      ],
+      "entrada": {
+        "acao": "transicao",
+        "atual": "negociacao",
+        "destino": "perdida",
+        "valor_centavos": 10000,
+        "motivo": 123,
+        "sistema_origem": "SMART"
+      },
+      "esperado": {
+        "aceito": false,
+        "codigo": "MOTIVO_OBRIGATORIO"
+      },
+      "obtido": {
+        "aceito": false,
+        "codigo": "MOTIVO_OBRIGATORIO"
+      },
+      "resultado": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "RF-C01",
+    "titulo": "Validar contrato do lote",
+    "necessidade": "N-C01: impedir cálculo sobre identificadores ou valores inválidos.",
+    "prioridade": "Must",
+    "historia": "Como operações, quero rejeitar lote estruturalmente inválido antes de calcular.",
+    "regra": "RN-C01: IDs de parcelas únicos, textos não vazios, status conhecido e valores inteiros positivos."
+  },
+  {
+    "id": "RF-C02",
+    "titulo": "Consolidar e classificar diferenças",
+    "necessidade": "N-C02: localizar parcelas com valor faltante ou excedente.",
+    "prioridade": "Must",
+    "historia": "Como operações, quero somar pagamentos válidos e comparar ao total da parcela.",
+    "regra": "RN-C02: somar por referência exata; igualdade em centavos, sem tolerância; permitir pagamentos parciais."
+  },
+  {
+    "id": "RF-C03",
+    "titulo": "Separar cancelamentos",
+    "necessidade": "N-C03: impedir conclusão automática de parcela cancelada.",
+    "prioridade": "Must",
+    "historia": "Como gestor, quero revisar qualquer recebimento em parcela cancelada.",
+    "regra": "RN-C03: cancelado com recebido → revisar_cancelado; sem recebido → cancelado_sem_recebimento; saldo null."
+  },
+  {
+    "id": "RF-C04",
+    "titulo": "Quarentenar duplicidades",
+    "necessidade": "N-C04: evitar dupla contagem e seleção arbitrária.",
+    "prioridade": "Must",
+    "historia": "Como operações, quero identificar todas as linhas com um mesmo ID de pagamento.",
+    "regra": "RN-C04: nenhuma ocorrência do ID duplicado participa da soma, mesmo com valores conflitantes."
+  },
+  {
+    "id": "RF-C05",
+    "titulo": "Identificar referência inexistente",
+    "necessidade": "N-C05: evitar alocação de recebimento à parcela errada.",
+    "prioridade": "Must",
+    "historia": "Como operações, quero localizar o pagamento sem parcela correspondente.",
+    "regra": "RN-C05: referência inexistente gera exceção por linha; não afeta soma de outras parcelas; duplicidade tem precedência."
+  }
+]

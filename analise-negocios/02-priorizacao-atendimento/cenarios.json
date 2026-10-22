@@ -1,0 +1,393 @@
+[
+  {
+    "id": "A-C01",
+    "requisitos": [
+      "RF-A02",
+      "RF-A03",
+      "RF-A04",
+      "RF-A05"
+    ],
+    "dado": "P1 sem resposta",
+    "quando": "Conferir no segundo exato do limite",
+    "entao": "Pendente no prazo e especialista",
+    "entrada": {
+      "impacto": 1,
+      "urgencia": 1,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T11:00:00Z"
+    },
+    "esperado": {
+      "prioridade": "P1",
+      "limite_primeira_resposta": "2026-10-01T11:00:00+00:00",
+      "situacao": "pendente_no_prazo",
+      "grupo": "especialista"
+    }
+  },
+  {
+    "id": "A-C02",
+    "requisitos": [
+      "RF-A04"
+    ],
+    "dado": "P1 sem resposta",
+    "quando": "Conferir um segundo depois do limite",
+    "entao": "Pendente vencido",
+    "entrada": {
+      "impacto": 1,
+      "urgencia": 1,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T11:00:01Z"
+    },
+    "esperado": {
+      "prioridade": "P1",
+      "limite_primeira_resposta": "2026-10-01T11:00:00+00:00",
+      "situacao": "pendente_vencido",
+      "grupo": "especialista"
+    }
+  },
+  {
+    "id": "A-C03",
+    "requisitos": [
+      "RF-A04"
+    ],
+    "dado": "P1 respondido exatamente às 11h",
+    "quando": "Conferir às 12h",
+    "entao": "Respondido no prazo",
+    "entrada": {
+      "impacto": 1,
+      "urgencia": 1,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T12:00:00Z",
+      "primeira_resposta": "2026-10-01T11:00:00Z"
+    },
+    "esperado": {
+      "prioridade": "P1",
+      "limite_primeira_resposta": "2026-10-01T11:00:00+00:00",
+      "situacao": "respondido_no_prazo",
+      "grupo": "especialista"
+    }
+  },
+  {
+    "id": "A-C04",
+    "requisitos": [
+      "RF-A04"
+    ],
+    "dado": "P1 respondido às 11h00m01s",
+    "quando": "Conferir às 12h",
+    "entao": "Respondido vencido",
+    "entrada": {
+      "impacto": 1,
+      "urgencia": 1,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T12:00:00Z",
+      "primeira_resposta": "2026-10-01T11:00:01Z"
+    },
+    "esperado": {
+      "prioridade": "P1",
+      "limite_primeira_resposta": "2026-10-01T11:00:00+00:00",
+      "situacao": "respondido_vencido",
+      "grupo": "especialista"
+    }
+  },
+  {
+    "id": "A-C05",
+    "requisitos": [
+      "RF-A01"
+    ],
+    "dado": "Urgência ausente",
+    "quando": "Classificar",
+    "entao": "Solicitar complemento",
+    "entrada": {
+      "impacto": 1,
+      "urgencia": null,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T11:00:00Z"
+    },
+    "esperado": {
+      "situacao": "aguardando_dados",
+      "codigo": "CLASSIFICACAO_INCOMPLETA"
+    }
+  },
+  {
+    "id": "A-C06",
+    "requisitos": [
+      "RF-A01"
+    ],
+    "dado": "Impacto fora do domínio",
+    "quando": "Classificar",
+    "entao": "Solicitar complemento",
+    "entrada": {
+      "impacto": 4,
+      "urgencia": 1,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T11:00:00Z"
+    },
+    "esperado": {
+      "situacao": "aguardando_dados",
+      "codigo": "CLASSIFICACAO_INCOMPLETA"
+    }
+  },
+  {
+    "id": "A-C07",
+    "requisitos": [
+      "RF-A03"
+    ],
+    "dado": "Abertura sem fuso",
+    "quando": "Calcular prazo",
+    "entao": "Revisar data",
+    "entrada": {
+      "impacto": 1,
+      "urgencia": 1,
+      "abertura": "2026-10-01T10:00:00",
+      "agora": "2026-10-01T11:00:00Z"
+    },
+    "esperado": {
+      "situacao": "revisar_dados",
+      "codigo": "DATA_INVALIDA"
+    }
+  },
+  {
+    "id": "A-C08",
+    "requisitos": [
+      "RF-A03"
+    ],
+    "dado": "Resposta anterior à abertura",
+    "quando": "Calcular situação",
+    "entao": "Revisar cronologia",
+    "entrada": {
+      "impacto": 1,
+      "urgencia": 1,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T11:00:00Z",
+      "primeira_resposta": "2026-10-01T09:00:00Z"
+    },
+    "esperado": {
+      "situacao": "revisar_dados",
+      "codigo": "DATA_INVALIDA"
+    }
+  },
+  {
+    "id": "A-C09",
+    "requisitos": [
+      "RF-A03"
+    ],
+    "dado": "Abertura 07h no fuso −03",
+    "quando": "Calcular limite UTC",
+    "entao": "Mesmo limite 11h UTC",
+    "entrada": {
+      "impacto": 1,
+      "urgencia": 1,
+      "abertura": "2026-10-01T07:00:00-03:00",
+      "agora": "2026-10-01T11:00:00Z"
+    },
+    "esperado": {
+      "prioridade": "P1",
+      "limite_primeira_resposta": "2026-10-01T11:00:00+00:00",
+      "situacao": "pendente_no_prazo",
+      "grupo": "especialista"
+    }
+  },
+  {
+    "id": "A-C10",
+    "requisitos": [
+      "RF-A03"
+    ],
+    "dado": "Resposta posterior ao relógio atual",
+    "quando": "Calcular situação",
+    "entao": "Revisar cronologia",
+    "entrada": {
+      "impacto": 1,
+      "urgencia": 1,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T11:00:00Z",
+      "primeira_resposta": "2026-10-01T12:00:00Z"
+    },
+    "esperado": {
+      "situacao": "revisar_dados",
+      "codigo": "DATA_INVALIDA"
+    }
+  },
+  {
+    "id": "A-C11",
+    "requisitos": [
+      "RF-A02",
+      "RF-A03",
+      "RF-A05"
+    ],
+    "dado": "Impacto 1, urgência 2",
+    "quando": "Classificar às 11h",
+    "entao": "P2, limite 14h e triagem",
+    "entrada": {
+      "impacto": 1,
+      "urgencia": 2,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T11:00:00Z"
+    },
+    "esperado": {
+      "prioridade": "P2",
+      "limite_primeira_resposta": "2026-10-01T14:00:00+00:00",
+      "situacao": "pendente_no_prazo",
+      "grupo": "triagem"
+    }
+  },
+  {
+    "id": "A-C12",
+    "requisitos": [
+      "RF-A02",
+      "RF-A03",
+      "RF-A05"
+    ],
+    "dado": "Impacto 1, urgência 3",
+    "quando": "Classificar às 11h",
+    "entao": "P2, limite 14h e triagem",
+    "entrada": {
+      "impacto": 1,
+      "urgencia": 3,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T11:00:00Z"
+    },
+    "esperado": {
+      "prioridade": "P2",
+      "limite_primeira_resposta": "2026-10-01T14:00:00+00:00",
+      "situacao": "pendente_no_prazo",
+      "grupo": "triagem"
+    }
+  },
+  {
+    "id": "A-C13",
+    "requisitos": [
+      "RF-A02",
+      "RF-A03",
+      "RF-A05"
+    ],
+    "dado": "Impacto 2, urgência 1",
+    "quando": "Classificar às 11h",
+    "entao": "P2, limite 14h e triagem",
+    "entrada": {
+      "impacto": 2,
+      "urgencia": 1,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T11:00:00Z"
+    },
+    "esperado": {
+      "prioridade": "P2",
+      "limite_primeira_resposta": "2026-10-01T14:00:00+00:00",
+      "situacao": "pendente_no_prazo",
+      "grupo": "triagem"
+    }
+  },
+  {
+    "id": "A-C14",
+    "requisitos": [
+      "RF-A02",
+      "RF-A03",
+      "RF-A05"
+    ],
+    "dado": "Impacto 2, urgência 2",
+    "quando": "Classificar às 11h",
+    "entao": "P2, limite 14h e triagem",
+    "entrada": {
+      "impacto": 2,
+      "urgencia": 2,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T11:00:00Z"
+    },
+    "esperado": {
+      "prioridade": "P2",
+      "limite_primeira_resposta": "2026-10-01T14:00:00+00:00",
+      "situacao": "pendente_no_prazo",
+      "grupo": "triagem"
+    }
+  },
+  {
+    "id": "A-C15",
+    "requisitos": [
+      "RF-A02",
+      "RF-A03",
+      "RF-A05"
+    ],
+    "dado": "Impacto 2, urgência 3",
+    "quando": "Classificar às 11h",
+    "entao": "P3, limite 18h e triagem",
+    "entrada": {
+      "impacto": 2,
+      "urgencia": 3,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T11:00:00Z"
+    },
+    "esperado": {
+      "prioridade": "P3",
+      "limite_primeira_resposta": "2026-10-01T18:00:00+00:00",
+      "situacao": "pendente_no_prazo",
+      "grupo": "triagem"
+    }
+  },
+  {
+    "id": "A-C16",
+    "requisitos": [
+      "RF-A02",
+      "RF-A03",
+      "RF-A05"
+    ],
+    "dado": "Impacto 3, urgência 1",
+    "quando": "Classificar às 11h",
+    "entao": "P2, limite 14h e triagem",
+    "entrada": {
+      "impacto": 3,
+      "urgencia": 1,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T11:00:00Z"
+    },
+    "esperado": {
+      "prioridade": "P2",
+      "limite_primeira_resposta": "2026-10-01T14:00:00+00:00",
+      "situacao": "pendente_no_prazo",
+      "grupo": "triagem"
+    }
+  },
+  {
+    "id": "A-C17",
+    "requisitos": [
+      "RF-A02",
+      "RF-A03",
+      "RF-A05"
+    ],
+    "dado": "Impacto 3, urgência 2",
+    "quando": "Classificar às 11h",
+    "entao": "P3, limite 18h e triagem",
+    "entrada": {
+      "impacto": 3,
+      "urgencia": 2,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T11:00:00Z"
+    },
+    "esperado": {
+      "prioridade": "P3",
+      "limite_primeira_resposta": "2026-10-01T18:00:00+00:00",
+      "situacao": "pendente_no_prazo",
+      "grupo": "triagem"
+    }
+  },
+  {
+    "id": "A-C18",
+    "requisitos": [
+      "RF-A02",
+      "RF-A03",
+      "RF-A05"
+    ],
+    "dado": "Impacto 3, urgência 3",
+    "quando": "Classificar às 11h",
+    "entao": "P3, limite 18h e triagem",
+    "entrada": {
+      "impacto": 3,
+      "urgencia": 3,
+      "abertura": "2026-10-01T10:00:00Z",
+      "agora": "2026-10-01T11:00:00Z"
+    },
+    "esperado": {
+      "prioridade": "P3",
+      "limite_primeira_resposta": "2026-10-01T18:00:00+00:00",
+      "situacao": "pendente_no_prazo",
+      "grupo": "triagem"
+    }
+  }
+]

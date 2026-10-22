@@ -1,0 +1,331 @@
+[
+  {
+    "id": "F-C01",
+    "requisitos": [
+      "RF-F01",
+      "RF-F02"
+    ],
+    "dado": "Oportunidade prospectada de R$100",
+    "quando": "Avançar à negociação",
+    "entao": "Aceitar negociacao",
+    "entrada": {
+      "acao": "transicao",
+      "atual": "prospeccao",
+      "destino": "negociacao",
+      "valor_centavos": 10000,
+      "sistema_origem": "SMART"
+    },
+    "esperado": {
+      "aceito": true,
+      "novo_status": "negociacao",
+      "sistema_origem": "SMART"
+    }
+  },
+  {
+    "id": "F-C02",
+    "requisitos": [
+      "RF-F01"
+    ],
+    "dado": "Valor negativo",
+    "quando": "Solicitar alteração",
+    "entao": "Rejeitar dados",
+    "entrada": {
+      "acao": "transicao",
+      "atual": "prospeccao",
+      "destino": "negociacao",
+      "valor_centavos": -1,
+      "sistema_origem": "SMART"
+    },
+    "esperado": {
+      "aceito": false,
+      "codigo": "DADOS_INVALIDOS"
+    }
+  },
+  {
+    "id": "F-C03",
+    "requisitos": [
+      "RF-F02"
+    ],
+    "dado": "Oportunidade em prospecção",
+    "quando": "Saltar diretamente para ganha",
+    "entao": "Rejeitar salto",
+    "entrada": {
+      "acao": "transicao",
+      "atual": "prospeccao",
+      "destino": "ganha",
+      "valor_centavos": 10000,
+      "sistema_origem": "SMART"
+    },
+    "esperado": {
+      "aceito": false,
+      "codigo": "TRANSICAO_INVALIDA"
+    }
+  },
+  {
+    "id": "F-C04",
+    "requisitos": [
+      "RF-F03"
+    ],
+    "dado": "Negociação com motivo em branco",
+    "quando": "Encerrar como perdida",
+    "entao": "Exigir motivo",
+    "entrada": {
+      "acao": "transicao",
+      "atual": "negociacao",
+      "destino": "perdida",
+      "valor_centavos": 10000,
+      "motivo": "  ",
+      "sistema_origem": "SMART"
+    },
+    "esperado": {
+      "aceito": false,
+      "codigo": "MOTIVO_OBRIGATORIO"
+    }
+  },
+  {
+    "id": "F-C05",
+    "requisitos": [
+      "RF-F02"
+    ],
+    "dado": "Oportunidade ganha",
+    "quando": "Tentar reabrir negociação",
+    "entao": "Rejeitar reabertura",
+    "entrada": {
+      "acao": "transicao",
+      "atual": "ganha",
+      "destino": "negociacao",
+      "valor_centavos": 10000,
+      "sistema_origem": "SMART"
+    },
+    "esperado": {
+      "aceito": false,
+      "codigo": "TRANSICAO_INVALIDA"
+    }
+  },
+  {
+    "id": "F-C06",
+    "requisitos": [
+      "RF-F04"
+    ],
+    "dado": "Uma ganha, uma perdida, uma aberta",
+    "quando": "Calcular as duas taxas",
+    "entao": "33,33% total; 50% encerradas; R$200 abertos",
+    "entrada": {
+      "acao": "indicadores",
+      "oportunidades": [
+        {
+          "status": "ganha",
+          "valor_centavos": 10000
+        },
+        {
+          "status": "perdida",
+          "valor_centavos": 5000
+        },
+        {
+          "status": "negociacao",
+          "valor_centavos": 20000
+        }
+      ]
+    },
+    "esperado": {
+      "total": 3,
+      "ganhas": 1,
+      "valor_aberto_centavos": 20000,
+      "conversao_total_pct": 33.33,
+      "taxa_ganho_encerradas_pct": 50.0
+    }
+  },
+  {
+    "id": "F-C07",
+    "requisitos": [
+      "RF-F05"
+    ],
+    "dado": "Lista vazia",
+    "quando": "Calcular taxas",
+    "entao": "Retornar null nos dois denominadores",
+    "entrada": {
+      "acao": "indicadores",
+      "oportunidades": []
+    },
+    "esperado": {
+      "total": 0,
+      "ganhas": 0,
+      "valor_aberto_centavos": 0,
+      "conversao_total_pct": null,
+      "taxa_ganho_encerradas_pct": null
+    }
+  },
+  {
+    "id": "F-C08",
+    "requisitos": [
+      "RF-F04",
+      "RF-F05"
+    ],
+    "dado": "Uma oportunidade aberta",
+    "quando": "Calcular taxas",
+    "entao": "0% sobre total e null sobre encerradas",
+    "entrada": {
+      "acao": "indicadores",
+      "oportunidades": [
+        {
+          "status": "prospeccao",
+          "valor_centavos": 10000
+        }
+      ]
+    },
+    "esperado": {
+      "total": 1,
+      "ganhas": 0,
+      "valor_aberto_centavos": 10000,
+      "conversao_total_pct": 0.0,
+      "taxa_ganho_encerradas_pct": null
+    }
+  },
+  {
+    "id": "F-C09",
+    "requisitos": [
+      "RF-F02"
+    ],
+    "dado": "Negociação válida",
+    "quando": "Encerrar como ganha",
+    "entao": "Aceitar ganho",
+    "entrada": {
+      "acao": "transicao",
+      "atual": "negociacao",
+      "destino": "ganha",
+      "valor_centavos": 10000,
+      "sistema_origem": "SMART"
+    },
+    "esperado": {
+      "aceito": true,
+      "novo_status": "ganha",
+      "sistema_origem": "SMART"
+    }
+  },
+  {
+    "id": "F-C10",
+    "requisitos": [
+      "RF-F03"
+    ],
+    "dado": "Negociação com motivo preço",
+    "quando": "Encerrar como perdida",
+    "entao": "Aceitar perda justificada",
+    "entrada": {
+      "acao": "transicao",
+      "atual": "negociacao",
+      "destino": "perdida",
+      "valor_centavos": 10000,
+      "motivo": "preco",
+      "sistema_origem": "SMART"
+    },
+    "esperado": {
+      "aceito": true,
+      "novo_status": "perdida",
+      "sistema_origem": "SMART"
+    }
+  },
+  {
+    "id": "F-C11",
+    "requisitos": [
+      "RF-F01",
+      "RF-F05"
+    ],
+    "dado": "Registro com estado desconhecido",
+    "quando": "Calcular indicadores",
+    "entao": "Rejeitar lote de indicadores",
+    "entrada": {
+      "acao": "indicadores",
+      "oportunidades": [
+        {
+          "status": "inventado",
+          "valor_centavos": 100
+        }
+      ]
+    },
+    "esperado": {
+      "erro": "REGISTRO_INVALIDO"
+    }
+  },
+  {
+    "id": "F-C12",
+    "requisitos": [
+      "RF-F01"
+    ],
+    "dado": "Valor zero",
+    "quando": "Solicitar negociação",
+    "entao": "Rejeitar valor",
+    "entrada": {
+      "acao": "transicao",
+      "atual": "prospeccao",
+      "destino": "negociacao",
+      "valor_centavos": 0,
+      "sistema_origem": "SMART"
+    },
+    "esperado": {
+      "aceito": false,
+      "codigo": "DADOS_INVALIDOS"
+    }
+  },
+  {
+    "id": "F-C13",
+    "requisitos": [
+      "RF-F01"
+    ],
+    "dado": "Oportunidade de origem SAP simulada",
+    "quando": "Avançar à negociação",
+    "entao": "Preservar origem SAP",
+    "entrada": {
+      "acao": "transicao",
+      "atual": "prospeccao",
+      "destino": "negociacao",
+      "valor_centavos": 10000,
+      "sistema_origem": "SAP"
+    },
+    "esperado": {
+      "aceito": true,
+      "novo_status": "negociacao",
+      "sistema_origem": "SAP"
+    }
+  },
+  {
+    "id": "F-C14",
+    "requisitos": [
+      "RF-F01"
+    ],
+    "dado": "Origem fora do contrato didático",
+    "quando": "Avançar à negociação",
+    "entao": "Rejeitar origem desconhecida",
+    "entrada": {
+      "acao": "transicao",
+      "atual": "prospeccao",
+      "destino": "negociacao",
+      "valor_centavos": 10000,
+      "sistema_origem": "OUTRO"
+    },
+    "esperado": {
+      "aceito": false,
+      "codigo": "DADOS_INVALIDOS"
+    }
+  },
+  {
+    "id": "F-C15",
+    "requisitos": [
+      "RF-F03"
+    ],
+    "dado": "Motivo preenchido com número em vez de texto",
+    "quando": "Encerrar como perdida",
+    "entao": "Exigir motivo textual",
+    "entrada": {
+      "acao": "transicao",
+      "atual": "negociacao",
+      "destino": "perdida",
+      "valor_centavos": 10000,
+      "motivo": 123,
+      "sistema_origem": "SMART"
+    },
+    "esperado": {
+      "aceito": false,
+      "codigo": "MOTIVO_OBRIGATORIO"
+    }
+  }
+]
