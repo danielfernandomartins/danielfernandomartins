@@ -1,0 +1,158 @@
+[
+  {
+    "id": "C01",
+    "requisito": "E1",
+    "descricao": "Solicitação completa na alçada inicial",
+    "entrada": {
+      "valor": "100",
+      "orcamento": "10000",
+      "solicitante": "u1",
+      "aprovador": "u2",
+      "documentos": true
+    },
+    "esperado": "GESTOR"
+  },
+  {
+    "id": "C02",
+    "requisito": "E1",
+    "descricao": "Limite inclusivo",
+    "entrada": {
+      "valor": "5000",
+      "orcamento": "10000",
+      "solicitante": "u1",
+      "aprovador": "u2",
+      "documentos": true
+    },
+    "esperado": "GESTOR"
+  },
+  {
+    "id": "C03",
+    "requisito": "E1",
+    "descricao": "Acima da alçada",
+    "entrada": {
+      "valor": "5000.01",
+      "orcamento": "10000",
+      "solicitante": "u1",
+      "aprovador": "u2",
+      "documentos": true
+    },
+    "esperado": "DIRETORIA"
+  },
+  {
+    "id": "C04",
+    "requisito": "E2",
+    "descricao": "Mesma identidade normalizada",
+    "entrada": {
+      "valor": "100",
+      "orcamento": "10000",
+      "solicitante": "u1",
+      "aprovador": " U1 ",
+      "documentos": true
+    },
+    "esperado": "BLOQUEADO_SEGREGACAO"
+  },
+  {
+    "id": "C05",
+    "requisito": "E3",
+    "descricao": "Falta evidência",
+    "entrada": {
+      "valor": "100",
+      "orcamento": "10000",
+      "solicitante": "u1",
+      "aprovador": "u2",
+      "documentos": false
+    },
+    "esperado": "PENDENTE_DOCUMENTOS"
+  },
+  {
+    "id": "C06",
+    "requisito": "E4",
+    "descricao": "Limite disponível excedido",
+    "entrada": {
+      "valor": "101",
+      "orcamento": "100",
+      "solicitante": "u1",
+      "aprovador": "u2",
+      "documentos": true
+    },
+    "esperado": "REVISAO_ORCAMENTO"
+  },
+  {
+    "id": "C07",
+    "requisito": "E4",
+    "descricao": "Igual ao limite disponível",
+    "entrada": {
+      "valor": "100",
+      "orcamento": "100",
+      "solicitante": "u1",
+      "aprovador": "u2",
+      "documentos": true
+    },
+    "esperado": "GESTOR"
+  },
+  {
+    "id": "C08",
+    "requisito": "E5",
+    "descricao": "Valor zero",
+    "entrada": {
+      "valor": "0",
+      "orcamento": "10000",
+      "solicitante": "u1",
+      "aprovador": "u2",
+      "documentos": true
+    },
+    "esperado": "ERRO"
+  },
+  {
+    "id": "C09",
+    "requisito": "E5",
+    "descricao": "Valor não finito",
+    "entrada": {
+      "valor": "NaN",
+      "orcamento": "10000",
+      "solicitante": "u1",
+      "aprovador": "u2",
+      "documentos": true
+    },
+    "esperado": "ERRO"
+  },
+  {
+    "id": "C10",
+    "requisito": "E5",
+    "descricao": "Precisão monetária inválida",
+    "entrada": {
+      "valor": "1.001",
+      "orcamento": "10000",
+      "solicitante": "u1",
+      "aprovador": "u2",
+      "documentos": true
+    },
+    "esperado": "ERRO"
+  },
+  {
+    "id": "C11",
+    "requisito": "E2",
+    "descricao": "Precedência da segregação",
+    "entrada": {
+      "valor": "100",
+      "orcamento": "10000",
+      "solicitante": "u1",
+      "aprovador": "u1",
+      "documentos": false
+    },
+    "esperado": "BLOQUEADO_SEGREGACAO"
+  },
+  {
+    "id": "C12",
+    "requisito": "E5",
+    "descricao": "Identidade vazia",
+    "entrada": {
+      "valor": "100",
+      "orcamento": "10000",
+      "solicitante": "",
+      "aprovador": "u2",
+      "documentos": true
+    },
+    "esperado": "ERRO"
+  }
+]

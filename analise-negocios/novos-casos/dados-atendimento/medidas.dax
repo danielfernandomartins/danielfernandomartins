@@ -1,0 +1,5 @@
+// Especificação para tabela propostas; validação no Desktop pendente.
+Propostas = COUNTROWS(propostas)
+Pendentes = CALCULATE(COUNTROWS(propostas), propostas[status] = "pendente")
+Taxa Pendencia = DIVIDE([Pendentes], [Propostas])
+Tempo Medio Min = AVERAGE(propostas[minutos])

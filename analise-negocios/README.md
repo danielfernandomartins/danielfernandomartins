@@ -40,3 +40,7 @@ SAP e SMART são nomes informados pelo proprietário do portfólio, usados como 
 ## Próxima evidência a conquistar
 
 Apresentar o caso a um profissional de negócio, registrar feedback real autorizado, revisar os requisitos e só então documentar aceite. Para uma experiência empresarial, seriam necessários ambiente autorizado, dados adequados, responsáveis, baseline e piloto. O portfólio atual não afirma essas etapas como concluídas.
+
+## Ampliação do portfólio
+
+[Três novos casos no contexto bancário](novos-casos/): encaminhamento de estornos, pendências cadastrais e priorização de melhorias. Incluem 15 requisitos, 36 cenários executados e análise SQL. Execute separadamente `python analise-negocios/novos-casos/validar.py` e `python analise-negocios/novos-casos/dados-atendimento/executar.py`. Os totais e o comando anteriores referem-se aos três casos originais.

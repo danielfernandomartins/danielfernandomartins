@@ -1,8 +1,8 @@
 # Daniel Fernando Martins — Analista de Negócios
 
-**Objetivo profissional: Analista de Negócios / Business Analyst**
+**Analista de Negócios / Business Analyst — experiência profissional no Bradesco**
 
-Trajetória em serviços financeiros, relacionamento com clientes e desenvolvimento comercial, com foco em conectar necessidades de negócio, processos e tecnologia.
+Experiência profissional como **Analista de Negócios no Bradesco**, com atuação em **análise de processos e requisitos**, conforme informado pelo autor, com trajetória em serviços financeiros, relacionamento com clientes e desenvolvimento comercial. O portfólio apresenta estudos independentes para demonstrar processos, requisitos, regras e apoio à decisão.
 
 ## Três casos para avaliação
 
@@ -13,6 +13,10 @@ Trajetória em serviços financeiros, relacionamento com clientes e desenvolvime
 | [Parcelas — contexto Bradesco Consórcios](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/03-conciliacao-recebimentos) | Conciliação, duplicidades, critérios monetários e revisão humana | 5 requisitos e 14 cenários executados |
 
 Cada caso contém escopo, stakeholders hipotéticos, perguntas de descoberta, AS-IS/TO-BE, histórias, regras, critérios de aceite, rastreabilidade, decisões, riscos e plano de homologação. Os protótipos são executáveis sem credenciais. [Ver documentação e resultados](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios).
+
+## Novos estudos de portfólio
+
+[Estornos](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/novos-casos/04-alcadas-estornos), [cadastro](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/novos-casos/05-ativacao-clientes) e [priorização de melhorias](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/novos-casos/06-priorizacao-melhorias): 15 requisitos e 36 cenários executados, com backlogs e especificações funcionais. [SQL de atendimento](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/novos-casos/dados-atendimento) executado em SQLite com dados sintéticos. [Ferramentas e referências públicas](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/novos-casos/FERRAMENTAS-E-FONTES.md).
 
 ## Foco da candidatura
 

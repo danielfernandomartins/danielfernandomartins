@@ -1,0 +1,188 @@
+[
+  {
+    "id": "C01",
+    "requisito": "P1",
+    "descricao": "Benefício ponderado e payback",
+    "entrada": {
+      "beneficio_mensal": "1000",
+      "custo_inicial": "2400",
+      "custo_mensal": "100",
+      "confianca": "0.5",
+      "esforco": "4"
+    },
+    "esperado": {
+      "beneficio_liquido_mensal": "400.00",
+      "score": "100.00",
+      "payback_meses": "6.00",
+      "recomendacao": "COMPARAR_NO_BACKLOG"
+    }
+  },
+  {
+    "id": "C02",
+    "requisito": "P1",
+    "descricao": "Sensibilidade otimista",
+    "entrada": {
+      "beneficio_mensal": "1000",
+      "custo_inicial": "2400",
+      "custo_mensal": "100",
+      "confianca": "1",
+      "esforco": "4"
+    },
+    "esperado": {
+      "beneficio_liquido_mensal": "900.00",
+      "score": "225.00",
+      "payback_meses": "2.67",
+      "recomendacao": "COMPARAR_NO_BACKLOG"
+    }
+  },
+  {
+    "id": "C03",
+    "requisito": "P2",
+    "descricao": "Confiança zero",
+    "entrada": {
+      "beneficio_mensal": "1000",
+      "custo_inicial": "2400",
+      "custo_mensal": "100",
+      "confianca": "0",
+      "esforco": "4"
+    },
+    "esperado": {
+      "beneficio_liquido_mensal": "-100.00",
+      "score": "-25.00",
+      "payback_meses": null,
+      "recomendacao": "INVESTIGAR"
+    }
+  },
+  {
+    "id": "C04",
+    "requisito": "P2",
+    "descricao": "Benefício líquido zero",
+    "entrada": {
+      "beneficio_mensal": "1000",
+      "custo_inicial": "2400",
+      "custo_mensal": "500",
+      "confianca": "0.5",
+      "esforco": "4"
+    },
+    "esperado": {
+      "beneficio_liquido_mensal": "0.00",
+      "score": "0.00",
+      "payback_meses": null,
+      "recomendacao": "INVESTIGAR"
+    }
+  },
+  {
+    "id": "C05",
+    "requisito": "P3",
+    "descricao": "Investimento inicial nulo",
+    "entrada": {
+      "beneficio_mensal": "1000",
+      "custo_inicial": "0",
+      "custo_mensal": "100",
+      "confianca": "0.5",
+      "esforco": "4"
+    },
+    "esperado": {
+      "beneficio_liquido_mensal": "400.00",
+      "score": "100.00",
+      "payback_meses": "0.00",
+      "recomendacao": "COMPARAR_NO_BACKLOG"
+    }
+  },
+  {
+    "id": "C06",
+    "requisito": "P4",
+    "descricao": "Esforço maior reduz score",
+    "entrada": {
+      "beneficio_mensal": "1000",
+      "custo_inicial": "2400",
+      "custo_mensal": "100",
+      "confianca": "0.5",
+      "esforco": "8"
+    },
+    "esperado": {
+      "beneficio_liquido_mensal": "400.00",
+      "score": "50.00",
+      "payback_meses": "6.00",
+      "recomendacao": "COMPARAR_NO_BACKLOG"
+    }
+  },
+  {
+    "id": "C07",
+    "requisito": "P5",
+    "descricao": "Esforço zero",
+    "entrada": {
+      "beneficio_mensal": "1000",
+      "custo_inicial": "2400",
+      "custo_mensal": "100",
+      "confianca": "0.5",
+      "esforco": "0"
+    },
+    "esperado": "ERRO"
+  },
+  {
+    "id": "C08",
+    "requisito": "P5",
+    "descricao": "Confiança acima de um",
+    "entrada": {
+      "beneficio_mensal": "1000",
+      "custo_inicial": "2400",
+      "custo_mensal": "100",
+      "confianca": "1.01",
+      "esforco": "4"
+    },
+    "esperado": "ERRO"
+  },
+  {
+    "id": "C09",
+    "requisito": "P5",
+    "descricao": "Custo negativo",
+    "entrada": {
+      "beneficio_mensal": "1000",
+      "custo_inicial": "-1",
+      "custo_mensal": "100",
+      "confianca": "0.5",
+      "esforco": "4"
+    },
+    "esperado": "ERRO"
+  },
+  {
+    "id": "C10",
+    "requisito": "P5",
+    "descricao": "Não finito",
+    "entrada": {
+      "beneficio_mensal": "Infinity",
+      "custo_inicial": "2400",
+      "custo_mensal": "100",
+      "confianca": "0.5",
+      "esforco": "4"
+    },
+    "esperado": "ERRO"
+  },
+  {
+    "id": "C11",
+    "requisito": "P5",
+    "descricao": "Confiança negativa",
+    "entrada": {
+      "beneficio_mensal": "1000",
+      "custo_inicial": "2400",
+      "custo_mensal": "100",
+      "confianca": "-0.1",
+      "esforco": "4"
+    },
+    "esperado": "ERRO"
+  },
+  {
+    "id": "C12",
+    "requisito": "P5",
+    "descricao": "Entrada não numérica",
+    "entrada": {
+      "beneficio_mensal": "abc",
+      "custo_inicial": "2400",
+      "custo_mensal": "100",
+      "confianca": "0.5",
+      "esforco": "4"
+    },
+    "esperado": "ERRO"
+  }
+]

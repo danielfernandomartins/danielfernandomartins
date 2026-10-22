@@ -1,0 +1,169 @@
+[
+  {
+    "id": "C01",
+    "requisito": "A1",
+    "descricao": "Cadastro completo",
+    "entrada": {
+      "cliente_id": "SINT-001",
+      "documentos": [
+        "cadastro",
+        "contrato"
+      ],
+      "duplicado": false,
+      "revisao_manual": false
+    },
+    "esperado": "APTO_PARA_ATIVACAO"
+  },
+  {
+    "id": "C02",
+    "requisito": "A2",
+    "descricao": "Contrato pendente",
+    "entrada": {
+      "cliente_id": "SINT-001",
+      "documentos": [
+        "cadastro"
+      ],
+      "duplicado": false,
+      "revisao_manual": false
+    },
+    "esperado": "PENDENTE_DOCUMENTOS"
+  },
+  {
+    "id": "C03",
+    "requisito": "A2",
+    "descricao": "Cadastro pendente",
+    "entrada": {
+      "cliente_id": "SINT-001",
+      "documentos": [
+        "contrato"
+      ],
+      "duplicado": false,
+      "revisao_manual": false
+    },
+    "esperado": "PENDENTE_DOCUMENTOS"
+  },
+  {
+    "id": "C04",
+    "requisito": "A2",
+    "descricao": "Ambos pendentes",
+    "entrada": {
+      "cliente_id": "SINT-001",
+      "documentos": [],
+      "duplicado": false,
+      "revisao_manual": false
+    },
+    "esperado": "PENDENTE_DOCUMENTOS"
+  },
+  {
+    "id": "C05",
+    "requisito": "A3",
+    "descricao": "Suspeita de duplicidade",
+    "entrada": {
+      "cliente_id": "SINT-001",
+      "documentos": [
+        "cadastro",
+        "contrato"
+      ],
+      "duplicado": true,
+      "revisao_manual": false
+    },
+    "esperado": "REVISAR_DUPLICIDADE"
+  },
+  {
+    "id": "C06",
+    "requisito": "A4",
+    "descricao": "Exceção exige decisão humana",
+    "entrada": {
+      "cliente_id": "SINT-001",
+      "documentos": [
+        "cadastro",
+        "contrato"
+      ],
+      "duplicado": false,
+      "revisao_manual": true
+    },
+    "esperado": "REVISAO_HUMANA"
+  },
+  {
+    "id": "C07",
+    "requisito": "A3",
+    "descricao": "Duplicidade prevalece",
+    "entrada": {
+      "cliente_id": "SINT-001",
+      "documentos": [],
+      "duplicado": true,
+      "revisao_manual": false
+    },
+    "esperado": "REVISAR_DUPLICIDADE"
+  },
+  {
+    "id": "C08",
+    "requisito": "A2",
+    "descricao": "Completude antes da exceção",
+    "entrada": {
+      "cliente_id": "SINT-001",
+      "documentos": [],
+      "duplicado": false,
+      "revisao_manual": true
+    },
+    "esperado": "PENDENTE_DOCUMENTOS"
+  },
+  {
+    "id": "C09",
+    "requisito": "A5",
+    "descricao": "ID vazio",
+    "entrada": {
+      "cliente_id": " ",
+      "documentos": [
+        "cadastro",
+        "contrato"
+      ],
+      "duplicado": false,
+      "revisao_manual": false
+    },
+    "esperado": "ERRO"
+  },
+  {
+    "id": "C10",
+    "requisito": "A5",
+    "descricao": "Flag textual inválida",
+    "entrada": {
+      "cliente_id": "SINT-001",
+      "documentos": [
+        "cadastro",
+        "contrato"
+      ],
+      "duplicado": "false",
+      "revisao_manual": false
+    },
+    "esperado": "ERRO"
+  },
+  {
+    "id": "C11",
+    "requisito": "A5",
+    "descricao": "Contrato de dados inválido",
+    "entrada": {
+      "cliente_id": "SINT-001",
+      "documentos": "cadastro",
+      "duplicado": false,
+      "revisao_manual": false
+    },
+    "esperado": "ERRO"
+  },
+  {
+    "id": "C12",
+    "requisito": "A1",
+    "descricao": "Repetição não altera completude",
+    "entrada": {
+      "cliente_id": "SINT-001",
+      "documentos": [
+        "cadastro",
+        "contrato",
+        "cadastro"
+      ],
+      "duplicado": false,
+      "revisao_manual": false
+    },
+    "esperado": "APTO_PARA_ATIVACAO"
+  }
+]

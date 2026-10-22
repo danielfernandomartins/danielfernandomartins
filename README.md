@@ -1,7 +1,7 @@
 <div align="center">
 
 # Daniel Fernando Martins
-### Objetivo profissional: Analista de Negócios
+### Analista de Negócios | Experiência no Bradesco
 **Processos · Regras de negócio · Indicadores · Clientes**
 
 Conectar necessidades do negócio, dados e tecnologia para apoiar decisões e melhorias.
@@ -16,11 +16,15 @@ Conectar necessidades do negócio, dados e tecnologia para apoiar decisões e me
 
 ## Sobre mim
 
-Sou Daniel Fernando Martins, com trajetória em **serviços financeiros, relacionamento com clientes e desenvolvimento comercial**, direcionando minha carreira para **Análise de Negócios**.
+Sou Daniel Fernando Martins, com experiência profissional como **Analista de Negócios no Bradesco** e trajetória em **serviços financeiros, relacionamento com clientes e desenvolvimento comercial**.
 
 Meu interesse é atuar na compreensão de necessidades, análise de processos, documentação de requisitos e acompanhamento de indicadores, aproximando as áreas de negócio e tecnologia. Nos projetos de estudo, exploro regras comerciais, definições de métricas e perguntas que ajudam a entender uma operação.
 
 **Formação:** Análise e Desenvolvimento de Sistemas — Universidade São Judas Tadeu.
+
+## Experiência profissional e portfólio
+
+Minha experiência como **Analista de Negócios no Bradesco**, com atuação em **análise de processos e requisitos**, é a base profissional que contextualiza este portfólio. Os estudos abaixo organizam problemas do setor bancário em processos, requisitos, regras de negócio e critérios verificáveis. São projetos independentes de demonstração, sem divulgação de entregas internas do banco.
 
 ## Meu diferencial
 
@@ -28,7 +32,7 @@ Minha experiência de negócio orienta a escolha dos problemas do portfólio: ac
 
 **Foco da candidatura:** Analista de Negócios / Business Analyst, com interesse em processos comerciais, serviços financeiros, relacionamento com clientes e soluções de tecnologia para operações.
 
-## Vitrine — três casos de Análise de Negócios
+## Vitrine — casos de Análise de Negócios
 
 **15 requisitos rastreáveis · 47 cenários de aceite executados · protótipos reproduzíveis**
 
@@ -66,6 +70,16 @@ Contrato de dados, pagamentos parciais, diferença de um centavo, registros canc
 
 [**Como reproduzir e avaliar as evidências →**](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios) · [Fontes públicas e limites](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/FONTES-E-LIMITES.md)
 
+## Novos casos ligados ao contexto bancário
+
+| Estudo de portfólio | Competência e entrega |
+|---|---|
+| [Encaminhamento de estornos](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/novos-casos/04-alcadas-estornos) | Alçadas simuladas, segregação de papéis, exceções e backlog |
+| [Pendências de cadastro](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/novos-casos/05-ativacao-clientes) | Jornada, completude, revisão humana e critérios de aceite |
+| [Priorização de melhorias](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/novos-casos/06-priorizacao-melhorias) | Business case, análise de sensibilidade e apoio ao backlog |
+
+**Novas entregas:** 15 requisitos, 36 cenários executados e [análise SQL de atendimento](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/novos-casos/dados-atendimento) com dados sintéticos. [Ferramentas e fontes](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/analise-negocios/novos-casos/FERRAMENTAS-E-FONTES.md): backlogs para Jira, documentação funcional e medidas DAX propostas; validações em Jira, Confluence e Power BI ainda pendentes.
+
 ## Competências e evidências
 
 | Área | Evidência no portfólio |
@@ -102,4 +116,4 @@ Os três casos já incluem processos, histórias e critérios verificáveis. A p
 **Vamos conversar sobre uma oportunidade em Análise de Negócios?**  
 [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) · [dfernandom@outlook.com](mailto:dfernandom@outlook.com)
 
-*Os projetos são estudos de portfólio. Não representam atuação profissional como Analista de Negócios nem resultados obtidos em empresas.*
+*A experiência profissional no Bradesco foi informada pelo autor. Os projetos publicados são estudos independentes de portfólio e não representam entregas internas ou resultados obtidos no banco.*
