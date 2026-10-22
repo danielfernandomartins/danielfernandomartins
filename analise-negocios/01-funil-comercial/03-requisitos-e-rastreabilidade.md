@@ -51,9 +51,9 @@ Cada requisito Must faz parte do protótipo e tem cenários associados. As hist�
 | valor_centavos | Inteiro positivo, sem booleanos; valor total de uma oportunidade |
 | motivo | Texto obrigatório somente ao mudar para perdida |
 | oportunidades | Lista para indicadores; cada linha representa uma oportunidade |
+| sistema_origem | SAP ou SMART, apenas nas transições; rótulos de fontes simuladas |
 
 Sem deduplicação de oportunidades ou datas nesta versão. O chamador deve fornecer registros únicos; valores inválidos rejeitam o cálculo inteiro.
-| sistema_origem | SAP ou SMART, apenas nas transições; rótulos de fontes simuladas |
 
 As oportunidades podem representar contatos comerciais sobre cartões ou consórcios. valor_centavos é um valor comercial fictício comparável na amostra; não significa limite aprovado de cartão, receita bancária, carta de crédito ou retorno de investimento. Ganho é encerramento de oportunidade no estudo, não concessão de crédito ou contemplação.
 
