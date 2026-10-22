@@ -1,12 +1,12 @@
 <div align="center">
 
 # Daniel Fernando Martins
-### Foco em Analista de Dados Júnior
-**Python · SQL · Indicadores de negócio**
+### Objetivo profissional: Analista de Negócios
+**Processos · Regras de negócio · Indicadores · Clientes**
 
-Transformar dados em perguntas melhores, análises claras e decisões bem fundamentadas.
+Conectar necessidades do negócio, dados e tecnologia para apoiar decisões e melhorias.
 
-[![Portfólio de dados](https://img.shields.io/badge/Portfólio-Análise_de_clientes-0F766E?style=for-the-badge)](https://github.com/danielfernandomartins/analise-dados-clientes)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Negocios_e_Tecnologia-0F766E?style=for-the-badge)](https://github.com/danielfernandomartins/danielfernandomartins/blob/main/RECRUITER-SUMMARY.md)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Conecte--se-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/danielfernandomartins)
 [![Contato](https://img.shields.io/badge/Email-Contato-334155?style=for-the-badge)](mailto:dfernandom@outlook.com)
 
@@ -16,82 +16,79 @@ Transformar dados em perguntas melhores, análises claras e decisões bem fundam
 
 ## Sobre mim
 
-Sou Daniel Fernando Martins e direciono minha carreira para **Análise de Dados**, conectando minha trajetória em serviços financeiros, relacionamento com clientes e desenvolvimento comercial à prática com Python.
+Sou Daniel Fernando Martins, com trajetória em **serviços financeiros, relacionamento com clientes e desenvolvimento comercial**, direcionando minha carreira para **Análise de Negócios**.
 
-Busco uma oportunidade como **Analista de Dados Júnior**, com interesse em comportamento de clientes, retenção, indicadores comerciais e análise financeira. Meu portfólio reúne projetos de estudo que aproximam programação e problemas de negócio.
+Meu interesse é atuar na compreensão de necessidades, análise de processos, documentação de requisitos e acompanhamento de indicadores, aproximando as áreas de negócio e tecnologia. Nos projetos de estudo, exploro regras comerciais, definições de métricas e perguntas que ajudam a entender uma operação.
 
 **Formação:** Análise e Desenvolvimento de Sistemas — Universidade São Judas Tadeu.
 
-## 📊 Projeto em destaque — Análise de cancelamento de clientes
+## Meu diferencial
 
-**Pergunta de negócio:** quais características aparecem associadas ao cancelamento e merecem investigação para apoiar a retenção?
+Minha experiência de negócio orienta a escolha dos problemas do portfólio: acompanhar oportunidades, compreender o comportamento de clientes e interpretar resultados comerciais. A prática com SQL e Python complementa essa visão com consultas, cálculos e conferência de dados.
 
-O projeto documenta uma análise exploratória de uma base de estudo, com foco em contratos, contatos com atendimento e atrasos de pagamento.
+**Foco da candidatura:** Analista de Negócios / Business Analyst, com interesse em processos comerciais, serviços financeiros, relacionamento com clientes e soluções de tecnologia para operações.
 
-- Inspeção, tratamento e organização de dados.
-- Análise de padrões de cancelamento e comparação de segmentos.
-- Visualização de dados e formulação de hipóteses de negócio.
-- Comunicação das limitações: associação não comprova causalidade.
+## Projetos em destaque
 
-**Tecnologias utilizadas no notebook:** Python, Pandas, Plotly Express e Jupyter Notebook.
+### 1. Pipeline comercial — regras e indicadores
 
-**Evidência quantitativa da execução histórica:** 49.996 registros após limpeza e 28.393 cancelamentos (56,79%). As taxas dos recortes são comparações descritivas, sem alegação de redução real de churn.
+**Problema:** organizar oportunidades e acompanhar os resultados de um funil comercial.
 
-O código do notebook foi revisado; a reprodução integral depende do CSV original, ainda ausente do repositório.
+A aplicação de estudo registra cliente, produto, valor e status. Calcula valor em aberto, vendas ganhas e conversão sobre o total de oportunidades cadastradas.
 
-[**Explorar o estudo →**](https://github.com/danielfernandomartins/analise-dados-clientes) · [**Abrir notebook →**](https://github.com/danielfernandomartins/analise-dados-clientes/blob/main/analise_cancelamentos.ipynb)
+**Contribuição para Análise de Negócios:** tornar explícitas as regras do processo e a definição dos indicadores. A documentação diferencia conversão sobre todas as oportunidades de taxa de ganho sobre oportunidades encerradas.
 
-## 🗂️ Portfólio selecionado
+[**Ver projeto e regras →**](https://github.com/danielfernandomartins/pipeline-comercial-python)
 
-| Projeto | Problema explorado | Foco para a área de dados |
-|---|---|---|
-| [SQL: análise de vendas](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/projetos-dados/sql-vendas) | Analisar vendas, receita e clientes | JOIN, agrupamentos, CTE e funções de janela; resultados executados |
-| [Power BI: dashboard de vendas](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/projetos-dados/powerbi-vendas) | Acompanhar indicadores comerciais | Projeto PBIP, Power Query e DAX; abertura no Desktop pendente |
-| [Análise de clientes](https://github.com/danielfernandomartins/analise-dados-clientes) | Investigar padrões associados ao churn | Análise exploratória, visualização e hipóteses de retenção |
-| [Pipeline comercial em Python](https://github.com/danielfernandomartins/pipeline-comercial-python) | Acompanhar oportunidades e resultados do funil | Indicadores de conversão, valor em aberto e vendas ganhas |
-| [Controle de despesas em Python](https://github.com/danielfernandomartins/controle-despesas-python) | Organizar registros de gastos | Filtros por categoria, totalização e organização de dados |
+### 2. Vendas — perguntas de negócio respondidas com SQL
 
-Os projetos têm escopos diferentes: a análise de clientes é o principal case de dados; os demais complementam a prática com Python e regras de negócio.
+**Problema:** entender como receita, vendas e ticket se distribuem por mês, categoria e cliente.
 
-## 🧰 Competências aplicadas no portfólio
+O estudo usa uma base fictícia completa e seis consultas executadas, com resultados disponíveis para conferência. A documentação explica o grão dos dados, a exclusão de vendas canceladas e o denominador de cada indicador.
 
-| Competência | Evidência |
+**Contribuição para Análise de Negócios:** alinhar a interpretação das métricas e fundamentar perguntas sobre a operação. Na amostra, Monitores representam 68,68% da receita; a análise explicita que receita não é lucro.
+
+[**Ver análise SQL →**](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/projetos-dados/sql-vendas) · [**Ler resultados e limites →**](https://github.com/danielfernandomartins/danielfernandomartins/blob/main/projetos-dados/LEITURA-DOS-RESULTADOS.md)
+
+### 3. Clientes — hipóteses sobre cancelamento
+
+**Problema:** investigar características associadas ao cancelamento e formular perguntas sobre retenção e atendimento.
+
+O notebook explora contratos, contatos com atendimento e atrasos. Os recortes são tratados como comparações entre populações diferentes, sem atribuir efeito causal ou redução real de cancelamentos.
+
+**Contribuição para Análise de Negócios:** formular hipóteses e comunicar quais evidências ainda seriam necessárias para apoiar uma decisão. A reprodução integral permanece pendente porque o CSV original não está publicado.
+
+[**Ver estudo de clientes →**](https://github.com/danielfernandomartins/analise-dados-clientes)
+
+## Competências e evidências
+
+| Área | Evidência no portfólio |
 |---|---|
-| SQL (SQLite) | Seis consultas executadas e resultados conferidos no projeto de vendas |
-| Power BI — projeto em validação | Modelo estrela, consultas M, cinco medidas DAX e sete visuais em PBIP |
-| Python | Organização de registros, funções, filtros e cálculos |
-| Pandas e análise exploratória | Projeto de cancelamento de clientes |
-| Plotly Express e notebooks | Visualizações no notebook de clientes |
-| Indicadores de negócio | Conversão, oportunidades e valores no pipeline comercial |
-| Comunicação analítica | Perguntas de negócio, hipóteses e limitações documentadas |
+| Regras de negócio | Status, valores e critérios de cálculo no pipeline comercial |
+| Definição de indicadores | Receita, ticket, conversão e cancelamento com denominadores explícitos |
+| Análise de dados de apoio ao negócio | Consultas SQL com JOIN, agrupamentos, ranking e variação mensal |
+| Documentação e comunicação | Perguntas de negócio, resultados, limitações e procedimentos de conferência |
+| Visão de cliente | Hipóteses sobre atendimento, contratos e retenção no estudo de cancelamentos |
+| Tecnologia de apoio | Python, SQL e projeto Power BI com modelo, Power Query e DAX |
 
-## 💼 Visão de negócio como diferencial
+**Power BI:** o [projeto de dashboard de vendas](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/projetos-dados/powerbi-vendas) está publicado em PBIP. A abertura, a execução DAX e a apresentação dos visuais ainda precisam de validação no Desktop.
 
-Minha experiência anterior em serviços financeiros e relacionamento com clientes orienta os problemas que escolho estudar: entender o cliente, acompanhar resultados e transformar informações em perguntas úteis para o negócio.
+## Desenvolvimento profissional
 
-Na transição para dados, meu foco é desenvolver análises que sejam **compreensíveis, verificáveis e conectadas ao contexto**.
+Minha próxima evolução é aprofundar **levantamento de requisitos, mapeamento de processos, histórias de usuário e critérios de aceite**, aplicando esses temas aos casos do portfólio. São objetivos de desenvolvimento, sem alegação de experiência profissional já comprovada nessas atividades.
 
-[**Ler o resumo para recrutadores →**](https://github.com/danielfernandomartins/danielfernandomartins/blob/main/RECRUITER-SUMMARY.md)
-
-## 🚀 Próximos passos do portfólio
-
-- Ampliar a análise de clientes com indicadores e segmentações mais detalhadas.
-- Ampliar o projeto SQL de vendas com novas perguntas de negócio.
-- Validar a abertura, atualização e apresentação do dashboard no Power BI Desktop.
-- Melhorar a reprodução dos estudos com dados acessíveis e dependências documentadas.
-
-O projeto SQL foi executado e conferido. O código do projeto Power BI está publicado; a abertura e a execução das medidas no Desktop ainda precisam ser validadas.
+[**Resumo para recrutadores →**](https://github.com/danielfernandomartins/danielfernandomartins/blob/main/RECRUITER-SUMMARY.md)
 
 <details>
-<summary><strong>Outras trilhas de estudo</strong></summary>
+<summary><strong>Outros estudos em tecnologia</strong></summary>
 
-Também mantenho estudos em [desenvolvimento Front-End](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/frontend-projects), [laboratórios de suporte](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/support-labs) e [documentação técnica](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/knowledge-base). Esses materiais complementam minha formação em tecnologia; o foco profissional desta apresentação é Análise de Dados Júnior.
+[Desenvolvimento Front-End](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/frontend-projects), [laboratórios de suporte](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/support-labs) e [documentação técnica](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/knowledge-base) complementam minha formação e meu entendimento de soluções de TI.
 
 </details>
 
 ---
 
-**Vamos conversar sobre uma oportunidade em dados?**  
+**Vamos conversar sobre uma oportunidade em Análise de Negócios?**  
 [LinkedIn](https://www.linkedin.com/in/danielfernandomartins) · [dfernandom@outlook.com](mailto:dfernandom@outlook.com)
 
-*Os projetos são estudos e aplicações de portfólio. Não representam experiência profissional em análise de dados nem resultados obtidos em empresas.*
+*Os projetos são estudos de portfólio. Não representam atuação profissional como Analista de Negócios nem resultados obtidos em empresas.*

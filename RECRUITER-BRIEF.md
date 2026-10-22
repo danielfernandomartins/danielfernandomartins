@@ -1,39 +1,38 @@
-# Daniel Fernando Martins — Resumo para recrutadores
+# Daniel Fernando Martins — Analista de Negócios
 
-**Objetivo profissional: Analista de Dados Júnior**
+**Objetivo profissional: Analista de Negócios / Business Analyst**
 
-Profissional em transição para a área de dados, com trajetória em serviços financeiros, relacionamento com clientes e desenvolvimento comercial. Conecta visão de negócio à prática com Python e a projetos de estudo sobre comportamento de clientes e indicadores.
+Profissional com trajetória em serviços financeiros, relacionamento com clientes e desenvolvimento comercial, direcionando sua carreira para Análise de Negócios. Conecta visão comercial à prática com tecnologia, regras de negócio e indicadores em projetos de estudo.
+
+## Foco de atuação desejado
+
+Compreensão de necessidades, análise de processos, documentação de requisitos e acompanhamento de indicadores, aproximando negócio e tecnologia. Interesse em operações comerciais, serviços financeiros e experiência do cliente.
 
 ## Evidências do portfólio
 
-| Projeto | Competências apresentadas |
+| Projeto | Evidência relevante para Análise de Negócios |
 |---|---|
-| [Análise de cancelamento de clientes](https://github.com/danielfernandomartins/analise-dados-clientes) | Análise exploratória, tratamento de dados, Python, Pandas, Plotly Express e Jupyter Notebook, verificados no código |
-| [Pipeline comercial](https://github.com/danielfernandomartins/pipeline-comercial-python) | Organização de oportunidades, taxa de conversão e consolidação de valores em Python |
-| [Controle de despesas](https://github.com/danielfernandomartins/controle-despesas-python) | Organização de registros, filtros por categoria e totalização em Python |
-
-## Evidência quantitativa e disponibilidade
-
-A execução histórica do case de clientes registrava 49.996 linhas após limpeza e 28.393 cancelamentos (56,79%). São números da base de estudo, não impacto empresarial. O CSV original está ausente, impedindo nova execução integral; a pendência está documentada no projeto.
-
-## Novos projetos de vendas
-
-- [SQL / SQLite](projetos-dados/sql-vendas/): seis consultas com JOIN, LEFT JOIN, agregações, CTE, ranking e variação mensal. Resultados executados e conferidos em uma base fictícia de 48 vendas.
-- [Power BI](projetos-dados/powerbi-vendas/): projeto PBIP com modelo estrela, Power Query, cinco medidas DAX e sete visuais. Abertura, atualização e renderização no Desktop ainda pendentes.
-
-Receita da amostra: R$ 25.292,00 em 42 vendas concluídas; ticket médio de R$ 602,19. Valores calculados em SQL; não são resultados empresariais.
+| [Pipeline comercial](https://github.com/danielfernandomartins/pipeline-comercial-python) | Regras de cadastro, status e valores; definição de conversão e distinção entre denominadores |
+| [Análise de vendas em SQL](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/projetos-dados/sql-vendas) | Perguntas de negócio, seis consultas executadas, regras dos indicadores e resultados conferíveis |
+| [Leitura dos resultados](https://github.com/danielfernandomartins/danielfernandomartins/blob/main/projetos-dados/LEITURA-DOS-RESULTADOS.md) | Interpretação de receita, concentração e variação mensal, com limites e perguntas para investigação |
+| [Análise de clientes](https://github.com/danielfernandomartins/analise-dados-clientes) | Hipóteses sobre retenção, atendimento e contratos; distinção entre associação e causalidade |
+| [Dashboard de vendas](https://github.com/danielfernandomartins/danielfernandomartins/tree/main/projetos-dados/powerbi-vendas) | Projeto PBIP, modelo estrela, Power Query e DAX; validação no Desktop pendente |
 
 ## Diferencial
 
-Visão de cliente e negócio aplicada à escolha de perguntas analíticas. O case de cancelamento documenta hipóteses de retenção e distingue associações observadas de relações causais.
+Experiência anterior com clientes e negócios como contexto para compreender problemas operacionais. SQL e Python são ferramentas de apoio para explorar dados e conferir indicadores; o foco da candidatura é Análise de Negócios.
 
 ## Formação
 
 Análise e Desenvolvimento de Sistemas — Universidade São Judas Tadeu.
 
-## Transparência e desenvolvimento
+## Escopo e transparência
 
-Os projetos são estudos de portfólio, sem atribuição de resultados empresariais ou experiência profissional em dados. SQL possui um projeto executável de estudo. Power BI possui código de projeto publicado, com validação no Desktop pendente; isso não equivale a experiência profissional ou domínio das ferramentas.
+- Os projetos são estudos, sem alegação de experiência profissional como Analista de Negócios.
+- Os resultados quantitativos são de bases didáticas, sem impacto empresarial comprovado.
+- O projeto SQL foi executado e conferido; Power BI ainda exige validação no Desktop.
+- A reprodução integral do estudo de clientes depende do CSV original, ausente do repositório.
+- Levantamento de requisitos, mapeamento de processos, histórias de usuário e critérios de aceite são próximos temas de aprofundamento, não experiência profissional comprovada.
 
 ## Contato
 
